@@ -1,0 +1,4294 @@
+{
+  "version": "0.1",
+  "id": "index",
+  "targetURL": "https://jc.z.inja.com/gjc/base/main.do?loginType=YSP",
+  "jsFile": "index.js",
+  "requires": {
+    "mission_dec": "../mission_dec/index.json",
+    "currency_dec": "../currency_dec/index.json",
+    "order_dec": "../order_dec/index.json",
+    "tender_mission": "../tender_mission/index.json",
+    "purchase_mission": "../purchase_mission/index.json",
+    "view_approve": "../view_approve/index.json",
+    "merge": "../merge/index.json",
+    "new_list": "../new_list/index.json",
+    "end": "../end/index.json",
+    "end_plan": "../end_plan/index.json"
+  },
+  "chineseName": "首页",
+  "description": "",
+  "firstPaintEnable": false,
+  "controls": {
+    "control5_qOadSx": {
+      "location": {
+        "data": {
+          "tagName": "DIV"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "@id/word",
+            "prob": 3,
+            "value": [
+              "descendant::DIV[@id=\"west\"]//DIV[@id=\"menubar\"]",
+              "descendant::DIV[@id=\"menubar\"]"
+            ]
+          },
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "value": "DIV.mini-layout-region-body DIV.shell DIV.menu"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[4]/DIV[2]/DIV[1]/DIV[1]"
+          }
+        ]
+      },
+      "events": {
+        "onGetData": "getData_control5_qOadSx"
+      },
+      "intendedRole": "custom",
+      "roles": "element,custom",
+      "monitored": true,
+      "frameXPath": ""
+    },
+    "control7_9fVVA4": {
+      "location": {
+        "data": {
+          "tagName": "TABLE"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "ordinal": [
+              0,
+              3
+            ],
+            "value": "DIV.mini-tabs-scrollCt DIV.mini-tabs-headers.mini-tabs-header-top TABLE.mini-tabs-header"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/DIV[1]/DIV[3]/TABLE[1]"
+          }
+        ]
+      },
+      "events": {
+        "onGetData": "getData_control7_9fVVA4"
+      },
+      "intendedRole": "custom",
+      "roles": "element,custom",
+      "monitored": true,
+      "frameXPath": "//iframe[@name='mainframe'][@id='mainframe']<<IFRAME>>"
+    },
+    "control9_K3ntnP": {
+      "location": {
+        "data": {
+          "tagName": "DIV"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "@id/word",
+            "prob": 2,
+            "value": [
+              "descendant::DIV[@id=\"mainTabs\"]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/DIV[2]",
+              "descendant::DIV[@id=\"mainTabs\"]//DIV"
+            ]
+          },
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "ordinal": [
+              0,
+              3
+            ],
+            "value": "DIV.mini-tabs.mini-tabs-position-top TABLE.mini-tabs-table.mini-tabs-plain DIV.mini-tabs-bodys.mini-tabs-body-top"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/DIV[2]"
+          }
+        ]
+      },
+      "events": {
+        "onGetData": "getData_control9_K3ntnP"
+      },
+      "intendedRole": "custom",
+      "roles": "element,custom",
+      "monitored": true,
+      "frameXPath": "//iframe[@name='mainframe'][@id='mainframe']<<IFRAME>>"
+    },
+    "control8_kNGNrq": {
+      "location": {
+        "data": {
+          "tagName": "DIV"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "@id/word",
+            "prob": 2,
+            "value": [
+              "descendant::DIV[@id=\"mainTabs\"]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/DIV[2]",
+              "descendant::DIV[@id=\"mainTabs\"]//DIV"
+            ]
+          },
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "ordinal": [
+              0,
+              3
+            ],
+            "value": "DIV.mini-tabs.mini-tabs-position-top TABLE.mini-tabs-table.mini-tabs-plain DIV.mini-tabs-bodys.mini-tabs-body-top"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/DIV[2]"
+          }
+        ]
+      },
+      "events": {
+        "onGetData": "getData_control8_kNGNrq"
+      },
+      "intendedRole": "custom",
+      "roles": "element,custom",
+      "monitored": true,
+      "frameXPath": "//iframe[@name='mainframe'][@id='mainframe']<<IFRAME>>"
+    },
+    "control10_KNBX0T": {
+      "location": {
+        "data": {
+          "tagName": "DIV"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "text",
+            "prob": 3,
+            "ordinal": [
+              0,
+              2
+            ],
+            "value": {
+              "text": [
+                "user-index-page"
+              ],
+              "visText": [
+                "user-index-page"
+              ]
+            }
+          },
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "value": "HTML.mini-xs.mini-sm.mini-sm-active DIV.user-simple-box"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "ordinal": [
+              0,
+              2
+            ],
+            "value": "/HTML[1]/BODY[1]/DIV[1]"
+          }
+        ]
+      },
+      "roles": "element",
+      "text": "user-index-page",
+      "frameXPath": ""
+    },
+    "control13_EJy5u0": {
+      "location": {
+        "data": {
+          "tagName": "DIV"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "@id/word",
+            "prob": 2,
+            "value": [
+              "descendant::DIV[@id=\"mainTabs\"]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/DIV[2]",
+              "descendant::DIV[@id=\"mainTabs\"]//DIV"
+            ]
+          },
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "ordinal": [
+              0,
+              4
+            ],
+            "value": "DIV.mini-tabs.mini-tabs-position-top TABLE.mini-tabs-table.mini-tabs-plain DIV.mini-tabs-bodys.mini-tabs-body-top"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/DIV[2]"
+          }
+        ]
+      },
+      "events": {
+        "onGetData": "getData_control13_EJy5u0"
+      },
+      "intendedRole": "custom",
+      "roles": "element,custom",
+      "monitored": true,
+      "frameXPath": "//iframe[@name='mainframe'][@id='mainframe']<<IFRAME>>"
+    },
+    "control14_m3dTyz": {
+      "location": {
+        "data": {
+          "tagName": "DIV"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "ordinal": [
+              0,
+              3
+            ],
+            "value": "DIV.mini-messagebox-content TABLE.mini-messagebox-table DIV.mini-messagebox-warning"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/DIV[6]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]"
+          },
+          {
+            "id": "elderLevel",
+            "value": {
+              "level": 0
+            }
+          }
+        ]
+      },
+      "intendedRole": "dialog",
+      "roles": "element,dialog",
+      "monitored": false,
+      "frameXPath": "//iframe[@name='mainframe'][@id='mainframe']<<IFRAME>>//iframe[contains(@name,'mini-iframe-')]<<IFRAME>>"
+    },
+    "control15_cdViJA": {
+      "location": {
+        "data": {
+          "tagName": "TD"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "text",
+            "prob": 3,
+            "value": {
+              "text": [
+                "请选中要删除的计划！"
+              ],
+              "visText": [
+                "请选中要删除的计划！"
+              ]
+            }
+          },
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "ordinal": [
+              0,
+              3
+            ],
+            "value": "DIV.mini-messagebox-content TABLE.mini-messagebox-table TD.mini-messagebox-content-text"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/DIV[6]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]"
+          },
+          {
+            "id": "elderLevel",
+            "value": {
+              "level": 0
+            }
+          }
+        ]
+      },
+      "roles": "element",
+      "content": true,
+      "monitored": false,
+      "frameXPath": "//iframe[@name='mainframe'][@id='mainframe']<<IFRAME>>//iframe[contains(@name,'mini-iframe-')]<<IFRAME>>"
+    },
+    "control16_0MouPg": {
+      "location": {
+        "data": {
+          "tagName": "A"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "button/text",
+            "prob": 3,
+            "value": {
+              "text": [
+                "确定"
+              ],
+              "visText": [
+                "确定"
+              ]
+            }
+          },
+          {
+            "id": "text",
+            "prob": 3,
+            "value": {
+              "text": [
+                "确定"
+              ],
+              "visText": [
+                "确定"
+              ]
+            }
+          },
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "ordinal": [
+              0,
+              3
+            ],
+            "value": "DIV.mini-panel-body DIV.mini-messagebox-buttons A.mini-button"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/DIV[6]/DIV[1]/DIV[2]/DIV[2]/DIV[2]/A[1]"
+          }
+        ]
+      },
+      "intendedRole": "button",
+      "roles": "element,button,link",
+      "monitored": false,
+      "frameXPath": "//iframe[@name='mainframe'][@id='mainframe']<<IFRAME>>//iframe[contains(@name,'mini-iframe-')]<<IFRAME>>"
+    },
+    "control92_Wz4fuD": {
+      "location": {
+        "data": {
+          "tagName": "DIV"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "@id/word",
+            "prob": 3,
+            "value": "descendant::DIV[@id=\"allmap\"]"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/DIV[1]"
+          },
+          {
+            "id": "shield",
+            "value": {
+              "zIndex": "0",
+              "width": 1184,
+              "height": 570
+            }
+          }
+        ]
+      },
+      "events": {
+        "onGetData": "getData_control92_Wz4fuD"
+      },
+      "intendedRole": "custom",
+      "roles": "element,custom",
+      "monitored": true,
+      "frameXPath": "//iframe[@name='mainframe'][@id='mainframe']<<IFRAME>>//iframe[contains(@name,'mini-iframe-')]<<IFRAME>>//iframe[contains(@name,'iframe')][contains(@id,'iframe')]<<IFRAME>>"
+    },
+    "control95_utKqPk": {
+      "location": {
+        "data": {
+          "tagName": "DIV"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "ordinal": [
+              0,
+              3
+            ],
+            "value": "DIV.mini-messagebox-content TABLE.mini-messagebox-table DIV.mini-messagebox-question"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/DIV[4]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]"
+          },
+          {
+            "id": "elderLevel",
+            "value": {
+              "level": 0
+            }
+          }
+        ]
+      },
+      "intendedRole": "dialog",
+      "roles": "element,dialog",
+      "monitored": false,
+      "frameXPath": "//iframe[@name='mainframe'][@id='mainframe']<<IFRAME>>//iframe[contains(@name,'mini-iframe-')]<<IFRAME>>"
+    },
+    "control96_W814wg": {
+      "location": {
+        "data": {
+          "tagName": "TD"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "text",
+            "prob": 3,
+            "value": {
+              "text": [
+                "将要删除已选择的计划及相关清单，且不可恢复！"
+              ],
+              "visText": [
+                "将要删除已选择的计划及相关清单，且不可恢复！"
+              ]
+            }
+          },
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "ordinal": [
+              0,
+              3
+            ],
+            "value": "DIV.mini-messagebox-content TABLE.mini-messagebox-table TD.mini-messagebox-content-text"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/DIV[4]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]"
+          },
+          {
+            "id": "elderLevel",
+            "value": {
+              "level": 0
+            }
+          }
+        ]
+      },
+      "roles": "element",
+      "content": true,
+      "monitored": false,
+      "frameXPath": "//iframe[@name='mainframe'][@id='mainframe']<<IFRAME>>//iframe[contains(@name,'mini-iframe-')]<<IFRAME>>"
+    },
+    "control97_wZQL90": {
+      "location": {
+        "data": {
+          "tagName": "DIV"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "ordinal": [
+              0,
+              3
+            ],
+            "value": "DIV.mini-panel-viewport DIV.mini-panel-body DIV.mini-messagebox-buttons"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/DIV[4]/DIV[1]/DIV[2]/DIV[2]/DIV[2]"
+          }
+        ]
+      },
+      "events": {
+        "onGetData": "getData_control97_wZQL90"
+      },
+      "intendedRole": "custom",
+      "roles": "element,custom",
+      "monitored": true,
+      "frameXPath": "//iframe[@name='mainframe'][@id='mainframe']<<IFRAME>>//iframe[contains(@name,'mini-iframe-')]<<IFRAME>>"
+    },
+    "control102_nBC3ZP": {
+      "location": {
+        "data": {
+          "tagName": "A"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "a/@href",
+            "prob": 3,
+            "ordinal": [
+              0,
+              2
+            ],
+            "value": {
+              "pathname": "/gjc/base/main.do"
+            }
+          },
+          {
+            "id": "@id/word",
+            "prob": 1,
+            "value": [
+              "descendant::DIV[@id=\"north\"]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/A[1]",
+              "descendant::DIV[@id=\"north\"]//A"
+            ]
+          },
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "value": "DIV.module-header DIV.i_logo_m A.i_logo.text"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/A[1]"
+          },
+          {
+            "id": "elderLevel",
+            "value": {
+              "level": 0
+            }
+          }
+        ]
+      },
+      "events": {
+        "onGetData": "getData_control102_nBC3ZP"
+      },
+      "intendedRole": "custom",
+      "roles": "element,link,custom",
+      "monitored": false,
+      "frameXPath": ""
+    },
+    "control159_kz1qG5": {
+      "location": {
+        "data": {
+          "tagName": "DIV"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/DIV[4]/DIV[1]/DIV[2]/DIV[2]/DIV[1]"
+          }
+        ]
+      },
+      "intendedRole": "dialog",
+      "roles": "element,dialog",
+      "monitored": false,
+      "frameXPath": "//iframe[@name='mainframe'][@id='mainframe']<<IFRAME>>//iframe[contains(@name,'mini-iframe-')]<<IFRAME>>"
+    },
+    "control160_wPzJhX": {
+      "location": {
+        "data": {
+          "tagName": "TD"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "text",
+            "prob": 3,
+            "value": {
+              "text": [
+                "退回原因："
+              ],
+              "visText": [
+                "退回原因："
+              ]
+            }
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/DIV[4]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]"
+          },
+          {
+            "id": "elderLevel",
+            "value": {
+              "level": 0
+            }
+          }
+        ]
+      },
+      "roles": "element",
+      "content": true,
+      "monitored": false,
+      "frameXPath": "//iframe[@name='mainframe'][@id='mainframe']<<IFRAME>>//iframe[contains(@name,'mini-iframe-')]<<IFRAME>>"
+    },
+    "control161_Um9l7N": {
+      "location": {
+        "data": {
+          "tagName": "TEXTAREA"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "elem/@name",
+            "prob": 2,
+            "value": "descendant::TEXTAREA[@name=\"reason\"]"
+          },
+          {
+            "id": "@id/word",
+            "prob": 3,
+            "value": "descendant::TEXTAREA[@id=\"reason\"]"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/DIV[4]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/TEXTAREA[1]"
+          },
+          {
+            "id": "elderLevel",
+            "value": {
+              "level": 0
+            }
+          }
+        ]
+      },
+      "intendedRole": "textbox",
+      "roles": "element,textbox",
+      "monitored": true,
+      "frameXPath": "//iframe[@name='mainframe'][@id='mainframe']<<IFRAME>>//iframe[contains(@name,'mini-iframe-')]<<IFRAME>>"
+    },
+    "control162_6kXhQK": {
+      "location": {
+        "data": {
+          "tagName": "A"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "button/text",
+            "prob": 3,
+            "value": {
+              "text": [
+                "确定"
+              ],
+              "visText": [
+                "确定"
+              ]
+            }
+          },
+          {
+            "id": "text",
+            "prob": 3,
+            "value": {
+              "text": [
+                "确定"
+              ],
+              "visText": [
+                "确定"
+              ]
+            }
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/DIV[4]/DIV[1]/DIV[2]/DIV[2]/DIV[2]/A[1]"
+          }
+        ]
+      },
+      "intendedRole": "button",
+      "roles": "element,button,link",
+      "monitored": false,
+      "frameXPath": "//iframe[@name='mainframe'][@id='mainframe']<<IFRAME>>//iframe[contains(@name,'mini-iframe-')]<<IFRAME>>"
+    },
+    "control174_m7wdZp": {
+      "location": {
+        "data": {
+          "tagName": "BODY"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "value": "HTML.mini-xs.mini-sm.mini-sm-active BODY"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "ordinal": [
+              0,
+              3
+            ],
+            "value": "/HTML[1]/BODY[1]"
+          }
+        ]
+      },
+      "events": {
+        "onGetData": "getData_control174_m7wdZp"
+      },
+      "intendedRole": "custom",
+      "roles": "element,custom",
+      "monitored": true,
+      "frameXPath": ""
+    }
+  },
+  "contexts": {
+    "context1_rIRPPI": {
+      "controls": [
+        "control5_qOadSx",
+        "control7_9fVVA4",
+        "control9_K3ntnP",
+        "control8_kNGNrq",
+        "control13_EJy5u0",
+        "control14_m3dTyz",
+        "control15_cdViJA",
+        "control16_0MouPg",
+        "control92_Wz4fuD",
+        "control95_utKqPk",
+        "control96_W814wg",
+        "control97_wZQL90",
+        "control102_nBC3ZP",
+        "control159_kz1qG5",
+        "control160_wPzJhX",
+        "control161_Um9l7N",
+        "control162_6kXhQK",
+        "control174_m7wdZp"
+      ],
+      "anchors": [
+        "control10_KNBX0T"
+      ],
+      "urlAnchor": []
+    }
+  },
+  "flows": {
+    "flow5_U0oOur": {
+      "toContexts": [
+        {
+          "toContextId": "context1_rIRPPI"
+        }
+      ]
+    },
+    "flow6_dp3rlx": {
+      "fromContextId": "context1_rIRPPI",
+      "fromAction": "doAction",
+      "fromControlId": "control5_qOadSx",
+      "toContexts": [
+        {
+          "toContextId": "context1_rIRPPI"
+        },
+        {
+          "toContextId": "context24_qRKc24",
+          "toModelId": "new_list"
+        }
+      ]
+    },
+    "flow9_v1G3LQ": {
+      "fromContextId": "context1_rIRPPI",
+      "fromAction": "doAction",
+      "fromControlId": "control7_9fVVA4",
+      "toContexts": [
+        {
+          "toContextId": "context1_rIRPPI"
+        }
+      ]
+    },
+    "flow10_nLbzn7": {
+      "fromContextId": "context1_rIRPPI",
+      "fromAction": "doAction",
+      "fromControlId": "control9_K3ntnP",
+      "toContexts": [
+        {
+          "toContextId": "context1_rIRPPI"
+        }
+      ]
+    },
+    "flow11_Tq2ASh": {
+      "fromContextId": "context1_rIRPPI",
+      "fromAction": "doAction",
+      "fromControlId": "control8_kNGNrq",
+      "toContexts": [
+        {
+          "toContextId": "context1_rIRPPI"
+        },
+        {
+          "toContextId": "context3_w4M70N",
+          "toModelId": "currency_dec"
+        },
+        {
+          "toContextId": "context15_0usTqF",
+          "toModelId": "order_dec"
+        },
+        {
+          "toContextId": "context17_kpDolS",
+          "toModelId": "purchase_mission"
+        },
+        {
+          "toContextId": "context20_ihoD5v",
+          "toModelId": "view_approve"
+        },
+        {
+          "toContextId": "context23_t5uEOw",
+          "toModelId": "merge"
+        },
+        {
+          "toContextId": "context24_qRKc24",
+          "toModelId": "new_list"
+        }
+      ]
+    },
+    "flow14_q4nk6m": {
+      "fromContextId": "context1_rIRPPI",
+      "fromAction": "doAction",
+      "fromControlId": "control13_EJy5u0",
+      "toContexts": [
+        {
+          "toContextId": "context1_rIRPPI"
+        },
+        {
+          "toContextId": "context3_w4M70N",
+          "toModelId": "currency_dec"
+        },
+        {
+          "toContextId": "context16_PbHB4K",
+          "toModelId": "tender_mission"
+        },
+        {
+          "toContextId": "context17_kpDolS",
+          "toModelId": "purchase_mission"
+        },
+        {
+          "toContextId": "context23_t5uEOw",
+          "toModelId": "merge"
+        },
+        {
+          "toContextId": "context27_Fn7d5V",
+          "toModelId": "end_plan"
+        }
+      ]
+    },
+    "flow19_7yaPJ1": {
+      "fromContextId": "context1_rIRPPI",
+      "fromAction": "click",
+      "fromControlId": "control16_0MouPg",
+      "toContexts": [
+        {
+          "toContextId": "context1_rIRPPI"
+        }
+      ]
+    },
+    "flow72_M7kqNN": {
+      "fromContextId": "context1_rIRPPI",
+      "fromAction": "doAction",
+      "fromControlId": "control92_Wz4fuD",
+      "toContexts": [
+        {
+          "toContextId": "context1_rIRPPI"
+        }
+      ]
+    },
+    "flow73_GVwfT0": {
+      "fromContextId": "context1_rIRPPI",
+      "fromAction": "doAction",
+      "fromControlId": "control97_wZQL90",
+      "toContexts": [
+        {
+          "toContextId": "context1_rIRPPI"
+        },
+        {
+          "toContextId": "context25_vXCCJ4",
+          "toModelId": "end"
+        }
+      ]
+    },
+    "flow104_LqXcQy": {
+      "fromContextId": "context1_rIRPPI",
+      "fromAction": "click",
+      "fromControlId": "control162_6kXhQK",
+      "toContexts": [
+        {
+          "toContextId": "context1_rIRPPI"
+        }
+      ]
+    },
+    "flow108_DL5BQp": {
+      "fromContextId": "context1_rIRPPI",
+      "fromAction": "click",
+      "fromControlId": "control159_kz1qG5",
+      "toContexts": [
+        {
+          "toContextId": "context1_rIRPPI"
+        }
+      ]
+    },
+    "flow99_qxIZMV": {
+      "fromContextId": "context1_rIRPPI",
+      "fromAction": "click",
+      "fromControlId": "control95_utKqPk",
+      "toContexts": [
+        {
+          "toContextId": "context1_rIRPPI"
+        }
+      ]
+    },
+    "flow113_SxA7X1": {
+      "fromContextId": "context1_rIRPPI",
+      "fromAction": "click",
+      "fromControlId": "control14_m3dTyz",
+      "toContexts": [
+        {
+          "toContextId": "context1_rIRPPI"
+        }
+      ]
+    }
+  },
+  "pages": {
+    "page1_7agHyi": {
+      "contextId": "context1_rIRPPI",
+      "layout": [
+        {
+          "id": "uiControl5_X1pVyc",
+          "controlId": "control5_qOadSx",
+          "display": {
+            "adapterId": "custom",
+            "type": "custom",
+            "adapter": {
+              "templateType": "react",
+              "events": {
+                "onDoAction": "doAction_uiControl5_X1pVyc",
+                "onGetTemplate": "getTemplate_uiControl5_X1pVyc"
+              }
+            }
+          }
+        },
+        {
+          "id": "uiControl158_eq9SOn",
+          "controlId": "control174_m7wdZp",
+          "display": {
+            "adapterId": "custom",
+            "type": "custom",
+            "adapter": {
+              "templateType": "react",
+              "events": {
+                "onDoAction": "doAction_uiControl158_eq9SOn",
+                "onGetTemplate": "getTemplate_uiControl158_eq9SOn"
+              }
+            }
+          }
+        },
+        {
+          "id": "uiControl7_WA1sx8",
+          "controlId": "control7_9fVVA4",
+          "display": {
+            "adapterId": "custom",
+            "type": "custom",
+            "adapter": {
+              "templateType": "react",
+              "events": {
+                "onDoAction": "doAction_uiControl7_WA1sx8",
+                "onGetTemplate": "getTemplate_uiControl7_WA1sx8"
+              }
+            }
+          }
+        },
+        {
+          "id": "uiControl78_Z3zR8N",
+          "controlId": "control92_Wz4fuD",
+          "display": {
+            "adapterId": "custom",
+            "type": "custom",
+            "adapter": {
+              "templateType": "react",
+              "events": {
+                "onDoAction": "doAction_uiControl78_Z3zR8N",
+                "onGetTemplate": "getTemplate_uiControl78_Z3zR8N"
+              }
+            }
+          }
+        },
+        {
+          "id": "uiControl9_lAGv6Z",
+          "controlId": "control9_K3ntnP",
+          "display": {
+            "adapterId": "custom",
+            "type": "custom",
+            "adapter": {
+              "templateType": "react",
+              "events": {
+                "onDoAction": "doAction_uiControl9_lAGv6Z",
+                "onGetTemplate": "getTemplate_uiControl9_lAGv6Z"
+              }
+            }
+          }
+        },
+        {
+          "id": "uiControl81_I7xoaq",
+          "controlId": "control95_utKqPk",
+          "display": {
+            "adapterId": "dialog",
+            "type": "dialog",
+            "class": "tips-confirm",
+            "adapter": {
+              "templateType": ""
+            }
+          },
+          "layout": [
+            {
+              "id": "uiControl81_I7xoaqbody",
+              "display": {
+                "type": "dialogBody",
+                "adapterId": "dialogBody",
+                "adapter": {
+                  "templateType": ""
+                }
+              },
+              "layout": [
+                {
+                  "id": "uiControl82_QnKOOo",
+                  "controlId": "control96_W814wg",
+                  "display": {
+                    "adapterId": "content",
+                    "type": "content",
+                    "adapter": {
+                      "templateType": ""
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "uiControl81_I7xoaqfooter",
+              "display": {
+                "type": "dialogFooter",
+                "adapterId": "dialogFooter",
+                "adapter": {
+                  "templateType": ""
+                }
+              },
+              "layout": [
+                {
+                  "id": "uiControl83_Runb1R",
+                  "controlId": "control97_wZQL90",
+                  "display": {
+                    "adapterId": "custom",
+                    "type": "custom",
+                    "adapter": {
+                      "templateType": "react",
+                      "events": {
+                        "onDoAction": "doAction_uiControl83_Runb1R",
+                        "onGetTemplate": "getTemplate_uiControl83_Runb1R"
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "uiControl144_eALAwd",
+          "controlId": "control159_kz1qG5",
+          "display": {
+            "adapterId": "dialog",
+            "type": "dialog",
+            "adapter": {
+              "templateType": ""
+            }
+          },
+          "layout": [
+            {
+              "id": "uiControl144_eALAwdbody",
+              "display": {
+                "type": "dialogBody",
+                "adapterId": "dialogBody",
+                "adapter": {
+                  "templateType": ""
+                }
+              },
+              "layout": [
+                {
+                  "id": "uiControl145_ZRg7qN",
+                  "controlId": "control160_wPzJhX",
+                  "display": {
+                    "adapterId": "content",
+                    "type": "content",
+                    "adapter": {
+                      "templateType": ""
+                    }
+                  }
+                },
+                {
+                  "id": "uiControl146_cIT5HV",
+                  "controlId": "control161_Um9l7N",
+                  "display": {
+                    "adapterId": "textbox",
+                    "type": "textbox",
+                    "adapter": {
+                      "templateType": ""
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "uiControl144_eALAwdfooter",
+              "display": {
+                "type": "dialogFooter",
+                "adapterId": "dialogFooter",
+                "adapter": {
+                  "templateType": ""
+                }
+              },
+              "layout": [
+                {
+                  "id": "uiControl147_8AEcti",
+                  "controlId": "control162_6kXhQK",
+                  "display": {
+                    "adapterId": "clickable",
+                    "type": "button",
+                    "adapter": {
+                      "templateType": ""
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "uiControl8_EmlqT0",
+          "controlId": "control8_kNGNrq",
+          "display": {
+            "adapterId": "custom",
+            "type": "custom",
+            "adapter": {
+              "templateType": "react",
+              "events": {
+                "onDoAction": "doAction_uiControl8_EmlqT0",
+                "onGetTemplate": "getTemplate_uiControl8_EmlqT0"
+              }
+            }
+          }
+        },
+        {
+          "id": "uiControl89_OONtEN",
+          "controlId": "control102_nBC3ZP",
+          "display": {
+            "adapterId": "custom",
+            "type": "custom",
+            "adapter": {
+              "templateType": "react",
+              "events": {
+                "onDoAction": "doAction_uiControl89_OONtEN",
+                "onGetTemplate": "getTemplate_uiControl89_OONtEN"
+              }
+            }
+          }
+        },
+        {
+          "id": "uiControl11_D7vaHK",
+          "controlId": "control14_m3dTyz",
+          "display": {
+            "adapterId": "dialog",
+            "type": "dialog",
+            "adapter": {
+              "templateType": ""
+            }
+          },
+          "layout": [
+            {
+              "id": "uiControl11_D7vaHKbody",
+              "display": {
+                "type": "dialogBody",
+                "adapterId": "dialogBody",
+                "adapter": {
+                  "templateType": ""
+                }
+              },
+              "layout": [
+                {
+                  "id": "uiControl13_PcTQMN",
+                  "controlId": "control15_cdViJA",
+                  "display": {
+                    "adapterId": "content",
+                    "type": "content",
+                    "adapter": {
+                      "templateType": ""
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "uiControl11_D7vaHKfooter",
+              "display": {
+                "type": "dialogFooter",
+                "adapterId": "dialogFooter",
+                "adapter": {
+                  "templateType": ""
+                }
+              },
+              "layout": [
+                {
+                  "id": "uiControl14_eeGSrb",
+                  "controlId": "control16_0MouPg",
+                  "display": {
+                    "adapterId": "clickable",
+                    "type": "button",
+                    "adapter": {
+                      "templateType": ""
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "uiControl12_QXwUfn",
+          "controlId": "control13_EJy5u0",
+          "display": {
+            "adapterId": "custom",
+            "type": "custom",
+            "adapter": {
+              "templateType": "react",
+              "events": {
+                "onDoAction": "doAction_uiControl12_QXwUfn",
+                "onGetTemplate": "getTemplate_uiControl12_QXwUfn"
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "matchers": {
+    "page/title": {
+      "contexts": {
+        "context1_rIRPPI": [
+          "云南省建设投资控股集团有限公司 云南建投集中采购管理系统",
+          "云上营家-建筑行业供应链管理、电子商务交易、供应链金融服务、物流服务电商平台"
+        ],
+        "context20_ihoD5v": [
+          "广那高速一分部钢材需用计划2017.1.17",
+          "需用计划测试-YSP-01"
+        ],
+        "context24_qRKc24": [
+          "项目部需用计划",
+          "采购部需用计划",
+          "订单跟踪列表",
+          "在途监控",
+          "页签"
+        ]
+      }
+    },
+    "page/urls": {
+      "contexts": {
+        "context1_rIRPPI": [
+          "jc.z.inja.com/gjc/base/main.do",
+          "jc.z.inja.com/gjc/base/main.do?loginType=YSP",
+          "ec.z.inja.com/index.do?returnURL=http%3A%2F%2Fjc.z.inja.com%2Fgjc%2Fbase%2Fmain.do%3FloginType%3DYSP&from=YSP",
+          "ec.z.inja.com/index.do?returnURL=http%3A%2F%2Fjc.z.inja.com%2Fgjc%2Fbase%2Fmain.do%3FloginType%3DYSP&from=YSP",
+          "jc.z.inja.com/gjc/base/main.do?loginType=YSP?sys=caigoushang"
+        ],
+        "context20_ihoD5v": [
+          "ly.z.inja.com/gjc/base/wf/approval/view.do?action=approval&belongid=4441a41dba064c66948af237d6b365d6&approvalid=ed9eb49cd2ca4d13b6ffb4c834b0d005&status=2&type=oms_pl10",
+          "ly.z.inja.com/gjc/base/wf/approval/view.do?approvalresultid=7fc4492140fa4af7b53f470809c2a14e&type=oms_pl10"
+        ],
+        "context24_qRKc24": [
+          "ly.z.inja.com/gjc/oms/buyer/plan/v.do?_m=list_proc_dept&_t=187100&_winid=w3270",
+          "ly.z.inja.com/gjc/oms/buyer/plan/v.do?_m=list_proc_dept",
+          "ly.z.inja.com/gjc/oms/buyer/plan/v.do?_m=list_sales_dept",
+          "ly.z.inja.com/gjc/oms/buyer/order/v.do?_m=list",
+          "ly.z.inja.com/gjc/oms/buyer/trans/v.do?_m=list_monitor",
+          "jc.z.inja.com/gjc/tabs.jsp?tabs=/gjc/tabs.jsp?tabs=%E9%A1%B9%E7%9B%AE%E9%83%A8%E9%9C%80%E7%94%A8%E8%AE%A1%E5%88%92,{domain.oms}/gjc/oms/buyer/plan/v.do?_m=list_proc_dept,refreshOnClick=true;/gjc/tabs.jsp?tabs=%E9%94%80%E5%94%AE%E9%83%A8%E9%9C%80%E7%94%A8%E8%AE%A1%E5%88%92,{domain.oms}/gjc/oms/buyer/plan/v.do?_m=list_sales_dept,refreshOnClick=true;/gjc/tabs.jsp?tabs=%E5%AD%90%E5%85%AC%E5%8F%B8%E9%9C%80%E7%94%A8%E8%AE%A1%E5%88%92,{domain.oms}/gjc/oms/buyer/plan/v.do?_m=list_subsi_company,refreshOnClick=true;/gjc/tabs.jsp?tabs=%E9%87%87%E8%B4%AD%E9%83%A8%E9%9C%80%E7%94%A8%E8%AE%A1%E5%88%92-%E5%88%86%E9%85%8D,{domain.oms}/gjc/oms/buyer/plan/v.do?_m=list_purchase_dept,refreshOnClick=true;/gjc/tabs.jsp?tabs=%E9%87%87%E8%B4%AD%E9%83%A8%E9%9C%80%E7%94%A8%E8%AE%A1%E5%88%92-%E6%89%A7%E8%A1%8C,{domain.oms}/gjc/oms/buyer/plan/v.do?_m=list_purchase_dept_operate,refreshOnClick=true"
+        ]
+      }
+    },
+    "page/ids": {
+      "contexts": {
+        "context1_rIRPPI": [
+          [
+            "center",
+            "layout",
+            "mainframe",
+            "menubar",
+            "north",
+            "userImageId",
+            "west"
+          ],
+          [
+            "aForgot",
+            "aRegister",
+            "account",
+            "acount",
+            "change_verify_code",
+            "checkBrowserModal",
+            "errormsg",
+            "form-",
+            "imgVerifyCode",
+            "login",
+            "password",
+            "rememberme",
+            "type",
+            "validatecode"
+          ],
+          [
+            "aForgot",
+            "aRegister",
+            "account",
+            "acount",
+            "change_verify_code",
+            "checkBrowserModal",
+            "errormsg",
+            "form-",
+            "imgVerifyCode",
+            "login",
+            "loginName",
+            "password",
+            "rememberme",
+            "type",
+            "validatecode"
+          ],
+          [
+            "aForgot",
+            "aRegister",
+            "account",
+            "acount",
+            "change_verify_code",
+            "checkBrowserModal",
+            "chunasqwd_ad_bf",
+            "close_chunasqwd_ad_bf",
+            "errormsg",
+            "form-",
+            "imgVerifyCode",
+            "login",
+            "password",
+            "rememberme",
+            "scriptsad_popup",
+            "scriptss",
+            "type",
+            "validatecode"
+          ]
+        ],
+        "context24_qRKc24": [
+          [
+            "$cell$",
+            "_grid_oms_plan",
+            "btn_planadd",
+            "btn_planadelete",
+            "btn_planzd",
+            "code",
+            "code$text",
+            "employeename",
+            "employeename$text",
+            "enddate",
+            "enddate$text",
+            "enddate$value",
+            "mini-",
+            "mini-$checkcolumn$$",
+            "mini-$emptytext",
+            "mini-$filter$",
+            "mini-$headerCell$",
+            "mini-$number$",
+            "mini-$row$",
+            "mini-$summary$",
+            "name",
+            "name$text",
+            "needorgname",
+            "needorgname$text",
+            "projectname",
+            "projectname$text",
+            "startdate",
+            "startdate$text",
+            "startdate$value",
+            "state",
+            "state$text",
+            "state$value"
+          ],
+          [
+            "$cell$",
+            "__modalmini-",
+            "_grid_oms_plan",
+            "btn_planadd",
+            "btn_planadelete",
+            "btn_planzd",
+            "code",
+            "code$text",
+            "employeename",
+            "employeename$text",
+            "enddate",
+            "enddate$text",
+            "enddate$value",
+            "mini-",
+            "mini-$checkcolumn$$",
+            "mini-$content",
+            "mini-$emptytext",
+            "mini-$filter$",
+            "mini-$headerCell$",
+            "mini-$number$",
+            "mini-$row$",
+            "mini-$summary$",
+            "mini-$table",
+            "name",
+            "name$text",
+            "needorgname",
+            "needorgname$text",
+            "projectname",
+            "projectname$text",
+            "startdate",
+            "startdate$text",
+            "startdate$value",
+            "state",
+            "state$text",
+            "state$value"
+          ],
+          [
+            "$cell$",
+            "__modalmini-",
+            "_grid_oms_plan",
+            "btn_planadd",
+            "btn_planadelete",
+            "btn_planzd",
+            "code",
+            "code$text",
+            "employeename",
+            "employeename$text",
+            "enddate",
+            "enddate$text",
+            "enddate$value",
+            "mini-",
+            "mini-$checkcolumn$$",
+            "mini-$emptytext",
+            "mini-$filter$",
+            "mini-$headerCell$",
+            "mini-$number$",
+            "mini-$row$",
+            "mini-$summary$",
+            "name",
+            "name$text",
+            "needorgname",
+            "needorgname$text",
+            "projectname",
+            "projectname$text",
+            "startdate",
+            "startdate$text",
+            "startdate$value",
+            "state",
+            "state$text",
+            "state$value"
+          ],
+          [
+            "$cell$",
+            "_grid_oms_plan",
+            "code",
+            "code$text",
+            "employeename",
+            "employeename$text",
+            "enddate",
+            "enddate$text",
+            "enddate$value",
+            "lvyue-title",
+            "mini-",
+            "mini-$emptytext",
+            "mini-$filter$",
+            "mini-$headerCell$",
+            "mini-$number$",
+            "mini-$row$",
+            "mini-$summary$",
+            "name",
+            "name$text",
+            "needorgname",
+            "needorgname$text",
+            "projectname",
+            "projectname$text",
+            "scalesdeptemployee",
+            "scalesdeptemployee$text",
+            "startdate",
+            "startdate$text",
+            "startdate$value",
+            "state",
+            "state$text",
+            "state$value"
+          ],
+          [
+            "$cell$",
+            "__modalmini-",
+            "_grid_oms_order",
+            "buysuppliername",
+            "buysuppliername$text",
+            "employeename",
+            "employeename$text",
+            "lvyue-title",
+            "mini-",
+            "mini-$emptytext",
+            "mini-$filter$",
+            "mini-$headerCell$",
+            "mini-$number$",
+            "mini-$row$",
+            "mini-$summary$",
+            "name",
+            "name$text",
+            "needorgname",
+            "needorgname$text",
+            "plancode",
+            "plancode$text",
+            "projectname",
+            "projectname$text",
+            "state",
+            "state$text",
+            "state$value"
+          ],
+          [
+            "$cell$",
+            "_grid_oms_trans",
+            "carnumber",
+            "carnumber$text",
+            "code",
+            "code$text",
+            "iframe",
+            "lvyue-title",
+            "mini-",
+            "mini-$emptytext",
+            "mini-$filter$",
+            "mini-$headerCell$",
+            "mini-$row$",
+            "mini-$summary$",
+            "orderemployeename",
+            "orderemployeename$text",
+            "projectname",
+            "projectname$text",
+            "warehousename",
+            "warehousename$text"
+          ],
+          [
+            "$cell$",
+            "_grid_oms_plan",
+            "btn_planadd",
+            "btn_planadelete",
+            "btn_planzd",
+            "code",
+            "code$text",
+            "employeename",
+            "employeename$text",
+            "enddate",
+            "enddate$text",
+            "enddate$value",
+            "lvyue-title",
+            "mini-",
+            "mini-$checkcolumn$$",
+            "mini-$emptytext",
+            "mini-$filter$",
+            "mini-$headerCell$",
+            "mini-$number$",
+            "mini-$row$",
+            "mini-$summary$",
+            "name",
+            "name$text",
+            "needorgname",
+            "needorgname$text",
+            "projectname",
+            "projectname$text",
+            "startdate",
+            "startdate$text",
+            "startdate$value",
+            "state",
+            "state$text",
+            "state$value"
+          ],
+          [
+            "$cell$",
+            "_grid_oms_trans",
+            "carnumber",
+            "carnumber$text",
+            "code",
+            "code$text",
+            "iframe",
+            "mini-",
+            "mini-$emptytext",
+            "mini-$filter$",
+            "mini-$headerCell$",
+            "mini-$row$",
+            "mini-$summary$",
+            "orderemployeename",
+            "orderemployeename$text",
+            "projectname",
+            "projectname$text",
+            "warehousename",
+            "warehousename$text"
+          ],
+          [
+            "mainTabs",
+            "mini-$",
+            "mini-$body$"
+          ]
+        ]
+      }
+    },
+    "page/classes": {
+      "contexts": {
+        "context1_rIRPPI": [
+          [
+            "clear-",
+            "clearfix",
+            "collapse",
+            "ellipsis",
+            "feedback",
+            "gray",
+            "hassub",
+            "header",
+            "help",
+            "home",
+            "i_header",
+            "i_logo",
+            "i_logo_m",
+            "icon",
+            "icon-chevron-left",
+            "iconfont",
+            "info",
+            "info-i",
+            "issub",
+            "menu",
+            "menu_blank",
+            "menu_item",
+            "mini-layout",
+            "mini-layout-border",
+            "mini-layout-proxy",
+            "mini-layout-proxy-north",
+            "mini-layout-proxy-west",
+            "mini-layout-region",
+            "mini-layout-region-body",
+            "mini-layout-region-center",
+            "mini-layout-region-header",
+            "mini-layout-region-icon",
+            "mini-layout-region-north",
+            "mini-layout-region-title",
+            "mini-layout-region-west",
+            "mini-layout-split",
+            "mini-layout-split-nodrag",
+            "mini-layout-split-north",
+            "mini-layout-split-west",
+            "mini-layout-spliticon",
+            "mini-tools",
+            "mini-tools-close",
+            "mini-tools-collapse",
+            "module-header",
+            "out",
+            "pulldown",
+            "shell",
+            "sublist",
+            "text",
+            "user",
+            "user-index-page",
+            "user-simple-box",
+            "user-simple-ctrl"
+          ],
+          [
+            "clear-",
+            "clearfix",
+            "collapse",
+            "ellipsis",
+            "feedback",
+            "gray",
+            "hassub",
+            "header",
+            "help",
+            "home",
+            "i_header",
+            "i_logo",
+            "i_logo_m",
+            "icon",
+            "icon-chevron-left",
+            "iconfont",
+            "info",
+            "info-i",
+            "issub",
+            "menu",
+            "menu_blank",
+            "menu_item",
+            "mini-layout",
+            "mini-layout-border",
+            "mini-layout-proxy",
+            "mini-layout-proxy-north",
+            "mini-layout-proxy-west",
+            "mini-layout-region",
+            "mini-layout-region-body",
+            "mini-layout-region-center",
+            "mini-layout-region-header",
+            "mini-layout-region-icon",
+            "mini-layout-region-north",
+            "mini-layout-region-title",
+            "mini-layout-region-west",
+            "mini-layout-split",
+            "mini-layout-split-nodrag",
+            "mini-layout-split-north",
+            "mini-layout-split-west",
+            "mini-layout-spliticon",
+            "mini-tips",
+            "mini-tips-success",
+            "mini-tools",
+            "mini-tools-close",
+            "mini-tools-collapse",
+            "module-header",
+            "out",
+            "pulldown",
+            "shell",
+            "sublist",
+            "text",
+            "user",
+            "user-index-page",
+            "user-simple-box",
+            "user-simple-ctrl"
+          ],
+          [
+            "clear-",
+            "clearfix",
+            "collapse",
+            "ellipsis",
+            "feedback",
+            "gray",
+            "hassub",
+            "header",
+            "help",
+            "home",
+            "i_header",
+            "i_logo",
+            "i_logo_m",
+            "icon",
+            "icon-chevron-down",
+            "icon-chevron-left",
+            "iconfont",
+            "info",
+            "info-i",
+            "issub",
+            "menu",
+            "menu_blank",
+            "menu_item",
+            "mini-layout",
+            "mini-layout-border",
+            "mini-layout-proxy",
+            "mini-layout-proxy-north",
+            "mini-layout-proxy-west",
+            "mini-layout-region",
+            "mini-layout-region-body",
+            "mini-layout-region-center",
+            "mini-layout-region-header",
+            "mini-layout-region-icon",
+            "mini-layout-region-north",
+            "mini-layout-region-title",
+            "mini-layout-region-west",
+            "mini-layout-split",
+            "mini-layout-split-nodrag",
+            "mini-layout-split-north",
+            "mini-layout-split-west",
+            "mini-layout-spliticon",
+            "mini-tools",
+            "mini-tools-close",
+            "mini-tools-collapse",
+            "module-header",
+            "out",
+            "pitch",
+            "pulldown",
+            "selected",
+            "shell",
+            "sublist",
+            "text",
+            "user",
+            "user-index-page",
+            "user-simple-box",
+            "user-simple-ctrl"
+          ],
+          [
+            "JS_global-sider-btn",
+            "JS_global-sider-hide",
+            "JS_gotop",
+            "JS_siderbox",
+            "active",
+            "bgcdb",
+            "bgf",
+            "c",
+            "cb",
+            "clear-",
+            "clearfix",
+            "db",
+            "dib",
+            "f",
+            "fl",
+            "focus_text",
+            "footer",
+            "forget-container",
+            "fr",
+            "global-apphide",
+            "global-qq-box",
+            "global-sider",
+            "global-sider-app",
+            "global-sider-bottom",
+            "global-sider-fankui",
+            "global-sider-gotop",
+            "gyc_msg",
+            "header",
+            "icon-global-app",
+            "icon_fankui",
+            "icon_sider_gotop",
+            "invalid",
+            "link",
+            "link-bar",
+            "login-bar",
+            "login-form",
+            "loginBord",
+            "login_banner",
+            "loginbtn",
+            "loginimage",
+            "lv_icon",
+            "mb",
+            "mid",
+            "ml",
+            "mr",
+            "msg",
+            "mt",
+            "pass",
+            "qq-box",
+            "qq-item",
+            "reg-box",
+            "reg-check-list",
+            "reg-txt",
+            "shadow_l",
+            "shadow_r",
+            "submit_btn",
+            "tab-wrapper",
+            "tac",
+            "textbox_ui",
+            "topbar",
+            "user",
+            "vam",
+            "verityWrap",
+            "wrapper"
+          ],
+          [
+            "clear-",
+            "clearfix",
+            "collapse",
+            "ellipsis",
+            "feedback",
+            "gray",
+            "hassub",
+            "header",
+            "help",
+            "i_header",
+            "i_logo",
+            "i_logo_m",
+            "icon",
+            "icon-chevron-left",
+            "iconfont",
+            "info",
+            "info-i",
+            "issub",
+            "menu",
+            "menu_blank",
+            "menu_item",
+            "mini-layout",
+            "mini-layout-border",
+            "mini-layout-proxy",
+            "mini-layout-proxy-north",
+            "mini-layout-proxy-west",
+            "mini-layout-region",
+            "mini-layout-region-body",
+            "mini-layout-region-center",
+            "mini-layout-region-header",
+            "mini-layout-region-icon",
+            "mini-layout-region-north",
+            "mini-layout-region-title",
+            "mini-layout-region-west",
+            "mini-layout-split",
+            "mini-layout-split-nodrag",
+            "mini-layout-split-north",
+            "mini-layout-split-west",
+            "mini-layout-spliticon",
+            "mini-tools",
+            "mini-tools-close",
+            "mini-tools-collapse",
+            "module-header",
+            "onlineService",
+            "out",
+            "pulldown",
+            "shell",
+            "sublist",
+            "text",
+            "user",
+            "user-index-page",
+            "user-simple-box",
+            "user-simple-ctrl"
+          ],
+          [
+            "JS_global-sider-btn",
+            "JS_global-sider-hide",
+            "JS_gotop",
+            "JS_siderbox",
+            "active",
+            "arrow-down",
+            "bgcdb",
+            "bgf",
+            "c",
+            "cb",
+            "cd",
+            "clear-",
+            "clearfix",
+            "db",
+            "dib",
+            "displayCls",
+            "f",
+            "fl",
+            "focus_text",
+            "footer",
+            "forget-container",
+            "fr",
+            "fwb",
+            "global-apphide",
+            "global-qq-box",
+            "global-sider",
+            "global-sider-app",
+            "global-sider-bottom",
+            "global-sider-fankui",
+            "global-sider-gotop",
+            "gyc_msg",
+            "header",
+            "icon-global-app",
+            "icon_fankui",
+            "icon_sider_gotop",
+            "invalid",
+            "link",
+            "link-bar",
+            "login-bar",
+            "login-form",
+            "loginBord",
+            "login_banner",
+            "loginbtn",
+            "loginimage",
+            "lv_icon",
+            "mb",
+            "mid",
+            "ml",
+            "mr",
+            "msg",
+            "mt",
+            "pass",
+            "pt-box",
+            "pt-list",
+            "pt-tit",
+            "qq-box",
+            "qq-item",
+            "reg-box",
+            "reg-check-list",
+            "reg-txt",
+            "shadow_l",
+            "shadow_r",
+            "submit_btn",
+            "tab-wrapper",
+            "tac",
+            "textbox_ui",
+            "topbar",
+            "user",
+            "vam",
+            "verityWrap",
+            "wrapper"
+          ],
+          [
+            "clear-",
+            "clearfix",
+            "collapse",
+            "ellipsis",
+            "feedback",
+            "gray",
+            "hassub",
+            "header",
+            "help",
+            "i_header",
+            "i_logo",
+            "i_logo_m",
+            "icon",
+            "icon-chevron-down",
+            "icon-chevron-left",
+            "iconfont",
+            "info",
+            "info-i",
+            "issub",
+            "menu",
+            "menu_blank",
+            "menu_item",
+            "mini-layout",
+            "mini-layout-border",
+            "mini-layout-proxy",
+            "mini-layout-proxy-north",
+            "mini-layout-proxy-west",
+            "mini-layout-region",
+            "mini-layout-region-body",
+            "mini-layout-region-center",
+            "mini-layout-region-header",
+            "mini-layout-region-icon",
+            "mini-layout-region-north",
+            "mini-layout-region-title",
+            "mini-layout-region-west",
+            "mini-layout-split",
+            "mini-layout-split-nodrag",
+            "mini-layout-split-north",
+            "mini-layout-split-west",
+            "mini-layout-spliticon",
+            "mini-tools",
+            "mini-tools-close",
+            "mini-tools-collapse",
+            "module-header",
+            "onlineService",
+            "out",
+            "pitch",
+            "pulldown",
+            "selected",
+            "shell",
+            "sublist",
+            "text",
+            "user",
+            "user-index-page",
+            "user-simple-box",
+            "user-simple-ctrl"
+          ]
+        ],
+        "context3_w4M70N": [
+          [
+            "CKhYiSyWLR",
+            "KhYiSyWLR",
+            "clear-",
+            "clearfix",
+            "collapse",
+            "ellipsis",
+            "feedback",
+            "gray",
+            "hassub",
+            "header",
+            "help",
+            "home",
+            "i_header",
+            "i_logo",
+            "i_logo_m",
+            "icon",
+            "icon-chevron-down",
+            "icon-chevron-left",
+            "iconfont",
+            "info",
+            "info-i",
+            "issub",
+            "menu",
+            "menu_blank",
+            "menu_item",
+            "mini-iconfont",
+            "mini-layout",
+            "mini-layout-border",
+            "mini-layout-proxy",
+            "mini-layout-proxy-north",
+            "mini-layout-proxy-west",
+            "mini-layout-region",
+            "mini-layout-region-body",
+            "mini-layout-region-center",
+            "mini-layout-region-header",
+            "mini-layout-region-icon",
+            "mini-layout-region-north",
+            "mini-layout-region-title",
+            "mini-layout-region-west",
+            "mini-layout-split",
+            "mini-layout-split-nodrag",
+            "mini-layout-split-north",
+            "mini-layout-split-west",
+            "mini-layout-spliticon",
+            "mini-modal",
+            "mini-panel",
+            "mini-panel-body",
+            "mini-panel-border",
+            "mini-panel-footer",
+            "mini-panel-header",
+            "mini-panel-header-inner",
+            "mini-panel-icon",
+            "mini-panel-title",
+            "mini-panel-toolbar",
+            "mini-panel-viewport",
+            "mini-resizer-trigger",
+            "mini-tools",
+            "mini-tools-close",
+            "mini-tools-collapse",
+            "mini-tools-min",
+            "mini-tools-restore",
+            "mini-window",
+            "module-header",
+            "out",
+            "pitch",
+            "pulldown",
+            "selected",
+            "shell",
+            "sublist",
+            "text",
+            "user",
+            "user-simple-box",
+            "user-simple-ctrl"
+          ],
+          [
+            "CKhYiSyWLR",
+            "clear-",
+            "clearfix",
+            "collapse",
+            "ellipsis",
+            "feedback",
+            "gray",
+            "hassub",
+            "header",
+            "help",
+            "home",
+            "i_header",
+            "i_logo",
+            "i_logo_m",
+            "icon",
+            "icon-chevron-down",
+            "icon-chevron-left",
+            "iconfont",
+            "info",
+            "info-i",
+            "issub",
+            "menu",
+            "menu_blank",
+            "menu_item",
+            "mini-iconfont",
+            "mini-layout",
+            "mini-layout-border",
+            "mini-layout-proxy",
+            "mini-layout-proxy-north",
+            "mini-layout-proxy-west",
+            "mini-layout-region",
+            "mini-layout-region-body",
+            "mini-layout-region-center",
+            "mini-layout-region-header",
+            "mini-layout-region-icon",
+            "mini-layout-region-north",
+            "mini-layout-region-title",
+            "mini-layout-region-west",
+            "mini-layout-split",
+            "mini-layout-split-nodrag",
+            "mini-layout-split-north",
+            "mini-layout-split-west",
+            "mini-layout-spliticon",
+            "mini-modal",
+            "mini-panel",
+            "mini-panel-body",
+            "mini-panel-border",
+            "mini-panel-footer",
+            "mini-panel-header",
+            "mini-panel-header-inner",
+            "mini-panel-icon",
+            "mini-panel-title",
+            "mini-panel-toolbar",
+            "mini-panel-viewport",
+            "mini-resizer-trigger",
+            "mini-tools",
+            "mini-tools-close",
+            "mini-tools-collapse",
+            "mini-tools-min",
+            "mini-tools-restore",
+            "mini-window",
+            "module-header",
+            "out",
+            "pitch",
+            "pulldown",
+            "selected",
+            "shell",
+            "sublist",
+            "text",
+            "user",
+            "user-simple-box",
+            "user-simple-ctrl"
+          ],
+          [
+            "CYeHLStLuYqh",
+            "clear-",
+            "clearfix",
+            "collapse",
+            "ellipsis",
+            "feedback",
+            "gray",
+            "hassub",
+            "header",
+            "help",
+            "home",
+            "i_header",
+            "i_logo",
+            "i_logo_m",
+            "icon",
+            "icon-chevron-down",
+            "icon-chevron-left",
+            "iconfont",
+            "info",
+            "info-i",
+            "issub",
+            "menu",
+            "menu_blank",
+            "menu_item",
+            "mini-iconfont",
+            "mini-layout",
+            "mini-layout-border",
+            "mini-layout-proxy",
+            "mini-layout-proxy-north",
+            "mini-layout-proxy-west",
+            "mini-layout-region",
+            "mini-layout-region-body",
+            "mini-layout-region-center",
+            "mini-layout-region-header",
+            "mini-layout-region-icon",
+            "mini-layout-region-north",
+            "mini-layout-region-title",
+            "mini-layout-region-west",
+            "mini-layout-split",
+            "mini-layout-split-nodrag",
+            "mini-layout-split-north",
+            "mini-layout-split-west",
+            "mini-layout-spliticon",
+            "mini-modal",
+            "mini-panel",
+            "mini-panel-body",
+            "mini-panel-border",
+            "mini-panel-footer",
+            "mini-panel-header",
+            "mini-panel-header-inner",
+            "mini-panel-icon",
+            "mini-panel-title",
+            "mini-panel-toolbar",
+            "mini-panel-viewport",
+            "mini-resizer-trigger",
+            "mini-tools",
+            "mini-tools-close",
+            "mini-tools-collapse",
+            "mini-tools-min",
+            "mini-tools-restore",
+            "mini-window",
+            "module-header",
+            "out",
+            "pitch",
+            "pulldown",
+            "selected",
+            "shell",
+            "sublist",
+            "text",
+            "user",
+            "user-simple-box",
+            "user-simple-ctrl"
+          ]
+        ],
+        "context17_kpDolS": [
+          [
+            "CKhYiSyWLR",
+            "CYeHLStLuYqh",
+            "clear-",
+            "clearfix",
+            "collapse",
+            "ellipsis",
+            "feedback",
+            "gray",
+            "hassub",
+            "header",
+            "help",
+            "home",
+            "i_header",
+            "i_logo",
+            "i_logo_m",
+            "icon",
+            "icon-chevron-down",
+            "icon-chevron-left",
+            "iconfont",
+            "info",
+            "info-i",
+            "issub",
+            "menu",
+            "menu_blank",
+            "menu_item",
+            "mini-iconfont",
+            "mini-layout",
+            "mini-layout-border",
+            "mini-layout-proxy",
+            "mini-layout-proxy-north",
+            "mini-layout-proxy-west",
+            "mini-layout-region",
+            "mini-layout-region-body",
+            "mini-layout-region-center",
+            "mini-layout-region-header",
+            "mini-layout-region-icon",
+            "mini-layout-region-north",
+            "mini-layout-region-title",
+            "mini-layout-region-west",
+            "mini-layout-split",
+            "mini-layout-split-nodrag",
+            "mini-layout-split-north",
+            "mini-layout-split-west",
+            "mini-layout-spliticon",
+            "mini-modal",
+            "mini-panel",
+            "mini-panel-body",
+            "mini-panel-border",
+            "mini-panel-footer",
+            "mini-panel-header",
+            "mini-panel-header-inner",
+            "mini-panel-icon",
+            "mini-panel-title",
+            "mini-panel-toolbar",
+            "mini-panel-viewport",
+            "mini-resizer-trigger",
+            "mini-tools",
+            "mini-tools-close",
+            "mini-tools-collapse",
+            "mini-tools-min",
+            "mini-tools-restore",
+            "mini-window",
+            "module-header",
+            "out",
+            "pitch",
+            "pulldown",
+            "selected",
+            "shell",
+            "sublist",
+            "text",
+            "user",
+            "user-simple-box",
+            "user-simple-ctrl"
+          ],
+          [
+            "CYeHLStLuYqh",
+            "clear-",
+            "clearfix",
+            "collapse",
+            "ellipsis",
+            "feedback",
+            "gray",
+            "hassub",
+            "header",
+            "help",
+            "home",
+            "i_header",
+            "i_logo",
+            "i_logo_m",
+            "icon",
+            "icon-chevron-down",
+            "icon-chevron-left",
+            "iconfont",
+            "info",
+            "info-i",
+            "issub",
+            "menu",
+            "menu_blank",
+            "menu_item",
+            "mini-iconfont",
+            "mini-layout",
+            "mini-layout-border",
+            "mini-layout-proxy",
+            "mini-layout-proxy-north",
+            "mini-layout-proxy-west",
+            "mini-layout-region",
+            "mini-layout-region-body",
+            "mini-layout-region-center",
+            "mini-layout-region-header",
+            "mini-layout-region-icon",
+            "mini-layout-region-north",
+            "mini-layout-region-title",
+            "mini-layout-region-west",
+            "mini-layout-split",
+            "mini-layout-split-nodrag",
+            "mini-layout-split-north",
+            "mini-layout-split-west",
+            "mini-layout-spliticon",
+            "mini-modal",
+            "mini-panel",
+            "mini-panel-body",
+            "mini-panel-border",
+            "mini-panel-footer",
+            "mini-panel-header",
+            "mini-panel-header-inner",
+            "mini-panel-icon",
+            "mini-panel-title",
+            "mini-panel-toolbar",
+            "mini-panel-viewport",
+            "mini-resizer-trigger",
+            "mini-tools",
+            "mini-tools-close",
+            "mini-tools-collapse",
+            "mini-tools-min",
+            "mini-tools-restore",
+            "mini-window",
+            "module-header",
+            "out",
+            "pitch",
+            "pulldown",
+            "selected",
+            "shell",
+            "sublist",
+            "text",
+            "user",
+            "user-simple-box",
+            "user-simple-ctrl"
+          ]
+        ],
+        "context20_ihoD5v": [
+          [
+            "a_count",
+            "icon-doc",
+            "icon-edit",
+            "mini-button",
+            "mini-button-disabled",
+            "mini-button-icon",
+            "mini-button-icon-text",
+            "mini-button-text",
+            "mini-disabled",
+            "mini-fit",
+            "mini-iconfont",
+            "mini-panel",
+            "mini-panel-body",
+            "mini-panel-border",
+            "mini-panel-footer",
+            "mini-panel-header",
+            "mini-panel-header-inner",
+            "mini-panel-icon",
+            "mini-panel-title",
+            "mini-panel-toolbar",
+            "mini-panel-viewport",
+            "mini-resizer-trigger",
+            "mini-tab",
+            "mini-tab-active",
+            "mini-tab-text",
+            "mini-tabs",
+            "mini-tabs-body",
+            "mini-tabs-body-top",
+            "mini-tabs-bodys",
+            "mini-tabs-buttons",
+            "mini-tabs-firstSpace",
+            "mini-tabs-header",
+            "mini-tabs-header-top",
+            "mini-tabs-headers",
+            "mini-tabs-hideOverflow",
+            "mini-tabs-lastSpace",
+            "mini-tabs-leftButton",
+            "mini-tabs-nav",
+            "mini-tabs-plain",
+            "mini-tabs-position-top",
+            "mini-tabs-rightButton",
+            "mini-tabs-scrollCt",
+            "mini-tabs-space",
+            "mini-tabs-table",
+            "mini-toolbar",
+            "mini-tools",
+            "mini-tools-close",
+            "mini-tools-collapse"
+          ],
+          [
+            "a_count",
+            "icon-doc",
+            "icon-edit",
+            "mini-button",
+            "mini-button-disabled",
+            "mini-button-icon",
+            "mini-button-icon-text",
+            "mini-button-text",
+            "mini-disabled",
+            "mini-fit",
+            "mini-iconfont",
+            "mini-panel",
+            "mini-panel-body",
+            "mini-panel-border",
+            "mini-panel-footer",
+            "mini-panel-header",
+            "mini-panel-header-inner",
+            "mini-panel-icon",
+            "mini-panel-title",
+            "mini-panel-toolbar",
+            "mini-panel-viewport",
+            "mini-resizer-trigger",
+            "mini-tab",
+            "mini-tab-active",
+            "mini-tab-text",
+            "mini-tabs",
+            "mini-tabs-body",
+            "mini-tabs-body-top",
+            "mini-tabs-bodys",
+            "mini-tabs-buttons",
+            "mini-tabs-firstSpace",
+            "mini-tabs-header",
+            "mini-tabs-header-top",
+            "mini-tabs-headers",
+            "mini-tabs-lastSpace",
+            "mini-tabs-leftButton",
+            "mini-tabs-nav",
+            "mini-tabs-plain",
+            "mini-tabs-position-top",
+            "mini-tabs-rightButton",
+            "mini-tabs-scrollCt",
+            "mini-tabs-space",
+            "mini-tabs-table",
+            "mini-toolbar",
+            "mini-tools",
+            "mini-tools-close",
+            "mini-tools-collapse"
+          ]
+        ],
+        "context23_t5uEOw": [
+          [
+            "CKhYiSZCIbm",
+            "clear-",
+            "clearfix",
+            "collapse",
+            "ellipsis",
+            "feedback",
+            "gray",
+            "hassub",
+            "header",
+            "help",
+            "home",
+            "i_header",
+            "i_logo",
+            "i_logo_m",
+            "icon",
+            "icon-chevron-down",
+            "icon-chevron-left",
+            "iconfont",
+            "info",
+            "info-i",
+            "issub",
+            "menu",
+            "menu_blank",
+            "menu_item",
+            "mini-iconfont",
+            "mini-layout",
+            "mini-layout-border",
+            "mini-layout-proxy",
+            "mini-layout-proxy-north",
+            "mini-layout-proxy-west",
+            "mini-layout-region",
+            "mini-layout-region-body",
+            "mini-layout-region-center",
+            "mini-layout-region-header",
+            "mini-layout-region-icon",
+            "mini-layout-region-north",
+            "mini-layout-region-title",
+            "mini-layout-region-west",
+            "mini-layout-split",
+            "mini-layout-split-nodrag",
+            "mini-layout-split-north",
+            "mini-layout-split-west",
+            "mini-layout-spliticon",
+            "mini-modal",
+            "mini-panel",
+            "mini-panel-body",
+            "mini-panel-border",
+            "mini-panel-footer",
+            "mini-panel-header",
+            "mini-panel-header-inner",
+            "mini-panel-icon",
+            "mini-panel-title",
+            "mini-panel-toolbar",
+            "mini-panel-viewport",
+            "mini-resizer-trigger",
+            "mini-tools",
+            "mini-tools-close",
+            "mini-tools-collapse",
+            "mini-tools-max",
+            "mini-tools-min",
+            "mini-window",
+            "mini-window-drag",
+            "module-header",
+            "out",
+            "pitch",
+            "pulldown",
+            "selected",
+            "shell",
+            "sublist",
+            "text",
+            "user",
+            "user-simple-box",
+            "user-simple-ctrl"
+          ],
+          [
+            "CKhYiSZCIbm",
+            "clear-",
+            "clearfix",
+            "collapse",
+            "ellipsis",
+            "feedback",
+            "gray",
+            "hassub",
+            "header",
+            "help",
+            "home",
+            "i_header",
+            "i_logo",
+            "i_logo_m",
+            "icon",
+            "icon-chevron-left",
+            "iconfont",
+            "info",
+            "info-i",
+            "issub",
+            "menu",
+            "menu_blank",
+            "menu_item",
+            "mini-iconfont",
+            "mini-layout",
+            "mini-layout-border",
+            "mini-layout-proxy",
+            "mini-layout-proxy-north",
+            "mini-layout-proxy-west",
+            "mini-layout-region",
+            "mini-layout-region-body",
+            "mini-layout-region-center",
+            "mini-layout-region-header",
+            "mini-layout-region-icon",
+            "mini-layout-region-north",
+            "mini-layout-region-title",
+            "mini-layout-region-west",
+            "mini-layout-split",
+            "mini-layout-split-nodrag",
+            "mini-layout-split-north",
+            "mini-layout-split-west",
+            "mini-layout-spliticon",
+            "mini-modal",
+            "mini-panel",
+            "mini-panel-body",
+            "mini-panel-border",
+            "mini-panel-footer",
+            "mini-panel-header",
+            "mini-panel-header-inner",
+            "mini-panel-icon",
+            "mini-panel-title",
+            "mini-panel-toolbar",
+            "mini-panel-viewport",
+            "mini-resizer-trigger",
+            "mini-tools",
+            "mini-tools-close",
+            "mini-tools-collapse",
+            "mini-tools-max",
+            "mini-tools-min",
+            "mini-window",
+            "mini-window-drag",
+            "module-header",
+            "out",
+            "pulldown",
+            "shell",
+            "sublist",
+            "text",
+            "user",
+            "user-simple-box",
+            "user-simple-ctrl"
+          ]
+        ],
+        "context24_qRKc24": [
+          [
+            "icon-add",
+            "icon-remove",
+            "icon-search",
+            "mini-button",
+            "mini-button-disabled",
+            "mini-button-icon",
+            "mini-button-icon-only",
+            "mini-button-icon-text",
+            "mini-button-plain",
+            "mini-button-text",
+            "mini-buttonedit",
+            "mini-buttonedit-border",
+            "mini-buttonedit-button",
+            "mini-buttonedit-buttons",
+            "mini-buttonedit-close",
+            "mini-buttonedit-icon",
+            "mini-buttonedit-input",
+            "mini-buttonedit-noInput",
+            "mini-buttonedit-trigger",
+            "mini-checkcolumn",
+            "mini-combobox",
+            "mini-datagrid",
+            "mini-datepicker",
+            "mini-fit",
+            "mini-grid",
+            "mini-grid-border",
+            "mini-grid-bottomCell",
+            "mini-grid-cell",
+            "mini-grid-cell-inner",
+            "mini-grid-cell-nowrap",
+            "mini-grid-checkbox",
+            "mini-grid-column-splitter",
+            "mini-grid-columns",
+            "mini-grid-columns-lock",
+            "mini-grid-columns-view",
+            "mini-grid-emptyText",
+            "mini-grid-filterCell",
+            "mini-grid-filterRow",
+            "mini-grid-filterRow-lock",
+            "mini-grid-filterRow-view",
+            "mini-grid-focus",
+            "mini-grid-headerCell",
+            "mini-grid-headerCell-inner",
+            "mini-grid-headerCell-nowrap",
+            "mini-grid-headerCell-outer",
+            "mini-grid-pager",
+            "mini-grid-rightCell",
+            "mini-grid-row",
+            "mini-grid-rows",
+            "mini-grid-rows-content",
+            "mini-grid-rows-lock",
+            "mini-grid-rows-view",
+            "mini-grid-rowstable",
+            "mini-grid-scrollHeaderCell",
+            "mini-grid-summaryCell",
+            "mini-grid-summaryRow",
+            "mini-grid-summaryRow-lock",
+            "mini-grid-summaryRow-view",
+            "mini-grid-table",
+            "mini-grid-topRightCell",
+            "mini-grid-viewport",
+            "mini-grid-vscroll",
+            "mini-grid-vscroll-content",
+            "mini-iconfont",
+            "mini-page-buttons",
+            "mini-pager",
+            "mini-pager-first",
+            "mini-pager-index",
+            "mini-pager-last",
+            "mini-pager-left",
+            "mini-pager-next",
+            "mini-pager-num",
+            "mini-pager-pages",
+            "mini-pager-prev",
+            "mini-pager-reload",
+            "mini-pager-right",
+            "mini-pager-size",
+            "mini-pager-sizetext",
+            "mini-panel",
+            "mini-panel-body",
+            "mini-panel-border",
+            "mini-panel-footer",
+            "mini-panel-header",
+            "mini-panel-header-inner",
+            "mini-panel-icon",
+            "mini-panel-title",
+            "mini-panel-toolbar",
+            "mini-panel-viewport",
+            "mini-popupedit",
+            "mini-resizer-trigger",
+            "mini-textbox",
+            "mini-textbox-border",
+            "mini-textbox-input",
+            "mini-tools",
+            "mini-tools-close",
+            "mini-tools-collapse",
+            "processbar",
+            "separator",
+            "uc-toolbaroverflow"
+          ],
+          [
+            "icon-add",
+            "icon-remove",
+            "icon-search",
+            "mini-button",
+            "mini-button-disabled",
+            "mini-button-icon",
+            "mini-button-icon-only",
+            "mini-button-icon-text",
+            "mini-button-plain",
+            "mini-button-text",
+            "mini-buttonedit",
+            "mini-buttonedit-border",
+            "mini-buttonedit-button",
+            "mini-buttonedit-buttons",
+            "mini-buttonedit-close",
+            "mini-buttonedit-icon",
+            "mini-buttonedit-input",
+            "mini-buttonedit-noInput",
+            "mini-buttonedit-trigger",
+            "mini-checkcolumn",
+            "mini-combobox",
+            "mini-datagrid",
+            "mini-datepicker",
+            "mini-fit",
+            "mini-grid",
+            "mini-grid-border",
+            "mini-grid-bottomCell",
+            "mini-grid-cell",
+            "mini-grid-cell-inner",
+            "mini-grid-cell-nowrap",
+            "mini-grid-cell-selected",
+            "mini-grid-checkbox",
+            "mini-grid-column-splitter",
+            "mini-grid-columns",
+            "mini-grid-columns-lock",
+            "mini-grid-columns-view",
+            "mini-grid-emptyText",
+            "mini-grid-filterCell",
+            "mini-grid-filterRow",
+            "mini-grid-filterRow-lock",
+            "mini-grid-filterRow-view",
+            "mini-grid-focus",
+            "mini-grid-headerCell",
+            "mini-grid-headerCell-inner",
+            "mini-grid-headerCell-nowrap",
+            "mini-grid-headerCell-outer",
+            "mini-grid-pager",
+            "mini-grid-rightCell",
+            "mini-grid-row",
+            "mini-grid-row-selected",
+            "mini-grid-rows",
+            "mini-grid-rows-content",
+            "mini-grid-rows-lock",
+            "mini-grid-rows-view",
+            "mini-grid-rowstable",
+            "mini-grid-scrollHeaderCell",
+            "mini-grid-summaryCell",
+            "mini-grid-summaryRow",
+            "mini-grid-summaryRow-lock",
+            "mini-grid-summaryRow-view",
+            "mini-grid-table",
+            "mini-grid-topRightCell",
+            "mini-grid-viewport",
+            "mini-grid-vscroll",
+            "mini-grid-vscroll-content",
+            "mini-iconfont",
+            "mini-page-buttons",
+            "mini-pager",
+            "mini-pager-first",
+            "mini-pager-index",
+            "mini-pager-last",
+            "mini-pager-left",
+            "mini-pager-next",
+            "mini-pager-num",
+            "mini-pager-pages",
+            "mini-pager-prev",
+            "mini-pager-reload",
+            "mini-pager-right",
+            "mini-pager-size",
+            "mini-pager-sizetext",
+            "mini-panel",
+            "mini-panel-body",
+            "mini-panel-border",
+            "mini-panel-footer",
+            "mini-panel-header",
+            "mini-panel-header-inner",
+            "mini-panel-icon",
+            "mini-panel-title",
+            "mini-panel-toolbar",
+            "mini-panel-viewport",
+            "mini-popupedit",
+            "mini-resizer-trigger",
+            "mini-textbox",
+            "mini-textbox-border",
+            "mini-textbox-input",
+            "mini-tools",
+            "mini-tools-close",
+            "mini-tools-collapse",
+            "processbar",
+            "separator",
+            "uc-toolbaroverflow"
+          ],
+          [
+            "icon-add",
+            "icon-remove",
+            "icon-search",
+            "mini-button",
+            "mini-button-icon",
+            "mini-button-icon-only",
+            "mini-button-icon-text",
+            "mini-button-plain",
+            "mini-button-text",
+            "mini-buttonedit",
+            "mini-buttonedit-border",
+            "mini-buttonedit-button",
+            "mini-buttonedit-buttons",
+            "mini-buttonedit-close",
+            "mini-buttonedit-icon",
+            "mini-buttonedit-input",
+            "mini-buttonedit-noInput",
+            "mini-buttonedit-trigger",
+            "mini-checkcolumn",
+            "mini-combobox",
+            "mini-datagrid",
+            "mini-datepicker",
+            "mini-fit",
+            "mini-grid",
+            "mini-grid-border",
+            "mini-grid-bottomCell",
+            "mini-grid-cell",
+            "mini-grid-cell-inner",
+            "mini-grid-cell-nowrap",
+            "mini-grid-checkbox",
+            "mini-grid-column-splitter",
+            "mini-grid-columns",
+            "mini-grid-columns-lock",
+            "mini-grid-columns-view",
+            "mini-grid-emptyText",
+            "mini-grid-filterCell",
+            "mini-grid-filterRow",
+            "mini-grid-filterRow-lock",
+            "mini-grid-filterRow-view",
+            "mini-grid-focus",
+            "mini-grid-headerCell",
+            "mini-grid-headerCell-inner",
+            "mini-grid-headerCell-nowrap",
+            "mini-grid-headerCell-outer",
+            "mini-grid-pager",
+            "mini-grid-rightCell",
+            "mini-grid-row",
+            "mini-grid-rows",
+            "mini-grid-rows-content",
+            "mini-grid-rows-lock",
+            "mini-grid-rows-view",
+            "mini-grid-rowstable",
+            "mini-grid-scrollHeaderCell",
+            "mini-grid-summaryCell",
+            "mini-grid-summaryRow",
+            "mini-grid-summaryRow-lock",
+            "mini-grid-summaryRow-view",
+            "mini-grid-table",
+            "mini-grid-topRightCell",
+            "mini-grid-viewport",
+            "mini-grid-vscroll",
+            "mini-grid-vscroll-content",
+            "mini-iconfont",
+            "mini-page-buttons",
+            "mini-pager",
+            "mini-pager-first",
+            "mini-pager-index",
+            "mini-pager-last",
+            "mini-pager-left",
+            "mini-pager-next",
+            "mini-pager-num",
+            "mini-pager-pages",
+            "mini-pager-prev",
+            "mini-pager-reload",
+            "mini-pager-right",
+            "mini-pager-size",
+            "mini-pager-sizetext",
+            "mini-panel",
+            "mini-panel-body",
+            "mini-panel-border",
+            "mini-panel-footer",
+            "mini-panel-header",
+            "mini-panel-header-inner",
+            "mini-panel-icon",
+            "mini-panel-title",
+            "mini-panel-toolbar",
+            "mini-panel-viewport",
+            "mini-popupedit",
+            "mini-resizer-trigger",
+            "mini-textbox",
+            "mini-textbox-border",
+            "mini-textbox-input",
+            "mini-tools",
+            "mini-tools-close",
+            "mini-tools-collapse",
+            "processbar",
+            "separator",
+            "uc-toolbaroverflow"
+          ],
+          [
+            "icon-add",
+            "icon-remove",
+            "icon-search",
+            "mini-button",
+            "mini-button-icon",
+            "mini-button-icon-only",
+            "mini-button-icon-text",
+            "mini-button-plain",
+            "mini-button-text",
+            "mini-buttonedit",
+            "mini-buttonedit-border",
+            "mini-buttonedit-button",
+            "mini-buttonedit-buttons",
+            "mini-buttonedit-close",
+            "mini-buttonedit-icon",
+            "mini-buttonedit-input",
+            "mini-buttonedit-noInput",
+            "mini-buttonedit-trigger",
+            "mini-checkcolumn",
+            "mini-combobox",
+            "mini-datagrid",
+            "mini-datepicker",
+            "mini-fit",
+            "mini-grid",
+            "mini-grid-border",
+            "mini-grid-bottomCell",
+            "mini-grid-cell",
+            "mini-grid-cell-inner",
+            "mini-grid-cell-nowrap",
+            "mini-grid-cell-selected",
+            "mini-grid-checkbox",
+            "mini-grid-column-splitter",
+            "mini-grid-columns",
+            "mini-grid-columns-lock",
+            "mini-grid-columns-view",
+            "mini-grid-emptyText",
+            "mini-grid-filterCell",
+            "mini-grid-filterRow",
+            "mini-grid-filterRow-lock",
+            "mini-grid-filterRow-view",
+            "mini-grid-focus",
+            "mini-grid-headerCell",
+            "mini-grid-headerCell-inner",
+            "mini-grid-headerCell-nowrap",
+            "mini-grid-headerCell-outer",
+            "mini-grid-pager",
+            "mini-grid-rightCell",
+            "mini-grid-row",
+            "mini-grid-row-selected",
+            "mini-grid-rows",
+            "mini-grid-rows-content",
+            "mini-grid-rows-lock",
+            "mini-grid-rows-view",
+            "mini-grid-rowstable",
+            "mini-grid-scrollHeaderCell",
+            "mini-grid-summaryCell",
+            "mini-grid-summaryRow",
+            "mini-grid-summaryRow-lock",
+            "mini-grid-summaryRow-view",
+            "mini-grid-table",
+            "mini-grid-topRightCell",
+            "mini-grid-viewport",
+            "mini-grid-vscroll",
+            "mini-grid-vscroll-content",
+            "mini-iconfont",
+            "mini-messagebox",
+            "mini-messagebox-buttons",
+            "mini-messagebox-content",
+            "mini-messagebox-content-text",
+            "mini-messagebox-table",
+            "mini-messagebox-warning",
+            "mini-modal",
+            "mini-page-buttons",
+            "mini-pager",
+            "mini-pager-first",
+            "mini-pager-index",
+            "mini-pager-last",
+            "mini-pager-left",
+            "mini-pager-next",
+            "mini-pager-num",
+            "mini-pager-pages",
+            "mini-pager-prev",
+            "mini-pager-reload",
+            "mini-pager-right",
+            "mini-pager-size",
+            "mini-pager-sizetext",
+            "mini-panel",
+            "mini-panel-body",
+            "mini-panel-border",
+            "mini-panel-footer",
+            "mini-panel-header",
+            "mini-panel-header-inner",
+            "mini-panel-icon",
+            "mini-panel-title",
+            "mini-panel-toolbar",
+            "mini-panel-viewport",
+            "mini-popupedit",
+            "mini-resizer-trigger",
+            "mini-textbox",
+            "mini-textbox-border",
+            "mini-textbox-input",
+            "mini-tools",
+            "mini-tools-close",
+            "mini-tools-collapse",
+            "mini-tools-max",
+            "mini-tools-min",
+            "mini-window",
+            "mini-window-drag",
+            "processbar",
+            "separator",
+            "uc-toolbaroverflow"
+          ],
+          [
+            "icon-add",
+            "icon-remove",
+            "icon-search",
+            "mini-button",
+            "mini-button-disabled",
+            "mini-button-icon",
+            "mini-button-icon-only",
+            "mini-button-icon-text",
+            "mini-button-plain",
+            "mini-button-text",
+            "mini-buttonedit",
+            "mini-buttonedit-border",
+            "mini-buttonedit-button",
+            "mini-buttonedit-buttons",
+            "mini-buttonedit-close",
+            "mini-buttonedit-icon",
+            "mini-buttonedit-input",
+            "mini-buttonedit-noInput",
+            "mini-buttonedit-trigger",
+            "mini-checkcolumn",
+            "mini-combobox",
+            "mini-datagrid",
+            "mini-datepicker",
+            "mini-fit",
+            "mini-grid",
+            "mini-grid-border",
+            "mini-grid-bottomCell",
+            "mini-grid-cell",
+            "mini-grid-cell-inner",
+            "mini-grid-cell-nowrap",
+            "mini-grid-checkbox",
+            "mini-grid-column-splitter",
+            "mini-grid-columns",
+            "mini-grid-columns-lock",
+            "mini-grid-columns-view",
+            "mini-grid-emptyText",
+            "mini-grid-filterCell",
+            "mini-grid-filterRow",
+            "mini-grid-filterRow-lock",
+            "mini-grid-filterRow-view",
+            "mini-grid-focus",
+            "mini-grid-headerCell",
+            "mini-grid-headerCell-inner",
+            "mini-grid-headerCell-nowrap",
+            "mini-grid-headerCell-outer",
+            "mini-grid-pager",
+            "mini-grid-rightCell",
+            "mini-grid-row",
+            "mini-grid-rows",
+            "mini-grid-rows-content",
+            "mini-grid-rows-lock",
+            "mini-grid-rows-view",
+            "mini-grid-rowstable",
+            "mini-grid-scrollHeaderCell",
+            "mini-grid-summaryCell",
+            "mini-grid-summaryRow",
+            "mini-grid-summaryRow-lock",
+            "mini-grid-summaryRow-view",
+            "mini-grid-table",
+            "mini-grid-topRightCell",
+            "mini-grid-viewport",
+            "mini-grid-vscroll",
+            "mini-grid-vscroll-content",
+            "mini-iconfont",
+            "mini-page-buttons",
+            "mini-pager",
+            "mini-pager-first",
+            "mini-pager-index",
+            "mini-pager-last",
+            "mini-pager-left",
+            "mini-pager-next",
+            "mini-pager-num",
+            "mini-pager-pages",
+            "mini-pager-prev",
+            "mini-pager-reload",
+            "mini-pager-right",
+            "mini-pager-size",
+            "mini-pager-sizetext",
+            "mini-panel",
+            "mini-panel-body",
+            "mini-panel-border",
+            "mini-panel-footer",
+            "mini-panel-header",
+            "mini-panel-header-inner",
+            "mini-panel-icon",
+            "mini-panel-title",
+            "mini-panel-toolbar",
+            "mini-panel-viewport",
+            "mini-popupedit",
+            "mini-resizer-trigger",
+            "mini-textbox",
+            "mini-textbox-border",
+            "mini-textbox-input",
+            "mini-tools",
+            "mini-tools-close",
+            "mini-tools-collapse",
+            "processbar",
+            "separator",
+            "uc-toolbaroverflow",
+            "user-lvyue-page",
+            "user-simple-box",
+            "user-simple-ctrl"
+          ],
+          [
+            "CKhYiSyWLR",
+            "icon-add",
+            "icon-remove",
+            "icon-search",
+            "mini-button",
+            "mini-button-disabled",
+            "mini-button-icon",
+            "mini-button-icon-only",
+            "mini-button-icon-text",
+            "mini-button-plain",
+            "mini-button-text",
+            "mini-buttonedit",
+            "mini-buttonedit-border",
+            "mini-buttonedit-button",
+            "mini-buttonedit-buttons",
+            "mini-buttonedit-close",
+            "mini-buttonedit-icon",
+            "mini-buttonedit-input",
+            "mini-buttonedit-noInput",
+            "mini-buttonedit-trigger",
+            "mini-checkcolumn",
+            "mini-combobox",
+            "mini-datagrid",
+            "mini-datepicker",
+            "mini-fit",
+            "mini-grid",
+            "mini-grid-border",
+            "mini-grid-bottomCell",
+            "mini-grid-cell",
+            "mini-grid-cell-inner",
+            "mini-grid-cell-nowrap",
+            "mini-grid-checkbox",
+            "mini-grid-column-splitter",
+            "mini-grid-columns",
+            "mini-grid-columns-lock",
+            "mini-grid-columns-view",
+            "mini-grid-emptyText",
+            "mini-grid-filterCell",
+            "mini-grid-filterRow",
+            "mini-grid-filterRow-lock",
+            "mini-grid-filterRow-view",
+            "mini-grid-focus",
+            "mini-grid-headerCell",
+            "mini-grid-headerCell-inner",
+            "mini-grid-headerCell-nowrap",
+            "mini-grid-headerCell-outer",
+            "mini-grid-pager",
+            "mini-grid-rightCell",
+            "mini-grid-row",
+            "mini-grid-rows",
+            "mini-grid-rows-content",
+            "mini-grid-rows-lock",
+            "mini-grid-rows-view",
+            "mini-grid-rowstable",
+            "mini-grid-scrollHeaderCell",
+            "mini-grid-summaryCell",
+            "mini-grid-summaryRow",
+            "mini-grid-summaryRow-lock",
+            "mini-grid-summaryRow-view",
+            "mini-grid-table",
+            "mini-grid-topRightCell",
+            "mini-grid-viewport",
+            "mini-grid-vscroll",
+            "mini-grid-vscroll-content",
+            "mini-iconfont",
+            "mini-modal",
+            "mini-page-buttons",
+            "mini-pager",
+            "mini-pager-first",
+            "mini-pager-index",
+            "mini-pager-last",
+            "mini-pager-left",
+            "mini-pager-next",
+            "mini-pager-num",
+            "mini-pager-pages",
+            "mini-pager-prev",
+            "mini-pager-reload",
+            "mini-pager-right",
+            "mini-pager-size",
+            "mini-pager-sizetext",
+            "mini-panel",
+            "mini-panel-body",
+            "mini-panel-border",
+            "mini-panel-footer",
+            "mini-panel-header",
+            "mini-panel-header-inner",
+            "mini-panel-icon",
+            "mini-panel-title",
+            "mini-panel-toolbar",
+            "mini-panel-viewport",
+            "mini-popupedit",
+            "mini-resizer-trigger",
+            "mini-textbox",
+            "mini-textbox-border",
+            "mini-textbox-input",
+            "mini-tools",
+            "mini-tools-close",
+            "mini-tools-collapse",
+            "mini-tools-min",
+            "mini-tools-restore",
+            "mini-window",
+            "processbar",
+            "separator",
+            "uc-toolbaroverflow",
+            "user-simple-box",
+            "user-simple-ctrl"
+          ],
+          [
+            "icon-search",
+            "mini-button",
+            "mini-button-disabled",
+            "mini-button-icon",
+            "mini-button-icon-only",
+            "mini-button-icon-text",
+            "mini-button-plain",
+            "mini-button-text",
+            "mini-buttonedit",
+            "mini-buttonedit-border",
+            "mini-buttonedit-button",
+            "mini-buttonedit-buttons",
+            "mini-buttonedit-close",
+            "mini-buttonedit-icon",
+            "mini-buttonedit-input",
+            "mini-buttonedit-noInput",
+            "mini-buttonedit-trigger",
+            "mini-combobox",
+            "mini-datagrid",
+            "mini-datepicker",
+            "mini-fit",
+            "mini-grid",
+            "mini-grid-border",
+            "mini-grid-bottomCell",
+            "mini-grid-cell",
+            "mini-grid-cell-inner",
+            "mini-grid-cell-nowrap",
+            "mini-grid-column-splitter",
+            "mini-grid-columns",
+            "mini-grid-columns-lock",
+            "mini-grid-columns-view",
+            "mini-grid-emptyText",
+            "mini-grid-filterCell",
+            "mini-grid-filterRow",
+            "mini-grid-filterRow-lock",
+            "mini-grid-filterRow-view",
+            "mini-grid-focus",
+            "mini-grid-headerCell",
+            "mini-grid-headerCell-inner",
+            "mini-grid-headerCell-nowrap",
+            "mini-grid-headerCell-outer",
+            "mini-grid-pager",
+            "mini-grid-rightCell",
+            "mini-grid-row",
+            "mini-grid-rows",
+            "mini-grid-rows-content",
+            "mini-grid-rows-lock",
+            "mini-grid-rows-view",
+            "mini-grid-rowstable",
+            "mini-grid-scrollHeaderCell",
+            "mini-grid-summaryCell",
+            "mini-grid-summaryRow",
+            "mini-grid-summaryRow-lock",
+            "mini-grid-summaryRow-view",
+            "mini-grid-table",
+            "mini-grid-topRightCell",
+            "mini-grid-viewport",
+            "mini-grid-vscroll",
+            "mini-grid-vscroll-content",
+            "mini-iconfont",
+            "mini-page-buttons",
+            "mini-pager",
+            "mini-pager-first",
+            "mini-pager-index",
+            "mini-pager-last",
+            "mini-pager-left",
+            "mini-pager-next",
+            "mini-pager-num",
+            "mini-pager-pages",
+            "mini-pager-prev",
+            "mini-pager-reload",
+            "mini-pager-right",
+            "mini-pager-size",
+            "mini-pager-sizetext",
+            "mini-panel",
+            "mini-panel-body",
+            "mini-panel-border",
+            "mini-panel-footer",
+            "mini-panel-header",
+            "mini-panel-header-inner",
+            "mini-panel-icon",
+            "mini-panel-title",
+            "mini-panel-toolbar",
+            "mini-panel-viewport",
+            "mini-popupedit",
+            "mini-resizer-trigger",
+            "mini-textbox",
+            "mini-textbox-border",
+            "mini-textbox-input",
+            "mini-tools",
+            "mini-tools-close",
+            "mini-tools-collapse",
+            "processbar",
+            "separator",
+            "uc-toolbaroverflow",
+            "user-lvyue-page",
+            "user-simple-box",
+            "user-simple-ctrl"
+          ],
+          [
+            "CKiYVKmoOF",
+            "icon-search",
+            "mini-button",
+            "mini-button-disabled",
+            "mini-button-icon",
+            "mini-button-icon-only",
+            "mini-button-icon-text",
+            "mini-button-plain",
+            "mini-button-text",
+            "mini-buttonedit",
+            "mini-buttonedit-border",
+            "mini-buttonedit-button",
+            "mini-buttonedit-buttons",
+            "mini-buttonedit-close",
+            "mini-buttonedit-icon",
+            "mini-buttonedit-input",
+            "mini-buttonedit-noInput",
+            "mini-buttonedit-trigger",
+            "mini-combobox",
+            "mini-datagrid",
+            "mini-fit",
+            "mini-grid",
+            "mini-grid-border",
+            "mini-grid-bottomCell",
+            "mini-grid-cell",
+            "mini-grid-cell-inner",
+            "mini-grid-cell-nowrap",
+            "mini-grid-cell-selected",
+            "mini-grid-column-splitter",
+            "mini-grid-columns",
+            "mini-grid-columns-lock",
+            "mini-grid-columns-view",
+            "mini-grid-emptyText",
+            "mini-grid-filterCell",
+            "mini-grid-filterRow",
+            "mini-grid-filterRow-lock",
+            "mini-grid-filterRow-view",
+            "mini-grid-focus",
+            "mini-grid-headerCell",
+            "mini-grid-headerCell-inner",
+            "mini-grid-headerCell-nowrap",
+            "mini-grid-headerCell-outer",
+            "mini-grid-pager",
+            "mini-grid-rightCell",
+            "mini-grid-row",
+            "mini-grid-row-selected",
+            "mini-grid-rows",
+            "mini-grid-rows-content",
+            "mini-grid-rows-lock",
+            "mini-grid-rows-view",
+            "mini-grid-rowstable",
+            "mini-grid-scrollHeaderCell",
+            "mini-grid-summaryCell",
+            "mini-grid-summaryRow",
+            "mini-grid-summaryRow-lock",
+            "mini-grid-summaryRow-view",
+            "mini-grid-table",
+            "mini-grid-topRightCell",
+            "mini-grid-viewport",
+            "mini-grid-vscroll",
+            "mini-grid-vscroll-content",
+            "mini-iconfont",
+            "mini-modal",
+            "mini-page-buttons",
+            "mini-pager",
+            "mini-pager-first",
+            "mini-pager-index",
+            "mini-pager-last",
+            "mini-pager-left",
+            "mini-pager-next",
+            "mini-pager-num",
+            "mini-pager-pages",
+            "mini-pager-prev",
+            "mini-pager-reload",
+            "mini-pager-right",
+            "mini-pager-size",
+            "mini-pager-sizetext",
+            "mini-panel",
+            "mini-panel-body",
+            "mini-panel-border",
+            "mini-panel-footer",
+            "mini-panel-header",
+            "mini-panel-header-inner",
+            "mini-panel-icon",
+            "mini-panel-title",
+            "mini-panel-toolbar",
+            "mini-panel-viewport",
+            "mini-popupedit",
+            "mini-resizer-trigger",
+            "mini-textbox",
+            "mini-textbox-border",
+            "mini-textbox-input",
+            "mini-toolbar",
+            "mini-tools",
+            "mini-tools-close",
+            "mini-tools-collapse",
+            "mini-tools-min",
+            "mini-tools-restore",
+            "mini-window",
+            "separator",
+            "user-simple-box",
+            "user-simple-ctrl"
+          ],
+          [
+            "icon-search",
+            "mini-button",
+            "mini-button-disabled",
+            "mini-button-icon",
+            "mini-button-icon-only",
+            "mini-button-icon-text",
+            "mini-button-plain",
+            "mini-button-text",
+            "mini-buttonedit",
+            "mini-buttonedit-border",
+            "mini-buttonedit-button",
+            "mini-buttonedit-buttons",
+            "mini-buttonedit-close",
+            "mini-buttonedit-icon",
+            "mini-buttonedit-input",
+            "mini-buttonedit-trigger",
+            "mini-combobox",
+            "mini-datagrid",
+            "mini-fit",
+            "mini-grid",
+            "mini-grid-border",
+            "mini-grid-bottomCell",
+            "mini-grid-cell",
+            "mini-grid-cell-inner",
+            "mini-grid-cell-nowrap",
+            "mini-grid-column-splitter",
+            "mini-grid-columns",
+            "mini-grid-columns-lock",
+            "mini-grid-columns-view",
+            "mini-grid-emptyText",
+            "mini-grid-filterCell",
+            "mini-grid-filterRow",
+            "mini-grid-filterRow-lock",
+            "mini-grid-filterRow-view",
+            "mini-grid-focus",
+            "mini-grid-headerCell",
+            "mini-grid-headerCell-inner",
+            "mini-grid-headerCell-nowrap",
+            "mini-grid-headerCell-outer",
+            "mini-grid-pager",
+            "mini-grid-rightCell",
+            "mini-grid-row",
+            "mini-grid-rows",
+            "mini-grid-rows-content",
+            "mini-grid-rows-lock",
+            "mini-grid-rows-view",
+            "mini-grid-rowstable",
+            "mini-grid-scrollHeaderCell",
+            "mini-grid-summaryCell",
+            "mini-grid-summaryRow",
+            "mini-grid-summaryRow-lock",
+            "mini-grid-summaryRow-view",
+            "mini-grid-table",
+            "mini-grid-topRightCell",
+            "mini-grid-viewport",
+            "mini-grid-vscroll",
+            "mini-grid-vscroll-content",
+            "mini-iconfont",
+            "mini-page-buttons",
+            "mini-pager",
+            "mini-pager-first",
+            "mini-pager-index",
+            "mini-pager-last",
+            "mini-pager-left",
+            "mini-pager-next",
+            "mini-pager-num",
+            "mini-pager-pages",
+            "mini-pager-prev",
+            "mini-pager-reload",
+            "mini-pager-right",
+            "mini-pager-size",
+            "mini-pager-sizetext",
+            "mini-panel",
+            "mini-panel-body",
+            "mini-panel-border",
+            "mini-panel-footer",
+            "mini-panel-header",
+            "mini-panel-header-inner",
+            "mini-panel-icon",
+            "mini-panel-title",
+            "mini-panel-toolbar",
+            "mini-panel-viewport",
+            "mini-popupedit",
+            "mini-resizer-trigger",
+            "mini-textbox",
+            "mini-textbox-border",
+            "mini-textbox-input",
+            "mini-toolbar",
+            "mini-tools",
+            "mini-tools-close",
+            "mini-tools-collapse",
+            "separator",
+            "user-lvyue-page",
+            "user-simple-box",
+            "user-simple-ctrl"
+          ],
+          [
+            "icon-add",
+            "icon-remove",
+            "icon-search",
+            "mini-button",
+            "mini-button-disabled",
+            "mini-button-icon",
+            "mini-button-icon-only",
+            "mini-button-icon-text",
+            "mini-button-plain",
+            "mini-button-text",
+            "mini-buttonedit",
+            "mini-buttonedit-border",
+            "mini-buttonedit-button",
+            "mini-buttonedit-buttons",
+            "mini-buttonedit-close",
+            "mini-buttonedit-icon",
+            "mini-buttonedit-input",
+            "mini-buttonedit-noInput",
+            "mini-buttonedit-trigger",
+            "mini-checkcolumn",
+            "mini-combobox",
+            "mini-datagrid",
+            "mini-datepicker",
+            "mini-fit",
+            "mini-grid",
+            "mini-grid-border",
+            "mini-grid-bottomCell",
+            "mini-grid-cell",
+            "mini-grid-cell-inner",
+            "mini-grid-cell-nowrap",
+            "mini-grid-checkbox",
+            "mini-grid-column-splitter",
+            "mini-grid-columns",
+            "mini-grid-columns-lock",
+            "mini-grid-columns-view",
+            "mini-grid-emptyText",
+            "mini-grid-filterCell",
+            "mini-grid-filterRow",
+            "mini-grid-filterRow-lock",
+            "mini-grid-filterRow-view",
+            "mini-grid-focus",
+            "mini-grid-headerCell",
+            "mini-grid-headerCell-inner",
+            "mini-grid-headerCell-nowrap",
+            "mini-grid-headerCell-outer",
+            "mini-grid-pager",
+            "mini-grid-rightCell",
+            "mini-grid-row",
+            "mini-grid-row-selected",
+            "mini-grid-rows",
+            "mini-grid-rows-content",
+            "mini-grid-rows-lock",
+            "mini-grid-rows-view",
+            "mini-grid-rowstable",
+            "mini-grid-scrollHeaderCell",
+            "mini-grid-summaryCell",
+            "mini-grid-summaryRow",
+            "mini-grid-summaryRow-lock",
+            "mini-grid-summaryRow-view",
+            "mini-grid-table",
+            "mini-grid-topRightCell",
+            "mini-grid-viewport",
+            "mini-grid-vscroll",
+            "mini-grid-vscroll-content",
+            "mini-iconfont",
+            "mini-page-buttons",
+            "mini-pager",
+            "mini-pager-first",
+            "mini-pager-index",
+            "mini-pager-last",
+            "mini-pager-left",
+            "mini-pager-next",
+            "mini-pager-num",
+            "mini-pager-pages",
+            "mini-pager-prev",
+            "mini-pager-reload",
+            "mini-pager-right",
+            "mini-pager-size",
+            "mini-pager-sizetext",
+            "mini-panel",
+            "mini-panel-body",
+            "mini-panel-border",
+            "mini-panel-footer",
+            "mini-panel-header",
+            "mini-panel-header-inner",
+            "mini-panel-icon",
+            "mini-panel-title",
+            "mini-panel-toolbar",
+            "mini-panel-viewport",
+            "mini-popupedit",
+            "mini-resizer-trigger",
+            "mini-textbox",
+            "mini-textbox-border",
+            "mini-textbox-input",
+            "mini-tools",
+            "mini-tools-close",
+            "mini-tools-collapse",
+            "processbar",
+            "separator",
+            "uc-toolbaroverflow",
+            "user-lvyue-page",
+            "user-simple-box",
+            "user-simple-ctrl"
+          ],
+          [
+            "mini-disabled",
+            "mini-fit",
+            "mini-tab",
+            "mini-tab-active",
+            "mini-tab-text",
+            "mini-tabs",
+            "mini-tabs-body",
+            "mini-tabs-body-top",
+            "mini-tabs-bodys",
+            "mini-tabs-buttons",
+            "mini-tabs-firstSpace",
+            "mini-tabs-header",
+            "mini-tabs-header-top",
+            "mini-tabs-headers",
+            "mini-tabs-hideOverflow",
+            "mini-tabs-lastSpace",
+            "mini-tabs-leftButton",
+            "mini-tabs-nav",
+            "mini-tabs-plain",
+            "mini-tabs-position-top",
+            "mini-tabs-rightButton",
+            "mini-tabs-scrollCt",
+            "mini-tabs-space",
+            "mini-tabs-table"
+          ]
+        ],
+        "context1_O2pWNO": [
+          [
+            "about",
+            "aboutBox",
+            "about_box",
+            "active",
+            "container",
+            "dowebok-hd",
+            "flex",
+            "footer",
+            "footer-info",
+            "footer-qycode",
+            "footer-qycode-item",
+            "inner",
+            "loginBar",
+            "loginBar-item",
+            "nav",
+            "pagination",
+            "pb",
+            "pt",
+            "sub-item",
+            "sub-item-box",
+            "swiper-container",
+            "swiper-container-horizontal",
+            "swiper-notification",
+            "swiper-pagination-bullet",
+            "swiper-pagination-bullet-active",
+            "swiper-pagination-bullets",
+            "swiper-pagination-clickable",
+            "swiper-slide",
+            "swiper-slide-active",
+            "swiper-slide-duplicate",
+            "swiper-slide-duplicate-next",
+            "swiper-slide-next",
+            "swiper-slide-prev",
+            "swiper-wrapper"
+          ],
+          [
+            "about",
+            "aboutBox",
+            "about_box",
+            "active",
+            "container",
+            "dowebok-hd",
+            "flex",
+            "footer",
+            "footer-info",
+            "footer-qycode",
+            "footer-qycode-item",
+            "inner",
+            "loginBar",
+            "loginBar-item",
+            "nav",
+            "pagination",
+            "pb",
+            "pt",
+            "sub-item",
+            "sub-item-box",
+            "swiper-container",
+            "swiper-container-horizontal",
+            "swiper-notification",
+            "swiper-pagination-bullet",
+            "swiper-pagination-bullet-active",
+            "swiper-pagination-bullets",
+            "swiper-pagination-clickable",
+            "swiper-slide",
+            "swiper-slide-active",
+            "swiper-slide-duplicate",
+            "swiper-slide-duplicate-active",
+            "swiper-slide-duplicate-next",
+            "swiper-slide-next",
+            "swiper-slide-prev",
+            "swiper-wrapper"
+          ],
+          [
+            "about",
+            "aboutBox",
+            "about_box",
+            "active",
+            "container",
+            "dowebok-hd",
+            "flex",
+            "footer",
+            "footer-info",
+            "footer-qycode",
+            "footer-qycode-item",
+            "inner",
+            "loginBar",
+            "loginBar-item",
+            "nav",
+            "pagination",
+            "pb",
+            "pt",
+            "sub-item",
+            "sub-item-box",
+            "swiper-container",
+            "swiper-container-horizontal",
+            "swiper-notification",
+            "swiper-pagination-bullet",
+            "swiper-pagination-bullet-active",
+            "swiper-pagination-bullets",
+            "swiper-pagination-clickable",
+            "swiper-slide",
+            "swiper-slide-active",
+            "swiper-slide-duplicate",
+            "swiper-slide-duplicate-prev",
+            "swiper-slide-next",
+            "swiper-slide-prev",
+            "swiper-wrapper"
+          ]
+        ]
+      }
+    },
+    "page/tagTriplets": {
+      "contexts": {
+        "context1_rIRPPI": [
+          [
+            "-/-/DIV",
+            "-/-/SCRIPT",
+            "-/DIV/DIV",
+            "-/DIV/UL",
+            "A/I/IMG",
+            "DIV/DIV/A",
+            "DIV/DIV/DIV",
+            "DIV/DIV/IFRAME",
+            "DIV/DIV/SPAN",
+            "DIV/DIV/UL",
+            "DIV/UL/DIV",
+            "DIV/UL/LI",
+            "LI/A/I",
+            "LI/A/SPAN",
+            "LI/DIV/UL",
+            "LI/P/A",
+            "LI/P/I",
+            "LI/P/IMG",
+            "UL/LI/A",
+            "UL/LI/DIV",
+            "UL/LI/P"
+          ],
+          [
+            "-/-/DIV",
+            "-/-/SCRIPT",
+            "-/DIV/A",
+            "-/DIV/B",
+            "-/DIV/BR",
+            "-/DIV/DIV",
+            "-/DIV/UL",
+            "A/I/IMG",
+            "DIV/DIV/A",
+            "DIV/DIV/DIV",
+            "DIV/DIV/IFRAME",
+            "DIV/DIV/SPAN",
+            "DIV/DIV/UL",
+            "DIV/UL/DIV",
+            "DIV/UL/LI",
+            "LI/A/I",
+            "LI/A/SPAN",
+            "LI/DIV/UL",
+            "LI/P/A",
+            "LI/P/I",
+            "LI/P/IMG",
+            "UL/LI/A",
+            "UL/LI/DIV",
+            "UL/LI/P"
+          ],
+          [
+            "-/-/DIV",
+            "-/-/INPUT-hidden",
+            "-/-/SCRIPT",
+            "-/DIV/DIV",
+            "-/DIV/P",
+            "DIV/A/EM",
+            "DIV/A/I",
+            "DIV/A/IMG",
+            "DIV/DIV/A",
+            "DIV/DIV/B",
+            "DIV/DIV/DIV",
+            "DIV/DIV/EM",
+            "DIV/DIV/FORM",
+            "DIV/DIV/H1",
+            "DIV/DIV/I",
+            "DIV/DIV/IMG",
+            "DIV/DIV/INPUT-hidden",
+            "DIV/DIV/INPUT-text",
+            "DIV/DIV/LABEL",
+            "DIV/DIV/P",
+            "DIV/DIV/SPAN",
+            "DIV/DIV/UL",
+            "DIV/FORM/DIV",
+            "DIV/FORM/INPUT-hidden",
+            "DIV/FORM/INPUT-submit",
+            "DIV/FORM/P",
+            "DIV/H1/A",
+            "DIV/H1/DIV",
+            "DIV/H1/SPAN",
+            "DIV/P/A",
+            "DIV/SPAN/EM",
+            "DIV/SPAN/I",
+            "DIV/SPAN/IMG",
+            "DIV/UL/DIV",
+            "DIV/UL/LI",
+            "FORM/DIV/DIV",
+            "FORM/DIV/INPUT-password",
+            "FORM/DIV/INPUT-text",
+            "FORM/DIV/LABEL",
+            "FORM/DIV/SPAN",
+            "FORM/P/A",
+            "FORM/P/INPUT-checkbox",
+            "FORM/P/SPAN",
+            "H1/A/IMG",
+            "P/SPAN/A",
+            "P/SPAN/IMG",
+            "UL/LI/A",
+            "UL/LI/EM"
+          ],
+          [
+            "-/-/DIV",
+            "-/-/INPUT-hidden",
+            "-/-/SCRIPT",
+            "-/DIV/DIV",
+            "-/DIV/P",
+            "DIV/A/DIV",
+            "DIV/A/EM",
+            "DIV/A/I",
+            "DIV/A/IMG",
+            "DIV/DIV/A",
+            "DIV/DIV/B",
+            "DIV/DIV/DIV",
+            "DIV/DIV/EM",
+            "DIV/DIV/FORM",
+            "DIV/DIV/H1",
+            "DIV/DIV/I",
+            "DIV/DIV/IMG",
+            "DIV/DIV/INPUT-hidden",
+            "DIV/DIV/INPUT-text",
+            "DIV/DIV/LABEL",
+            "DIV/DIV/P",
+            "DIV/DIV/SPAN",
+            "DIV/DIV/UL",
+            "DIV/FORM/DIV",
+            "DIV/FORM/INPUT-hidden",
+            "DIV/FORM/INPUT-submit",
+            "DIV/FORM/P",
+            "DIV/H1/A",
+            "DIV/H1/DIV",
+            "DIV/H1/SPAN",
+            "DIV/P/A",
+            "DIV/P/IMG",
+            "DIV/SPAN/EM",
+            "DIV/SPAN/I",
+            "DIV/SPAN/IMG",
+            "DIV/UL/DIV",
+            "DIV/UL/LI",
+            "FORM/DIV/DIV",
+            "FORM/DIV/INPUT-password",
+            "FORM/DIV/INPUT-text",
+            "FORM/DIV/LABEL",
+            "FORM/DIV/SPAN",
+            "FORM/P/A",
+            "FORM/P/INPUT-checkbox",
+            "FORM/P/SPAN",
+            "H1/A/IMG",
+            "P/A/SPAN",
+            "P/SPAN/A",
+            "P/SPAN/IMG",
+            "UL/LI/A",
+            "UL/LI/EM"
+          ],
+          [
+            "-/-/DIV",
+            "-/-/INPUT-hidden",
+            "-/-/SCRIPT",
+            "-/DIV/DIV",
+            "-/DIV/IFRAME",
+            "-/DIV/P",
+            "DIV/A/EM",
+            "DIV/A/I",
+            "DIV/A/IMG",
+            "DIV/DIV/A",
+            "DIV/DIV/B",
+            "DIV/DIV/DIV",
+            "DIV/DIV/EM",
+            "DIV/DIV/FORM",
+            "DIV/DIV/H1",
+            "DIV/DIV/I",
+            "DIV/DIV/IMG",
+            "DIV/DIV/INPUT-hidden",
+            "DIV/DIV/INPUT-text",
+            "DIV/DIV/LABEL",
+            "DIV/DIV/P",
+            "DIV/DIV/SPAN",
+            "DIV/DIV/UL",
+            "DIV/FORM/DIV",
+            "DIV/FORM/INPUT-hidden",
+            "DIV/FORM/INPUT-submit",
+            "DIV/FORM/P",
+            "DIV/H1/A",
+            "DIV/H1/DIV",
+            "DIV/H1/SPAN",
+            "DIV/P/A",
+            "DIV/SPAN/EM",
+            "DIV/SPAN/I",
+            "DIV/SPAN/IMG",
+            "DIV/UL/DIV",
+            "DIV/UL/LI",
+            "FORM/DIV/DIV",
+            "FORM/DIV/INPUT-password",
+            "FORM/DIV/INPUT-text",
+            "FORM/DIV/LABEL",
+            "FORM/DIV/SPAN",
+            "FORM/P/A",
+            "FORM/P/INPUT-checkbox",
+            "FORM/P/SPAN",
+            "H1/A/IMG",
+            "P/SPAN/A",
+            "P/SPAN/IMG",
+            "UL/LI/A",
+            "UL/LI/EM"
+          ]
+        ],
+        "context24_qRKc24": [
+          [
+            "-/-/DIV",
+            "-/-/SCRIPT",
+            "-/DIV/A",
+            "-/DIV/DIV",
+            "-/DIV/SPAN",
+            "A/SPAN/SPAN",
+            "DIV/A/DIV",
+            "DIV/A/SPAN",
+            "DIV/DIV/A",
+            "DIV/DIV/DIV",
+            "DIV/DIV/SPAN",
+            "DIV/DIV/TABLE",
+            "DIV/SPAN/INPUT-hidden",
+            "DIV/SPAN/SPAN",
+            "DIV/TABLE/TBODY",
+            "SPAN/SPAN/INPUT-hidden",
+            "SPAN/SPAN/INPUT-text",
+            "SPAN/SPAN/SPAN",
+            "TABLE/TBODY/TR",
+            "TBODY/TR/TD",
+            "TD/A/SPAN",
+            "TD/DIV/A",
+            "TD/DIV/DIV",
+            "TD/DIV/SPAN",
+            "TD/SPAN/INPUT-text",
+            "TD/SPAN/SPAN",
+            "TR/TD/A",
+            "TR/TD/DIV",
+            "TR/TD/SPAN"
+          ],
+          [
+            "-/-/DIV",
+            "-/-/SCRIPT",
+            "-/DIV/A",
+            "-/DIV/DIV",
+            "-/DIV/SPAN",
+            "A/SPAN/SPAN",
+            "DIV/A/DIV",
+            "DIV/A/SPAN",
+            "DIV/DIV/A",
+            "DIV/DIV/DIV",
+            "DIV/DIV/IFRAME",
+            "DIV/DIV/SPAN",
+            "DIV/DIV/TABLE",
+            "DIV/SPAN/INPUT-hidden",
+            "DIV/SPAN/SPAN",
+            "DIV/TABLE/TBODY",
+            "SPAN/SPAN/INPUT-hidden",
+            "SPAN/SPAN/INPUT-text",
+            "SPAN/SPAN/SPAN",
+            "TABLE/TBODY/TR",
+            "TBODY/TR/TD",
+            "TD/A/SPAN",
+            "TD/DIV/A",
+            "TD/DIV/DIV",
+            "TD/DIV/SPAN",
+            "TD/SPAN/INPUT-text",
+            "TD/SPAN/SPAN",
+            "TR/TD/A",
+            "TR/TD/DIV",
+            "TR/TD/SPAN"
+          ],
+          [
+            "-/-/DIV",
+            "-/-/SCRIPT",
+            "-/DIV/A",
+            "-/DIV/DIV",
+            "-/DIV/SPAN",
+            "A/SPAN/SPAN",
+            "DIV/A/DIV",
+            "DIV/A/SPAN",
+            "DIV/DIV/A",
+            "DIV/DIV/DIV",
+            "DIV/DIV/SPAN",
+            "DIV/DIV/TABLE",
+            "DIV/SPAN/INPUT-hidden",
+            "DIV/SPAN/SPAN",
+            "DIV/TABLE/TBODY",
+            "SPAN/SPAN/INPUT-hidden",
+            "SPAN/SPAN/INPUT-text",
+            "SPAN/SPAN/SPAN",
+            "TABLE/TBODY/TR",
+            "TBODY/TR/TD",
+            "TD/A/SPAN",
+            "TD/DIV/A",
+            "TD/DIV/DIV",
+            "TD/SPAN/INPUT-text",
+            "TD/SPAN/SPAN",
+            "TR/TD/A",
+            "TR/TD/DIV",
+            "TR/TD/SPAN"
+          ],
+          [
+            "-/-/DIV",
+            "-/-/SCRIPT",
+            "-/DIV/DIV",
+            "-/DIV/TABLE",
+            "A/SPAN/SPAN",
+            "DIV/DIV/A",
+            "DIV/DIV/DIV",
+            "DIV/DIV/IFRAME",
+            "DIV/DIV/SPAN",
+            "DIV/DIV/TABLE",
+            "DIV/TABLE/TBODY",
+            "SPAN/SPAN/INPUT-hidden",
+            "SPAN/SPAN/INPUT-text",
+            "SPAN/SPAN/SPAN",
+            "TABLE/TBODY/TR",
+            "TBODY/TR/TD",
+            "TD/A/SPAN",
+            "TD/DIV/A",
+            "TD/DIV/DIV",
+            "TD/SPAN/INPUT-hidden",
+            "TD/SPAN/INPUT-text",
+            "TD/SPAN/SPAN",
+            "TR/TD/A",
+            "TR/TD/DIV",
+            "TR/TD/SPAN"
+          ],
+          [
+            "-/-/DIV",
+            "-/-/SCRIPT",
+            "-/DIV/DIV",
+            "-/DIV/IFRAME",
+            "-/DIV/TABLE",
+            "A/SPAN/SPAN",
+            "DIV/DIV/A",
+            "DIV/DIV/DIV",
+            "DIV/DIV/SPAN",
+            "DIV/DIV/TABLE",
+            "DIV/TABLE/TBODY",
+            "SPAN/SPAN/INPUT-hidden",
+            "SPAN/SPAN/INPUT-text",
+            "SPAN/SPAN/SPAN",
+            "TABLE/TBODY/TR",
+            "TBODY/TR/TD",
+            "TD/A/SPAN",
+            "TD/DIV/A",
+            "TD/DIV/DIV",
+            "TD/SPAN/INPUT-hidden",
+            "TD/SPAN/INPUT-text",
+            "TD/SPAN/SPAN",
+            "TR/TD/A",
+            "TR/TD/DIV",
+            "TR/TD/SPAN"
+          ],
+          [
+            "-/-/DIV",
+            "-/-/SCRIPT",
+            "-/DIV/DIV",
+            "DIV/DIV/A",
+            "DIV/DIV/IFRAME",
+            "DIV/DIV/TABLE",
+            "DIV/TABLE/TBODY",
+            "TABLE/TBODY/TR",
+            "TBODY/TR/TD",
+            "TD/DIV/DIV",
+            "TR/TD/DIV",
+            "TR/TD/SPAN"
+          ]
+        ]
+      }
+    }
+  }
+}

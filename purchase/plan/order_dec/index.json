@@ -1,0 +1,856 @@
+{
+  "version": "0.1",
+  "id": "order_dec",
+  "targetURL": "https://jc.z.inja.com/gjc/base/main.do",
+  "jsFile": "index.js",
+  "requires": {},
+  "chineseName": "订单详情",
+  "description": "",
+  "controls": {
+    "control73_Vkn8CS": {
+      "location": {
+        "data": {
+          "tagName": "DIV"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "text",
+            "prob": 3,
+            "ordinal": [
+              0,
+              2
+            ],
+            "value": {
+              "text": [
+                "6K6i5Y2V6Km5oOF"
+              ],
+              "visText": [
+                "6K6i5Y2V6Km5oOF"
+              ]
+            }
+          },
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "value": "HTML.mini-xs.mini-sm.mini-md.mini-lg.mini-lg-active DIV.user-simple-box"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "ordinal": [
+              0,
+              5
+            ],
+            "value": "/HTML[1]/BODY[1]/DIV[1]"
+          }
+        ]
+      },
+      "roles": "element",
+      "text": "6K6i5Y2V6Km5oOF",
+      "frameXPath": ""
+    },
+    "control89_gyHpHa": {
+      "location": {
+        "data": {
+          "tagName": "DIV"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "ordinal": [
+              0,
+              8
+            ],
+            "value": "HTML.mini-xs.mini-xs-active DIV.mini-fit"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "ordinal": [
+              0,
+              6
+            ],
+            "value": "/HTML[1]/BODY[1]/DIV[2]"
+          }
+        ]
+      },
+      "events": {
+        "onGetData": "getData_control89_gyHpHa"
+      },
+      "intendedRole": "custom",
+      "roles": "element,custom",
+      "monitored": true,
+      "frameXPath": "//iframe[contains(@name,'mini-iframe-')]<<IFRAME>>"
+    },
+    "control90_QECFQe": {
+      "location": {
+        "data": {
+          "tagName": "TABLE"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "ordinal": [
+              0,
+              8
+            ],
+            "value": "DIV.mini-tabs-scrollCt DIV.mini-tabs-headers.mini-tabs-header-top TABLE.mini-tabs-header"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/DIV[1]/DIV[3]/TABLE[1]"
+          }
+        ]
+      },
+      "events": {
+        "onGetData": "getData_control90_QECFQe"
+      },
+      "intendedRole": "custom",
+      "roles": "element,custom",
+      "monitored": true,
+      "frameXPath": "//iframe[contains(@name,'mini-iframe-')]<<IFRAME>>"
+    },
+    "control91_4CA984": {
+      "location": {
+        "data": {
+          "tagName": "DIV"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "ordinal": [
+              0,
+              8
+            ],
+            "value": "DIV.mini-tabs.mini-tabs-position-top TABLE.mini-tabs-table.mini-tabs-plain DIV.mini-tabs-bodys.mini-tabs-body-top"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/DIV[2]"
+          }
+        ]
+      },
+      "events": {
+        "onGetData": "getData_control91_4CA984"
+      },
+      "intendedRole": "custom",
+      "roles": "element,custom",
+      "monitored": true,
+      "frameXPath": "//iframe[contains(@name,'mini-iframe-')]<<IFRAME>>"
+    },
+    "control88_eNMmsa": {
+      "location": {
+        "data": {
+          "tagName": "BODY"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "ordinal": [
+              0,
+              3
+            ],
+            "value": "HTML.mini-xs.mini-sm.mini-sm-active BODY"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "ordinal": [
+              0,
+              3
+            ],
+            "value": "/HTML[1]/BODY[1]"
+          }
+        ]
+      },
+      "events": {
+        "onGetData": "getData_control88_eNMmsa"
+      },
+      "intendedRole": "custom",
+      "roles": "element,custom",
+      "monitored": true,
+      "frameXPath": ""
+    },
+    "control63_K76rUp": {
+      "location": {
+        "data": {
+          "tagName": "BODY"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "ordinal": [
+              0,
+              3
+            ],
+            "value": "HTML.mini-xs.mini-sm.mini-sm-active BODY"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "ordinal": [
+              0,
+              5
+            ],
+            "value": "/HTML[1]/BODY[1]"
+          }
+        ]
+      },
+      "events": {
+        "onGetData": "getData_control63_K76rUp"
+      },
+      "intendedRole": "custom",
+      "roles": "element,custom",
+      "monitored": false,
+      "frameXPath": ""
+    }
+  },
+  "contexts": {
+    "context15_0usTqF": {
+      "controls": [
+        "control89_gyHpHa",
+        "control90_QECFQe",
+        "control91_4CA984",
+        "control88_eNMmsa",
+        "control63_K76rUp"
+      ],
+      "anchors": [
+        "control73_Vkn8CS"
+      ],
+      "urlAnchor": []
+    }
+  },
+  "flows": {
+    "flow68_dkg6FL": {
+      "fromContextId": "context15_0usTqF",
+      "fromAction": "doAction",
+      "fromControlId": "control89_gyHpHa",
+      "toContexts": [
+        {
+          "toContextId": "context15_0usTqF"
+        }
+      ]
+    },
+    "flow69_HNc94v": {
+      "fromContextId": "context15_0usTqF",
+      "fromAction": "doAction",
+      "fromControlId": "control90_QECFQe",
+      "toContexts": [
+        {
+          "toContextId": "context15_0usTqF"
+        }
+      ]
+    },
+    "flow70_OXHlkP": {
+      "fromContextId": "context15_0usTqF",
+      "fromAction": "doAction",
+      "fromControlId": "control91_4CA984",
+      "toContexts": [
+        {
+          "toContextId": "context15_0usTqF"
+        }
+      ]
+    },
+    "flow103_mdIqy9": {
+      "fromContextId": "context15_0usTqF",
+      "fromAction": "doAction",
+      "fromControlId": "control88_eNMmsa",
+      "toContexts": [
+        {
+          "toContextId": "context15_0usTqF"
+        }
+      ]
+    }
+  },
+  "pages": {
+    "page15_Fq04Nz": {
+      "contextId": "context15_0usTqF",
+      "layout": [
+        {
+          "id": "uiControl74_1wmAXF",
+          "controlId": "control88_eNMmsa",
+          "display": {
+            "adapterId": "custom",
+            "type": "custom",
+            "adapter": {
+              "templateType": "react",
+              "events": {
+                "onDoAction": "doAction_uiControl74_1wmAXF",
+                "onGetTemplate": "getTemplate_uiControl74_1wmAXF"
+              }
+            }
+          }
+        },
+        {
+          "id": "uiControl75_rnxR6B",
+          "controlId": "control89_gyHpHa",
+          "display": {
+            "adapterId": "custom",
+            "type": "custom",
+            "adapter": {
+              "templateType": "react",
+              "events": {
+                "onDoAction": "doAction_uiControl75_rnxR6B",
+                "onGetTemplate": "getTemplate_uiControl75_rnxR6B"
+              }
+            }
+          }
+        },
+        {
+          "id": "uiControl76_FkosdZ",
+          "controlId": "control90_QECFQe",
+          "display": {
+            "adapterId": "custom",
+            "type": "custom",
+            "adapter": {
+              "templateType": "react",
+              "events": {
+                "onDoAction": "doAction_uiControl76_FkosdZ",
+                "onGetTemplate": "getTemplate_uiControl76_FkosdZ"
+              }
+            }
+          }
+        },
+        {
+          "id": "uiControl35_zD5xps",
+          "controlId": "control63_K76rUp",
+          "display": {
+            "adapterId": "custom",
+            "type": "custom",
+            "adapter": {
+              "templateType": "react",
+              "events": {
+                "onDoAction": "doAction_uiControl35_zD5xps",
+                "onGetTemplate": "getTemplate_uiControl35_zD5xps"
+              }
+            }
+          }
+        },
+        {
+          "id": "uiControl77_w5W5a6",
+          "controlId": "control91_4CA984",
+          "display": {
+            "adapterId": "custom",
+            "type": "custom",
+            "adapter": {
+              "templateType": "react",
+              "events": {
+                "onDoAction": "doAction_uiControl77_w5W5a6",
+                "onGetTemplate": "getTemplate_uiControl77_w5W5a6"
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "matchers": {
+    "page/title": {
+      "contexts": {
+        "context15_0usTqF": [
+          "云南省建设投资控股集团有限公司 云南建投集中采购管理系统",
+          "订单跟踪列表"
+        ]
+      }
+    },
+    "page/urls": {
+      "contexts": {
+        "context15_0usTqF": [
+          "jc.z.inja.com/gjc/base/main.do",
+          "ly.z.inja.com/gjc/oms/buyer/order/v.do?_m=list",
+          "jc.z.inja.com/gjc/base/main.do?loginType=YSP"
+        ]
+      }
+    },
+    "page/ids": {
+      "contexts": {
+        "context15_0usTqF": [
+          [
+            "__modalmini-",
+            "center",
+            "layout",
+            "mainframe",
+            "menubar",
+            "mini-",
+            "north",
+            "userImageId",
+            "west"
+          ],
+          [
+            "$cell$",
+            "__modalmini-",
+            "_grid_oms_order",
+            "buysuppliername",
+            "buysuppliername$text",
+            "employeename",
+            "employeename$text",
+            "lvyue-title",
+            "mini-",
+            "mini-$emptytext",
+            "mini-$filter$",
+            "mini-$headerCell$",
+            "mini-$number$",
+            "mini-$row$",
+            "mini-$summary$",
+            "name",
+            "name$text",
+            "needorgname",
+            "needorgname$text",
+            "plancode",
+            "plancode$text",
+            "projectname",
+            "projectname$text",
+            "state",
+            "state$text",
+            "state$value"
+          ],
+          [
+            "$cell$",
+            "__modalmini-",
+            "_grid_oms_order",
+            "buysuppliername",
+            "buysuppliername$text",
+            "employeename",
+            "employeename$text",
+            "lvyue-title",
+            "mini-",
+            "mini-$",
+            "mini-$ck$",
+            "mini-$emptytext",
+            "mini-$filter$",
+            "mini-$headerCell$",
+            "mini-$number$",
+            "mini-$row$",
+            "mini-$summary$",
+            "name",
+            "name$text",
+            "needorgname",
+            "needorgname$text",
+            "plancode",
+            "plancode$text",
+            "projectname",
+            "projectname$text",
+            "state",
+            "state$text",
+            "state$value"
+          ]
+        ]
+      }
+    },
+    "page/classes": {
+      "contexts": {
+        "context15_0usTqF": [
+          [
+            "CKiYVKmoOF",
+            "clear-",
+            "clearfix",
+            "collapse",
+            "ellipsis",
+            "feedback",
+            "gray",
+            "hassub",
+            "header",
+            "help",
+            "home",
+            "i_header",
+            "i_logo",
+            "i_logo_m",
+            "icon",
+            "icon-chevron-down",
+            "icon-chevron-left",
+            "iconfont",
+            "info",
+            "info-i",
+            "issub",
+            "menu",
+            "menu_blank",
+            "menu_item",
+            "mini-iconfont",
+            "mini-layout",
+            "mini-layout-border",
+            "mini-layout-proxy",
+            "mini-layout-proxy-north",
+            "mini-layout-proxy-west",
+            "mini-layout-region",
+            "mini-layout-region-body",
+            "mini-layout-region-center",
+            "mini-layout-region-header",
+            "mini-layout-region-icon",
+            "mini-layout-region-north",
+            "mini-layout-region-title",
+            "mini-layout-region-west",
+            "mini-layout-split",
+            "mini-layout-split-nodrag",
+            "mini-layout-split-north",
+            "mini-layout-split-west",
+            "mini-layout-spliticon",
+            "mini-modal",
+            "mini-panel",
+            "mini-panel-body",
+            "mini-panel-border",
+            "mini-panel-footer",
+            "mini-panel-header",
+            "mini-panel-header-inner",
+            "mini-panel-icon",
+            "mini-panel-title",
+            "mini-panel-toolbar",
+            "mini-panel-viewport",
+            "mini-resizer-trigger",
+            "mini-tools",
+            "mini-tools-close",
+            "mini-tools-collapse",
+            "mini-tools-min",
+            "mini-tools-restore",
+            "mini-window",
+            "module-header",
+            "out",
+            "pitch",
+            "pulldown",
+            "selected",
+            "shell",
+            "sublist",
+            "text",
+            "user",
+            "user-simple-box",
+            "user-simple-ctrl"
+          ],
+          [
+            "CKiYVKmoOF",
+            "icon-search",
+            "mini-button",
+            "mini-button-disabled",
+            "mini-button-icon",
+            "mini-button-icon-only",
+            "mini-button-icon-text",
+            "mini-button-plain",
+            "mini-button-text",
+            "mini-buttonedit",
+            "mini-buttonedit-border",
+            "mini-buttonedit-button",
+            "mini-buttonedit-buttons",
+            "mini-buttonedit-close",
+            "mini-buttonedit-icon",
+            "mini-buttonedit-input",
+            "mini-buttonedit-noInput",
+            "mini-buttonedit-trigger",
+            "mini-combobox",
+            "mini-datagrid",
+            "mini-fit",
+            "mini-grid",
+            "mini-grid-border",
+            "mini-grid-bottomCell",
+            "mini-grid-cell",
+            "mini-grid-cell-inner",
+            "mini-grid-cell-nowrap",
+            "mini-grid-cell-selected",
+            "mini-grid-column-splitter",
+            "mini-grid-columns",
+            "mini-grid-columns-lock",
+            "mini-grid-columns-view",
+            "mini-grid-emptyText",
+            "mini-grid-filterCell",
+            "mini-grid-filterRow",
+            "mini-grid-filterRow-lock",
+            "mini-grid-filterRow-view",
+            "mini-grid-focus",
+            "mini-grid-headerCell",
+            "mini-grid-headerCell-inner",
+            "mini-grid-headerCell-nowrap",
+            "mini-grid-headerCell-outer",
+            "mini-grid-pager",
+            "mini-grid-rightCell",
+            "mini-grid-row",
+            "mini-grid-row-selected",
+            "mini-grid-rows",
+            "mini-grid-rows-content",
+            "mini-grid-rows-lock",
+            "mini-grid-rows-view",
+            "mini-grid-rowstable",
+            "mini-grid-scrollHeaderCell",
+            "mini-grid-summaryCell",
+            "mini-grid-summaryRow",
+            "mini-grid-summaryRow-lock",
+            "mini-grid-summaryRow-view",
+            "mini-grid-table",
+            "mini-grid-topRightCell",
+            "mini-grid-viewport",
+            "mini-grid-vscroll",
+            "mini-grid-vscroll-content",
+            "mini-iconfont",
+            "mini-modal",
+            "mini-page-buttons",
+            "mini-pager",
+            "mini-pager-first",
+            "mini-pager-index",
+            "mini-pager-last",
+            "mini-pager-left",
+            "mini-pager-next",
+            "mini-pager-num",
+            "mini-pager-pages",
+            "mini-pager-prev",
+            "mini-pager-reload",
+            "mini-pager-right",
+            "mini-pager-size",
+            "mini-pager-sizetext",
+            "mini-panel",
+            "mini-panel-body",
+            "mini-panel-border",
+            "mini-panel-footer",
+            "mini-panel-header",
+            "mini-panel-header-inner",
+            "mini-panel-icon",
+            "mini-panel-title",
+            "mini-panel-toolbar",
+            "mini-panel-viewport",
+            "mini-popupedit",
+            "mini-resizer-trigger",
+            "mini-textbox",
+            "mini-textbox-border",
+            "mini-textbox-input",
+            "mini-toolbar",
+            "mini-tools",
+            "mini-tools-close",
+            "mini-tools-collapse",
+            "mini-tools-min",
+            "mini-tools-restore",
+            "mini-window",
+            "separator",
+            "user-simple-box",
+            "user-simple-ctrl"
+          ],
+          [
+            "CKiYVKmoOF",
+            "icon-search",
+            "mini-button",
+            "mini-button-disabled",
+            "mini-button-icon",
+            "mini-button-icon-only",
+            "mini-button-icon-text",
+            "mini-button-plain",
+            "mini-button-text",
+            "mini-buttonedit",
+            "mini-buttonedit-border",
+            "mini-buttonedit-button",
+            "mini-buttonedit-buttons",
+            "mini-buttonedit-close",
+            "mini-buttonedit-icon",
+            "mini-buttonedit-input",
+            "mini-buttonedit-noInput",
+            "mini-buttonedit-trigger",
+            "mini-combobox",
+            "mini-datagrid",
+            "mini-errorIcon",
+            "mini-fit",
+            "mini-grid",
+            "mini-grid-border",
+            "mini-grid-bottomCell",
+            "mini-grid-cell",
+            "mini-grid-cell-inner",
+            "mini-grid-cell-nowrap",
+            "mini-grid-cell-selected",
+            "mini-grid-column-splitter",
+            "mini-grid-columns",
+            "mini-grid-columns-lock",
+            "mini-grid-columns-view",
+            "mini-grid-emptyText",
+            "mini-grid-filterCell",
+            "mini-grid-filterRow",
+            "mini-grid-filterRow-lock",
+            "mini-grid-filterRow-view",
+            "mini-grid-focus",
+            "mini-grid-headerCell",
+            "mini-grid-headerCell-inner",
+            "mini-grid-headerCell-nowrap",
+            "mini-grid-headerCell-outer",
+            "mini-grid-pager",
+            "mini-grid-rightCell",
+            "mini-grid-row",
+            "mini-grid-row-selected",
+            "mini-grid-rows",
+            "mini-grid-rows-content",
+            "mini-grid-rows-lock",
+            "mini-grid-rows-view",
+            "mini-grid-rowstable",
+            "mini-grid-scrollHeaderCell",
+            "mini-grid-summaryCell",
+            "mini-grid-summaryRow",
+            "mini-grid-summaryRow-lock",
+            "mini-grid-summaryRow-view",
+            "mini-grid-table",
+            "mini-grid-topRightCell",
+            "mini-grid-viewport",
+            "mini-grid-vscroll",
+            "mini-grid-vscroll-content",
+            "mini-iconfont",
+            "mini-listbox",
+            "mini-listbox-border",
+            "mini-listbox-checkbox",
+            "mini-listbox-header",
+            "mini-listbox-hideCheckBox",
+            "mini-listbox-item",
+            "mini-listbox-items",
+            "mini-listbox-view",
+            "mini-modal",
+            "mini-page-buttons",
+            "mini-pager",
+            "mini-pager-first",
+            "mini-pager-index",
+            "mini-pager-last",
+            "mini-pager-left",
+            "mini-pager-next",
+            "mini-pager-num",
+            "mini-pager-pages",
+            "mini-pager-prev",
+            "mini-pager-reload",
+            "mini-pager-right",
+            "mini-pager-size",
+            "mini-pager-sizetext",
+            "mini-panel",
+            "mini-panel-body",
+            "mini-panel-border",
+            "mini-panel-footer",
+            "mini-panel-header",
+            "mini-panel-header-inner",
+            "mini-panel-icon",
+            "mini-panel-title",
+            "mini-panel-toolbar",
+            "mini-panel-viewport",
+            "mini-popup",
+            "mini-popupedit",
+            "mini-resizer-trigger",
+            "mini-shadow",
+            "mini-textbox",
+            "mini-textbox-border",
+            "mini-textbox-input",
+            "mini-toolbar",
+            "mini-tools",
+            "mini-tools-close",
+            "mini-tools-collapse",
+            "mini-tools-min",
+            "mini-tools-restore",
+            "mini-window",
+            "separator",
+            "user-simple-box",
+            "user-simple-ctrl"
+          ]
+        ]
+      }
+    },
+    "page/tagTriplets": {
+      "contexts": {
+        "context15_0usTqF": [
+          [
+            "-/-/DIV",
+            "-/-/SCRIPT",
+            "-/DIV/DIV",
+            "-/DIV/UL",
+            "A/I/IMG",
+            "DIV/DIV/A",
+            "DIV/DIV/DIV",
+            "DIV/DIV/IFRAME",
+            "DIV/DIV/SPAN",
+            "DIV/DIV/UL",
+            "DIV/UL/DIV",
+            "DIV/UL/LI",
+            "LI/A/I",
+            "LI/A/SPAN",
+            "LI/DIV/UL",
+            "LI/P/A",
+            "LI/P/I",
+            "LI/P/IMG",
+            "UL/LI/A",
+            "UL/LI/DIV",
+            "UL/LI/P"
+          ],
+          [
+            "-/-/DIV",
+            "-/-/SCRIPT",
+            "-/DIV/DIV",
+            "-/DIV/TABLE",
+            "A/SPAN/SPAN",
+            "DIV/DIV/A",
+            "DIV/DIV/DIV",
+            "DIV/DIV/IFRAME",
+            "DIV/DIV/SPAN",
+            "DIV/DIV/TABLE",
+            "DIV/TABLE/TBODY",
+            "SPAN/SPAN/INPUT-hidden",
+            "SPAN/SPAN/INPUT-text",
+            "SPAN/SPAN/SPAN",
+            "TABLE/TBODY/TR",
+            "TBODY/TR/TD",
+            "TD/A/SPAN",
+            "TD/DIV/A",
+            "TD/DIV/DIV",
+            "TD/SPAN/INPUT-hidden",
+            "TD/SPAN/INPUT-text",
+            "TD/SPAN/SPAN",
+            "TR/TD/A",
+            "TR/TD/DIV",
+            "TR/TD/SPAN"
+          ],
+          [
+            "-/-/DIV",
+            "-/-/SCRIPT",
+            "-/DIV/DIV",
+            "-/DIV/TABLE",
+            "A/SPAN/SPAN",
+            "DIV/DIV/A",
+            "DIV/DIV/DIV",
+            "DIV/DIV/IFRAME",
+            "DIV/DIV/INPUT-hidden",
+            "DIV/DIV/SPAN",
+            "DIV/DIV/TABLE",
+            "DIV/TABLE/TBODY",
+            "SPAN/SPAN/INPUT-hidden",
+            "SPAN/SPAN/INPUT-text",
+            "SPAN/SPAN/SPAN",
+            "TABLE/TBODY/TR",
+            "TBODY/TR/TD",
+            "TD/A/SPAN",
+            "TD/DIV/A",
+            "TD/DIV/DIV",
+            "TD/SPAN/INPUT-hidden",
+            "TD/SPAN/INPUT-text",
+            "TD/SPAN/SPAN",
+            "TR/TD/A",
+            "TR/TD/DIV",
+            "TR/TD/INPUT-checkbox",
+            "TR/TD/SPAN"
+          ]
+        ]
+      }
+    }
+  }
+}

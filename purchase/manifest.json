@@ -1,0 +1,217 @@
+{
+  "type": "adapter",
+  "short_name": "",
+  "version": "0.0.1",
+  "runtime_version": "2.5.3",
+  "description": "",
+  "options": {
+    "resource_intercept": {
+      "type": [],
+      "ignore": [
+        ".map"
+      ]
+    },
+    "resource_filter": [
+      {
+        "url_match": [
+          "^https:\\/\\/jc\\.z\\.inja\\.com\\/gjc\\/base\\/main\\.do.*"
+        ],
+        "charset": "utf-8",
+        "replaces": [
+          {
+            "regexp": "\\btop\\b",
+            "sub_str": "_ysp_top"
+          }
+        ]
+      }
+    ],
+    "resource_inject": [],
+    "unadapted": {
+      "timeout": 30000,
+      "rules": [
+        {
+          "match": ".*",
+          "type": "block"
+        }
+      ]
+    },
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+  },
+  "override_urls": [
+    {
+      "origin_url": [
+        "https:\\/\\/jc\\.z\\.inja\\.com\\/script\\/boot\\.js.*"
+      ],
+      "target_url": "override/boot.js",
+      "default_url": "https://jc.z.inja.com/script/boot.js.*"
+    },
+    {
+      "origin_url": [
+        "https:\\/\\/ly\\.z\\.inja\\.com\\/script\\/boot\\.js.*"
+      ],
+      "target_url": "override/boot2.js",
+      "default_url": "https://ly.z.inja.com/script/boot.js.*"
+    },
+    {
+      "origin_url": [
+        "https:\\/\\/ec\\.z\\.inja\\.com\\/portal\\/ec_ynjt\\/js\\/jquery-1\\.11\\.1\\.min\\.js"
+      ],
+      "target_url": "override/jquery-1.11.1.min.js",
+      "default_url": "https://ec.z.inja.com/portal/ec_ynjt/js/jquery-1.11.1.min.js"
+    },
+    {
+      "origin_url": [
+        "https:\\/\\/ec\\.z\\.inja\\.com\\/portal\\/ec_ynjt\\/js\\/datetimepicker\\/jquery\\.datetimepicker\\.js.*"
+      ],
+      "target_url": "override/jquery.datetimepicker.js",
+      "default_url": "https://ec.z.inja.com/portal/ec_ynjt/js/datetimepicker/jquery.datetimepicker.js?ver=v2.0"
+    },
+    {
+      "origin_url": [
+        "https:\\/\\/jc\\.z\\.inja\\.com\\/script\\/miniui\\/miniui\\.js.*"
+      ],
+      "target_url": "override/miniui.js",
+      "default_url": "https://jc.z.inja.com/script/miniui/miniui.js?ver=v6.0.171224"
+    },
+    {
+      "origin_url": [
+        "https:\\/\\/jc\\.z\\.inja\\.com\\/script\\/echarts\\/echarts-all\\.js"
+      ],
+      "target_url": "override/echarts-all.js",
+      "default_url": "https://jc.z.inja.com/script/echarts/echarts-all.js"
+    },
+    {
+      "origin_url": [
+        "https:\\/\\/jc\\.z\\.inja\\.com\\/script\\/webuploader\\/webuploader\\.js"
+      ],
+      "target_url": "override/webuploader.js",
+      "default_url": "https://jc.z.inja.com/script/webuploader/webuploader.js"
+    },
+    {
+      "origin_url": [
+        "https:\\/\\/jc\\.z\\.inja\\.com\\/script\\/raphael-min\\.js"
+      ],
+      "target_url": "override/raphael-min.js",
+      "default_url": "https://jc.z.inja.com/script/raphael-min.js"
+    },
+    {
+      "origin_url": [
+        "https:\\/\\/jc\\.z\\.inja\\.com\\/script\\/jquery\\/1\\.8\\.2\\/jquery\\.min\\.js"
+      ],
+      "target_url": "override/jquery.min.js",
+      "default_url": "https://jc.z.inja.com/script/jquery/1.8.2/jquery.min.js"
+    },
+    {
+      "origin_url": [
+        "https:\\/\\/jc\\.z\\.inja\\.com\\/script\\/swfupload\\/swfupload\\.js.*"
+      ],
+      "target_url": "override/swfupload.js",
+      "default_url": "https://jc.z.inja.com/script/swfupload/swfupload.js?ver=v6.0.171224"
+    },
+    {
+      "origin_url": [
+        "https:\\/\\/www\\.inja\\.com\\/index_ylshop\\/js\\/jquery-1\\.11\\.1\\.min\\.js"
+      ],
+      "target_url": "override/jquery-1.11.1.min.js",
+      "default_url": "https://www.inja.com/index_ylshop/js/jquery-1.11.1.min.js"
+    },
+    {
+      "origin_url": [
+        "https:\\/\\/www\\.inja\\.com\\/index_ylshop\\/js\\/swiper\\/swiper\\.min\\.js"
+      ],
+      "target_url": "override/swiper.min.js",
+      "default_url": "https://www.inja.com/index_ylshop/js/swiper/swiper.min.js"
+    },
+    {
+      "origin_url": [
+        "https:\\/\\/www\\.inja\\.com\\/((?!xcloud2json).)*png"
+      ],
+      "target_url": "override/logo-1.png",
+      "default_url": "https://www.inja.com/index_ylshop/new_images/logo-1.png"
+    },
+    {
+      "origin_url": [
+        "https:\\/\\/jc\\.z\\.inja\\.com\\/gjc\\/base\\/welcome\\.do"
+      ],
+      "target_url": "override/welcome.html",
+      "default_url": "https://jc.z.inja.com/gjc/base/welcome.do"
+    },
+    {
+      "origin_url": [
+        "https:\\/\\/ec\\.z\\.inja\\.com\\/index\\.do\\?returnURL.*caigoushang&from=YSP.*"
+      ],
+      "target_url": "override/login.html",
+      "default_url": "https://ec.z.inja.com/index.do?returnURL=https%3A%2F%2Fjc.z.inja.com%2Fgjc%2Fbase%2Fmain.do%3FloginType%3DYSP%26sys%3Dcaigoushang&from=YSP"
+    }
+  ],
+  "adapter_urls": [
+    {
+      "title": "index",
+      "url": "adapter://purchase/plan/index/index.json",
+      "matcher": [
+        "^https:\\/\\/jc\\.z\\.inja\\.com\\/gjc\\/base\\/main\\.do.*"
+      ],
+      "demo": []
+    },
+    {
+      "title": "login2",
+      "url": "adapter://purchase/plan/login/index.json",
+      "matcher": [
+        "^https:\\/\\/ec\\.z\\.inja\\.com\\/index\\.do.*caigoushang.*"
+      ],
+      "demo": []
+    },
+    {
+      "title": "new_list",
+      "url": "adapter://purchase/plan/new_list/index.json",
+      "matcher": [
+        "^https:\\/\\/ly\\.z\\.inja\\.com\\/gjc\\/oms\\/buyer\\/.*\\/v\\.do.*"
+      ],
+      "demo": []
+    },
+    {
+      "title": "ios_view_contract",
+      "url": "adapter://purchase/plan/ios_view_contract/index.json",
+      "matcher": [
+        "^https:\\/\\/jc\\.z\\.inja\\.com\\/gjc\\/buyer\\/ct\\/contract\\/v\\.do.*"
+      ],
+      "demo": [
+        "https://jc.z.inja.com/gjc/buyer/ct/contract/v.do?_m=mat/edit_sell2&reado%E2%80%A6=2a1b65eb9b3906bd5d0088d2fab36b93&status=2&purchasemode=2&objtype=2&type=2"
+      ]
+    },
+    {
+      "title": "view_approve",
+      "url": "adapter://purchase/plan/view_approve/index.json",
+      "matcher": [
+        "^https:\\/\\/.*\\.z\\.inja\\.com\\/gjc\\/base\\/wf\\/approval\\/view\\.do.*"
+      ],
+      "demo": [
+        "https://ly.z.inja.com/gjc/base/wf/approval/view.do?action=approval&belongid=4441a41dba064c66948af237d6b365d6&approvalid=ed9eb49cd2ca4d13b6ffb4c834b0d005&status=2&type=oms_pl10"
+      ]
+    },
+    {
+      "title": "map",
+      "url": "adapter://purchase/plan/map/index.json",
+      "matcher": [
+        "^https:\\/\\/wl\\.inja\\.com\\/ycihwl\\/SingleCarPage\\.jsp\\?LOAD_NO=.*"
+      ],
+      "demo": [
+        "https://wl.inja.com/ycihwl/SingleCarPage.jsp?LOAD_NO=JTYSCF1808130037"
+      ]
+    },
+    {
+      "title": "www",
+      "url": "adapter://purchase/plan/www/index.json",
+      "matcher": [
+        "^https:\\/\\/www\\.inja\\.com\\/.*caigoushang$"
+      ],
+      "demo": []
+    }
+  ],
+  "name": "采购商平台",
+  "default_url": "https://ec.z.inja.com/index.do?returnURL=https%3A%2F%2Fjc.z.inja.com%2Fgjc%2Fbase%2Fmain.do%3FloginType%3DYSP%26sys%3Dcaigoushang&from=YSP",
+  "scope": "purchase",
+  "start_url": "https://ec.z.inja.com/index.do?returnURL=https%3A%2F%2Fjc.z.inja.com%2Fgjc%2Fbase%2Fmain.do%3FloginType%3DYSP%26sys%3Dcaigoushang&from=YSP",
+  "fixed_version": 1,
+  "update_time": 1535449441661
+}

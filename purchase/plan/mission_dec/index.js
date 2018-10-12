@@ -1,0 +1,10 @@
+(function (win, ysp) {
+  ysp.runtime.Model.extendLoadingModel({
+    getData_control6_9vRVXI: function (elem) {},
+    doAction_uiControl6_rWpQHh: function (data, elem) {},
+    getTemplate_uiControl6_rWpQHh: function () {
+      var selfTemplate = "import { Header, HeaderLeft, HeaderRight } from 'ysp-interior-components';\nimport { back } from 'appRenderer';\nmodule.exports = React.createClass({\n  render: function() {\n    var me = this;\n    var data = this.props.customData;\n    return (\n      <Header amStyle=\"primary\" title=\"\u4EFB\u52A1\u8BE6\u60C5\">\n        <HeaderLeft>\n          <AMUI.Button amStyle=\"primary\" style={{ margin: 0 }} onClick={back}><span className=\"icon icon-left-nav\"></span>\u8FD4\u56DE</AMUI.Button>\n        </HeaderLeft>\n        <HeaderRight>\n          <AMUI.Button amStyle=\"primary\" style={{ margin: 0 }} onClick={this.showNav}><span className=\"icon icon-bars\"></span></AMUI.Button>\n        </HeaderRight>\n      </Header>\n    );\n  }\n});";
+      return "'use strict';\n\nvar _yspInteriorComponents = require('ysp-interior-components');\n\nvar _appRenderer = require('appRenderer');\n\nmodule.exports = React.createClass({\n  displayName: 'exports',\n\n  render: function render() {\n    var me = this;\n    var data = this.props.customData;\n    return React.createElement(\n      _yspInteriorComponents.Header,\n      { amStyle: 'primary', title: '\\u4EFB\\u52A1\\u8BE6\\u60C5' },\n      React.createElement(\n        _yspInteriorComponents.HeaderLeft,\n        null,\n        React.createElement(\n          AMUI.Button,\n          { amStyle: 'primary', style: { margin: 0 }, onClick: _appRenderer.back },\n          React.createElement('span', { className: 'icon icon-left-nav' }),\n          '\\u8FD4\\u56DE'\n        )\n      ),\n      React.createElement(\n        _yspInteriorComponents.HeaderRight,\n        null,\n        React.createElement(\n          AMUI.Button,\n          { amStyle: 'primary', style: { margin: 0 }, onClick: this.showNav },\n          React.createElement('span', { className: 'icon icon-bars' })\n        )\n      )\n    );\n  }\n});";
+    }
+  });
+})(window, ysp);

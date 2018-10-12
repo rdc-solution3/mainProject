@@ -1,0 +1,341 @@
+{
+  "version": "0.1",
+  "id": "map",
+  "targetURL": "https://wl.inja.com/ycihwl/SingleCarPage.jsp?LOAD_NO=JTYSCF1808130037",
+  "jsFile": "index.js",
+  "requires": {
+    "new_list": "../new_list/index.json"
+  },
+  "chineseName": "地图",
+  "description": "",
+  "controls": {
+    "control94_XWCmlJ": {
+      "location": {
+        "data": {
+          "tagName": "DIV"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "@id/word",
+            "prob": 2,
+            "value": "descendant::DIV[@id=\"allmap\"]/DIV[1]/DIV[1]"
+          },
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "value": "DIV.BMap_mask"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]"
+          },
+          {
+            "id": "elderLevel",
+            "value": {
+              "level": 0
+            }
+          },
+          {
+            "id": "shield",
+            "value": {
+              "zIndex": "9",
+              "width": 1467,
+              "height": 813
+            }
+          }
+        ]
+      },
+      "events": {
+        "onGetData": "getData_control94_XWCmlJ"
+      },
+      "intendedRole": "custom",
+      "roles": "element,custom",
+      "monitored": true,
+      "frameXPath": ""
+    },
+    "control178_iGoHVx": {
+      "location": {
+        "data": {
+          "tagName": "BODY"
+        },
+        "locators": [
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]"
+          }
+        ]
+      },
+      "events": {
+        "onGetData": "getData_control178_iGoHVx"
+      },
+      "intendedRole": "custom",
+      "roles": "element,custom",
+      "monitored": true,
+      "frameXPath": ""
+    }
+  },
+  "contexts": {
+    "context30_Z8XsqC": {
+      "controls": [
+        "control94_XWCmlJ",
+        "control178_iGoHVx"
+      ],
+      "anchors": [],
+      "urlAnchor": []
+    }
+  },
+  "flows": {
+    "flow121_huGB7R": {
+      "toContexts": [
+        {
+          "toContextId": "context30_Z8XsqC"
+        }
+      ]
+    },
+    "flow122_fz8Bu2": {
+      "fromContextId": "context30_Z8XsqC",
+      "fromAction": "doAction",
+      "fromControlId": "control94_XWCmlJ",
+      "toContexts": [
+        {
+          "toContextId": "context30_Z8XsqC"
+        },
+        {
+          "toContextId": "context24_qRKc24",
+          "toModelId": "new_list"
+        }
+      ]
+    }
+  },
+  "pages": {
+    "page30_VBys45": {
+      "contextId": "context30_Z8XsqC",
+      "layout": [
+        {
+          "id": "uiControl161_dARRUR",
+          "controlId": "control178_iGoHVx",
+          "display": {
+            "adapterId": "custom",
+            "type": "custom",
+            "adapter": {
+              "templateType": "react",
+              "events": {
+                "onDoAction": "doAction_uiControl161_dARRUR",
+                "onGetTemplate": "getTemplate_uiControl161_dARRUR"
+              }
+            }
+          }
+        },
+        {
+          "id": "uiControl80_V2DDH3",
+          "controlId": "control94_XWCmlJ",
+          "display": {
+            "adapterId": "custom",
+            "type": "custom",
+            "adapter": {
+              "templateType": "react",
+              "events": {
+                "onDoAction": "doAction_uiControl80_V2DDH3",
+                "onGetTemplate": "getTemplate_uiControl80_V2DDH3"
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "matchers": {
+    "page/title": {
+      "contexts": {
+        "context30_Z8XsqC": [
+          "单车轨迹"
+        ]
+      }
+    },
+    "page/urls": {
+      "contexts": {
+        "context30_Z8XsqC": [
+          "wl.inja.com/ycihwl/SingleCarPage.jsp?LOAD_NO=JTYSCF1808130037",
+          "wl.inja.com/ycihwl/SingleCarPage.jsp?LOAD_NO=JTYSCF1808080044"
+        ]
+      }
+    },
+    "page/ids": {
+      "contexts": {
+        "context30_Z8XsqC": [
+          [
+            "allmap",
+            "zoomer"
+          ]
+        ]
+      }
+    },
+    "page/classes": {
+      "contexts": {
+        "context30_Z8XsqC": [
+          [
+            "BMapLabel",
+            "BMap_button",
+            "BMap_checkbox",
+            "BMap_cpyCtrl",
+            "BMap_geolocationContainer",
+            "BMap_geolocationIcon",
+            "BMap_geolocationIconBackground",
+            "BMap_ieundefined",
+            "BMap_mask",
+            "BMap_noprint",
+            "BMap_omBtn",
+            "BMap_omBtnClosed",
+            "BMap_omCtrl",
+            "BMap_omInnFrame",
+            "BMap_omMapContainer",
+            "BMap_omOutFrame",
+            "BMap_omViewInnFrame",
+            "BMap_omViewMv",
+            "BMap_panE",
+            "BMap_panN",
+            "BMap_panS",
+            "BMap_panW",
+            "BMap_scaleBar",
+            "BMap_scaleCtrl",
+            "BMap_scaleHBar",
+            "BMap_scaleLBar",
+            "BMap_scaleRBar",
+            "BMap_scaleTxt",
+            "BMap_smcbg",
+            "BMap_stdMpCtrl",
+            "BMap_stdMpGeolocation",
+            "BMap_stdMpPan",
+            "BMap_stdMpPanBg",
+            "BMap_stdMpSlider",
+            "BMap_stdMpSliderBar",
+            "BMap_stdMpSliderBgBot",
+            "BMap_stdMpSliderBgTop",
+            "BMap_stdMpSliderMask",
+            "BMap_stdMpType",
+            "BMap_stdMpZoom",
+            "BMap_stdMpZoomIn",
+            "BMap_stdMpZoomOut",
+            "BMap_zlCity",
+            "BMap_zlCountry",
+            "BMap_zlHolder",
+            "BMap_zlProv",
+            "BMap_zlSt",
+            "BMap_zoomer",
+            "anchorBL",
+            "anchorBR",
+            "anchorTL",
+            "anchorTR",
+            "pano_close",
+            "pano_pc_indoor_exit",
+            "quad"
+          ],
+          [
+            "BMapLabel",
+            "BMap_Marker",
+            "BMap_button",
+            "BMap_checkbox",
+            "BMap_cpyCtrl",
+            "BMap_geolocationContainer",
+            "BMap_geolocationIcon",
+            "BMap_geolocationIconBackground",
+            "BMap_ieundefined",
+            "BMap_mask",
+            "BMap_noprint",
+            "BMap_omBtn",
+            "BMap_omBtnClosed",
+            "BMap_omCtrl",
+            "BMap_omInnFrame",
+            "BMap_omMapContainer",
+            "BMap_omOutFrame",
+            "BMap_omViewInnFrame",
+            "BMap_omViewMv",
+            "BMap_panE",
+            "BMap_panN",
+            "BMap_panS",
+            "BMap_panW",
+            "BMap_scaleBar",
+            "BMap_scaleCtrl",
+            "BMap_scaleHBar",
+            "BMap_scaleLBar",
+            "BMap_scaleRBar",
+            "BMap_scaleTxt",
+            "BMap_smcbg",
+            "BMap_stdMpCtrl",
+            "BMap_stdMpGeolocation",
+            "BMap_stdMpPan",
+            "BMap_stdMpPanBg",
+            "BMap_stdMpSlider",
+            "BMap_stdMpSliderBar",
+            "BMap_stdMpSliderBgBot",
+            "BMap_stdMpSliderBgTop",
+            "BMap_stdMpSliderMask",
+            "BMap_stdMpType",
+            "BMap_stdMpZoom",
+            "BMap_stdMpZoomIn",
+            "BMap_stdMpZoomOut",
+            "BMap_zlCity",
+            "BMap_zlCountry",
+            "BMap_zlHolder",
+            "BMap_zlProv",
+            "BMap_zlSt",
+            "BMap_zoomer",
+            "anchorBL",
+            "anchorBR",
+            "anchorTL",
+            "anchorTR",
+            "pano_close",
+            "pano_pc_indoor_exit",
+            "quad"
+          ]
+        ]
+      }
+    },
+    "page/tagTriplets": {
+      "contexts": {
+        "context30_Z8XsqC": [
+          [
+            "-/-/DIV",
+            "-/-/SCRIPT",
+            "-/DIV/A",
+            "-/DIV/DIV",
+            "DIV/A/IMG",
+            "DIV/A/SPAN",
+            "DIV/DIV/A",
+            "DIV/DIV/DIV",
+            "DIV/DIV/IMG",
+            "DIV/DIV/LABEL",
+            "DIV/DIV/SPAN",
+            "DIV/SPAN/SPAN",
+            "SPAN/SPAN/A"
+          ],
+          [
+            "-/-/DIV",
+            "-/-/SCRIPT",
+            "-/DIV/A",
+            "-/DIV/DIV",
+            "DIV/A/IMG",
+            "DIV/A/SPAN",
+            "DIV/DIV/A",
+            "DIV/DIV/DIV",
+            "DIV/DIV/IMG",
+            "DIV/DIV/LABEL",
+            "DIV/DIV/SPAN",
+            "DIV/DIV/svg",
+            "DIV/SPAN/DIV",
+            "DIV/SPAN/LABEL",
+            "DIV/SPAN/SPAN",
+            "DIV/svg/path",
+            "SPAN/DIV/IMG"
+          ]
+        ]
+      }
+    }
+  }
+}

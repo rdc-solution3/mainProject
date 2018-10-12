@@ -1,0 +1,55 @@
+{
+  "special_models": [
+    {
+      "path": "plan/login/index.json"
+    }
+  ],
+  "common_js": [
+    {
+      "path": "lib/base.js"
+    },
+    {
+      "path": "lib/customTemplate.js"
+    },
+    {
+      "path": "lib/amazeui.touch.min.js",
+      "sourceType": "local",
+      "target": "face"
+    },
+    {
+      "path": "lib/pipei.js",
+      "sourceType": "local",
+      "target": "face"
+    },
+    {
+      "path": "https://api.map.baidu.com/api?v=2.0&ak=hwhxWUwFqDXT06ge4QldTszCpkp301yd",
+      "sourceType": "online",
+      "target": "face"
+    },
+    {
+      "path": "https://api.map.baidu.com/getscript?v=2.0&ak=hwhxWUwFqDXT06ge4QldTszCpkp301yd&services=&t=20180629105706",
+      "sourceType": "online",
+      "target": "face"
+    },
+    {
+      "path": "https://api.map.baidu.com/library/LuShu/1.2/src/LuShu_min.js",
+      "sourceType": "online",
+      "target": "face"
+    }
+  ],
+  "common_css": [
+    {
+      "path": "lib/base.css"
+    },
+    {
+      "path": "lib/font-awesome.min.css",
+      "sourceType": "local",
+      "target": "face"
+    },
+    {
+      "path": "lib/amazeui.touch.min.css",
+      "sourceType": "local",
+      "target": "face"
+    }
+  ]
+}

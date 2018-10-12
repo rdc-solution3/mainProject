@@ -1,0 +1,477 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<title>云上营家-建筑行业供应链管理、电子商务交易、供应链金融服务、物流服务电商平台</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="Description" content="云南云采网-建筑行业大宗材料集中采购、电子商务交易、互联网金融服务、物流服务电商平台">
+		<meta name="Keywords" content="集采,云南云采,集中采购,云采购,采购电子商务平台,施工方招标,招标,采购,招投标,招标信息,投标">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta http-equiv="Pragma" content="no-cache">
+		
+		<script type="text/javascript" src="/portal/ec_ynjt/js/jquery-1.11.1.min.js"></script>
+		<!-- <script type="text/javascript" src="/portal/ec_ynjt/js/jCommon.js?ver=v2.0"></script>
+		<script type="text/javascript" src="/portal/ec_ynjt/js/layer/layer.js?ver=v2.0"></script>
+		<script type="text/javascript" src="/portal/ec_ynjt/js/portal.js?ver=v2.0"></script>
+		<script type="text/javascript" src="/portal/ec_ynjt/js/jquery.selectlist.js?ver=v2.0"></script>
+		<script type="text/javascript" src="/portal/ec_ynjt/js/flexslider/jquery.flexslider-min.js?ver=v2.0"></script>
+		<script type="text/javascript" src="/portal/ec_ynjt/js/datetimepicker/jquery.datetimepicker.js?ver=v2.0"></script>
+		<script type="text/javascript" src="/portal/ec_ynjt/js/scroll/jquery.scroll.js?ver=v2.0"></script>
+		<script type="text/javascript" src="/portal/ec_ynjt/js/fullpage/jquery.fullPage.min.js?ver=v2.0"></script>
+		<script type="text/javascript" src="/portal/ec_ynjt/js/globalbar.js?ver=v2.0"></script> -->
+		<!-- <script>
+		alert("这才进入登录页");
+		</script> -->
+	</head>
+
+	<body>
+		<div class="topbar bgf0">
+  <div class="wrapper">
+  <input type="hidden" value="" id="acount">
+    <div class="login-bar">您好，欢迎来到
+      <span class="cb">
+      云南建投电子商务平台      </span>
+      <em class="ml10 mr10 c9">|</em>
+            			      		<a  class="c6" href='https://www.inja.com/login.html'>登录</a>
+	      		<!-- <em class="ml10 mr10 c9">|</em><a  class="c6" href='https://www.inja.com/register.html'>注册</a> -->
+	      	            
+    </div>
+   	
+	
+    <div class="link-bar">
+		<ul>
+						<li class="link">
+				<a class="c6" class="co" href="/index_about.do?doccode=aboutUs&chnlcode=about" target="_blank">关于我们 </a>
+				<em class="ml10 mr10 c9">|</em>
+			</li>
+			<li>400-6565215 </li>
+		</ul>
+    </div>
+  </div>
+</div>
+
+
+<div class="reg-box" style="display: none;">
+	<p>， 申请成为供应商需要选择您所提供的服务类型（可多选），审核时间为1-2个工作日：</p>
+	<div class="reg-check-list">
+		<ul>
+						<div class="clear-2"></div>
+		</ul>
+	</div>
+</div>
+
+<script type="text/javascript">
+	// $(function(){
+	// 	$(".pt-list").hover(function(){
+	// 	    $(this).addClass("pt-hover");
+	// 	},function(){
+	// 	    $(this).removeClass("pt-hover");
+	// 	});
+	// })
+	
+	
+	// function modifyPassword() {
+	// 	   layer.open({
+	// 		  skin: 'cwd-modal',
+	// 		  type: 2,
+	// 	      title: ['修改密码','padding: 0 20px; text-align: center; font-size: 16px; border-radius: 5px 5px 0 0;'],
+	// 	      shadeClose: true,
+	// 	      shade: [0.7 , '#000' , true],
+	// 	      maxmin: false, //开启最大化最小化按钮
+	// 	      area: ['550px', '380px'],
+	// 	      content: '/portal/ec_ynjt/modify_password.vm'
+	// 	   });
+	// }
+
+ //    function init(){
+	//  	jQuery.ajax({  
+ //            type: "POST",
+ //            url: "/common/jsonpsso?uscd=&uspw=&operation=ssoLogin",  
+ //            dataType: "jsonp",
+ //            jsonp:"jsonpCallback",
+ //            success: function(data){ 
+ //            	if(data.Header.return_code=='true'){
+ //            		jQuery(".displayCls").show();
+ //        		    jQuery("#em1").show();
+ //            	}
+ //            },  
+ //            error: function(XMLHttpRequest, textStatus, errorThrown){  
+ //            	console.log("XMLHttpRequest.status:"+XMLHttpRequest.status+"   XMLHttpRequest.readyState:"+XMLHttpRequest.readyState+"    textStatus:"+textStatus);
+ //            }  
+ //        });  
+ //    }
+    
+	// function logisticalClick(){
+ //    	jQuery.ajax({  
+ //            type: "POST",
+ //            url: "/common/jsonpsso?uscd=&uspw=&operation=ssoLogin",  
+ //            dataType: "jsonp",
+ //            jsonp:"jsonpCallback",
+ //            success: function(data){ 
+ //            	if(data.Header.return_code=='true'){
+					 
+ //            	}
+ //            },  
+ //            error: function(XMLHttpRequest, textStatus, errorThrown){  
+ //            	console.log("XMLHttpRequest.status:"+XMLHttpRequest.status+"   XMLHttpRequest.readyState:"+XMLHttpRequest.readyState+"    textStatus:"+textStatus);
+ //            }  
+ //        }); 
+ //    }
+
+	// function applyPurchaser() {
+	// 	layer.confirm('，是否确认申请同时成为采购商？申请采购商的审核时间为1-2个工作日。', {
+	// 	  btn: ['确认申请','取消']
+	// 	}, function(){
+	// 		layer.closeAll();
+	// 	 	jQuery.post('/register/apply.do?identity=1&aid=', function() {
+	// 	 		window.location.href='/index.jsp';
+	// 	 	});
+	// 	}, function(){
+		  
+	// 	});
+	// }
+	
+	// function doLogout() {
+	// 	layer.confirm('确定要退出系统吗？', {
+	// 		title: false,
+	// 		skin: 'layer-confirm-modal',
+	// 		closeBtn: 0,
+	// 	  btn: ['确定','取消'] 
+	// 	}, function(index, layero){
+	// 		layer.close(index); 
+	// 	  	window.location.href='/logout.do';
+	// 	}, function(){
+			
+	// 	});
+	// }
+	
+    	
+	// $(".reg-pop").bind("click",function(){
+	// 	layer.open({
+	// 		type: 1,
+	// 		title: false,
+	// 		closeBtn: 0,
+	// 		shadeClose: true,
+	// 		scrollbar: false,
+	// 		skin: 'yourclass',
+	// 		area: ['500px', '400px'],
+	// 		content:$(".reg-box"),
+	// 	    btn: ['确认申请', '取消'],
+	// 	    yes: function(index, layero){  
+	// 	      	var data = '';
+	// 			jQuery("input:checkbox[name='categories']").each(function() {
+	// 				if (jQuery(this).is(":checked")) {
+	// 					data += '&categories='+jQuery(this).val();
+	// 				}
+	// 			});
+	// 			if(data.length > 0) {
+	// 				layer.close(index); 
+	// 				jQuery.ajax({
+	// 					url: '/register/apply.do?identity=2&aid=',
+	// 					data: data,
+	// 					type: 'post',
+	// 					success: function() {
+	// 						layer.msg("提交成功");
+	// 						window.location.href='/index.jsp';
+	// 					},
+	// 					complete: function() {
+	// 						layer.close(index); 
+	// 					},
+	// 				});
+	// 			} else {
+	// 				layer.alert("请选择贵公司提供服务的类型(可多选)");
+	// 			}
+	// 	    },btn2: function(index){ 
+	// 	    	layer.close(index) 
+	// 	    } 
+	// 	}); 
+	// });
+	
+	// function onCenter(){
+	// 	jQuery.ajax({
+	// 		url: '/index/market/validateLoginAuthStatus.do',
+	// 		data: {},
+	// 		type: 'post',
+	// 		success: function(rs) {
+	// 			debugger;
+	// 			 if(rs.success){
+	// 				  if("isInside" == rs.data.msg) {//内部买家账号，还没注册过的
+	// 		    		  layer.confirm('您无权访问菜单，是否立即完成注册？', {
+	// 		    				title: false,
+	// 		    				skin: 'layer-confirm-modal',
+	// 		    				closeBtn: 0,
+	// 		    			  btn: ['确定','取消'] 
+	// 		    			}, function(){
+	// 		    			  	window.location.href = '/register/perfect.do';
+	// 		    			}, function(){
+	// 		    				return ;
+	// 		    			});
+			    	 
+	// 				  }else{
+	// 		    		  window.location.href='/gjc/core/simple/v.do?_m=/portal/ec_ynjt/user/user_info.vm';
+	// 		    	  }
+	// 			 }
+	// 		},
+			
+	// 	});
+		
+		
+	// }
+	
+</script>
+		<div class="header mb20 mt20">
+			<div class="wrapper">
+				<h1 class="">
+				<a href="/index.jsp"><img class="vam"
+					src="/portal/ec_ynjt/style/imgs/logo.png"></a> <span
+					class="reg-txt">欢迎登录</span>
+				<div class="clear-2"></div>
+			</h1>
+			</div>
+		</div>
+		<div class="login_banner">
+			<div class="mid clearfix">
+				<div class="loginimage"><img src="/portal/ec_ynjt/style/imgs/reg-login/login-img.png"></div>
+				<div class="loginBord">
+															<div class="tab-wrapper">
+						<div class="dib active" data-val="1" onclick="showLogintype(this)">
+							企业用户
+						</div>
+						<div class="dib " data-val="0" onclick="showLogintype(this)">
+							个人用户
+						</div>
+					</div>
+					<div class="gyc_msg">
+								<b id="errormsg" style="color:#f60;"></b>
+							</div>
+					<div class="login-form">
+						<form id="form-1" method="post" action="/login.do?returnURL=https://jc.z.inja.com/gjc/base/main.do?loginType=YSP＆sys=caigoushang&from=YSP" onsubmit="return doLogin();">
+							<input type="hidden" id="type" name="type" value="1"/>
+							<div class="textbox_ui user">
+								<label></label>
+								<input type="text" placeholder="已验证手机/用户名" id="account" name="account" autofocus="" autocomplete="off" value="" style="height:17px;" maxlength="17">
+								<div class="focus_text">请输入登录名，登录名可能是您的手机号或用户名</div>
+								<div class="invalid" style="display: none;"> <i></i>
+									<div class="msg"></div>
+								</div>
+							</div>
+							<div class="textbox_ui pass">
+								<label></label>
+								<input type="password" name="password" id="password" placeholder="密码" autocomplete="off" style="height:17px;">
+								<div class="focus_text">请输入您的密码，您的密码可能为字母、数字或符号的组合</div>
+								<div class="invalid"> <i></i>
+									<div class="msg"></div>
+								</div>
+							</div>
+							
+							
+							<div class="verityWrap" style="display: none;">
+								<div class="textbox_ui">
+									<label></label>
+									<input type="text" name="validatecode" placeholder="验证码" autocomplete="off" id="validatecode">
+									<div class="focus_text">按右图填写，不区分大小写</div>
+									<div class="invalid"> <i></i>
+										<div class="msg"></div>
+									</div>
+								</div>
+								<span id="change_verify_code">
+									<img id="imgVerifyCode" src="/www/getValidatecode.do" width="100" height="25" onclick="this.src='/www/getValidatecode.do?'+(new Date()).toString() +'' " /> 
+								</span> 
+							</div>
+							
+							<p class="forget-container">
+								<input id="rememberme" name="rememberme" type="checkbox"/> 记住密码
+								<span style="float:right;">
+									<img class="vam" src="/portal/ec_ynjt/img/connect_logo_qq.png"/> 
+									<a href="javascript:void(0)" onclick="qqLogin()">QQ账号登录</a>
+									<img class="vam" src="/portal/ec_ynjt/img/icon16_wx_logo.png" style="margin-left:10px"/> 
+									<a href="javascript:void(0)" onclick="wxLogin()">微信账号登录</a>
+								</span>
+							</p>
+							<input id="login" name="login" class="loginbtn submit_btn bgcdb" type="submit" value="登 录" style="display: block; width: 100%;">
+							<p class="db"> 
+																	<a id="aRegister" class="fr" href="/register/enterprise.do">立即注册</a>
+																
+								<a id="aForgot" class="fl" href="/forgotpage.do?type=1">忘记密码?</a>
+							</p>
+							
+						</form>
+					</div>
+					<div class="shadow_l"></div>
+					<div class="shadow_r"></div>
+				</div>
+			</div>
+		</div>
+		<input type="hidden" value="open" id="checkBrowserModal">
+		<div class="footer">
+			<div class="wrapper">
+				<div class="tac f12 mt15">
+					<p>&copy;2016-2017&nbsp;&nbsp;云南省建设投资控股集团有限公司&nbsp;&nbsp;All Rights Reserved&nbsp;&nbsp;
+						<a href="http://www.miibeian.gov.cn" target="_blank">滇ICP备15008381号-2</a>
+					</p>
+					</li>
+				</div>
+			</div>
+		</div>
+		<script>
+			var _hmt = _hmt || [];
+			(function() {
+				var hm = document.createElement("script");
+				hm.src = "https://hm.baidu.com/hm.js?7d903100c2bed03d4bab38de1f3f9e89";
+				var s = document.getElementsByTagName("script")[0];
+				s.parentNode.insertBefore(hm, s);
+			})();
+		</script>
+		<!-- <script type="text/javascript" src="/portal/ec_ynjt/js/Gjc.validate.js"></script>
+		<script type="text/javascript" src="/portal/ec_ynjt/js/layer/layer.js"></script>
+		<script type="text/javascript" src="/script/browser/checkbrowser.js"></script> -->
+		<script type="text/javascript" src="/portal/ec_ynjt/js/jquery.cookie.js?ver=v2.0"></script>
+		<script type="text/javascript">
+			jQuery(function() {
+				// var error = jQuery.request('_ERROR');
+				// if('qq' == error) {
+				// 	jQuery('#errormsg').html('QQ号未绑定账号');
+				// 	jQuery(".gyc_msg").addClass("active");
+				// } else if('wx' == error) {
+				// 	jQuery('#errormsg').html('微信号未绑定账号');
+				// 	jQuery(".gyc_msg").addClass("active");
+				// }
+			
+				// jQuery(document).keyup(function(event) {
+				// 	if(event.keyCode == 13) {
+				// 		doLogin();
+				// 	}
+				// });
+
+				//初始化页面时验证是否记住了密码
+				if(jQuery.cookie("remembermeck") == "true") {
+					jQuery("#rememberme").attr("checked", "checked");
+					jQuery("#account").val(jQuery.cookie("accountck"));
+					jQuery("#password").val(jQuery.cookie("passwordck"));
+				}
+			});
+
+			function doLogin() {
+				var account = jQuery.trim(jQuery('#account').val());
+				if(account == null || account.length < 1) {
+					jQuery('#errormsg').empty().html('请填写用户名');
+					jQuery(".gyc_msg").addClass("active");
+					jQuery('#imgVerifyCode').click();
+					return false;
+				}
+
+				var password = jQuery.trim(jQuery('#password').val());
+				if(password == null || password.length < 1) {
+					jQuery('#errormsg').empty().html('请填写密码');
+					jQuery(".gyc_msg").addClass("active");
+					jQuery('#imgVerifyCode').click();
+					return false;
+				}
+
+				
+				//jquery1.6以后获取checkbox是否选中，用.prop。如果用.attr("checked")始终得到的都会是checked
+				if(jQuery("#rememberme").prop("checked")) {
+					var account = jQuery("#account").val();
+					var password = jQuery("#password").val();
+					jQuery.cookie("remembermeck", "true", {
+						expires: 7
+					}); // 存储一个带7天期限的 cookie
+					jQuery.cookie("accountck", account, {
+						expires: 7
+					}); // 存储一个带7天期限的 cookie
+					jQuery.cookie("passwordck", password, {
+						expires: 7
+					}); // 存储一个带7天期限的 cookie
+				} else {
+					jQuery.cookie("remembermeck", "false", {
+						expires: -1
+					}); // 删除 cookie
+					jQuery.cookie("accountck", '', {
+						expires: -1
+					});
+					jQuery.cookie("passwordck", '', {
+						expires: -1
+					});
+				}
+				
+				$('#login').attr('disabled',"true");
+				return true;
+			}
+			
+			// function showLogintype(sender) {
+			// 	$(sender).parent().children().removeClass("active");
+			// 	$(sender).addClass("active");
+				
+			// 	var index = $(sender).data("val");
+			// 	$('#type').val(index);
+				
+			// 	if(index == '0') {
+			// 		$('#aRegister').attr('href', '/register/personal.do');
+			// 		$('#aForgot').attr('href', '/forgotpage.do?type=0');
+			// 	} else if(index == '1'){
+			// 		$('#aRegister').attr('href', '/register/enterprise.do');
+			// 		$('#aForgot').attr('href', '/forgotpage.do?type=1');
+			// 	}
+			// }
+			
+			// function qqLogin() {
+			// 	var returnUrl = encodeURIComponent('https://ec.z.inja.com' + '/qqLogin.do');
+			// 	location = 'https://graph.qq.com/oauth2.0/authorize?response_type=code&client_id=101440536&redirect_uri='+returnUrl;
+			// }
+			
+			// function wxLogin() {
+			// 	var returnUrl = encodeURIComponent('https://ec.z.inja.com' + '/wxLogin.do');
+			// 	location = 'https://open.weixin.qq.com/connect/qrconnect?appid=wxa2e8597b2362b23e&redirect_uri='+returnUrl+'&response_type=code&scope=snsapi_login&state=STATE#wechat_redirect';
+			// }
+		</script>
+		<script>
+			var doc=document;
+			var username=doc.querySelector("#account");
+			var password=doc.querySelector("#password");
+			var btn=doc.querySelector("#login");
+			var form=doc.querySelector("#form-1");
+			try{
+				if(top.ysp.appMain.isIOS()){
+				    if(top && top.yspUser){
+					    if(top.yspUser.getUsername('local')!=""){
+							//判断权限
+							if(Number(top.yspUser.getDepartmentid('local'))==1){
+								doc.getElementById("errormsg").innerText = "此账号无权限！";
+								alert("此账号无权限！");
+								top.ysp.appMain.closeWindow();
+							}
+							username.value=top.yspUser.getUsername('local');
+							username.dispatchEvent(new Event("change"));
+							password.value=top.yspUser.getPassword('local');
+							password.dispatchEvent(new Event("change"));
+							setTimeout(function(){
+								form.submit();
+							},200)
+					    }
+				    }
+			  	}else if(ysp.appMain.isAndroid()){
+				    if(yspCheckIn.getUserName()!=""){
+				      	//判断权限
+				        if(Number(yspCheckIn.getDepartmentId()) == 1) {
+				          doc.getElementById("errormsg").innerText = "此账号无权限！";
+				          alert("此账号无权限！");
+				          ysp.appMain.closeWindow();
+				        }
+				        
+				        username.value=yspCheckIn.getUserName();
+				        username.dispatchEvent(new Event("change"));
+				        password.value=yspCheckIn.getPassword();
+				        password.dispatchEvent(new Event("change"));
+				        setTimeout(function(){
+				          form.submit();
+				        },200)
+				    }
+				}
+			}catch(err){
+				console.log("调用客户端方法出错了")
+			}
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,20 @@
+{
+  "replace": [
+    {
+      "type": "js",
+      "remote": [
+        "https:\\/\\/jc\\.z\\.inja\\.com\\/script\\/boot\\.js"
+      ],
+      "local": "boot.js",
+      "time": 1522059317280
+    },
+    {
+      "type": "js",
+      "remote": [
+        "https:\\/\\/ly\\.z\\.inja\\.com\\/script\\/boot\\.js"
+      ],
+      "local": "boot2.js",
+      "time": 1522059323045
+    }
+  ]
+}

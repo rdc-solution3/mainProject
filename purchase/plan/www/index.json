@@ -1,0 +1,265 @@
+{
+  "version": "0.1",
+  "id": "www",
+  "targetURL": "https://www.inja.com/#caigoushang",
+  "jsFile": "index.js",
+  "requires": {
+    "www": "../www/index.json"
+  },
+  "chineseName": "www",
+  "description": "",
+  "firstPaintEnable": false,
+  "controls": {
+    "control93_a0S78N": {
+      "location": {
+        "data": {
+          "tagName": "DIV"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "value": "DIV.dowebok-hd"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/DIV[1]"
+          }
+        ]
+      },
+      "events": {
+        "onGetData": "getData_control93_a0S78N"
+      },
+      "intendedRole": "custom",
+      "roles": "element,custom",
+      "monitored": true,
+      "frameXPath": ""
+    },
+    "control179_fcCtWR": {
+      "location": {
+        "data": {
+          "tagName": "DIV"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "value": "DIV.dowebok-hd"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/DIV[1]"
+          }
+        ]
+      },
+      "roles": "element",
+      "text": "\n    \n        \n        \n            \n                首页\n            \n            \n                品牌印象\n            \n            \n                关于我们\n                \n            \n            \n                新闻中心\n            \n            \n                下载中心\n            \n\n        \n\t\t        \n            \n                登录\n            \n            \n                注册\n            \n        \n    \n",
+      "frameXPath": ""
+    }
+  },
+  "contexts": {
+    "context1_O2pWNO": {
+      "controls": [
+        "control93_a0S78N"
+      ],
+      "anchors": [
+        "control179_fcCtWR"
+      ],
+      "urlAnchor": [
+        "https://www.inja.com/#caigoushang"
+      ]
+    }
+  },
+  "flows": {
+    "flow123_syoysT": {
+      "toContexts": [
+        {
+          "toContextId": "context1_O2pWNO",
+          "toModelId": "www"
+        },
+        {
+          "toContextId": "context1_O2pWNO"
+        }
+      ]
+    },
+    "flow124_tUcVTt": {
+      "fromContextId": "context1_O2pWNO",
+      "fromAction": "doAction",
+      "fromControlId": "control93_a0S78N",
+      "toContexts": [
+        {
+          "toContextId": "context1_O2pWNO"
+        }
+      ]
+    }
+  },
+  "pages": {
+    "page1_FvvfrQ": {
+      "contextId": "context1_O2pWNO",
+      "layout": [
+        {
+          "id": "uiControl79_FJgXc4",
+          "controlId": "control93_a0S78N",
+          "display": {
+            "adapterId": "custom",
+            "type": "custom",
+            "adapter": {
+              "templateType": "react",
+              "events": {
+                "onDoAction": "doAction_uiControl79_FJgXc4",
+                "onGetTemplate": "getTemplate_uiControl79_FJgXc4"
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "matchers": {
+    "page/title": {
+      "contexts": {
+        "context1_O2pWNO": [
+          "云上营家"
+        ]
+      }
+    },
+    "page/urls": {
+      "contexts": {
+        "context1_O2pWNO": [
+          "www.inja.com/"
+        ]
+      }
+    },
+    "page/ids": {
+      "contexts": {
+        "context1_O2pWNO": [
+          [
+            "banner",
+            "bannerSwiper",
+            "bannerpagination"
+          ]
+        ]
+      }
+    },
+    "page/classes": {
+      "contexts": {
+        "context1_O2pWNO": [
+          [
+            "about",
+            "aboutBox",
+            "about_box",
+            "active",
+            "container",
+            "dowebok-hd",
+            "flex",
+            "footer",
+            "footer-info",
+            "footer-qycode",
+            "footer-qycode-item",
+            "inner",
+            "loginBar",
+            "loginBar-item",
+            "nav",
+            "pagination",
+            "pb",
+            "pt",
+            "sub-item",
+            "sub-item-box",
+            "swiper-container",
+            "swiper-container-horizontal",
+            "swiper-notification",
+            "swiper-pagination-bullet",
+            "swiper-pagination-bullet-active",
+            "swiper-pagination-bullets",
+            "swiper-pagination-clickable",
+            "swiper-slide",
+            "swiper-slide-active",
+            "swiper-slide-duplicate",
+            "swiper-slide-duplicate-next",
+            "swiper-slide-next",
+            "swiper-slide-prev",
+            "swiper-wrapper"
+          ],
+          [
+            "about",
+            "aboutBox",
+            "about_box",
+            "active",
+            "container",
+            "dowebok-hd",
+            "flex",
+            "footer",
+            "footer-info",
+            "footer-qycode",
+            "footer-qycode-item",
+            "inner",
+            "loginBar",
+            "loginBar-item",
+            "nav",
+            "pagination",
+            "pb",
+            "pt",
+            "sub-item",
+            "sub-item-box",
+            "swiper-container",
+            "swiper-container-horizontal",
+            "swiper-notification",
+            "swiper-pagination-bullet",
+            "swiper-pagination-bullet-active",
+            "swiper-pagination-bullets",
+            "swiper-pagination-clickable",
+            "swiper-slide",
+            "swiper-slide-active",
+            "swiper-slide-duplicate",
+            "swiper-slide-duplicate-active",
+            "swiper-slide-duplicate-next",
+            "swiper-slide-next",
+            "swiper-slide-prev",
+            "swiper-wrapper"
+          ]
+        ]
+      }
+    },
+    "page/tagTriplets": {
+      "contexts": {
+        "context1_O2pWNO": [
+          [
+            "-/-/DIV",
+            "-/-/SCRIPT",
+            "-/DIV/DIV",
+            "DIV/A/H3",
+            "DIV/A/IMG",
+            "DIV/A/P",
+            "DIV/DIV/A",
+            "DIV/DIV/DIV",
+            "DIV/DIV/H1",
+            "DIV/DIV/IMG",
+            "DIV/DIV/P",
+            "DIV/DIV/SPAN",
+            "DIV/DIV/UL",
+            "DIV/DL/DD",
+            "DIV/DL/DT",
+            "DIV/H1/A",
+            "DIV/P/A",
+            "DIV/P/IMG",
+            "DIV/UL/LI",
+            "DL/DD/A",
+            "LI/DIV/DL",
+            "UL/LI/A",
+            "UL/LI/DIV"
+          ]
+        ]
+      }
+    }
+  }
+}
