@@ -1,0 +1,10 @@
+{
+  "menu": [
+    {
+      "name": "登录",
+      "app_id": "login",
+      "icon": "local/img/OA.png",
+      "url": "http://oa.jx-bank.com/"
+    }
+  ]
+}

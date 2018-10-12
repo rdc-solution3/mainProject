@@ -1,0 +1,37 @@
+{
+  "special_models": [
+    {
+      "path": "plan/login/index.json"
+    }
+  ],
+  "common_js": [
+    {
+      "path": "lib/base.js"
+    },
+    {
+      "path": "lib/customTemplate.js"
+    },
+    {
+      "path": "lib/jquery-3.2.0.min.js"
+    },
+    {
+      "path": "lib/jquery-3.2.0.min.js",
+      "target": "face"
+    },
+    {
+      "path": "lib/newPage.js",
+      "target": "face"
+    },
+    {
+      "path": "lib/compatibility.js"
+    },
+    {
+      "path": "lib/encodeToGb2312.js"
+    }
+  ],
+  "common_css": [
+    {
+      "path": "lib/base.css"
+    }
+  ]
+}

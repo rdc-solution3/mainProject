@@ -1,0 +1,276 @@
+{
+  "version": "0.1",
+  "id": "lwdw",
+  "targetURL": "http://oa.jx-bank.com/weboa/wrecfile.nsf/frmselectunit?openform",
+  "jsFile": "index.js",
+  "requires": {
+    "fhfwxzdw": "../fhfwxzdw/index.json",
+    "lwdw": "../lwdw/index.json",
+    "lwdw02": "../lwdw02/index.json",
+    "lwdw03": "../lwdw03/index.json"
+  },
+  "chineseName": "来文单位（总行收文）",
+  "description": "",
+  "firstPaintEnable": false,
+  "controls": {
+    "control73_LVpBaI": {
+      "location": {
+        "data": {
+          "tagName": "TBODY"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/FORM[1]/P[1]/TABLE[1]/TBODY[1]"
+          }
+        ]
+      },
+      "events": {
+        "onGetData": "getData_control73_LVpBaI"
+      },
+      "intendedRole": "custom",
+      "roles": "element,custom",
+      "monitored": true,
+      "frameXPath": "//iframe[@name='testframe']<<IFRAME>>"
+    },
+    "control74_CoIC2H": {
+      "location": {
+        "data": {
+          "tagName": "TR"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "value": "BODY.popbody TD.popbottom TABLE TBODY TR"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/FORM[1]/TABLE[1]/TBODY[1]/TR[3]/TD[1]/TABLE[1]/TBODY[1]/TR[1]"
+          }
+        ]
+      },
+      "events": {
+        "onGetData": "getData_control74_CoIC2H"
+      },
+      "intendedRole": "custom",
+      "roles": "element,custom",
+      "monitored": true,
+      "frameXPath": ""
+    }
+  },
+  "contexts": {
+    "context17_QrTmK1": {
+      "controls": [
+        "control73_LVpBaI",
+        "control74_CoIC2H"
+      ],
+      "anchors": [],
+      "urlAnchor": [
+        "http:\\/\\/oa\\.jx-bank\\.com\\/weboa\\/wrecfile\\.nsf\\/frmselectunit\\?openform|http:\\/\\/oa\\.jx-bank\\.com\\/weboa\\/wbmrecfile\\.nsf\\/frmselectunit\\?openform|http:\\/\\/oa(fh[1-4])?\\.jx-bank\\.com\\/weboa\\/wrecfile\\.nsf\\/frmselectunit\\?openform|http:\\/\\/oa(fh[1-4])?\\.jx-bank\\.com\\/weboa\\/wbmrecfile\\.nsf\\/frmselectunit\\?openform"
+      ]
+    }
+  },
+  "flows": {
+    "flow63_S3wMxs": {
+      "toContexts": [
+        {
+          "toContextId": "context17_QrTmK1"
+        },
+        {
+          "toContextId": "context22_ACNG8A",
+          "toModelId": "fhfwxzdw"
+        },
+        {
+          "toContextId": "context17_QrTmK1",
+          "toModelId": "lwdw"
+        },
+        {
+          "toContextId": "context23_Tf2ixo",
+          "toModelId": "lwdw02"
+        },
+        {
+          "toContextId": "context27_7WP321",
+          "toModelId": "lwdw03"
+        }
+      ]
+    },
+    "flow62_lK3LG2": {
+      "fromContextId": "context17_QrTmK1",
+      "fromAction": "doAction",
+      "fromControlId": "control73_LVpBaI",
+      "toContexts": [
+        {
+          "toContextId": "context17_QrTmK1"
+        }
+      ]
+    }
+  },
+  "pages": {
+    "page17_Ro2KQl": {
+      "contextId": "context17_QrTmK1",
+      "layout": [
+        {
+          "id": "uiControl73_ZB6gi2",
+          "controlId": "control73_LVpBaI",
+          "display": {
+            "adapterId": "custom",
+            "type": "custom",
+            "adapter": {
+              "templateType": "react",
+              "events": {
+                "onDoAction": "doAction_uiControl73_ZB6gi2",
+                "onGetTemplate": "getTemplate_uiControl73_ZB6gi2"
+              }
+            }
+          }
+        },
+        {
+          "id": "uiControl74_iNT4Hi",
+          "display": {
+            "type": "sticky",
+            "adapterId": "sticky",
+            "class": "bottomBtnCon",
+            "adapter": {
+              "templateType": ""
+            }
+          },
+          "layout": [
+            {
+              "id": "uiControl74_iNT4Hibody",
+              "display": {
+                "type": "stickyBody",
+                "adapterId": "stickyBody",
+                "adapter": {
+                  "templateType": ""
+                }
+              },
+              "layout": [
+                {
+                  "id": "uiControl75_9ObvsM",
+                  "controlId": "control74_CoIC2H",
+                  "display": {
+                    "adapterId": "custom",
+                    "type": "custom",
+                    "adapter": {
+                      "templateType": "react",
+                      "events": {
+                        "onDoAction": "doAction_uiControl75_9ObvsM",
+                        "onGetTemplate": "getTemplate_uiControl75_9ObvsM"
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "matchers": {
+    "page/title": {
+      "contexts": {
+        "context17_QrTmK1": [
+          "请选择单位"
+        ]
+      }
+    },
+    "page/urls": {
+      "contexts": {
+        "context17_QrTmK1": [
+          "oa.jx-bank.com/weboa/wrecfile.nsf/frmselectunit?openform",
+          "oa.jx-bank.com/weboa/wfhdispdoc.nsf/frmSelectDispOrganize?openform",
+          "oa.jx-bank.com/weboa/wfhrecfile.nsf/frmselectunit?openform",
+          "oa.jx-bank.com/weboa/wzhrecfile.nsf/frmselectunit?openform"
+        ]
+      }
+    },
+    "page/ids": {
+      "contexts": {
+        "context17_QrTmK1": [
+          []
+        ]
+      }
+    },
+    "page/classes": {
+      "contexts": {
+        "context17_QrTmK1": [
+          [
+            "input-button",
+            "popbottom",
+            "popmiddle",
+            "poptitle"
+          ],
+          [
+            "input-button",
+            "popbottom",
+            "popfset",
+            "popmiddle",
+            "poptitle"
+          ]
+        ]
+      }
+    },
+    "page/tagTriplets": {
+      "contexts": {
+        "context17_QrTmK1": [
+          [
+            "-/-/FORM",
+            "-/-/SCRIPT",
+            "-/FORM/INPUT-hidden",
+            "-/FORM/LINK",
+            "-/FORM/TABLE",
+            "FORM/TABLE/TBODY",
+            "TABLE/TBODY/TR",
+            "TBODY/TR/TD",
+            "TD/B/FONT",
+            "TD/DIV/INPUT-button",
+            "TD/TABLE/TBODY",
+            "TR/TD/B",
+            "TR/TD/DIV",
+            "TR/TD/IFRAME",
+            "TR/TD/TABLE"
+          ],
+          [
+            "-/-/FORM",
+            "-/-/SCRIPT",
+            "-/FORM/INPUT-hidden",
+            "-/FORM/LINK",
+            "-/FORM/TABLE",
+            "DIV/P/INPUT-button",
+            "FIELDSET/LEGEND/STRONG",
+            "FIELDSET/TABLE/TBODY",
+            "FORM/TABLE/TBODY",
+            "TABLE/TBODY/TR",
+            "TBODY/TR/TD",
+            "TD/B/FONT",
+            "TD/DIV/BR",
+            "TD/DIV/INPUT-button",
+            "TD/DIV/P",
+            "TD/FIELDSET/LEGEND",
+            "TD/FIELDSET/TABLE",
+            "TD/TABLE/TBODY",
+            "TR/TD/B",
+            "TR/TD/DIV",
+            "TR/TD/FIELDSET",
+            "TR/TD/IFRAME",
+            "TR/TD/INPUT-hidden",
+            "TR/TD/SELECT",
+            "TR/TD/TABLE"
+          ]
+        ]
+      }
+    }
+  }
+}
