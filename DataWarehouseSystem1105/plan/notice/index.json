@@ -1,0 +1,335 @@
+{
+  "version": "0.1",
+  "id": "notice",
+  "targetURL": "http://10.1.45.109:8080/ncods/main.htm",
+  "jsFile": "index.js",
+  "requires": {
+    "index": "../index/index.json"
+  },
+  "chineseName": "公告",
+  "description": "",
+  "controls": {
+    "control39_hyTnTy": {
+      "location": {
+        "data": {
+          "tagName": "H2"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "text",
+            "prob": 3,
+            "value": {
+              "text": [
+                "公告"
+              ],
+              "visText": [
+                "公告"
+              ]
+            }
+          },
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "value": "DIV.all TD.notic_top H2"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/H2[1]"
+          },
+          {
+            "id": "elderLevel",
+            "value": {
+              "level": 0
+            }
+          }
+        ]
+      },
+      "roles": "element",
+      "text": "\n\t\t\t\t\t\t\t公告\n\t\t\t\t\t\t",
+      "frameXPath": "//iframe[@id='lhgfrm']<<IFRAME>>"
+    },
+    "control66_cPLR9G": {
+      "location": {
+        "data": {
+          "tagName": "TABLE"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "value": "DIV.all TABLE"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/DIV[1]/TABLE[1]"
+          }
+        ]
+      },
+      "events": {
+        "onGetData": "getData_control66_cPLR9G"
+      },
+      "intendedRole": "custom",
+      "roles": "element,custom",
+      "monitored": false,
+      "frameXPath": "//iframe[@id='lhgfrm']<<IFRAME>>",
+      "componentType": "custom"
+    }
+  },
+  "contexts": {
+    "context2_TZTPb2": {
+      "controls": [
+        "control66_cPLR9G"
+      ],
+      "anchors": [
+        "control39_hyTnTy"
+      ],
+      "urlAnchor": []
+    }
+  },
+  "flows": {
+    "flow4_XvMZRo": {
+      "toContexts": [
+        {
+          "toContextId": "context2_TZTPb2"
+        }
+      ]
+    },
+    "flow28_15UgPZ": {
+      "fromContextId": "context2_TZTPb2",
+      "fromAction": "doAction",
+      "fromControlId": "control66_cPLR9G",
+      "toContexts": [
+        {
+          "toContextId": "context2_TZTPb2"
+        },
+        {
+          "toContextId": "context3_kWFId4",
+          "toModelId": "index"
+        }
+      ]
+    }
+  },
+  "pages": {
+    "page2_t4eLyd": {
+      "contextId": "context2_TZTPb2",
+      "layout": [
+        {
+          "id": "uiControl26_M7eoIu",
+          "controlId": "control66_cPLR9G",
+          "display": {
+            "adapterId": "custom",
+            "type": "custom",
+            "adapter": {
+              "templateType": "react",
+              "events": {
+                "onDoAction": "doAction_uiControl26_M7eoIu",
+                "onGetTemplate": "getTemplate_uiControl26_M7eoIu"
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "matchers": {
+    "page/title": {
+      "contexts": {
+        "context2_TZTPb2": [
+          "江西银行数据仓库系统--欢迎【宋莉】使用"
+        ]
+      }
+    },
+    "page/urls": {
+      "contexts": {
+        "context2_TZTPb2": [
+          "10.1.45.109:8080/ncods/main.htm"
+        ]
+      }
+    },
+    "page/ids": {
+      "contexts": {
+        "context2_TZTPb2": [
+          [
+            "adbededbedfbfPurview",
+            "adbfbe",
+            "adcccccdaa",
+            "adeaeaeaa",
+            "adeeccdefaecbca",
+            "adfcadfcbbf",
+            "allDiv",
+            "bDiv",
+            "bar",
+            "barimg",
+            "bt",
+            "btns",
+            "cDiv",
+            "ccc",
+            "center",
+            "close",
+            "contactForm",
+            "contactFormContainer",
+            "content",
+            "context",
+            "d",
+            "dialog",
+            "dialogIcon",
+            "digLeft",
+            "drag",
+            "drop",
+            "eedb",
+            "firstPage",
+            "hd",
+            "head",
+            "helpMenuDiv",
+            "icon",
+            "imgHelp",
+            "left",
+            "left_fk",
+            "lhgfrm",
+            "load",
+            "loginInfo",
+            "logodiv",
+            "main",
+            "mainframe",
+            "menu",
+            "menuBar",
+            "msbtn",
+            "mscon",
+            "msg",
+            "mstitle",
+            "mswinpop",
+            "nav",
+            "no",
+            "norevmsg",
+            "organId",
+            "phone",
+            "qkReport",
+            "qkrpt",
+            "reportId",
+            "secondPage",
+            "sjbhelp",
+            "sjlink",
+            "subMenuUL",
+            "tempMenu",
+            "tempTopMenu",
+            "throbber",
+            "title",
+            "topMenuUL",
+            "tree_title",
+            "tree_warp",
+            "waitDiv",
+            "xbtn"
+          ]
+        ]
+      }
+    },
+    "page/classes": {
+      "contexts": {
+        "context2_TZTPb2": [
+          [
+            "ac_input",
+            "bDiv",
+            "bar",
+            "bold",
+            "bottom",
+            "btn_blue",
+            "btns",
+            "button",
+            "contact",
+            "container",
+            "content",
+            "errorMessage",
+            "fontsize",
+            "header_top",
+            "helpMenuItem",
+            "icon",
+            "input_boxes",
+            "left",
+            "leftBottom",
+            "leftTop",
+            "lhgdig",
+            "loader",
+            "menuli_",
+            "message-missing",
+            "msclose",
+            "mscon",
+            "mstitle",
+            "noclose",
+            "notitle",
+            "phone-missing",
+            "right",
+            "rightBottom",
+            "rightTop",
+            "ss",
+            "submit",
+            "throbber",
+            "title",
+            "title-missing",
+            "top",
+            "top_right",
+            "tree_title",
+            "xbtn"
+          ]
+        ]
+      }
+    },
+    "page/tagTriplets": {
+      "contexts": {
+        "context2_TZTPb2": [
+          [
+            "-/-/DIV",
+            "-/-/FORM",
+            "-/-/NOSCRIPT",
+            "-/-/SCRIPT",
+            "-/DIV/DIV",
+            "-/DIV/TABLE",
+            "-/FORM/INPUT-hidden",
+            "DIV/A/EM",
+            "DIV/DIV/BUTTON",
+            "DIV/DIV/DIV",
+            "DIV/DIV/FONT",
+            "DIV/DIV/IFRAME",
+            "DIV/DIV/IMG",
+            "DIV/DIV/INPUT-button",
+            "DIV/DIV/INPUT-hidden",
+            "DIV/DIV/P",
+            "DIV/DIV/SPAN",
+            "DIV/DIV/UL",
+            "DIV/P/BR",
+            "DIV/P/INPUT-text",
+            "DIV/P/LABEL",
+            "DIV/P/SPAN",
+            "DIV/P/TEXTAREA",
+            "DIV/TABLE/TBODY",
+            "DIV/UL/DIV",
+            "DIV/UL/INPUT-button",
+            "DIV/UL/INPUT-text",
+            "DIV/UL/LI",
+            "DIV/UL/UL",
+            "TABLE/TBODY/TR",
+            "TBODY/TR/TD",
+            "TD/DIV/A",
+            "TD/DIV/SPAN",
+            "TD/TABLE/TBODY",
+            "TR/TD/DIV",
+            "TR/TD/IFRAME",
+            "TR/TD/TABLE",
+            "UL/DIV/UL",
+            "UL/LI/A",
+            "UL/LI/IMG"
+          ]
+        ]
+      }
+    }
+  }
+}

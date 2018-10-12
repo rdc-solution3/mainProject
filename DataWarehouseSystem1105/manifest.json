@@ -1,0 +1,38 @@
+{
+  "type": "adapter",
+  "short_name": "",
+  "version": "0.0.1",
+  "runtime_version": "2.7.0",
+  "description": "",
+  "options": {
+    "resource_intercept": {
+      "type": [],
+      "ignore": []
+    },
+    "resource_inject": []
+  },
+  "override_urls": [
+    {
+      "origin_url": [
+        "http:\\/\\/10\\.1\\.45\\.109:8080\\/ncods\\/login\\.js"
+      ],
+      "target_url": "override/login.js",
+      "default_url": "http://10.1.45.109:8080/ncods/login.js"
+    }
+  ],
+  "adapter_urls": [
+    {
+      "title": "login",
+      "url": "adapter://DataWarehouseSystem/plan/login/index.json",
+      "matcher": [
+        "^http:\\/\\/10\\.1\\.45\\.109:8080\\/ncods\\/index\\.htm.*"
+      ],
+      "demo": []
+    }
+  ],
+  "name": "数据仓库系统",
+  "default_url": "http://10.1.45.109:8080/ncods/index.htm",
+  "scope": "DataWarehouseSystem",
+  "start_url": "http://10.1.45.109:8080/ncods/index.htm",
+  "update_time": 1539241000036
+}

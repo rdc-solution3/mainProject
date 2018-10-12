@@ -1,0 +1,294 @@
+{
+  "version": "0.1",
+  "id": "login",
+  "targetURL": "http://10.1.45.109:8080/ncods/index.htm",
+  "jsFile": "index.js",
+  "requires": {
+    "isArrayMessage": "../isArrayMessage/index.json",
+    "notice": "../notice/index.json",
+    "changePwd": "../changePwd/index.json"
+  },
+  "chineseName": "登录",
+  "description": "",
+  "controls": {
+    "control70_BMKNKv": {
+      "location": {
+        "data": {
+          "tagName": "TABLE"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "value": "DIV.main_center DIV.login_div TABLE.login_detail"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/FORM[1]/DIV[1]/DIV[3]/DIV[1]/DIV[1]/TABLE[1]"
+          }
+        ]
+      },
+      "events": {
+        "onGetData": "getData_control70_BMKNKv"
+      },
+      "intendedRole": "custom",
+      "roles": "element,custom",
+      "monitored": true,
+      "frameXPath": "",
+      "componentType": "custom"
+    }
+  },
+  "contexts": {
+    "context0_iy1ApU": {
+      "controls": [
+        "control70_BMKNKv"
+      ],
+      "anchors": [],
+      "urlAnchor": []
+    }
+  },
+  "flows": {
+    "flow0_kE3rp7": {
+      "toContexts": [
+        {
+          "toContextId": "context0_iy1ApU"
+        },
+        {
+          "toContextId": "context2_TZTPb2",
+          "toModelId": "notice"
+        }
+      ]
+    },
+    "flow1_1K9muM": {
+      "fromContextId": "context0_iy1ApU",
+      "fromAction": "doAction",
+      "fromControlId": "control70_BMKNKv",
+      "toContexts": [
+        {
+          "toContextId": "context0_iy1ApU"
+        },
+        {
+          "toContextId": "context1_uATnXx",
+          "toModelId": "isArrayMessage"
+        },
+        {
+          "toContextId": "context13_lesE5L",
+          "toModelId": "changePwd"
+        }
+      ]
+    }
+  },
+  "pages": {
+    "page0_2CpaE1": {
+      "contextId": "context0_iy1ApU",
+      "layout": [
+        {
+          "id": "uiControl18_b36xTE",
+          "controlId": "control70_BMKNKv",
+          "display": {
+            "adapterId": "custom",
+            "type": "custom",
+            "adapter": {
+              "templateType": "react",
+              "events": {
+                "onDoAction": "doAction_uiControl18_b36xTE",
+                "onGetTemplate": "getTemplate_uiControl18_b36xTE"
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "matchers": {
+    "page/title": {
+      "contexts": {
+        "context0_iy1ApU": [
+          "江西银行数据仓库系统"
+        ]
+      }
+    },
+    "page/urls": {
+      "contexts": {
+        "context0_iy1ApU": [
+          "10.1.45.109:8080/ncods/index.htm",
+          "10.1.45.109:8080/ncods/sys_Login.htm"
+        ]
+      }
+    },
+    "page/ids": {
+      "contexts": {
+        "context0_iy1ApU": [
+          [
+            "chkCzUser",
+            "chkHomePage",
+            "chkRememberPwd",
+            "dialog",
+            "dialogIcon",
+            "imgbtn",
+            "jq_bbf_tipdiv",
+            "loginName",
+            "msg",
+            "password",
+            "pbarDialog",
+            "pbarinfo",
+            "progressbar",
+            "ui-dialog-title-dialog",
+            "ui-dialog-title-pbarDialog",
+            "white"
+          ]
+        ]
+      }
+    },
+    "page/classes": {
+      "contexts": {
+        "context0_iy1ApU": [
+          [
+            "all",
+            "errorMessage",
+            "login_detail",
+            "login_div",
+            "main",
+            "main_center",
+            "top",
+            "top_logo",
+            "ui-corner-all",
+            "ui-dialog",
+            "ui-dialog-buttonpane",
+            "ui-dialog-content",
+            "ui-dialog-title",
+            "ui-dialog-titlebar",
+            "ui-dialog-titlebar-close",
+            "ui-draggable",
+            "ui-helper-clearfix",
+            "ui-icon",
+            "ui-icon-closethick",
+            "ui-state-default",
+            "ui-widget",
+            "ui-widget-content",
+            "ui-widget-header"
+          ],
+          [
+            "all",
+            "errorMessage",
+            "login_detail",
+            "login_div",
+            "main",
+            "main_center",
+            "top",
+            "top_logo",
+            "ui-corner-all",
+            "ui-dialog",
+            "ui-dialog-buttonpane",
+            "ui-dialog-content",
+            "ui-dialog-title",
+            "ui-dialog-titlebar",
+            "ui-dialog-titlebar-close",
+            "ui-draggable",
+            "ui-helper-clearfix",
+            "ui-icon",
+            "ui-icon-closethick",
+            "ui-state-default",
+            "ui-widget",
+            "ui-widget-content",
+            "ui-widget-header",
+            "ui-widget-overlay"
+          ],
+          [
+            "all",
+            "errorMessage",
+            "login_detail",
+            "login_div",
+            "main",
+            "main_center",
+            "top",
+            "top_logo",
+            "ui-corner-all",
+            "ui-dialog",
+            "ui-dialog-buttonpane",
+            "ui-dialog-content",
+            "ui-dialog-title",
+            "ui-dialog-titlebar",
+            "ui-dialog-titlebar-close",
+            "ui-draggable",
+            "ui-helper-clearfix",
+            "ui-icon",
+            "ui-icon-closethick",
+            "ui-state-default",
+            "ui-state-focus",
+            "ui-widget",
+            "ui-widget-content",
+            "ui-widget-header",
+            "ui-widget-overlay"
+          ]
+        ]
+      }
+    },
+    "page/tagTriplets": {
+      "contexts": {
+        "context0_iy1ApU": [
+          [
+            "-/-/DIV",
+            "-/-/FORM",
+            "-/-/NOSCRIPT",
+            "-/-/SCRIPT",
+            "-/DIV/DIV",
+            "-/DIV/P",
+            "-/FORM/DIV",
+            "-/FORM/INPUT-hidden",
+            "DIV/A/SPAN",
+            "DIV/DIV/A",
+            "DIV/DIV/BUTTON",
+            "DIV/DIV/DIV",
+            "DIV/DIV/IMG",
+            "DIV/DIV/SPAN",
+            "DIV/DIV/TABLE",
+            "DIV/SPAN/BR",
+            "DIV/TABLE/TBODY",
+            "FORM/DIV/DIV",
+            "TABLE/TBODY/TR",
+            "TBODY/TR/TD",
+            "TD/LABEL/INPUT-checkbox",
+            "TR/TD/BR",
+            "TR/TD/INPUT-button",
+            "TR/TD/INPUT-password",
+            "TR/TD/INPUT-text",
+            "TR/TD/LABEL"
+          ],
+          [
+            "-/-/DIV",
+            "-/-/FORM",
+            "-/-/NOSCRIPT",
+            "-/-/SCRIPT",
+            "-/DIV/DIV",
+            "-/DIV/P",
+            "-/FORM/DIV",
+            "-/FORM/INPUT-hidden",
+            "DIV/A/SPAN",
+            "DIV/DIV/A",
+            "DIV/DIV/BUTTON",
+            "DIV/DIV/DIV",
+            "DIV/DIV/IMG",
+            "DIV/DIV/SPAN",
+            "DIV/DIV/TABLE",
+            "DIV/TABLE/TBODY",
+            "FORM/DIV/DIV",
+            "TABLE/TBODY/TR",
+            "TBODY/TR/TD",
+            "TD/LABEL/INPUT-checkbox",
+            "TR/TD/BR",
+            "TR/TD/INPUT-button",
+            "TR/TD/INPUT-password",
+            "TR/TD/INPUT-text",
+            "TR/TD/LABEL"
+          ]
+        ]
+      }
+    }
+  }
+}

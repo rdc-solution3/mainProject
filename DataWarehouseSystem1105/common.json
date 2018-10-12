@@ -1,0 +1,31 @@
+{
+  "special_models": [
+    {
+      "path": "plan/login/index.json"
+    }
+  ],
+  "common_js": [
+    {
+      "path": "lib/base.js"
+    },
+    {
+      "path": "lib/customTemplate.js"
+    },
+    {
+      "path": "lib/jquery-3.2.0.min.js",
+      "sourceType": "local",
+      "target": "face"
+    }
+  ],
+  "common_css": [
+    {
+      "path": "lib/base.css"
+    },
+    {
+      "path": "lib/amazeui.touch1.override.css",
+      "sourceType": "local",
+      "target": "face"
+    }
+  ],
+  "path": "file://C:/Users/Administrator/Documents/enterplorer/enterprises/593505b34bdb5e50fdd25b3c/apps/DataWarehouseSystem/common.json"
+}

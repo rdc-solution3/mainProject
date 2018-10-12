@@ -1,0 +1,184 @@
+{
+  "version": "0.1",
+  "id": "changePwd",
+  "targetURL": "http://10.1.45.109:8080/ncods/sys_Login.htm",
+  "jsFile": "index.js",
+  "chineseName": "修改密码",
+  "description": "",
+  "controls": {
+    "control0_s2ODpT": {
+      "location": {
+        "data": {
+          "tagName": "TABLE"
+        },
+        "locators": [
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "value": "TABLE.tableForm1"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/FORM[1]/TABLE[2]"
+          }
+        ]
+      },
+      "events": {
+        "onGetData": "getData_control0_s2ODpT"
+      },
+      "intendedRole": "custom",
+      "roles": "element,custom",
+      "monitored": true,
+      "frameXPath": "",
+      "componentType": "custom"
+    }
+  },
+  "contexts": {
+    "context13_lesE5L": {
+      "controls": [
+        "control0_s2ODpT"
+      ],
+      "anchors": [],
+      "urlAnchor": []
+    }
+  },
+  "flows": {
+    "flow12_3z8xKT": {
+      "toContexts": [
+        {
+          "toContextId": "context13_lesE5L"
+        }
+      ]
+    },
+    "flow13_VBMTCu": {
+      "fromContextId": "context13_lesE5L",
+      "fromAction": "doAction",
+      "fromControlId": "control0_s2ODpT",
+      "toContexts": [
+        {
+          "toContextId": "context13_lesE5L"
+        }
+      ]
+    }
+  },
+  "pages": {
+    "page13_UMJVPm": {
+      "contextId": "context13_lesE5L",
+      "layout": [
+        {
+          "id": "uiControl0_FTeyrT",
+          "controlId": "control0_s2ODpT",
+          "display": {
+            "adapterId": "custom",
+            "type": "custom",
+            "adapter": {
+              "templateType": "react",
+              "events": {
+                "onDoAction": "doAction_uiControl0_FTeyrT",
+                "onGetTemplate": "getTemplate_uiControl0_FTeyrT"
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "matchers": {
+    "page/title": {
+      "contexts": {
+        "context13_lesE5L": [
+          "修改密码"
+        ]
+      }
+    },
+    "page/urls": {
+      "contexts": {
+        "context13_lesE5L": [
+          "10.1.45.109:8080/ncods/sys_Login.htm"
+        ]
+      }
+    },
+    "page/ids": {
+      "contexts": {
+        "context13_lesE5L": [
+          [
+            "buttonBar",
+            "dialog",
+            "dialogIcon",
+            "msg",
+            "newpwd",
+            "oldpwd",
+            "pbarDialog",
+            "pbarinfo",
+            "progressbar",
+            "ui-dialog-title-dialog",
+            "ui-dialog-title-pbarDialog"
+          ]
+        ]
+      }
+    },
+    "page/classes": {
+      "contexts": {
+        "context13_lesE5L": [
+          [
+            "actionMessage",
+            "btnlan",
+            "errorMessage",
+            "tableForm",
+            "titlelan",
+            "topTab",
+            "topTabTd",
+            "ui-corner-all",
+            "ui-dialog",
+            "ui-dialog-buttonpane",
+            "ui-dialog-content",
+            "ui-dialog-title",
+            "ui-dialog-titlebar",
+            "ui-dialog-titlebar-close",
+            "ui-draggable",
+            "ui-helper-clearfix",
+            "ui-icon",
+            "ui-icon-closethick",
+            "ui-state-default",
+            "ui-widget",
+            "ui-widget-content",
+            "ui-widget-header"
+          ]
+        ]
+      }
+    },
+    "page/tagTriplets": {
+      "contexts": {
+        "context13_lesE5L": [
+          [
+            "-/-/DIV",
+            "-/-/FORM",
+            "-/-/SCRIPT",
+            "-/-/UL",
+            "-/DIV/DIV",
+            "-/FORM/DIV",
+            "-/FORM/TABLE",
+            "-/UL/LI",
+            "DIV/A/SPAN",
+            "DIV/DIV/A",
+            "DIV/DIV/BUTTON",
+            "DIV/DIV/DIV",
+            "DIV/DIV/IMG",
+            "DIV/DIV/SPAN",
+            "DIV/SPAN/BR",
+            "FORM/DIV/DIV",
+            "FORM/TABLE/INPUT-hidden",
+            "FORM/TABLE/TBODY",
+            "TABLE/TBODY/TR",
+            "TBODY/TR/TD",
+            "TBODY/TR/TH",
+            "TR/TD/INPUT-password",
+            "TR/TH/SPAN",
+            "UL/LI/SPAN"
+          ]
+        ]
+      }
+    }
+  }
+}

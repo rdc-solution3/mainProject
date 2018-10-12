@@ -1,0 +1,672 @@
+// base.less 是整个工程全局的样式文件，会作用到所有的页面模板中
+// Less 的语法与 CSS 兼容，可以直接用 CSS 语法进行编写
+// 如需了解详情，请访问 http://www.lesscss.net/
+// 发布后，base.less 被编译成 base.css 文件
+@themeColor: #1C8CEA;//#015BB1;
+@activeThemeColor: #1A79C9;//#034383;
+@textActiveColor: #015BB1;
+*{
+  // box-sizing: border-box;
+}
+
+.loginContainer{
+  padding-top: 100px;
+  padding-bottom: 50px;
+  .loginLogo{
+    height: 100px;
+    background: url(../local/img/loginBg_03.png) center no-repeat;
+    background-size: 80%;
+  }
+  .inputCon{
+    padding: 0 15px;
+    margin-top: 15px;
+    label{
+      display: flex;
+      flex-flow: row;
+      align-items: center;
+      margin-bottom: 15px;
+      border: 1px solid @themeColor;
+      border-radius: 5px;
+      >span{
+        width: 30%;
+        padding-left: 40px;
+        font-size: 14px;
+        font-weight: bold;
+        height: 50px;
+    		line-height: 50px;
+      }
+      >input{
+        flex: 1;
+        margin: 0;
+        border: none;
+        font-size: 14px;
+      }
+    }
+    .username{
+      span{
+        background: url(../local/img/user.png) 10px center no-repeat;
+        background-size: 20px;
+      }
+    }
+    .password{
+      span{
+        background: url(../local/img/password.png) 10px center no-repeat;
+        background-size: 20px;
+      }
+    }
+    button{
+      width: 100%;
+      height: 50px;
+      border-radius: 5px;
+      border: none;
+      color: #fff;
+      background: @themeColor;
+      font-size: 16px;
+      &:active{
+        background: @activeThemeColor;
+      }
+    }
+  }
+}
+
+td{
+  text-align: center;
+  vertical-align: middle;
+  font-size: 12px;
+  font-weight: bold;
+  border-color: #333;
+}
+
+.pageHeader{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  padding: 0;
+  margin: 0;
+  background: @themeColor;
+  font-weight: normal;
+  font-size: 18px;
+  color: #fff;
+  line-height: 50px;
+  z-index: 99;
+  .backBtn{
+    display: inline-block;
+    background: url(../local/img/icon-back.png) no-repeat 15px 14px;
+    background-size: 12px;
+    padding-left: 30px;
+    &:active{
+      background-image: url(../local/img/icon-back-active.png);
+      color: #B6B0B0;
+    }
+  }
+  .searchBtn{
+    position: fixed;
+    right: 0;
+    padding: 0 15px;
+    &:active{
+      color: #B6B0B0;
+    }
+  }
+}
+
+.tableTitle{
+  position: fixed;
+  width: 100%;
+  top: 50px;
+  padding: 0 15px;
+  z-index: 99;
+  background-color: #fff;
+  padding-bottom: 15px;
+  >h4{
+    margin: 0;
+    margin-top: 10px;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 16px;
+    font-family: '宋体';
+   }
+  >p{
+    font-size: 14px;
+    font-family: '宋体';
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+  }
+}
+
+.topDiv, .bottomDiv{
+  display: flex;
+  flex-flow: row;
+}
+.topDiv{
+  position: fixed;
+  left: 15px;
+  right: 15px;
+  top: 208px;
+  z-index: 99;
+  .topDiv-left{
+    width: 90px;
+    border: 1px solid #333;
+    border-bottom: none;
+    border-right: 2px solid #333;
+    background: url(../local/img/reportServlet.jpg) no-repeat center;
+    background-size: 100% 100%;
+  }
+  
+  .topDiv-right{
+    flex: 1;
+    overflow-x: hidden;
+    background: #D3EBEF;
+    table{
+      border-bottom: none;
+      border-left: none;
+      td{
+        border-bottom: none;
+      }
+    }
+    &::-webkit-scrollbar {
+      display:none
+    }
+  }
+}
+
+.bottomDiv{
+  .bottomDiv-right{
+    flex: 1;
+    overflow-x: scroll;
+    table{
+      border-left: none;
+      tr:nth-child(odd){
+        background: #DCDCDC;
+      }
+      tr:last-child{
+        background: #EEFFAF;
+        >td{
+          font-weight: bold;
+        }
+      }
+      td {
+        font-weight: normal;
+        word-break: break-all;
+        &:first-child{
+          border-left: none;
+        }
+      }
+    }
+  }
+  
+  .bottomDiv-left{
+    width: 90px;
+    border: none;
+    table{
+      width: 100%;
+      border-right: none;
+      tr:nth-child(odd){
+        background: #DCDCDC;
+      }
+      tr:last-child{
+        background: #EEFFAF;
+      }
+      td{
+        border-right-width: 2px;
+        word-break: break-all;
+        line-height: 1.0;
+      }
+    }
+  }
+}
+
+#tablePart2{
+  display: none;
+}
+
+
+
+.tableContainer{
+  padding-left: 15px;
+  padding-right: 15px;
+  #tablePart1{
+      padding-top: 347px;
+  }
+  #tablePart2{
+      padding-top: 347px;
+  }
+}
+
+.toggleTableBtnCon{
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+  overflow: hidden;
+  color: #fff;
+  button{
+    width: 50%;
+    height: 40px;
+    background: #E5E0E0;
+    border: none;
+    font-size: 16px;
+  }
+  .active{
+    background: @themeColor;
+  }
+}
+
+.otherDataContainer{
+  list-style: none;
+  padding: 10px 0;
+  font-size: 14px;
+  margin: 0;
+  >li{
+    display: flex;
+    flex-flow: row;
+    >b{
+      width: 35%;
+    }
+    >span{
+      flex: 1;
+      text-align: right;
+    }
+  }
+}
+
+.searchContainerModal{
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background: rgba(0, 0, 0, .5);
+  z-index: 999;
+  .searchContainer{
+    width: 90%;
+    margin: 150px auto 0;
+    background: #fff;
+    padding: 20px 15px;
+    border-radius: 5px;
+    >div{
+      display: flex;
+      flex-flow: row;
+      align-items: center;
+      margin-bottom: 10px;
+      >b{
+        font-size: 14px;
+        width: 30%;
+        
+      }
+      >input, select{
+        margin: 0;
+        padding: 10px;
+        height: 40px;
+        border-radius: 5px;
+        flex: 1;
+        font-size: 14px;
+      }
+      select{
+        padding-right: 30px;
+      }
+      input[type="date"]{
+        padding-right: 30px;
+        background: url(../local/img/icon_date.jpg) no-repeat 95% center;
+        background-size: 30px;
+      }
+    }
+    button{
+      width: 100%;
+      height: 40px;
+      font-size: 14px;
+      padding: 0;
+      border: none;
+      border-radius: 5px;
+      background: @themeColor;
+      color: #fff;
+      margin-top: 5px;
+      &:active{
+        background: @activeThemeColor;
+      }
+    }
+  }
+}
+
+.intervalContainer{
+  >input{
+    flex: 0.8;
+  }
+  >span{
+    flex: 1;
+    font-size: 14px;
+    text-align: center;
+  }
+}
+
+
+.tableContainer{
+  -webkit-user-select: none;
+  overflow: hidden;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  #theadContainer{
+    overflow-x: hidden;
+    position: fixed;
+    right: 15px;
+    left: 15px;
+    z-index: 999;
+    tr{
+      &:first-child{
+        background: #D3EBEF;
+      }
+      td{
+        font-weight: bold;
+        line-height: 1;
+      }
+    }
+  }
+  #tbodyContainer{
+    overflow-x: auto;
+    table{
+      table-layout: fixed;
+      border-top:none;
+      tr{
+        td{
+          font-weight: normal;
+          line-height: 1;
+        }
+        &:first-child{
+          td{
+            border-top: none;
+          }
+        }
+      }
+      .activeTr{
+        background: #E4F7D6;
+      }
+    }
+  }
+}
+
+div[data-ysp-modelid="table2"],div[data-ysp-modelid="table3"],div[data-ysp-modelid="table4"],div[data-ysp-modelid="table5"]{
+  table{
+    table-layout: fixed;
+    td{
+      font-weight: normal;
+      text-align: center;
+      box-sizing: content-box;
+    }
+  }
+}
+
+div[data-ysp-modelid="table2"]{
+  .tableContainer{
+    padding-top: 126px;
+    #tbodyContainer{
+      padding-top: 34px;
+      td{
+        white-space: normal;
+      }
+    }
+  }
+}
+
+div[data-ysp-modelid="table3"]{
+  .tableContainer{
+    padding-top: 214px;
+    #tbodyContainer{
+      padding-top: 23px;
+      td{
+        white-space: normal;
+      }
+    }
+  }
+}
+
+div[data-ysp-modelid="table4"]{
+  .tableContainer{
+    padding-top: 170px;
+    #tbodyContainer{
+      padding-top: 23px;
+      td{
+        white-space: normal;
+      }
+    }
+  }
+}
+
+div[data-ysp-modelid="table5"]{
+  .tableContainer{
+    padding-top: 126px;
+    #tbodyContainer{
+      padding-top: 23px;
+      td{
+        white-space: normal;
+      }
+    }
+  }
+}
+
+.noticeModal{
+  ol{
+    margin: 0;
+    padding: 0 0 0 15px;
+    color: #0033D5;
+    li{
+      margin-bottom: 5px;
+    }
+  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, .5);
+  .noticeInnerContainer{
+    background: #fff;
+    padding: 15px;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 5px;
+    margin-top: 100px;
+    h4{
+      margin: 0;
+      height: 40px;
+      line-height: 40px;
+      font-size: 16px;
+      text-align: center;
+    }
+    button{
+      border: none;
+      padding: 0;
+      width: 100%;
+      height: 40px;
+      background: #59C831;
+      color: #fff;
+      font-size: 16px;
+      border-radius: 5px;
+      margin-top: 15px;
+      &:active{
+        background: #48A548;
+      }
+    }
+  }
+}
+
+.tableContainer{
+  .theadContainer{
+    display: flex;
+    flex-flow: row;
+    >.theadLeft{
+      border: 1px solid #333;
+      border-right-width: 2px;
+      border-bottom-width: 2px;
+      text-align: center;
+      background: #D3EBEF;
+      font-size: 12px;
+      font-weight: bold;
+    }
+    >.theadRight{
+      flex: 1;
+      overflow-x: hidden;
+      table{
+        table-layout: fixed;
+        border-left: none;
+        tr{
+          td{
+            border-bottom-width: 2px;
+            &:first-child{
+              border-left: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  .tbodyContainer{
+    display: flex;
+    flex-flow: row;
+    >.tbodyLeft{
+      z-index: 9;
+      table{
+        tr{
+          &:last-child{
+            background: #CBDC8E;
+          }
+        }
+      }
+    }
+    >.tbodyRight{
+      flex: 1;
+      overflow-x: auto;
+      table{
+        table-layout: fixed;
+        tr{
+          &:last-child{
+            background: #CBDC8E;
+          }
+          td{
+            &:first-child{
+              border-left: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.menuContainer{
+  padding-top: 52px;
+  ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-top: 10px solid #f4f4f4;
+    box-shadow: 0px -2px 2px #DCDCDC;
+    li{
+      padding: 15px;
+      padding-left: 42px;
+      border-bottom: 1px solid #D9D9D9;
+      position: relative;
+      background-repeat: no-repeat !important;
+      background-size: 20px;
+      background-position: 15px center;
+      &:after{
+        content: '';
+        display: inline-block;
+        width: 13px;
+        height: 13px;
+        border-top: 2px solid #ccc;
+        border-right: 2px solid #ccc;
+        position: absolute;
+        right: 15px;
+        transform: rotate(45deg);
+        top: 21px;
+      }
+      &:active{
+        background: #E5E5E5;
+        background-size: 20px;
+        background-position: 15px center;
+      }
+      &:nth-of-type(1){
+        background-image: url(../local/img/icon_listItem1.png);
+      }
+      &:nth-of-type(2){
+        background-image: url(../local/img/icon_listItem2.png);
+      }
+      &:nth-of-type(3){
+        background-image: url(../local/img/icon_listItem3.png);
+      }
+      &:nth-of-type(4){
+        background-image: url(../local/img/icon_listItem4.png);
+      }
+      &:nth-of-type(5){
+        background-image: url(../local/img/icon_listItem5.png);
+      }
+      &:nth-of-type(6){
+        background-image: url(../local/img/icon_listItem6.png);
+      }
+      &:nth-of-type(7){
+        background-image: url(../local/img/icon_listItem7.png);
+      }
+      &:nth-of-type(8){
+        background-image: url(../local/img/icon_listItem8.png);
+      }
+    }
+   }
+}
+
+//修改密码页面
+.changePwdCon{
+  padding: 0 15px;
+  padding-top: 50px;
+  .actionMessage{
+    text-align: center;
+    margin: 0;
+    padding: 15px;
+    font-size: 18px;
+  }
+  ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    li{
+      margin-bottom: 5px;
+      label{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 3px;
+        >b{
+          font-size: 14px;
+          white-space: nowrap;
+        }
+        >input{
+          margin: 0;
+          border-radius: 5px;
+          font-size: 14px;
+          max-width: 80%;
+          margin-left: 5px;
+        }
+      }
+      .errorMessage{
+        color: red;
+        text-align: right;
+      }
+    }
+  }
+  button{
+    border: none;
+    padding: 0;
+    width: 100%;
+    height: 40px;
+    background: #59C831;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 15px;
+    &:active{
+      background: #48A548;
+    }
+  }
+}

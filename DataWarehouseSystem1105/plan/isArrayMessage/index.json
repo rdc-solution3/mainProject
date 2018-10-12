@@ -1,0 +1,1414 @@
+{
+  "version": "0.1",
+  "id": "isArrayMessage",
+  "targetURL": "http://10.1.45.109:8080/ncods/pages/report/showinfo.jsp",
+  "jsFile": "index.js",
+  "requires": {
+    "notice": "../notice/index.json",
+    "baobiaozhuanqu": "../baobiaozhuanqu/index.json"
+  },
+  "chineseName": "金融统计信息披露原则",
+  "description": "",
+  "controls": {
+    "control6_zFpFo4": {
+      "location": {
+        "data": {
+          "tagName": "H2"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "text",
+            "prob": 3,
+            "value": {
+              "text": [
+                "公告"
+              ],
+              "visText": [
+                "公告"
+              ]
+            }
+          },
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "value": "DIV.all TD.notic_top H2"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/H2[1]"
+          },
+          {
+            "id": "elderLevel",
+            "value": {
+              "level": 0
+            }
+          }
+        ]
+      },
+      "roles": "element",
+      "frameXPath": "//iframe[@id='lhgfrm']<<IFRAME>>"
+    },
+    "control7_sk8m1q": {
+      "location": {
+        "data": {
+          "tagName": "H2"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "text",
+            "prob": 3,
+            "value": {
+              "text": [
+                "公告"
+              ],
+              "visText": [
+                "公告"
+              ]
+            }
+          },
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "value": "DIV.all TD.notic_top H2"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/H2[1]"
+          },
+          {
+            "id": "elderLevel",
+            "value": {
+              "level": 0
+            }
+          }
+        ]
+      },
+      "roles": "element",
+      "frameXPath": "//iframe[@id='lhgfrm']<<IFRAME>>"
+    },
+    "control8_PT2csB": {
+      "location": {
+        "data": {
+          "tagName": "H2"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "text",
+            "prob": 3,
+            "value": {
+              "text": [
+                "公告"
+              ],
+              "visText": [
+                "公告"
+              ]
+            }
+          },
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "value": "DIV.all TD.notic_top H2"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/H2[1]"
+          },
+          {
+            "id": "elderLevel",
+            "value": {
+              "level": 0
+            }
+          }
+        ]
+      },
+      "roles": "element",
+      "frameXPath": "//iframe[@id='lhgfrm']<<IFRAME>>"
+    },
+    "control9_bLG9Ur": {
+      "location": {
+        "data": {
+          "tagName": "H2"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "text",
+            "prob": 3,
+            "value": {
+              "text": [
+                "公告"
+              ],
+              "visText": [
+                "公告"
+              ]
+            }
+          },
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "value": "DIV.all TD.notic_top H2"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/H2[1]"
+          },
+          {
+            "id": "elderLevel",
+            "value": {
+              "level": 0
+            }
+          }
+        ]
+      },
+      "roles": "element",
+      "frameXPath": "//iframe[@id='lhgfrm']<<IFRAME>>"
+    },
+    "control10_RNyl8l": {
+      "location": {
+        "data": {
+          "tagName": "H2"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "text",
+            "prob": 3,
+            "value": {
+              "text": [
+                "公告"
+              ],
+              "visText": [
+                "公告"
+              ]
+            }
+          },
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "value": "DIV.all TD.notic_top H2"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/H2[1]"
+          },
+          {
+            "id": "elderLevel",
+            "value": {
+              "level": 0
+            }
+          }
+        ]
+      },
+      "roles": "element",
+      "frameXPath": "//iframe[@id='lhgfrm']<<IFRAME>>"
+    },
+    "control11_c8BwIS": {
+      "location": {
+        "data": {
+          "tagName": "TD"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "text",
+            "prob": 3,
+            "value": {
+              "text": [
+                "公告"
+              ],
+              "visText": [
+                "公告"
+              ]
+            }
+          },
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "value": "DIV.all TD.notic_top"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]"
+          }
+        ]
+      },
+      "roles": "element",
+      "frameXPath": "//iframe[@id='lhgfrm']<<IFRAME>>"
+    },
+    "control12_S6TTqU": {
+      "location": {
+        "data": {
+          "tagName": "TBODY"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "value": "DIV.all TABLE TBODY"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/DIV[1]/TABLE[1]/TBODY[1]"
+          }
+        ]
+      },
+      "roles": "element",
+      "frameXPath": "//iframe[@id='lhgfrm']<<IFRAME>>"
+    },
+    "control13_QTteAG": {
+      "location": {
+        "data": {
+          "tagName": "TBODY"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "value": "DIV.all TABLE TBODY"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/DIV[1]/TABLE[1]/TBODY[1]"
+          }
+        ]
+      },
+      "roles": "element",
+      "frameXPath": "//iframe[@id='lhgfrm']<<IFRAME>>"
+    },
+    "control14_cBSbdA": {
+      "location": {
+        "data": {
+          "tagName": "TBODY"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "value": "DIV.all TABLE TBODY"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/DIV[1]/TABLE[1]/TBODY[1]"
+          }
+        ]
+      },
+      "roles": "element",
+      "frameXPath": "//iframe[@id='lhgfrm']<<IFRAME>>"
+    },
+    "control15_i0N5bW": {
+      "location": {
+        "data": {
+          "tagName": "TABLE"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "value": "DIV.all TABLE"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/DIV[1]/TABLE[1]"
+          }
+        ]
+      },
+      "roles": "element",
+      "frameXPath": "//iframe[@id='lhgfrm']<<IFRAME>>"
+    },
+    "control16_0xCi0L": {
+      "location": {
+        "data": {
+          "tagName": "TABLE"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "value": "DIV.all TABLE"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/DIV[1]/TABLE[1]"
+          }
+        ]
+      },
+      "roles": "element",
+      "frameXPath": "//iframe[@id='lhgfrm']<<IFRAME>>"
+    },
+    "control17_hNEWzM": {
+      "location": {
+        "data": {
+          "tagName": "TABLE"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "value": "DIV.all TABLE"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/DIV[1]/TABLE[1]"
+          }
+        ]
+      },
+      "roles": "element",
+      "frameXPath": "//iframe[@id='lhgfrm']<<IFRAME>>"
+    },
+    "control18_2VsUca": {
+      "location": {
+        "data": {
+          "tagName": "TABLE"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "value": "DIV.all TABLE"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/DIV[1]/TABLE[1]"
+          }
+        ]
+      },
+      "roles": "element",
+      "frameXPath": "//iframe[@id='lhgfrm']<<IFRAME>>"
+    },
+    "control19_3LAJ5H": {
+      "location": {
+        "data": {
+          "tagName": "TABLE"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "value": "DIV.all TABLE"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/DIV[1]/TABLE[1]"
+          }
+        ]
+      },
+      "roles": "element",
+      "frameXPath": "//iframe[@id='lhgfrm']<<IFRAME>>"
+    },
+    "control20_ITFMZK": {
+      "location": {
+        "data": {
+          "tagName": "H2"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "text",
+            "prob": 3,
+            "value": {
+              "text": [
+                "公告"
+              ],
+              "visText": [
+                "公告"
+              ]
+            }
+          },
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "value": "DIV.all TD.notic_top H2"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/H2[1]"
+          },
+          {
+            "id": "elderLevel",
+            "value": {
+              "level": 0
+            }
+          }
+        ]
+      },
+      "roles": "element",
+      "frameXPath": "//iframe[@id='lhgfrm']<<IFRAME>>"
+    },
+    "control21_T2vUaq": {
+      "location": {
+        "data": {
+          "tagName": "H2"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "text",
+            "prob": 3,
+            "value": {
+              "text": [
+                "公告"
+              ],
+              "visText": [
+                "公告"
+              ]
+            }
+          },
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "value": "DIV.all TD.notic_top H2"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/H2[1]"
+          },
+          {
+            "id": "elderLevel",
+            "value": {
+              "level": 0
+            }
+          }
+        ]
+      },
+      "roles": "element",
+      "frameXPath": "//iframe[@id='lhgfrm']<<IFRAME>>"
+    },
+    "control22_JcfCVL": {
+      "location": {
+        "data": {
+          "tagName": "H2"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "text",
+            "prob": 3,
+            "value": {
+              "text": [
+                "公告"
+              ],
+              "visText": [
+                "公告"
+              ]
+            }
+          },
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "value": "DIV.all TD.notic_top H2"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/H2[1]"
+          },
+          {
+            "id": "elderLevel",
+            "value": {
+              "level": 0
+            }
+          }
+        ]
+      },
+      "roles": "element",
+      "frameXPath": "//iframe[@id='lhgfrm']<<IFRAME>>"
+    },
+    "control23_5mDETG": {
+      "location": {
+        "data": {
+          "tagName": "H2"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "text",
+            "prob": 3,
+            "value": {
+              "text": [
+                "公告"
+              ],
+              "visText": [
+                "公告"
+              ]
+            }
+          },
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "value": "DIV.all TD.notic_top H2"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/H2[1]"
+          },
+          {
+            "id": "elderLevel",
+            "value": {
+              "level": 0
+            }
+          }
+        ]
+      },
+      "roles": "element",
+      "frameXPath": "//iframe[@id='lhgfrm']<<IFRAME>>"
+    },
+    "control24_xJJyK2": {
+      "location": {
+        "data": {
+          "tagName": "H2"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "text",
+            "prob": 3,
+            "value": {
+              "text": [
+                "公告"
+              ],
+              "visText": [
+                "公告"
+              ]
+            }
+          },
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "value": "DIV.all TD.notic_top H2"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/H2[1]"
+          },
+          {
+            "id": "elderLevel",
+            "value": {
+              "level": 0
+            }
+          }
+        ]
+      },
+      "roles": "element",
+      "frameXPath": "//iframe[@id='lhgfrm']<<IFRAME>>"
+    },
+    "control25_1r35bH": {
+      "location": {
+        "data": {
+          "tagName": "H2"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "text",
+            "prob": 3,
+            "value": {
+              "text": [
+                "公告"
+              ],
+              "visText": [
+                "公告"
+              ]
+            }
+          },
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "value": "DIV.all TD.notic_top H2"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/H2[1]"
+          },
+          {
+            "id": "elderLevel",
+            "value": {
+              "level": 0
+            }
+          }
+        ]
+      },
+      "roles": "element",
+      "frameXPath": "//iframe[@id='lhgfrm']<<IFRAME>>"
+    },
+    "control26_JeaKb3": {
+      "location": {
+        "data": {
+          "tagName": "P"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "ordinal": [
+              0,
+              2
+            ],
+            "value": "DIV.all TD.content.blue P"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[2]/TD[1]/P[1]"
+          },
+          {
+            "id": "style/color",
+            "value": [
+              0,
+              51,
+              204
+            ]
+          }
+        ]
+      },
+      "roles": "element",
+      "frameXPath": "//iframe[@id='lhgfrm']<<IFRAME>>"
+    },
+    "control27_CMTTT9": {
+      "location": {
+        "data": {
+          "tagName": "P"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "ordinal": [
+              0,
+              2
+            ],
+            "value": "DIV.all TD.content.blue P"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[2]/TD[1]/P[1]"
+          },
+          {
+            "id": "style/color",
+            "value": [
+              0,
+              51,
+              204
+            ]
+          }
+        ]
+      },
+      "roles": "element",
+      "frameXPath": "//iframe[@id='lhgfrm']<<IFRAME>>"
+    },
+    "control28_MawkfH": {
+      "location": {
+        "data": {
+          "tagName": "P"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "ordinal": [
+              0,
+              2
+            ],
+            "value": "DIV.all TD.content.blue P"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[2]/TD[1]/P[1]"
+          },
+          {
+            "id": "style/color",
+            "value": [
+              0,
+              51,
+              204
+            ]
+          }
+        ]
+      },
+      "roles": "element",
+      "frameXPath": "//iframe[@id='lhgfrm']<<IFRAME>>"
+    },
+    "control29_tvpigs": {
+      "location": {
+        "data": {
+          "tagName": "FONT"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "text",
+            "prob": 3,
+            "value": {
+              "text": [
+                "ATM前置系统、CRM系统、IC卡系统、POS前置系统、财务系统、村镇财务系统、村镇核心系统、短信平台系统、个贷系统、公贷系统、国结系统、核心系统、理财销售系统、万得外部系统、网银跨行支付系统、网银系统、信用卡系统、押品系统、银联前置系统、资产管理系统、资金交易系统"
+              ],
+              "visText": [
+                "ATM前置系统、CRM系统、IC卡系统、POS前置系统、财务系统、村镇财务系统、村镇核心系统、短信平台系统、个贷系统、公贷系统、国结系统、核心系统、理财销售系统、万得外部系统、网银跨行支付系统、网银系统、信用卡系统、押品系统、银联前置系统、资产管理系统、资金交易系统"
+              ]
+            }
+          },
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "value": "DIV.all TD.content.blue P FONT"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[2]/TD[1]/P[1]/FONT[1]"
+          },
+          {
+            "id": "style/color",
+            "value": [
+              254,
+              36,
+              25
+            ]
+          },
+          {
+            "id": "elderLevel",
+            "value": {
+              "level": 0
+            }
+          }
+        ]
+      },
+      "roles": "element",
+      "frameXPath": "//iframe[@id='lhgfrm']<<IFRAME>>"
+    },
+    "control30_UaLlbq": {
+      "location": {
+        "data": {
+          "tagName": "FONT"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "text",
+            "prob": 3,
+            "value": {
+              "text": [
+                "ATM前置系统、CRM系统、IC卡系统、POS前置系统、财务系统、村镇财务系统、村镇核心系统、短信平台系统、个贷系统、公贷系统、国结系统、核心系统、理财销售系统、万得外部系统、网银跨行支付系统、网银系统、信用卡系统、押品系统、银联前置系统、资产管理系统、资金交易系统"
+              ],
+              "visText": [
+                "ATM前置系统、CRM系统、IC卡系统、POS前置系统、财务系统、村镇财务系统、村镇核心系统、短信平台系统、个贷系统、公贷系统、国结系统、核心系统、理财销售系统、万得外部系统、网银跨行支付系统、网银系统、信用卡系统、押品系统、银联前置系统、资产管理系统、资金交易系统"
+              ]
+            }
+          },
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "value": "DIV.all TD.content.blue P FONT"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[2]/TD[1]/P[1]/FONT[1]"
+          },
+          {
+            "id": "style/color",
+            "value": [
+              254,
+              36,
+              25
+            ]
+          },
+          {
+            "id": "elderLevel",
+            "value": {
+              "level": 0
+            }
+          }
+        ]
+      },
+      "roles": "element",
+      "frameXPath": "//iframe[@id='lhgfrm']<<IFRAME>>"
+    },
+    "control31_eBhZa6": {
+      "location": {
+        "data": {
+          "tagName": "H2"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "text",
+            "prob": 3,
+            "value": {
+              "text": [
+                "公告"
+              ],
+              "visText": [
+                "公告"
+              ]
+            }
+          },
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "value": "DIV.all TD.notic_top H2"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/H2[1]"
+          },
+          {
+            "id": "elderLevel",
+            "value": {
+              "level": 0
+            }
+          }
+        ]
+      },
+      "roles": "element",
+      "frameXPath": "//iframe[@id='lhgfrm']<<IFRAME>>"
+    },
+    "control32_hWQyzc": {
+      "location": {
+        "data": {
+          "tagName": "H2"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "text",
+            "prob": 3,
+            "value": {
+              "text": [
+                "公告"
+              ],
+              "visText": [
+                "公告"
+              ]
+            }
+          },
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "value": "DIV.all TD.notic_top H2"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/H2[1]"
+          },
+          {
+            "id": "elderLevel",
+            "value": {
+              "level": 0
+            }
+          }
+        ]
+      },
+      "roles": "element",
+      "frameXPath": "//iframe[@id='lhgfrm']<<IFRAME>>"
+    },
+    "control33_E9hvWk": {
+      "location": {
+        "data": {
+          "tagName": "H2"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "text",
+            "prob": 3,
+            "value": {
+              "text": [
+                "公告"
+              ],
+              "visText": [
+                "公告"
+              ]
+            }
+          },
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "value": "DIV.all TD.notic_top H2"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/H2[1]"
+          },
+          {
+            "id": "elderLevel",
+            "value": {
+              "level": 0
+            }
+          }
+        ]
+      },
+      "roles": "element",
+      "frameXPath": "//iframe[@id='lhgfrm']<<IFRAME>>"
+    },
+    "control34_hotOL9": {
+      "location": {
+        "data": {
+          "tagName": "H2"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "text",
+            "prob": 3,
+            "value": {
+              "text": [
+                "公告"
+              ],
+              "visText": [
+                "公告"
+              ]
+            }
+          },
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "value": "DIV.all TD.notic_top H2"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/H2[1]"
+          },
+          {
+            "id": "elderLevel",
+            "value": {
+              "level": 0
+            }
+          }
+        ]
+      },
+      "roles": "element",
+      "frameXPath": "//iframe[@id='lhgfrm']<<IFRAME>>"
+    },
+    "control35_nKERJF": {
+      "location": {
+        "data": {
+          "tagName": "H2"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "text",
+            "prob": 3,
+            "value": {
+              "text": [
+                "公告"
+              ],
+              "visText": [
+                "公告"
+              ]
+            }
+          },
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "value": "DIV.all TD.notic_top H2"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/H2[1]"
+          },
+          {
+            "id": "elderLevel",
+            "value": {
+              "level": 0
+            }
+          }
+        ]
+      },
+      "roles": "element",
+      "frameXPath": "//iframe[@id='lhgfrm']<<IFRAME>>"
+    },
+    "control36_oLTDdF": {
+      "location": {
+        "data": {
+          "tagName": "H2"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "text",
+            "prob": 3,
+            "value": {
+              "text": [
+                "公告"
+              ],
+              "visText": [
+                "公告"
+              ]
+            }
+          },
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "value": "DIV.all TD.notic_top H2"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/H2[1]"
+          },
+          {
+            "id": "elderLevel",
+            "value": {
+              "level": 0
+            }
+          }
+        ]
+      },
+      "roles": "element",
+      "frameXPath": "//iframe[@id='lhgfrm']<<IFRAME>>"
+    },
+    "control37_MB2mJp": {
+      "location": {
+        "data": {
+          "tagName": "P"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "ordinal": [
+              0,
+              2
+            ],
+            "value": "DIV.all TD.content.blue P"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[2]/TD[1]/P[1]"
+          },
+          {
+            "id": "style/color",
+            "value": [
+              0,
+              51,
+              204
+            ]
+          }
+        ]
+      },
+      "roles": "element",
+      "frameXPath": "//iframe[@id='lhgfrm']<<IFRAME>>"
+    },
+    "control38_VdBB4f": {
+      "location": {
+        "data": {
+          "tagName": "P"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "ordinal": [
+              0,
+              2
+            ],
+            "value": "DIV.all TD.content.blue P"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[2]/TD[1]/P[1]"
+          },
+          {
+            "id": "style/color",
+            "value": [
+              0,
+              51,
+              204
+            ]
+          }
+        ]
+      },
+      "roles": "element",
+      "frameXPath": "//iframe[@id='lhgfrm']<<IFRAME>>"
+    },
+    "control65_qzKIMb": {
+      "location": {
+        "data": {
+          "tagName": "TABLE"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "value": "DIV.all TABLE"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/DIV[1]/TABLE[1]"
+          }
+        ]
+      },
+      "events": {
+        "onGetData": "getData_control65_qzKIMb"
+      },
+      "intendedRole": "custom",
+      "roles": "element,custom",
+      "monitored": true,
+      "frameXPath": "",
+      "componentType": "custom"
+    }
+  },
+  "contexts": {
+    "context1_uATnXx": {
+      "controls": [
+        "control65_qzKIMb"
+      ],
+      "anchors": [],
+      "urlAnchor": []
+    }
+  },
+  "flows": {
+    "flow2_hHZXuT": {
+      "toContexts": [
+        {
+          "toContextId": "context1_uATnXx"
+        }
+      ]
+    },
+    "flow27_bPIlLK": {
+      "fromContextId": "context1_uATnXx",
+      "fromAction": "doAction",
+      "fromControlId": "control65_qzKIMb",
+      "toContexts": [
+        {
+          "toContextId": "context1_uATnXx"
+        },
+        {
+          "toContextId": "context2_TZTPb2",
+          "toModelId": "notice"
+        },
+        {
+          "toContextId": "context5_cdgLIh",
+          "toModelId": "baobiaozhuanqu"
+        }
+      ]
+    }
+  },
+  "pages": {
+    "page1_7qTpui": {
+      "contextId": "context1_uATnXx",
+      "layout": [
+        {
+          "id": "uiControl25_CkUKx1",
+          "controlId": "control65_qzKIMb",
+          "display": {
+            "adapterId": "custom",
+            "type": "custom",
+            "adapter": {
+              "templateType": "react",
+              "events": {
+                "onDoAction": "doAction_uiControl25_CkUKx1",
+                "onGetTemplate": "getTemplate_uiControl25_CkUKx1"
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "matchers": {
+    "page/title": {
+      "contexts": {
+        "context1_uATnXx": [
+          "金融统计信息披露原则"
+        ]
+      }
+    },
+    "page/urls": {
+      "contexts": {
+        "context1_uATnXx": [
+          "10.1.45.109:8080/ncods/pages/report/showinfo.jsp"
+        ]
+      }
+    },
+    "page/ids": {
+      "contexts": {
+        "context1_uATnXx": [
+          []
+        ]
+      }
+    },
+    "page/classes": {
+      "contexts": {
+        "context1_uATnXx": [
+          [
+            "all",
+            "blue",
+            "content",
+            "notic_top"
+          ]
+        ]
+      }
+    },
+    "page/tagTriplets": {
+      "contexts": {
+        "context1_uATnXx": [
+          [
+            "-/-/DIV",
+            "-/-/SCRIPT",
+            "-/DIV/TABLE",
+            "DIV/TABLE/TBODY",
+            "LI/H4/BR",
+            "OL/LI/H4",
+            "TABLE/TBODY/TR",
+            "TBODY/TR/TD",
+            "TD/OL/LI",
+            "TR/TD/BR",
+            "TR/TD/BUTTON",
+            "TR/TD/H2",
+            "TR/TD/OL"
+          ]
+        ]
+      }
+    }
+  }
+}
