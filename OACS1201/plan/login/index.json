@@ -1,0 +1,668 @@
+{
+  "version": "0.1",
+  "id": "login",
+  "targetURL": "http://oacs.jx-bank.com/",
+  "jsFile": "index.js",
+  "requires": {
+    "index": "../index/index.json",
+    "list1": "../list1/index.json",
+    "cuibanxixin": "../cuibanxixin/index.json",
+    "xzbm": "../xzbm/index.json",
+    "czmm": "../czmm/index.json"
+  },
+  "chineseName": "登录",
+  "description": "",
+  "firstPaintEnable": false,
+  "controls": {
+    "control2_L7EecX": {
+      "location": {
+        "data": {
+          "tagName": "BUTTON"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "value": "DIV.box DIV.sub BUTTON.but1"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/FORM[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]/DIV[3]/BUTTON[1]"
+          }
+        ]
+      },
+      "intendedRole": "button",
+      "roles": "element,button",
+      "monitored": true,
+      "frameXPath": ""
+    },
+    "control0_yrI18M": {
+      "location": {
+        "data": {
+          "tagName": "INPUT"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "elem/@name",
+            "prob": 2,
+            "value": [
+              "descendant::form[@name=\"_DominoForm\"]//INPUT[@name=\"Username\"]",
+              "descendant::INPUT[@name=\"Username\"]"
+            ]
+          },
+          {
+            "id": "@id/word",
+            "prob": 2,
+            "value": [
+              "descendant::DIV[@id=\"loginun\"]/INPUT[1]",
+              "descendant::DIV[@id=\"loginun\"]//INPUT"
+            ]
+          },
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "value": "DIV.box DIV.un INPUT.user"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/FORM[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]/DIV[1]/INPUT[1]"
+          },
+          {
+            "id": "input/type",
+            "verifyEnabled": true,
+            "value": "text"
+          }
+        ]
+      },
+      "events": {
+        "onGetData": "getData_control0_yrI18M"
+      },
+      "intendedRole": "custom",
+      "roles": "element,textbox,custom",
+      "monitored": true,
+      "frameXPath": ""
+    },
+    "control1_SMFkw7": {
+      "location": {
+        "data": {
+          "tagName": "INPUT"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "input/@value",
+            "prob": 1,
+            "value": {
+              "text": [
+                "password"
+              ]
+            }
+          },
+          {
+            "id": "elem/@name",
+            "prob": 2,
+            "value": [
+              "descendant::form[@name=\"_DominoForm\"]//INPUT[@name=\"Password\"]",
+              "descendant::INPUT[@name=\"Password\"]"
+            ]
+          },
+          {
+            "id": "@id/word",
+            "prob": 2,
+            "value": [
+              "descendant::DIV[@id=\"loginpd\"]/INPUT[1]",
+              "descendant::DIV[@id=\"loginpd\"]//INPUT"
+            ]
+          },
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "value": "DIV.box DIV.pd2 INPUT.user"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/FORM[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]/DIV[2]/INPUT[1]"
+          },
+          {
+            "id": "input/type",
+            "verifyEnabled": true,
+            "value": "password"
+          }
+        ]
+      },
+      "events": {
+        "onGetData": "getData_control1_SMFkw7"
+      },
+      "intendedRole": "custom",
+      "roles": "element,passwordbox,textbox,custom",
+      "monitored": true,
+      "frameXPath": ""
+    },
+    "control65_9h07xE": {
+      "location": {
+        "data": {
+          "tagName": "DIV"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "value": "DIV.box"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/FORM[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]"
+          }
+        ]
+      },
+      "events": {
+        "onGetData": "getData_control65_9h07xE"
+      },
+      "intendedRole": "custom",
+      "roles": "element,custom",
+      "monitored": false,
+      "frameXPath": ""
+    },
+    "control112_XeQFsK": {
+      "location": {
+        "data": {
+          "tagName": "B"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "text",
+            "prob": 3,
+            "value": {
+              "text": [
+                "用户名或密码错误，请重新输入！"
+              ],
+              "visText": [
+                "用户名或密码错误，请重新输入！"
+              ]
+            }
+          },
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "value": "DIV.box DIV.sub FONT B"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/FORM[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]/DIV[3]/FONT[1]/B[1]"
+          },
+          {
+            "id": "style/color",
+            "value": [
+              255,
+              51,
+              0
+            ]
+          },
+          {
+            "id": "elderLevel",
+            "value": {
+              "level": 0
+            }
+          }
+        ]
+      },
+      "roles": "element",
+      "content": true,
+      "monitored": true,
+      "frameXPath": ""
+    },
+    "control121_ZMkETH": {
+      "location": {
+        "data": {
+          "tagName": "DIV"
+        },
+        "userData": {
+          "data": [
+            {
+              "method": "XPath",
+              "value": "/html/body/form/table/tbody/tr/td/div"
+            }
+          ],
+          "force": true
+        },
+        "locators": [
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "value": "DIV.box"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/FORM[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]"
+          }
+        ]
+      },
+      "events": {
+        "onGetData": "getData_control121_ZMkETH"
+      },
+      "intendedRole": "custom",
+      "roles": "element,custom",
+      "monitored": true,
+      "frameXPath": ""
+    }
+  },
+  "contexts": {
+    "context0_mn0bAL": {
+      "controls": [
+        "control2_L7EecX",
+        "control0_yrI18M",
+        "control1_SMFkw7",
+        "control65_9h07xE",
+        "control112_XeQFsK",
+        "control121_ZMkETH"
+      ],
+      "anchors": [],
+      "urlAnchor": []
+    }
+  },
+  "flows": {
+    "flow0_pg0zKp": {
+      "toContexts": [
+        {
+          "toContextId": "context0_mn0bAL"
+        },
+        {
+          "toContextId": "context1_yKzvdD",
+          "toModelId": "index"
+        }
+      ]
+    },
+    "flow1_uyoOn7": {
+      "fromContextId": "context0_mn0bAL",
+      "fromAction": "click",
+      "fromControlId": "control2_L7EecX",
+      "toContexts": [
+        {
+          "toContextId": "context0_mn0bAL"
+        },
+        {
+          "toContextId": "context1_yKzvdD",
+          "toModelId": "index"
+        }
+      ]
+    },
+    "flow2_2o1VX5": {
+      "fromContextId": "context0_mn0bAL",
+      "fromAction": "doAction",
+      "fromControlId": "control0_yrI18M",
+      "toContexts": [
+        {
+          "toContextId": "context0_mn0bAL"
+        },
+        {
+          "toContextId": "context1_yKzvdD",
+          "toModelId": "index"
+        }
+      ]
+    },
+    "flow96_2tczFM": {
+      "fromContextId": "context0_mn0bAL",
+      "fromAction": "doAction",
+      "fromControlId": "control1_SMFkw7",
+      "toContexts": [
+        {
+          "toContextId": "context0_mn0bAL"
+        }
+      ]
+    },
+    "flow97_NDz00o": {
+      "fromContextId": "context0_mn0bAL",
+      "fromAction": "doAction",
+      "fromControlId": "control121_ZMkETH",
+      "toContexts": [
+        {
+          "toContextId": "context0_mn0bAL"
+        },
+        {
+          "toContextId": "context1_yKzvdD",
+          "toModelId": "index"
+        },
+        {
+          "toContextId": "context29_FvE2Hd",
+          "toModelId": "czmm"
+        }
+      ]
+    }
+  },
+  "pages": {
+    "page0_7BtVP1": {
+      "contextId": "context0_mn0bAL",
+      "layout": [
+        {
+          "id": "uiControl60_vwDRsD",
+          "display": {
+            "type": "card",
+            "adapterId": "card",
+            "class": "loginInnerCon",
+            "adapter": {
+              "templateType": ""
+            }
+          },
+          "layout": [
+            {
+              "id": "uiControl60_vwDRsDheader",
+              "display": {
+                "type": "cardHeader",
+                "text": "",
+                "adapterId": "cardHeader",
+                "adapter": {
+                  "templateType": ""
+                }
+              },
+              "layout": []
+            },
+            {
+              "id": "uiControl60_vwDRsDbody",
+              "display": {
+                "type": "cardBody",
+                "adapterId": "cardBody",
+                "adapter": {
+                  "templateType": ""
+                }
+              },
+              "layout": [
+                {
+                  "id": "uiControl64_KFV5iA",
+                  "controlId": "control65_9h07xE",
+                  "display": {
+                    "adapterId": "custom",
+                    "type": "custom",
+                    "adapter": {
+                      "templateType": "react",
+                      "events": {
+                        "onDoAction": "doAction_uiControl64_KFV5iA",
+                        "onGetTemplate": "getTemplate_uiControl64_KFV5iA"
+                      }
+                    }
+                  }
+                },
+                {
+                  "id": "uiControl116_lnEF4c",
+                  "controlId": "control112_XeQFsK",
+                  "display": {
+                    "adapterId": "content",
+                    "type": "content",
+                    "class": "passwordErr",
+                    "adapter": {
+                      "templateType": ""
+                    }
+                  }
+                },
+                {
+                  "id": "uiControl1_qLSWZw",
+                  "controlId": "control0_yrI18M",
+                  "display": {
+                    "adapterId": "custom",
+                    "type": "custom",
+                    "adapter": {
+                      "templateType": "react",
+                      "events": {
+                        "onDoAction": "doAction_uiControl1_qLSWZw",
+                        "onGetTemplate": "getTemplate_uiControl1_qLSWZw"
+                      }
+                    }
+                  }
+                },
+                {
+                  "id": "uiControl57_TnKZ5y",
+                  "controlId": "control1_SMFkw7",
+                  "display": {
+                    "adapterId": "custom",
+                    "type": "custom",
+                    "adapter": {
+                      "templateType": "react",
+                      "events": {
+                        "onDoAction": "doAction_uiControl57_TnKZ5y",
+                        "onGetTemplate": "getTemplate_uiControl57_TnKZ5y"
+                      }
+                    }
+                  }
+                },
+                {
+                  "id": "uiControl2_CtCNhO",
+                  "controlId": "control2_L7EecX",
+                  "display": {
+                    "adapterId": "clickable",
+                    "type": "button",
+                    "text": "登录",
+                    "amStyle": "secondary",
+                    "class": "loginBtnHidden",
+                    "adapter": {
+                      "templateType": ""
+                    }
+                  }
+                },
+                {
+                  "id": "uiControl127_gx0sII",
+                  "controlId": "control121_ZMkETH",
+                  "display": {
+                    "adapterId": "custom",
+                    "type": "custom",
+                    "adapter": {
+                      "templateType": "react",
+                      "events": {
+                        "onDoAction": "doAction_uiControl127_gx0sII",
+                        "onGetTemplate": "getTemplate_uiControl127_gx0sII"
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "uiControl60_vwDRsDfooter",
+              "display": {
+                "type": "cardFooter",
+                "adapterId": "cardFooter",
+                "adapter": {
+                  "templateType": ""
+                }
+              },
+              "layout": []
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "matchers": {
+    "page/title": {
+      "contexts": {
+        "context0_mn0bAL": [
+          "江西银行办公自动化系统"
+        ]
+      }
+    },
+    "page/urls": {
+      "contexts": {
+        "context0_mn0bAL": [
+          "oacs.jx-bank.com/",
+          "oacs.jx-bank.com/weboa/wdispdoc.nsf/0/2867284E9C41107148258171000BF79B?opendocument",
+          "oacs.jx-bank.com/names.nsf?Login",
+          "oacs.jx-bank.com/weboa/windex.nsf/oaframe?openframeset"
+        ],
+        "context1_yKzvdD": [
+          "oacs.jx-bank.com/weboa/windex.nsf/oaframe?openframeset&17-9-14%208:44:05&dept=%BD%AD%CE%F7%D2%F8%D0%D0/%D0%C5%CF%A2%BF%C6%BC%BC%B2%BF",
+          "oacs.jx-bank.com/weboa/windex.nsf/oaframe?openframeset&17-9-19%2010:18:36&dept=%BD%AD%CE%F7%D2%F8%D0%D0/%D0%C5%CF%A2%BF%C6%BC%BC%B2%BF",
+          "oacs.jx-bank.com/weboa/windex.nsf/oaframe?openframeset&17-9-27%2015:23:35&dept=%BD%AD%CE%F7%D2%F8%D0%D0/%D0%C5%CF%A2%BF%C6%BC%BC%B2%BF",
+          "oacs.jx-bank.com/weboa/windex.nsf/oaframe?openframeset&17-10-17%2011:06:24&dept=%BD%AD%CE%F7%D2%F8%D0%D0/%D0%C5%CF%A2%BF%C6%BC%BC%B2%BF",
+          "oacs.jx-bank.com/weboa/windex.nsf/oaframe?openframeset&17-10-26%2012:38:47&dept=%BD%AD%CE%F7%D2%F8%D0%D0/%D0%C5%CF%A2%BF%C6%BC%BC%B2%BF",
+          "oacs.jx-bank.com/weboa/windex.nsf/oaframe?openframeset&17-10-26%2015:43:27&dept=%BD%AD%CE%F7%D2%F8%D0%D0/%D0%C5%CF%A2%BF%C6%BC%BC%B2%BF",
+          "oacs.jx-bank.com/weboa/windex.nsf/oaframe?openframeset&17-11-1%2010:46:30&dept=%BD%AD%CE%F7%D2%F8%D0%D0/%D0%C5%CF%A2%BF%C6%BC%BC%B2%BF",
+          "oacs.jx-bank.com/weboa/windex.nsf/oaframe?openframeset&17-11-1%2010:46:57&dept=%BD%AD%CE%F7%D2%F8%D0%D0/%D0%C5%CF%A2%BF%C6%BC%BC%B2%BF",
+          "oacs.jx-bank.com/weboa/windex.nsf/oaframe?openframeset&17-11-1%2010:48:32&dept=%BD%AD%CE%F7%D2%F8%D0%D0/%D0%C5%CF%A2%BF%C6%BC%BC%B2%BF",
+          "oacs.jx-bank.com/weboa/windex.nsf/oaframe?openframeset&17-11-6%2014:57:42&dept=%BD%AD%CE%F7%D2%F8%D0%D0/%D0%C5%CF%A2%BF%C6%BC%BC%B2%BF",
+          "oacs.jx-bank.com/weboa/windex.nsf/oaframe?openframeset&17-11-7%2011:50:27&dept=%BD%AD%CE%F7%D2%F8%D0%D0/%D0%C5%CF%A2%BF%C6%BC%BC%B2%BF",
+          "oacs.jx-bank.com/weboa/windex.nsf/oaframe?openframeset&17-11-8%208:58:50&dept=%BD%AD%CE%F7%D2%F8%D0%D0/%D0%C5%CF%A2%BF%C6%BC%BC%B2%BF",
+          "oacs.jx-bank.com/weboa/windex.nsf/oaframe?openframeset&17-11-23%209:59:51&dept=%BD%AD%CE%F7%D2%F8%D0%D0/%D0%C5%CF%A2%BF%C6%BC%BC%B2%BF",
+          "oacs.jx-bank.com/weboa/windex.nsf/oaframe?openframeset&17-12-13%209:23:20&dept=%BD%AD%CE%F7%D2%F8%D0%D0/%D0%C5%CF%A2%BF%C6%BC%BC%B2%BF",
+          "oacs.jx-bank.com/weboa/windex.nsf/oaframe?openframeset&17-12-13%2014:30:22&dept=%BD%AD%CE%F7%D2%F8%D0%D0/%D0%C5%CF%A2%BF%C6%BC%BC%B2%BF",
+          "oacs.jx-bank.com/weboa/windex.nsf/oaframe?openframeset&17-12-13%2015:40:06&dept=%BD%AD%CE%F7%D2%F8%D0%D0/%D0%C5%CF%A2%BF%C6%BC%BC%B2%BF",
+          "oacs.jx-bank.com/weboa/windex.nsf/oaframe?openframeset&18-1-17%2016:29:36&dept=%BD%AD%CE%F7%D2%F8%D0%D0/%B0%EC%B9%AB%CA%D2",
+          "oacs.jx-bank.com/weboa/windex.nsf/oaframe?openframeset&18-1-17%2016:46:06&dept=%BD%AD%CE%F7%D2%F8%D0%D0/%B0%EC%B9%AB%CA%D2",
+          "oacs.jx-bank.com/weboa/windex.nsf/oaframe?openframeset&18-1-17%2017:11:48&dept=%BD%AD%CE%F7%D2%F8%D0%D0/%B0%EC%B9%AB%CA%D2",
+          "oacs.jx-bank.com/weboa/windex.nsf/oaframe?openframeset&18-1-24%2017:10:13&dept=%BD%AD%CE%F7%D2%F8%D0%D0/%D0%C5%CF%A2%BF%C6%BC%BC%B2%BF",
+          "oacs.jx-bank.com/weboa/windex.nsf/oaframe?openframeset&18-1-25%2014:21:06&dept=%BD%AD%CE%F7%D2%F8%D0%D0/%D0%D0%C1%EC%B5%BC",
+          "oacs.jx-bank.com/weboa/windex.nsf/oaframe?openframeset&18-1-29%2018:48:31&dept=%BD%AD%CE%F7%D2%F8%D0%D0/%D0%C5%CF%A2%BF%C6%BC%BC%B2%BF",
+          "oacs.jx-bank.com/weboa/windex.nsf/oaframe?openframeset&18-1-31%209:12:07&dept=%BD%AD%CE%F7%D2%F8%D0%D0/%D0%C5%CF%A2%BF%C6%BC%BC%B2%BF",
+          "oacs.jx-bank.com/weboa/windex.nsf/oaframe?openframeset&18-1-31%2011:09:37&dept=%BD%AD%CE%F7%D2%F8%D0%D0/%D0%C5%CF%A2%BF%C6%BC%BC%B2%BF",
+          "oacs.jx-bank.com/weboa/windex.nsf/oaframe?openframeset&18-3-8%209:20:47&dept=%BD%AD%CE%F7%D2%F8%D0%D0/%BD%AD%CE%F7%CA%A1%B7%D6%D0%D0/%C4%CF%B2%FD%B7%D6%D0%D0/%B0%CB%D2%BB%D6%A7%D0%D0/%D7%DB%BA%CF%B2%BF",
+          "oacs.jx-bank.com/weboa/windex.nsf/oaframe?openframeset&18-3-12%2016:43:37&dept=%BD%AD%CE%F7%D2%F8%D0%D0/%BD%AD%CE%F7%CA%A1%B7%D6%D0%D0/%D2%CB%B4%BA%B7%D6%D0%D0/%B0%EC%B9%AB%CA%D2",
+          "oacs.jx-bank.com/weboa/windex.nsf/oaframe?openframeset&18-3-12%2016:46:55&dept=%BD%AD%CE%F7%D2%F8%D0%D0/%BD%AD%CE%F7%CA%A1%B7%D6%D0%D0/%D2%CB%B4%BA%B7%D6%D0%D0/%B0%EC%B9%AB%CA%D2",
+          "oacs.jx-bank.com/weboa/windex.nsf/oaframe?openframeset&18-3-12%2017:04:00&dept=%BD%AD%CE%F7%D2%F8%D0%D0/%BD%AD%CE%F7%CA%A1%B7%D6%D0%D0/%D2%CB%B4%BA%B7%D6%D0%D0/%B0%EC%B9%AB%CA%D2",
+          "oacs.jx-bank.com/weboa/windex.nsf/oaframe?openframeset&18-3-15%2011:38:03&dept=%BD%AD%CE%F7%D2%F8%D0%D0/%D0%C5%CF%A2%BF%C6%BC%BC%B2%BF",
+          "oacs.jx-bank.com/weboa/windex.nsf/oaframe?openframeset&18-3-22%2015:29:57&dept=%BD%AD%CE%F7%D2%F8%D0%D0/%D0%C5%CF%A2%BF%C6%BC%BC%B2%BF",
+          "oacs.jx-bank.com/weboa/windex.nsf/oaframe?openframeset&18-3-22%2018:14:19&dept=%BD%AD%CE%F7%D2%F8%D0%D0/%D0%C5%CF%A2%BF%C6%BC%BC%B2%BF",
+          "oacs.jx-bank.com/weboa/windex.nsf/oaframe?openframeset&18-3-26%2015:44:24&dept=%BD%AD%CE%F7%D2%F8%D0%D0/%BD%AD%CE%F7%CA%A1%B7%D6%D0%D0/%C4%CF%B2%FD%B7%D6%D0%D0/%B0%CB%D2%BB%D6%A7%D0%D0/%D7%DB%BA%CF%B2%BF",
+          "oacs.jx-bank.com/weboa/windex.nsf/oaframe?openframeset&18-3-26%2016:39:37&dept=%BD%AD%CE%F7%D2%F8%D0%D0/%BD%AD%CE%F7%CA%A1%B7%D6%D0%D0/%C4%CF%B2%FD%B7%D6%D0%D0/%B0%CB%D2%BB%D6%A7%D0%D0/%D6%A7%D0%D0%D0%D0%C1%EC%B5%BC",
+          "oacs.jx-bank.com/weboa/windex.nsf/oaframe?openframeset&18-3-26%2017:02:50&dept=%BD%AD%CE%F7%D2%F8%D0%D0/%D0%C5%CF%A2%BF%C6%BC%BC%B2%BF",
+          "oacs.jx-bank.com/weboa/windex.nsf/oaframe?openframeset&18-3-28%209:38:01&dept=%BD%AD%CE%F7%D2%F8%D0%D0/%BD%AD%CE%F7%CA%A1%B7%D6%D0%D0/%D2%CB%B4%BA%B7%D6%D0%D0/%B0%EC%B9%AB%CA%D2",
+          "oacs.jx-bank.com/weboa/windex.nsf/oaframe?openframeset&18-3-28%209:49:03&dept=%BD%AD%CE%F7%D2%F8%D0%D0/%BD%AD%CE%F7%CA%A1%B7%D6%D0%D0/%D2%CB%B4%BA%B7%D6%D0%D0/%B0%EC%B9%AB%CA%D2",
+          "oacs.jx-bank.com/weboa/windex.nsf/oaframe?openframeset&18-3-29%2010:55:29&dept=%BD%AD%CE%F7%D2%F8%D0%D0/%D0%D0%C1%EC%B5%BC",
+          "oacs.jx-bank.com/weboa/windex.nsf/oaframe?openframeset&18-4-9%209:07:16&dept=%BD%AD%CE%F7%D2%F8%D0%D0/%D0%C5%CF%A2%BF%C6%BC%BC%B2%BF",
+          "oacs.jx-bank.com/weboa/windex.nsf/oaframe?openframeset&18-4-10%2017:31:55&dept=%BD%AD%CE%F7%D2%F8%D0%D0/%D0%C5%CF%A2%BF%C6%BC%BC%B2%BF",
+          "oacs.jx-bank.com/weboa/windex.nsf/oaframe?openframeset",
+          "oacs.jx-bank.com/weboa/windex.nsf/oaframe?openframeset&18-5-2%2012:03:23&dept=%BD%AD%CE%F7%D2%F8%D0%D0/%B5%B3%CE%AF%B0%EC%B9%AB%CA%D2",
+          "oacs.jx-bank.com/weboa/windex.nsf/oaframe?openframeset&18-5-2%2014:49:46&dept=%BD%AD%CE%F7%D2%F8%D0%D0/%B5%B3%CE%AF%B0%EC%B9%AB%CA%D2",
+          "oacs.jx-bank.com/weboa/windex.nsf/oaframe?openframeset&18-5-2%2016:27:53&dept=%BD%AD%CE%F7%D2%F8%D0%D0/%D0%C5%CF%A2%BF%C6%BC%BC%B2%BF",
+          "oacs.jx-bank.com/weboa/windex.nsf/oaframe?openframeset&18-6-11%2017:48:27&dept=%BD%AD%CE%F7%D2%F8%D0%D0/%D0%C5%CF%A2%BF%C6%BC%BC%B2%BF",
+          "oacs.jx-bank.com/weboa/windex.nsf/oaframe?openframeset&18-6-12%208:53:25&dept=%BD%AD%CE%F7%D2%F8%D0%D0/%D0%D0%C1%EC%B5%BC",
+          "oafh3.jx-bank.com/weboa/windex.nsf/oaframe?openframeset&18-6-13%2011:35:24&dept=%E6%B1%9F%E8%A5%BF%E9%93%B6%E8%A1%8C/%E6%B1%9F%E8%A5%BF%E7%9C%81%E5%88%86%E8%A1%8C/%E5%AE%9C%E6%98%A5%E5%88%86%E8%A1%8C/%E5%8A%9E%E5%85%AC%E5%AE%A4",
+          "oafh1.jx-bank.com/weboa/windex.nsf/oaframe?openframeset&18-6-22%2018:21:18&dept=%E6%B1%9F%E8%A5%BF%E9%93%B6%E8%A1%8C/%E6%B1%9F%E8%A5%BF%E7%9C%81%E5%88%86%E8%A1%8C/%E5%8D%97%E6%98%8C%E5%88%86%E8%A1%8C/%E4%B8%9C%E6%B9%96%E6%94%AF%E8%A1%8C/%E5%85%AC%E5%8F%B8%E9%93%B6%E8%A1%8C%E9%83%A8",
+          "oafh1.jx-bank.com/weboa/windex.nsf/oaframe?openframeset&18-6-22%2018:29:57&dept=%E6%B1%9F%E8%A5%BF%E9%93%B6%E8%A1%8C/%E6%B1%9F%E8%A5%BF%E7%9C%81%E5%88%86%E8%A1%8C/%E5%8D%97%E6%98%8C%E5%88%86%E8%A1%8C/%E4%B8%9C%E6%B9%96%E6%94%AF%E8%A1%8C/%E5%85%AC%E5%8F%B8%E9%93%B6%E8%A1%8C%E9%83%A8",
+          "oacs.jx-bank.com/weboa/windex.nsf/oaframe?openframeset&18-6-29%2014:00:52&dept=%BD%AD%CE%F7%D2%F8%D0%D0/%BD%AD%CE%F7%CA%A1%B7%D6%D0%D0/%C4%CF%B2%FD%B7%D6%D0%D0/%B0%CB%D2%BB%D6%A7%D0%D0/%D7%DB%BA%CF%B2%BF",
+          "oacs.jx-bank.com/weboa/windex.nsf/oaframe?openframeset&18-7-12%209:38:41&dept=%BD%AD%CE%F7%D2%F8%D0%D0/%D0%C5%CF%A2%BF%C6%BC%BC%B2%BF",
+          "oacs.jx-bank.com/weboa/windex.nsf/oaframe?openframeset&18-7-12%2014:34:43&dept=%BD%AD%CE%F7%D2%F8%D0%D0/%D0%C5%CF%A2%BF%C6%BC%BC%B2%BF",
+          "oacs.jx-bank.com/weboa/windex.nsf/oaframe?openframeset&18-7-14%2017:58:34&dept=%E6%B1%9F%E8%A5%BF%E9%93%B6%E8%A1%8C/%E4%BF%A1%E6%81%AF%E7%A7%91%E6%8A%80%E9%83%A8",
+          "oacs.jx-bank.com/weboa/windex.nsf/oaframe?openframeset&18-7-14%2018:23:12&dept=%E6%B1%9F%E8%A5%BF%E9%93%B6%E8%A1%8C/%E4%BF%A1%E6%81%AF%E7%A7%91%E6%8A%80%E9%83%A8",
+          "oafh2.jx-bank.com/weboa/windex.nsf/oaframe?openframeset&18-8-1%209:06:37&dept=%E6%B1%9F%E8%A5%BF%E9%93%B6%E8%A1%8C/%E6%B1%9F%E8%A5%BF%E7%9C%81%E5%88%86%E8%A1%8C/%E5%8D%97%E6%98%8C%E5%88%86%E8%A1%8C/%E9%AB%98%E6%96%B0%E6%94%AF%E8%A1%8C/%E8%B4%A2%E4%BC%9A%E9%83%A8",
+          "oacs.jx-bank.com/weboa/windex.nsf/oaframe?openframeset&18-8-29%2015:41:10&dept=%E6%B1%9F%E8%A5%BF%E9%93%B6%E8%A1%8C/%E4%BF%A1%E6%81%AF%E7%A7%91%E6%8A%80%E9%83%A8",
+          "oacs.jx-bank.com/weboa/windex.nsf/oaframe?openframeset&18-9-7%2017:54:07&dept=%E6%B1%9F%E8%A5%BF%E9%93%B6%E8%A1%8C/%E4%BF%A1%E6%81%AF%E7%A7%91%E6%8A%80%E9%83%A8",
+          "oacs.jx-bank.com/weboa/windex.nsf/oaframe?openframeset&18-9-7%2018:14:07&dept=%E6%B1%9F%E8%A5%BF%E9%93%B6%E8%A1%8C/%E4%BF%A1%E6%81%AF%E7%A7%91%E6%8A%80%E9%83%A8"
+        ]
+      }
+    },
+    "page/ids": {
+      "contexts": {
+        "context0_mn0bAL": [
+          [
+            "info",
+            "loginpd",
+            "loginun"
+          ]
+        ]
+      }
+    },
+    "page/classes": {
+      "contexts": {
+        "context0_mn0bAL": [
+          [
+            "box",
+            "but",
+            "login",
+            "pd",
+            "sub",
+            "un",
+            "user"
+          ]
+        ]
+      }
+    },
+    "page/tagTriplets": {
+      "contexts": {
+        "context0_mn0bAL": [
+          [
+            "-/-/FORM",
+            "-/-/SCRIPT",
+            "-/FORM/BR",
+            "-/FORM/FONT",
+            "-/FORM/INPUT-hidden",
+            "-/FORM/LINK",
+            "-/FORM/META",
+            "-/FORM/SCRIPT",
+            "-/FORM/STYLE",
+            "-/FORM/TABLE",
+            "-/FORM/TITLE",
+            "DIV/DIV/BR",
+            "DIV/DIV/BUTTON",
+            "DIV/DIV/DIV",
+            "DIV/DIV/FONT",
+            "DIV/DIV/IMG",
+            "DIV/DIV/INPUT-null",
+            "DIV/DIV/INPUT-password",
+            "DIV/DIV/P",
+            "DIV/FONT/B",
+            "DIV/FONT/STRONG",
+            "FORM/FONT/INPUT-hidden",
+            "FORM/TABLE/TBODY",
+            "TABLE/TBODY/TR",
+            "TBODY/TR/TD",
+            "TD/DIV/DIV",
+            "TR/TD/DIV"
+          ],
+          [
+            "-/-/FORM",
+            "-/-/SCRIPT",
+            "-/FORM/BR",
+            "-/FORM/FONT",
+            "-/FORM/H1",
+            "-/FORM/INPUT-hidden",
+            "-/FORM/INPUT-number",
+            "-/FORM/LINK",
+            "-/FORM/META",
+            "-/FORM/SCRIPT",
+            "-/FORM/STYLE",
+            "-/FORM/TABLE",
+            "-/FORM/TITLE",
+            "DIV/DIV/BR",
+            "DIV/DIV/BUTTON",
+            "DIV/DIV/DIV",
+            "DIV/DIV/FONT",
+            "DIV/DIV/IMG",
+            "DIV/DIV/INPUT-null",
+            "DIV/DIV/INPUT-password",
+            "DIV/DIV/P",
+            "DIV/FONT/B",
+            "DIV/FONT/STRONG",
+            "FORM/FONT/INPUT-hidden",
+            "FORM/TABLE/TBODY",
+            "TABLE/TBODY/TR",
+            "TBODY/TR/TD",
+            "TD/DIV/DIV",
+            "TR/TD/DIV"
+          ]
+        ]
+      }
+    }
+  }
+}

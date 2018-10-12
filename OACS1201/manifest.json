@@ -1,0 +1,104 @@
+{
+  "type": "adapter",
+  "short_name": "",
+  "version": "0.0.1",
+  "runtime_version": "2.5.3",
+  "runtime_env": "1webview",
+  "description": "",
+  "options": {
+    "resource_intercept": {
+      "type": [],
+      "ignore": []
+    },
+    "resource_inject": [],
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36",
+    "resource_filter": [
+      {
+        "url_match": [
+          "^http:\\/\\/oacs\\.jx-bank\\.com\\/.*"
+        ],
+        "charset": "utf-8",
+        "replaces": [
+          {
+            "regexp": "\\x0D",
+            "sub_str": "\\\n"
+          }
+        ]
+      }
+    ]
+  },
+  "override_urls": [
+    {
+      "origin_url": [
+        "http:\\/\\/oacs\\.jx-bank\\.com\\/weboa\\/wdispdoc\\.nsf\\/0\\/.*\\?EditDocument&Seq=1"
+      ],
+      "target_url": "override/success.html",
+      "default_url": "http://oacs.jx-bank.com/weboa/wdispdoc.nsf/00/.*?EditDocument&Seq=1"
+    },
+    {
+      "origin_url": [
+        "http:\\/\\/oacs\\.jx-bank\\.com\\/weboa\\/DaiKuan00\\.nsf\\/0\\/ede51d2c0cf11d5b482581ed0021a29c\\?EditDocument&Seq=1"
+      ],
+      "target_url": "override/wuwenjiantishi.html",
+      "default_url": "http://oacs.jx-bank.com/weboa/DaiKuan00.nsf/0/ede51d2c0cf11d5b482581ed0021a29c?EditDocument&Seq=1"
+    }
+  ],
+  "adapter_urls": [
+    {
+      "title": "index",
+      "url": "adapter://OACS/plan/index/index.json",
+      "matcher": [
+        ".*weboa\\/windex\\.nsf\\/oaframe.*"
+      ],
+      "demo": [
+        "http://oacs.jx-bank.com/weboa/windex.nsf/oaframe?openframeset&17-9-14%208:44:05&dept=%BD%AD%CE%F7%D2%F8%D0%D0/%D0%C5%CF%A2%BF%C6%BC%BC%B2%BF"
+      ]
+    },
+    {
+      "title": "login",
+      "url": "adapter://OACS/plan/index/index.json",
+      "matcher": [
+        "^http:\\/\\/oacs\\.jx-bank\\.com\\/\\?type=login"
+      ],
+      "demo": [
+        "http://oacs.jx-bank.com/"
+      ]
+    },
+    {
+      "title": "otherList",
+      "url": "adapter://OACS/plan/otherList/index.json",
+      "matcher": [
+        ".*[Oo]pen[Vv]iew.*"
+      ],
+      "demo": [
+        "http://oacs.jx-bank.com/weboa/wrecfile.nsf/vwAllDoc?OpenView&count=20"
+      ]
+    },
+    {
+      "title": "changeDepartment",
+      "url": "adapter://OACS/plan/changeDepartment/index.json",
+      "matcher": [
+        ".*WFrmdeptchange.*"
+      ],
+      "demo": [
+        "http://oacs.jx-bank.com/weboa/wrecfile.nsf/vwAllDoc?OpenView&count=20"
+      ]
+    },
+    {
+      "title": "fwgldetail",
+      "url": "adapter://OACS/plan/fwgldetail/index.json",
+      "matcher": [
+        ".*opendocument.*"
+      ],
+      "demo": [
+        "http://oacs.jx-bank.com/weboa/wdispdoc.nsf/0/6D0630EF50BA6CFF4825818A00299622?opendocument"
+      ]
+    }
+  ],
+  "name": "OA系统（测试完整）",
+  "default_url": "http://oacs.jx-bank.com",
+  "scope": "OACS",
+  "start_url": "http://oacs.jx-bank.com/weboa/windex.nsf/oaframe?openframeset&pagetype=mobile",
+  "fixed_version": 1,
+  "update_time": 1538279689743
+}

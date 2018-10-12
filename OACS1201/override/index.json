@@ -1,0 +1,20 @@
+{
+  "replace": [
+    {
+      "type": "html",
+      "remote": [
+        "http:\\/\\/oacs\\.jx-bank\\.com00000\\/weboa\\/wdispdoc\\.nsf\\/0\\/.*\\?EditDocument&Seq=1"
+      ],
+      "local": "success.html",
+      "time": 1516785394733
+    },
+    {
+      "type": "html",
+      "remote": [
+        "http:\\/\\/oacs\\.jx-bank\\.com\\/weboa\\/DaiKuan00\\.nsf\\/0\\/ede51d2c0cf11d5b482581ed0021a29c\\?EditDocument&Seq=1"
+      ],
+      "local": "wuwenjiantishi.html",
+      "time": 1512614274755
+    }
+  ]
+}
