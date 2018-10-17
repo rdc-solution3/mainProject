@@ -1,0 +1,36 @@
+{
+  "replace": [
+    {
+      "type": "js",
+      "remote": [
+        "http:\\/\\/10\\.1\\.41\\.169:7001\\/grxd\\/js\\/ShieldKey\\.js"
+      ],
+      "local": "ShieldKey.js",
+      "time": 1506499121283
+    },
+    {
+      "type": "js",
+      "remote": [
+        "http:\\/\\/10\\.1\\.41\\.169:7001\\/grxd\\/js\\/loan\\.js"
+      ],
+      "local": "loan.js",
+      "time": 1506586290687
+    },
+    {
+      "type": "js",
+      "remote": [
+        "http:\\/\\/10\\.1\\.41\\.169:7001\\/grxd\\/js\\/formvalidate\\.js"
+      ],
+      "local": "formvalidate.js",
+      "time": 1510123428098
+    },
+    {
+      "type": "html",
+      "remote": [
+        "http:\\/\\/10\\.1\\.41\\.169:7001\\/grxd\\/close\\.jsp"
+      ],
+      "local": "close.html",
+      "time": 1536284358222
+    }
+  ]
+}
