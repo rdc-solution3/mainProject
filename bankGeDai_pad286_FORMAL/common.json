@@ -1,0 +1,46 @@
+{
+  "special_models": [
+    {
+      "path": "plan/login/index.json"
+    }
+  ],
+  "common_js": [
+    {
+      "path": "lib/base.js"
+    },
+    {
+      "path": "lib/customTemplate.js"
+    },
+    {
+      "path": "lib/jquery-3.2.0.min.js"
+    },
+    {
+      "path": "lib/jquery-3.2.0.min.js",
+      "target": "face"
+    },
+    {
+      "path": "lib/compatibility.js"
+    },
+    {
+      "path": "lib/jq-signature.min.js",
+      "target": "face"
+    },
+    {
+      "path": "lib/jquery.js",
+      "target": "face"
+    },
+    {
+      "path": "lib/jSignature.min.js",
+      "target": "face"
+    },
+    {
+      "path": "lib/jSignature.CompressorSVG.js",
+      "target": "face"
+    }
+  ],
+  "common_css": [
+    {
+      "path": "lib/base.css"
+    }
+  ]
+}

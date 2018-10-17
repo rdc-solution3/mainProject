@@ -1,0 +1,2568 @@
+/**** 隐藏元素 ****/
+.disnone {
+  display: none;
+}
+select {
+  padding: 0;
+  height: 45px;
+  line-height: 45px;
+  padding-left: 10px;
+}
+.editor-state [data-type="card"] {
+  margin: 0;
+  padding: 1px 0 0 0;
+}
+/**** grid 结构 ****/
+.mainContainer {
+  height: 90vh;
+}
+.mainContainer .col-3 {
+  flex: initial;
+  max-width: none;
+  height: 100vh;
+}
+.mainContainer .col-3:first-child {
+  width: 20%;
+}
+.mainContainer .col-3:first-child .sideBar {
+  height: 100vh;
+  background: #333;
+  color: #fff;
+  padding-top: 20px;
+}
+.mainContainer .col-3:first-child .sideBar div {
+  padding: 10px 0;
+  padding-left: 20px;
+  position: relative;
+}
+.mainContainer .col-3:first-child .sideBar div .dot {
+  width: 15px;
+  height: 15px;
+  line-height: 15px;
+  text-align: center;
+  margin-right: 10px;
+}
+.mainContainer .col-3:first-child .sideBar div .dot .num {
+  display: none;
+}
+.mainContainer .col-3:first-child .sideBar .dot:before {
+  content: '';
+  border-radius: 50%;
+  background: #009593;
+  font-size: 13px;
+  display: inline-block;
+  line-height: 15px;
+  text-align: center;
+  padding: 0 2px;
+  width: 5px;
+  height: 5px;
+  margin: 0 auto;
+}
+.mainContainer .col-3:first-child .sideBar .curStep {
+  -webkit-filter: brightness(1.2);
+  filter: brightness(1.2);
+  background: #333;
+}
+.mainContainer .col-3:first-child .sideBar .curStep .dot:before {
+  display: none;
+}
+.mainContainer .col-3:first-child .sideBar .curStep .dot {
+  padding: 2px 0;
+  color: #000;
+}
+.mainContainer .col-3:first-child .sideBar .curStep .dot .num {
+  display: inline-block;
+  background: #fff;
+  padding: 0 3px;
+  border-radius: 50%;
+  position: relative;
+  left: -4px;
+}
+.mainContainer .col-3:first-child .sideBar .curStep ~ div .dot:before {
+  background: #fff;
+}
+.mainContainer .col-3:last-child {
+  width: 80%;
+  overflow-y: auto;
+  position: relative;
+  padding-bottom: 100px;
+  /** 借款人详细信息 左右侧分结构 **/
+  /** 贷款申请底部标题 **/
+  /*** 贷前初审 获取内评结果按钮 ***/
+}
+.mainContainer .col-3:last-child .loanerCardTitle {
+  background: #f6f6f6;
+  padding: 15px;
+  font-size: 1.1em;
+}
+.mainContainer .col-3:last-child .loanerInfoLeft,
+.mainContainer .col-3:last-child .loanerInfoRight {
+  border: 0;
+  box-shadow: none;
+  float: left;
+  margin: 0;
+  height: 70vh;
+  overflow-y: scroll;
+  position: relative;
+}
+.mainContainer .col-3:last-child .loanerInfoLeft .card-body,
+.mainContainer .col-3:last-child .loanerInfoRight .card-body {
+  padding: 0;
+}
+.mainContainer .col-3:last-child .loanerInfoLeft {
+  width: 25%;
+  padding: 10px 10px 10px 15px;
+}
+.mainContainer .col-3:last-child .loanerInfoLeft .title {
+  padding: 10px 0;
+  color: #aaa;
+}
+.mainContainer .col-3:last-child .loanerInfoLeft .curTitle {
+  color: #000;
+}
+.mainContainer .col-3:last-child .loanerInfoRight {
+  width: 75%;
+  border-left: 1px solid #ddd;
+}
+.mainContainer .col-3:last-child    .bottomBtns {
+  position: fixed;
+  height: 60px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #f6f6f6;
+  margin: 0;
+  margin-left: 20%;
+  padding: 0;
+  box-shadow: none;
+  z-index: 2;
+}
+.mainContainer .col-3:last-child    .bottomBtns .card-body {
+  margin: 0;
+  padding: 0;
+}
+.mainContainer .col-3:last-child    .bottomBtns .loanBottomBtn {
+  background: #fff;
+  z-index: 1;
+  padding: 10px 10px 0;
+  background: #f6f6f6;
+  padding-left: 60%;
+}
+.mainContainer .col-3:last-child    .bottomBtns .loanBottomBtn .btn {
+  margin-bottom: 0;
+  background: #009593;
+  color: #fff;
+  padding: 8px 0;
+  border-color: transparent;
+}
+.mainContainer .col-3:last-child    .bottomBtns .loanBottomBtn .btn:first-child {
+  background-color: #e8e8e8;
+  color: #009593;
+}
+.mainContainer .col-3:last-child    .bottomBtns .loanBottomBtn .btn#confirmBtn {
+  background-color: #009593;
+  color: #fff;
+}
+.mainContainer .col-3:last-child    .bottomBtns .loanBottomBtn .btn#confirmBtn + .btn,
+.mainContainer .col-3:last-child    .bottomBtns .loanBottomBtn .btn#cancelBtn {
+  background-color: #e8e8e8;
+  color: #009593;
+}
+.mainContainer .col-3:last-child    .bottomBtns .btnWithIcon {
+  padding-left: 50%;
+}
+.mainContainer .col-3:last-child    .bottomBtns .btnWithIcon .btn:nth-child(2) {
+  background-color: #e8e8e8;
+  color: #009593;
+  border-color: #e8e8e8;
+}
+.mainContainer .col-3:last-child    .bottomBtns .btnWithIcon .btn.iconImgBtn {
+  background: transparent;
+  border: none;
+  color: #009593;
+  margin-right: 40%;
+  background: transparent url(img/video.png) no-repeat left 47%;
+  background-size: 18px 15px;
+  padding-left: 28px;
+  display: flex;
+  align-items: center;
+}
+.mainContainer .col-3:last-child .getInternalAssess {
+  padding-left: 15px;
+  height: 1px;
+  position: relative;
+  top: -0.2vh;
+  color: #009593;
+  /** 贷前初审 内评结果 **/
+}
+.mainContainer .col-3:last-child .getInternalAssess > span {
+  position: relative;
+  top: 15px;
+  padding-left: 20px;
+  background: url(img/internalAssess.png) no-repeat left center;
+  background-size: 15px 15px;
+}
+.mainContainer .col-3:last-child .getInternalAssess .assessResultCard {
+  padding: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0px -1px 2px 1px #ddd;
+  margin-top: 15px;
+  font-family: '黑体';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.mainContainer .col-3:last-child .getInternalAssess .assessResultCard .assessGrp {
+  display: inline-block;
+  width: 50%;
+  padding-bottom: 5px;
+}
+.mainContainer .col-3:last-child .getInternalAssess .assessResultCard .assessGrp .key,
+.mainContainer .col-3:last-child .getInternalAssess .assessResultCard .assessGrp .value {
+  display: inline-block;
+}
+.mainContainer .col-3:last-child .getInternalAssess .assessResultCard .assessGrp .key {
+  color: #333;
+  width: 30%;
+}
+.mainContainer .col-3:last-child .getInternalAssess .assessResultCard .assessGrp .value {
+  width: 70%;
+}
+.mainContainer .col-3:last-child .getInternalAssess .assessResultCard .assessGrp .value input {
+  width: 100%;
+  border: 1px solid #eee;
+  padding: 10px;
+  background: #fff;
+  font-size: 0.9em;
+  border-radius: 2px;
+}
+.mainContainer .col-3:last-child .getInternalAssess .assessResultCard .assessGrp .value input[disabled],
+.mainContainer .col-3:last-child .getInternalAssess .assessResultCard .assessGrp .value input[readonly] {
+  background: #f2f2f2;
+}
+/**** 新增贷款 ****/
+/**** 借款人信息列表-bottombtn左侧底部按钮 ****/
+[data-ysp-modelid="loanerInfoList"] .bottomBtns .btnLeft,
+[data-ysp-modelid="loanerInfoList"] .bottomBtns .btnRight {
+  float: left;
+  padding: 0;
+  margin: 0;
+  width: 50%;
+  background: #fff;
+  z-index: 1;
+  background: #f6f6f6;
+  box-shadow: none;
+}
+[data-ysp-modelid="loanerInfoList"] .bottomBtns .btnLeft .card-body,
+[data-ysp-modelid="loanerInfoList"] .bottomBtns .btnRight .card-body {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+[data-ysp-modelid="loanerInfoList"] .bottomBtns .btnLeft .loanBtns {
+  padding-right: 40%;
+  background: #fff;
+  z-index: 1;
+  background: #f6f6f6;
+}
+[data-ysp-modelid="loanerInfoList"] .bottomBtns .btnLeft .loanBtns .btn {
+  margin-bottom: 0;
+  color: #009593;
+  background: transparent;
+  border: 0;
+  padding: 8px 0;
+  width: 30%;
+  padding-right: 5px;
+}
+[data-ysp-modelid="loanerInfoList"] .bottomBtns .btnLeft .loanBtns .btn[data-gray='gray'] {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray;
+}
+[data-ysp-modelid="loanerInfoList"] .bottomBtns .btnLeft .loanBtns #add {
+  background: url(img/add.png) no-repeat;
+}
+[data-ysp-modelid="loanerInfoList"] .bottomBtns .btnLeft .loanBtns #detail {
+  background: url(img/detail.png) no-repeat;
+}
+[data-ysp-modelid="loanerInfoList"] .bottomBtns .btnLeft .loanBtns #delete {
+  background: url(img/delete.png) no-repeat;
+}
+[data-ysp-modelid="loanerInfoList"] .bottomBtns .btnLeft .loanBtns #add,
+[data-ysp-modelid="loanerInfoList"] .bottomBtns .btnLeft .loanBtns #delete,
+[data-ysp-modelid="loanerInfoList"] .bottomBtns .btnLeft .loanBtns #detail {
+  background-size: 15px 15px;
+  background-position: 5px 48%;
+  padding-left: 13px;
+}
+[data-ysp-modelid="loanerInfoList"] .bottomBtns .btnRight .loanBtns {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  padding: 7px 8px;
+}
+[data-ysp-modelid="loanerInfoList"] .bottomBtns .btnRight .loanBtns .btn {
+  display: inline-block;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #4B9BEC;
+  background: #fff;
+  color: #4B9BEC;
+  margin-right: 5px;
+}
+[data-ysp-modelid="loanerInfoList"] .bottomBtns .btnRight .loanBtns .btn:last-child {
+  margin-right: 0;
+}
+/**** 贷前初审 ****/
+[data-ysp-modelid="checkBeforeLoan"] .mainContainer .col-3:last-child {
+  padding-bottom: 30%;
+}
+[data-ysp-modelid="checkBeforeLoan"] .tableContainer .StandardTable table td .btn_me:nth-child(2) {
+  color: #FF4E4E;
+  padding: 5px 0;
+}
+/**** tableBoxWithIcon,tableBoxNoIcon ****/
+.tableBoxWithIcon .TableBox,
+.tableBoxNoIcon .TableBox {
+  background: #f8f8f8;
+  box-shadow: #ddd 0px -5px 5px 0px;
+  z-index: 999;
+}
+.tableBoxWithIcon .TableBox .TableBox_title,
+.tableBoxNoIcon .TableBox .TableBox_title {
+  background: #f6f6f6;
+  padding: 15px;
+  font-size: 1.1em;
+}
+.tableBoxWithIcon .TableBox .TableBox_title .hideSelf,
+.tableBoxNoIcon .TableBox .TableBox_title .hideSelf {
+  font-size: 0.9em;
+  display: inline-block;
+  color: #009593;
+}
+.tableBoxWithIcon .TableBox .TableBox_title .TableBox_switch,
+.tableBoxNoIcon .TableBox .TableBox_title .TableBox_switch {
+  font-size: 0.9em;
+  color: #009593;
+}
+.tableBoxWithIcon .TableBox .TableBox_body table,
+.tableBoxNoIcon .TableBox .TableBox_body table {
+  text-align: center;
+}
+.tableBoxWithIcon .TableBox .TableBox_body table tbody tr:first-child,
+.tableBoxNoIcon .TableBox .TableBox_body table tbody tr:first-child {
+  color: #aaa;
+}
+.tableBoxWithIcon .TableBox .TableBox_body table tbody tr.activeRow,
+.tableBoxNoIcon .TableBox .TableBox_body table tbody tr.activeRow {
+  background: #009593;
+  color: #fff;
+}
+.tableBoxWithIcon .TableBox .TableBox_body table tbody tr,
+.tableBoxNoIcon .TableBox .TableBox_body table tbody tr {
+  border-bottom: 1px solid #ddd;
+}
+.tableBoxWithIcon .TableBox .TableBox_body table tbody tr td:last-child,
+.tableBoxNoIcon .TableBox .TableBox_body table tbody tr td:last-child {
+  white-space: normal;
+}
+.tableBoxWithIcon .TableBox .TableBox_chose .type-list:before,
+.tableBoxNoIcon .TableBox .TableBox_chose .type-list:before {
+  content: '';
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+  border-radius: 50%;
+  border: 1px solid #009593;
+  background: transparent;
+}
+.tableBoxWithIcon .TableBox .TableBox_chose .active:before,
+.tableBoxNoIcon .TableBox .TableBox_chose .active:before {
+  background: #009593;
+  border: 3px solid #333;
+  box-shadow: 0px 0px 1px 1px #009593;
+}
+.tableBoxWithIcon {
+  height: 1px;
+}
+.tableBoxWithIcon .icon {
+  height: 10vh;
+  line-height: 10vh;
+  text-align: center;
+  padding: 0 30px;
+  font-size: 1.0rem;
+  margin-left: 10px;
+  color: #009593;
+}
+.tableBoxWithIcon .icon-open {
+  background: url(img/repaymentOpen.png) no-repeat;
+}
+.tableBoxWithIcon .icon-fold {
+  background: url(img/repaymentFold.png) no-repeat;
+}
+.tableBoxWithIcon .icon-fold,
+.tableBoxWithIcon .icon-open {
+  background-size: 15px 15px;
+  background-position: left 48%;
+  padding-left: 20px;
+}
+.tableBoxWithIcon .TableBox {
+  position: fixed;
+  left: 20%;
+  right: 0;
+  bottom: 10vh;
+  background: #f8f8f8;
+  box-shadow: #ddd 0px -5px 5px 0px;
+}
+.tableBoxWithIcon .TableBox .activeRow {
+  background: #009593;
+}
+.tableBoxWithIcon .TableBox .TableBox_body {
+  max-height: 40vh;
+  overflow-y: scroll;
+}
+.tableBoxWithIcon .TableBox .TableBox_body table {
+  text-align: center;
+}
+.tableBoxWithIcon .TableBox .TableBox_body table tbody tr:first-child {
+  color: #aaa;
+}
+.tableBoxWithIcon .TableBox .TableBox_body table tbody tr {
+  border-bottom: 1px solid #ddd;
+}
+.tableBoxNoIcon .TableBox {
+  background-color: #fff;
+  z-index: 1000;
+}
+.tableBoxNoIcon .TableBox_body {
+  padding: 0;
+}
+.tableBoxNoIcon .TableBox_body table {
+  border-collapse: collapse;
+  width: 100%;
+  font-family: '黑体';
+  border-bottom: 1px solid #f6f6f6;
+}
+.tableBoxNoIcon .TableBox_body table tbody tr:nth-child(odd) {
+  background: #f6f6f6;
+}
+.tableBoxNoIcon .TableBox_body table tbody tr:first-child {
+  border-bottom: 1px solid #eee;
+  text-align: center;
+}
+.tableBoxNoIcon .TableBox_body table tbody tr:first-child td {
+  font-weight: normal;
+  color: #666;
+}
+.tableBoxNoIcon .TableBox_body table tr th,
+.tableBoxNoIcon .TableBox_body table tr td {
+  white-space: nowrap;
+  padding: 5px;
+  text-align: center;
+}
+.tableBoxNoIcon .TableBox_body table tr td:last-child {
+  white-space: normal;
+}
+/**** menuList 主菜单公共组件样式菜单样式 ****/
+.menuList {
+  box-shadow: 0px 1px 10px 1px #000;
+  position: relative;
+  z-index: 1;
+  height: 10vh;
+}
+.menuList .header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #333;
+  padding: 7px 0;
+  height: 10vh;
+}
+.menuList .header span {
+  color: #fff;
+  text-align: center;
+  display: inline-block;
+  width: 50%;
+}
+.menuList .header span:first-child {
+  font-size: 1.1em;
+  text-align: left;
+  padding-left: 30px;
+}
+.menuList .header span:nth-child(2) {
+  text-align: right;
+  padding-right: 30px;
+}
+.menuList .header span.refreshBtn:before {
+  background: url(img/refresh.png) no-repeat center center;
+  background-size: 100%;
+  content: '';
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+}
+/**** StandardTable 公共组件样式 ****/
+.tableContainer .cardTitle {
+  background: #f6f6f6;
+  padding: 15px;
+  font-size: 1.1em;
+}
+.tableContainer .StandardTable table {
+  border-collapse: collapse;
+  width: 100%;
+  font-family: '黑体';
+  border-bottom: 1px solid #f6f6f6;
+}
+.tableContainer .StandardTable table thead tr {
+  border-bottom: 1px solid #eee;
+  text-align: center;
+}
+.tableContainer .StandardTable table thead tr th {
+  font-weight: normal;
+  color: #666;
+}
+.tableContainer .StandardTable table tbody tr:nth-child(even) {
+  background: #f6f6f6;
+}
+.tableContainer .StandardTable table tbody tr.selectedTr {
+  background: #009593;
+  color: #fff;
+}
+.tableContainer .StandardTable table tr th,
+.tableContainer .StandardTable table tr td {
+  white-space: nowrap;
+  padding: 5px;
+  text-align: center;
+}
+.tableContainer .StandardTable table tr td:last-child {
+  white-space: normal;
+}
+.tableContainer .StandardTable table.btnTable tbody tr td .btn_me {
+  color: #009593;
+}
+.tableContainer .confirmSignBtn {
+  color: #c9302c;
+}
+/**** pageBtns 分页页码公共组件样式 ****/
+.pageBtns {
+  margin: 20px 0;
+}
+.pageBtns .curPage {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.pageBtns .btns {
+  display: flex;
+}
+.pageBtns .btns button {
+  margin: 0 3px;
+  width: 100%;
+  color: #333;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+/**** inboxMenus 公共组件样式 ****/
+.inboxMenusContainer {
+  width: 100%;
+  overflow: scroll;
+  overflow-y: hidden;
+  margin: 10px 0;
+}
+.inboxMenusContainer .inboxMenus {
+  width: 250%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+}
+.inboxMenusContainer .inboxMenus span {
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+}
+.inboxMenusContainer .inboxMenus span.curMenu {
+  position: relative;
+  color: #44CDEF;
+}
+.inboxMenusContainer .inboxMenus span.curMenu:after {
+  content: '';
+  display: block;
+  width: 50%;
+  position: absolute;
+  left: 10%;
+  bottom: 0;
+  border-bottom: 2px solid #44CDEF;
+}
+/**** 客户信息采集 ****/
+.ocrCard {
+  padding-bottom: 10vh;
+}
+.ocrCard .ocrCardGroup {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.ocrCard .ocrCardGroup > div {
+  width: 50%;
+  padding: 10px 25px;
+}
+.ocrCard .ocrCardGroup > div .picName {
+  font-family: '黑体';
+  font-size: 1.1em;
+}
+.ocrCard .ocrCardGroup > div .picShow {
+  width: 15em;
+  height: 10em;
+  position: relative;
+  margin: 10px 0px;
+}
+.ocrCard .ocrCardGroup > div .picShow img {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.ocrCard .ocrCardGroup > div .picShow .icon-plus {
+  position: absolute;
+  left: 45%;
+  right: 45%;
+  top: 45%;
+  bottom: 45%;
+  color: #fff;
+  font-weight: bold;
+}
+.ocrCard .ocrCardGroup > div .picShow .icon-plus:before {
+  background: #a8b9c9;
+  border-radius: 50%;
+  padding: 5px;
+}
+.ocrCard .ocrCardGroup > div .picShow .picChoose {
+  position: absolute;
+  left: 45%;
+  top: 60%;
+  border-radius: 3px;
+  box-shadow: 0px 2px 5px 1px #CACACA;
+  background: #fff;
+}
+.ocrCard .ocrCardGroup > div .picShow .picChoose span {
+  display: inline-block;
+  width: 100%;
+  padding: 10px;
+}
+.ocrCard .ocrCardGroup > div:first-child .picShow {
+  background: url(img/idFront.png) no-repeat center center;
+  background-size: 100%;
+}
+.ocrCard .ocrCardGroup > div:nth-child(2) .picShow {
+  background: url(img/idBack.png) no-repeat center center;
+  background-size: 100%;
+}
+.ocrCard .ocrCardGroup > div:nth-child(3) .picShow,
+.ocrCard .ocrCardGroup > div:nth-child(4) .picShow {
+  background: url(img/picEmpty.png) no-repeat center center;
+  background-size: 100%;
+}
+/**** singleSelect 模拟 ****/
+.singleSelect {
+  padding-left: 60%;
+  background: #eee;
+}
+.singleSelect .singleSelectLi {
+  padding: 10px;
+}
+.singleSelect .singleSelectLi .title,
+.singleSelect .singleSelectLi .value {
+  display: inline-block;
+}
+.singleSelect .singleSelectLi .title {
+  width: 44%;
+  margin-left: 2px;
+  color: #009593;
+}
+.singleSelect .singleSelectLi .value {
+  width: 52%;
+}
+.singleSelect .singleSelectLi .value select {
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  height: 45px;
+}
+/**** mainCard ****/
+.mainCard {
+  padding: 10px 20%;
+  border-bottom: 1px solid #eee;
+}
+.mainCard .cardTitle {
+  padding-bottom: 10px;
+  font-size: 1.1em;
+  display: none;
+}
+.mainCard .groups .group {
+  margin: 10px 0;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+}
+.mainCard .groups .group .key,
+.mainCard .groups .group .value {
+  display: inline-block;
+}
+.mainCard .groups .group .key {
+  width: 30%;
+}
+.mainCard .groups .group .value {
+  width: 70%;
+  text-align: right;
+}
+.mainCard .groups .group .value input {
+  margin: 0;
+}
+.mainCard .groups .group .value select {
+  background-color: #fff;
+  padding: 0;
+  padding-left: 10px;
+  height: 45px;
+}
+.mainCard .groups .group .value select[disabled],
+.mainCard .groups .group .value select[readonly] {
+  background-color: #f2f2f2;
+}
+/**** 登录框 ****/
+[data-ysp-modelid="login"] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+[data-ysp-modelid="login"] [data-componentsid="uiControl14_eAWq8P"] {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loginBox {
+  width: 40%;
+  padding: 20% 5% 5% 5%;
+  border-radius: 5px;
+  background: url(img/logo.png) no-repeat center 5%;
+  background-size: 50%;
+}
+.loginBox .loginGrp {
+  padding-top: 10px;
+  position: relative;
+}
+.loginBox .loginGrp .btn#reset {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  width: auto;
+  background: transparent;
+  color: #009593;
+  border: 0;
+}
+.loginBox .loginGrp input {
+  display: inline-block;
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+  padding-left: 2em;
+}
+.loginBox .loginGrp input[type='text'] {
+  background: url(img/user.png) no-repeat left center;
+  background-size: 1.2em 1.2em;
+}
+.loginBox .loginGrp input[type='password'] {
+  padding-right: 55px;
+  background: url(img/pwd.png) no-repeat left center;
+  background-size: 1.2em 1.5em;
+}
+.loginBox .btnGrp {
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+.loginBox .btnGrp .btn#submit {
+  display: inline-block;
+  width: 100%;
+  border-radius: 5px;
+  background: #009593;
+  color: #fff;
+  border: 0;
+}
+/******* 云按揭贷款申请 *******/
+/** 卡片样式 **/
+/** 新增贷款表格下按钮 **/
+.loanBtns {
+  display: flex;
+  justify-content: center;
+  padding: 7px 8px;
+}
+.loanBtns .btn {
+  display: inline-block;
+  width: 100%;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+/** 概要 **/
+.summaryTab {
+  padding: 15px 0 15px 20%;
+  border-bottom: 1px solid #eee;
+}
+.summaryTab .sumLi {
+  display: inline-block;
+  width: 50%;
+  padding-right: 20px;
+}
+.summaryTab .sumLi .sumTit {
+  display: inline-block;
+  width: 45%;
+  text-align: left;
+  white-space: nowrap;
+  color: #666;
+}
+.summaryTab .sumLi .sumCont {
+  display: inline-block;
+  width: 55%;
+  text-align: right;
+  color: #333;
+  font-weight: bold;
+}
+.summaryTab .sumLi .sumCont input {
+  display: inline-block;
+  width: 80%;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  margin-right: 3%;
+  text-align: right;
+}
+/**** 问卷调查 ****/
+[data-ysp-modelid="personaQuestionare"] div.questionare {
+  padding: 10px 10px 50px 10px;
+}
+[data-ysp-modelid="personaQuestionare"] div.questionare table tbody td {
+  padding: 10px 0;
+}
+[data-ysp-modelid="personaQuestionare"] div.questionare input[type='radio'] {
+  margin: 0 10px 0 15px;
+}
+[data-ysp-modelid="personaQuestionare"] div.questionare input[type='text'] {
+  display: inline-block;
+  width: 100px;
+  height: 20px;
+  border: 0;
+  margin: 0px 5px;
+  border-bottom: 1px solid #f2f2f2;
+  width: 200px;
+}
+[data-ysp-modelid="personaQuestionare"] div.questionare select {
+  width: 20%;
+  display: inline-block;
+  margin-right: 5px;
+  border: 1px solid #e2e2e2;
+  background-color: #fff;
+}
+[data-ysp-modelid="personaQuestionare"] div.questionare select[disabled],
+[data-ysp-modelid="personaQuestionare"] div.questionare select[readonly] {
+  background-color: #f2f2f2;
+}
+/**** 目录页 ****/
+.directoryList {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+.directoryList div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  padding: 20% 0;
+  background: url(img/bg1.jpg) no-repeat center center;
+  background-size: auto 100%;
+}
+.directoryList div i.icon {
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  font-style: normal;
+  text-align: center;
+  font-size: 1em;
+  padding: 70px 20px 20px 20px;
+  background: url(img/loanApply.png) no-repeat center 25px;
+  background-size: 30px 30px;
+  border-radius: 50%;
+  background-color: #fff;
+  font-weight: bold;
+}
+.directoryList div:nth-child(2) {
+  background-image: url(img/bg2.jpg);
+}
+.directoryList div:nth-child(2) i.icon {
+  background-image: url(img/todoList.png);
+}
+.directoryList div:nth-child(3) {
+  background-image: url(img/bg3.jpg);
+}
+.directoryList div:nth-child(3) i.icon {
+  background-image: url(img/loanCalc.png);
+}
+.directoryList div:nth-child(4) {
+  background-image: url(img/bg4.jpg);
+}
+.directoryList div:nth-child(4) i.icon {
+  background-image: url(img/prodIntro.png);
+}
+/**** 头部返回 ****/
+.backHeader {
+  background-color: #333;
+  color: #fff;
+  box-shadow: 0px 0px 5px 1px #333;
+  border: 0;
+  padding: 5px 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+.backHeader .btn {
+  background-color: #333;
+  border-color: transparent;
+  margin-top: 5px;
+  border: 0;
+  margin: 0;
+}
+/**** 黑名单信息 ****/
+[data-ysp-modelid="blackList"] .name_id {
+  background: #f9f9f9;
+  padding: 10px 30px;
+}
+[data-ysp-modelid="blackList"] .name_id .name {
+  color: #000;
+  font-size: 1.1em;
+  padding-right: 20px;
+  border-right: 1px solid #e0e0e0;
+}
+[data-ysp-modelid="blackList"] .name_id .id {
+  color: #999;
+  padding-left: 20px;
+}
+[data-ysp-modelid="blackList"] .tableContainer {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  margin-bottom: 10px;
+}
+[data-ysp-modelid="blackList"] .tableContainer .cardTitle {
+  background: transparent;
+  font-size: 1em;
+  color: #009593;
+}
+[data-ysp-modelid="blackList"] .tableContainer .StandardTable {
+  overflow-x: auto;
+  border: 0;
+}
+[data-ysp-modelid="blackList"] .tableContainer .StandardTable table {
+  border: 0;
+  padding: 10px;
+}
+[data-ysp-modelid="blackList"] .tableContainer .StandardTable table thead {
+  background: #ddd;
+}
+[data-ysp-modelid="blackList"] .tableContainer .StandardTable table thead th {
+  color: #000;
+}
+[data-ysp-modelid="blackList"] .tableContainer .StandardTable table tbody {
+  padding: 10px;
+}
+[data-ysp-modelid="blackList"] .tableContainer .StandardTable table tbody tr:nth-child(even) {
+  background: #f9f9f9;
+}
+/**** 客户信息采集表格页 ****/
+[data-ysp-modelid="OCRCollectInfo"] table.infoCollect tbody tr td:nth-child(2) {
+  color: #009593;
+}
+[data-ysp-modelid="OCRCollectInfo"] table.infoCollect tbody tr td[data-gray='gray'] {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray(100%);
+}
+[data-ysp-modelid="OCRCollectInfo"] .col-3:last-child  .bottomBtns .loanBottomBtn {
+  padding-left: 10px;
+}
+/**** 获取内评结果弹出页面 ****/
+.assessHeader {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  height: 10vh;
+}
+.assessHeader > div {
+  display: inline-block;
+  width: 50%;
+}
+.assessHeader > div .icon {
+  font-size: 1em;
+}
+.assessHeader > div .icon:before {
+  margin-right: 10px;
+}
+.assessHeader > div:nth-child(2) {
+  text-align: right;
+  height: 20px;
+}
+.assessHeader > div:nth-child(2) .icon {
+  background: url(img/check_self.png) no-repeat center center;
+  background-size: 100%;
+  width: 20px;
+  height: 20px;
+}
+/**** 内评 ****/
+[data-ysp-modelid="internalAssess"] .name_id {
+  background: #f9f9f9;
+  padding: 10px 30px;
+}
+[data-ysp-modelid="internalAssess"] .name_id .name {
+  color: #000;
+  font-size: 1.1em;
+  padding-right: 20px;
+  border-right: 1px solid #e0e0e0;
+}
+[data-ysp-modelid="internalAssess"] .name_id .id {
+  color: #999;
+  padding-left: 20px;
+}
+[data-ysp-modelid="internalAssess"] .tableContainer {
+  overflow-x: scroll;
+}
+[data-ysp-modelid="internalAssess"] .assessTwoLineTable {
+  border-bottom: 1px solid #eee;
+}
+[data-ysp-modelid="internalAssess"] .assessTwoLineTable .grp {
+  padding: 15px 8px;
+}
+[data-ysp-modelid="internalAssess"] .assessTwoLineTable .grp .key,
+[data-ysp-modelid="internalAssess"] .assessTwoLineTable .grp .value {
+  display: inline-block;
+  width: 70%;
+}
+[data-ysp-modelid="internalAssess"] .assessTwoLineTable .grp .value {
+  width: 30%;
+  text-align: right;
+  border-left: 1px solid #eee;
+  padding-left: 10px;
+}
+[data-ysp-modelid="internalAssess"] .assessTwoLineTable .grp:last-child {
+  color: #ccc;
+}
+/**** 个人征信报告 ****/
+.creditReport {
+  padding: 10px;
+}
+.creditReport table {
+  width: 100%;
+}
+.creditReport table td {
+  width: auto;
+  white-space: normal;
+}
+.creditHeader {
+  background: #333;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.creditHeader .btn {
+  width: 50%;
+  text-align: left;
+  background: #333;
+  border: 0;
+}
+[data-ysp-modelid="signCreditAuthority"],
+[data-ysp-modelid="signContractAuthority"] {
+  position: relative;
+  padding-bottom: 250px;
+}
+[data-ysp-modelid="signCreditAuthority"] .authorityContainer .authGrp,
+[data-ysp-modelid="signContractAuthority"] .authorityContainer .authGrp {
+  border-bottom: 5px solid #eee;
+}
+[data-ysp-modelid="signCreditAuthority"] .authorityContainer .authGrp .authKey,
+[data-ysp-modelid="signContractAuthority"] .authorityContainer .authGrp .authKey,
+[data-ysp-modelid="signCreditAuthority"] .authorityContainer .authGrp .authValue,
+[data-ysp-modelid="signContractAuthority"] .authorityContainer .authGrp .authValue {
+  padding: 10px 15px;
+}
+[data-ysp-modelid="signCreditAuthority"] .authorityContainer .authGrp .authKey,
+[data-ysp-modelid="signContractAuthority"] .authorityContainer .authGrp .authKey {
+  border-bottom: 1px solid #eee;
+  font-size: 1.1em;
+  color: #000;
+}
+[data-ysp-modelid="signCreditAuthority"] .authorityContainer .authGrp .authValue p:empty,
+[data-ysp-modelid="signContractAuthority"] .authorityContainer .authGrp .authValue p:empty {
+  display: none;
+}
+[data-ysp-modelid="signCreditAuthority"] .authorityContainer .authGrp .authValue p,
+[data-ysp-modelid="signContractAuthority"] .authorityContainer .authGrp .authValue p {
+  margin: 0;
+  padding: 5px;
+}
+[data-ysp-modelid="signCreditAuthority"] .contractTit,
+[data-ysp-modelid="signContractAuthority"] .contractTit {
+  border-bottom: 1px solid #eee;
+  font-size: 1.1em;
+  color: #000;
+  padding: 10px 15px;
+}
+[data-ysp-modelid="signCreditAuthority"] .contractCont,
+[data-ysp-modelid="signContractAuthority"] .contractCont {
+  padding: 10px 20px;
+  font-family: '黑体';
+}
+[data-ysp-modelid="signCreditAuthority"] .contractCont h1,
+[data-ysp-modelid="signContractAuthority"] .contractCont h1 {
+  text-align: center;
+}
+[data-ysp-modelid="signCreditAuthority"] .contractCont p,
+[data-ysp-modelid="signContractAuthority"] .contractCont p {
+  margin: 0;
+  text-indent: 2em;
+}
+[data-ysp-modelid="signCreditAuthority"] .contractCont table,
+[data-ysp-modelid="signContractAuthority"] .contractCont table {
+  text-align: left;
+}
+[data-ysp-modelid="signCreditAuthority"] .contractCont table tr,
+[data-ysp-modelid="signContractAuthority"] .contractCont table tr {
+  padding: 5px;
+}
+[data-ysp-modelid="signCreditAuthority"] .signBottomBtn,
+[data-ysp-modelid="signContractAuthority"] .signBottomBtn {
+  background: #fff;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  height: 60px;
+  box-shadow: 0 0 5px 0 #333;
+}
+[data-ysp-modelid="signCreditAuthority"] .signBottomBtn .btn,
+[data-ysp-modelid="signContractAuthority"] .signBottomBtn .btn {
+  background: #c9302c;
+  border-radius: 5px;
+  color: #fff;
+}
+[data-ysp-modelid="signCreditAuthority"] .dialog,
+[data-ysp-modelid="signContractAuthority"] .dialog {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+[data-ysp-modelid="signCreditAuthority"] .dialog .dialogCont,
+[data-ysp-modelid="signContractAuthority"] .dialog .dialogCont {
+  position: absolute;
+  background: #fff;
+  top: 30%;
+  bottom: 30%;
+  left: 25%;
+  right: 25%;
+  width: 40%;
+  height: 250px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 2px #333;
+}
+[data-ysp-modelid="signCreditAuthority"] .dialog .dialogCont header,
+[data-ysp-modelid="signContractAuthority"] .dialog .dialogCont header {
+  background: #f6f6f6;
+  border-radius: 5px;
+  height: 20%;
+}
+[data-ysp-modelid="signCreditAuthority"] .dialog .dialogCont header span,
+[data-ysp-modelid="signContractAuthority"] .dialog .dialogCont header span {
+  display: inline-block;
+  width: 50%;
+  padding: 10px;
+}
+[data-ysp-modelid="signCreditAuthority"] .dialog .dialogCont header span.dialogClose,
+[data-ysp-modelid="signContractAuthority"] .dialog .dialogCont header span.dialogClose {
+  text-align: right;
+  color: #666;
+}
+[data-ysp-modelid="signCreditAuthority"] .dialog .dialogCont section,
+[data-ysp-modelid="signContractAuthority"] .dialog .dialogCont section {
+  padding: 10px;
+  height: 55%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+[data-ysp-modelid="signCreditAuthority"] .dialog .dialogCont footer,
+[data-ysp-modelid="signContractAuthority"] .dialog .dialogCont footer {
+  display: flex;
+  padding: 5px;
+  height: 20%;
+}
+[data-ysp-modelid="signCreditAuthority"] .dialog .dialogCont footer .btn,
+[data-ysp-modelid="signContractAuthority"] .dialog .dialogCont footer .btn {
+  width: 100%;
+  margin: 0;
+  border-radius: 5px;
+  padding: 8px 3px;
+  border: 1px solid #c9302c;
+  color: #c9302c;
+  background: #fff;
+}
+[data-ysp-modelid="signCreditAuthority"] .dialog .dialogCont footer .btn:nth-child(2),
+[data-ysp-modelid="signContractAuthority"] .dialog .dialogCont footer .btn:nth-child(2) {
+  margin-left: 5px;
+  background: #c9302c;
+  color: #fff;
+}
+[data-ysp-modelid="signCreditAuthority"] .dialog.codeMsg .dialogCont,
+[data-ysp-modelid="signContractAuthority"] .dialog.codeMsg .dialogCont {
+  top: 25%;
+  bottom: 25%;
+}
+[data-ysp-modelid="signCreditAuthority"] .dialog.codeMsg section,
+[data-ysp-modelid="signContractAuthority"] .dialog.codeMsg section {
+  height: 80%;
+  display: block;
+}
+[data-ysp-modelid="signCreditAuthority"] .dialog.codeMsg section > div,
+[data-ysp-modelid="signContractAuthority"] .dialog.codeMsg section > div {
+  padding: 10px 5px;
+}
+[data-ysp-modelid="signCreditAuthority"] .dialog.codeMsg section > div .value,
+[data-ysp-modelid="signContractAuthority"] .dialog.codeMsg section > div .value {
+  position: relative;
+  padding: 10px 0;
+}
+[data-ysp-modelid="signCreditAuthority"] .dialog.codeMsg section > div .value input,
+[data-ysp-modelid="signContractAuthority"] .dialog.codeMsg section > div .value input {
+  display: inline-block;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+  margin: 0;
+  padding: 3px 2px;
+}
+[data-ysp-modelid="signCreditAuthority"] .dialog.codeMsg section > div .value .btn,
+[data-ysp-modelid="signContractAuthority"] .dialog.codeMsg section > div .value .btn {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 2px;
+  background: transparent;
+  border: 0;
+  color: #c9302c;
+}
+[data-ysp-modelid="signCreditAuthority"] .dialog.codeMsg footer,
+[data-ysp-modelid="signContractAuthority"] .dialog.codeMsg footer {
+  height: 18%;
+}
+[data-ysp-modelid="signCreditAuthority"] #signatureSection .signBtn,
+[data-ysp-modelid="signContractAuthority"] #signatureSection .signBtn {
+  position: fixed;
+  bottom: 70px;
+  right: 50px;
+  background: #fff;
+  border: 1px solid #c9302c;
+  color: #c9302c;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+}
+[data-ysp-modelid="signCreditAuthority"] #signatureSection .signBtn i,
+[data-ysp-modelid="signContractAuthority"] #signatureSection .signBtn i {
+  background: url('http://10.1.24.207:7001/grxd/images/icon.png') no-repeat center -60px;
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-size: 60px;
+  margin: 0 auto;
+}
+[data-ysp-modelid="signCreditAuthority"] #signatureSection .signBox,
+[data-ysp-modelid="signContractAuthority"] #signatureSection .signBox {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.5);
+}
+[data-ysp-modelid="signCreditAuthority"] #signatureSection .signature,
+[data-ysp-modelid="signContractAuthority"] #signatureSection .signature {
+  position: fixed;
+  top: 50px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 200;
+}
+[data-ysp-modelid="signCreditAuthority"] #signatureSection .signature canvas,
+[data-ysp-modelid="signContractAuthority"] #signatureSection .signature canvas {
+  background: rgba(255, 255, 255, 0.3) !important;
+}
+[data-ysp-modelid="signCreditAuthority"] #signatureSection .controlBox,
+[data-ysp-modelid="signContractAuthority"] #signatureSection .controlBox {
+  z-index: 200;
+  background: #333;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+[data-ysp-modelid="signCreditAuthority"] #signatureSection .controlBox .btn,
+[data-ysp-modelid="signContractAuthority"] #signatureSection .controlBox .btn {
+  width: 100%;
+  background: transparent;
+  color: #fff;
+  border: 0;
+  margin: 0;
+  border-right: 1px solid #eee;
+  background: url('http://10.1.24.207:7001/grxd/images/icon.png') no-repeat center -180px;
+  background-size: 30px;
+}
+[data-ysp-modelid="signCreditAuthority"] #signatureSection .controlBox .btn.clear,
+[data-ysp-modelid="signContractAuthority"] #signatureSection .controlBox .btn.clear {
+  background-position: center -92px;
+}
+[data-ysp-modelid="signCreditAuthority"] #signatureSection .controlBox .btn.save,
+[data-ysp-modelid="signContractAuthority"] #signatureSection .controlBox .btn.save {
+  background-position: center -212px;
+}
+[data-ysp-modelid="signPanel"] #signatureSection .signBox {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.5);
+}
+[data-ysp-modelid="signPanel"] #signatureSection .signature {
+  position: fixed;
+  top: 50px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 200;
+}
+[data-ysp-modelid="signPanel"] #signatureSection .signature canvas {
+  background: rgba(255, 255, 255, 0.3) !important;
+}
+[data-ysp-modelid="signPanel"] #signatureSection .controlBox {
+  z-index: 200;
+  background: #333;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+[data-ysp-modelid="signPanel"] #signatureSection .controlBox .btn {
+  width: 100%;
+  background: transparent;
+  color: #fff;
+  border: 0;
+  margin: 0;
+  border-right: 1px solid #eee;
+  background: url('http://10.1.24.207:7001/grxd/images/icon.png') no-repeat center -180px;
+  background-size: 30px;
+}
+[data-ysp-modelid="signPanel"] #signatureSection .controlBox .btn.clear {
+  background-position: center -92px;
+}
+[data-ysp-modelid="signPanel"] #signatureSection .controlBox .btn.save {
+  background-position: center -212px;
+}
+/**** 征信签名&&合同签名 合同按钮 ****/
+.checkContractBtns {
+  text-align: right;
+}
+.checkContractBtns .btn {
+  border-radius: 5px;
+  color: #c9302c;
+  background: transparent;
+  border: 1px solid #c9302c;
+}
+.checkContractBtns .btn:first-child {
+  background: #c9302c;
+  color: #fff;
+  border: 0;
+}
+[data-ysp-modelid="infoAdded"] .mainCard {
+  padding: 10px 5px;
+}
+[data-ysp-modelid="infoAdded"] .mainCard .groups .cardTitle {
+  display: block;
+  font-weight: bold;
+}
+[data-ysp-modelid="infoAdded"] .mainCard .groups .group {
+  padding: 10px 20%;
+}
+[data-ysp-modelid="infoAdded"] .mainCard .groups .group .value select[disabled],
+[data-ysp-modelid="infoAdded"] .mainCard .groups .group .value select[readonly] {
+  background-color: #f2f2f2;
+}
+[data-ysp-modelid="DBSX"] .card {
+  box-shadow: none;
+  margin: 0px;
+}
+[data-ysp-modelid="DBSX"] .card .card-body {
+  margin: 0px;
+  padding: 0px;
+}
+[data-ysp-modelid="DBSX"] .todoListBelow {
+  height: 90vh;
+  overflow-y: scroll;
+}
+[data-ysp-modelid="DBSX"] .DBSX-head {
+  display: flex;
+  padding: 5px 0px;
+  border-bottom: solid 1px #d8d8d8;
+}
+[data-ysp-modelid="DBSX"] .DBSX-head .list {
+  flex: 1;
+  margin: 10px 10px;
+  padding: 5px 5px;
+  text-align: center;
+  color: block;
+  font-weight: bold;
+}
+[data-ysp-modelid="DBSX"] .DBSX-head .list:nth-child(1) {
+  border-right: solid 1px #d8d8d8;
+}
+[data-ysp-modelid="DBSX"] .DBSX-head .list:nth-child(2) {
+  border-right: solid 1px #d8d8d8;
+}
+[data-ysp-modelid="DBSX"] .DBSX-mainTitle {
+  display: "block";
+  line-height: 60px;
+  height: 60px;
+  padding-left: 20px;
+  font-size: 20px;
+  color: #202020;
+  background: #f8f8f8;
+  font-weight: bold;
+}
+[data-ysp-modelid="DBSX"] .DBSX-title {
+  color: #202020;
+  font-size: 18px;
+  font-weight: bold;
+  display: block;
+  line-height: 60px;
+  height: 60px;
+  position: relative;
+}
+[data-ysp-modelid="DBSX"] .DBSX-title.right-title {
+  border-bottom: solid 1px #d2d2d2;
+  overflow: hidden;
+}
+[data-ysp-modelid="DBSX"] .DBSX-title.right-title .right-title_title {
+  float: left;
+}
+[data-ysp-modelid="DBSX"] .DBSX-title.right-title .pageBox {
+  float: right;
+  font-size: 16px;
+  color: #202020;
+  font-weight: normal;
+}
+[data-ysp-modelid="DBSX"] .DBSX-title.right-title .pageBox select {
+  width: 100px;
+  padding: 0px;
+  margin: 0px 10px;
+  line-height: 36px;
+  height: 36px;
+  padding-left: 10px;
+  display: inline-block;
+}
+[data-ysp-modelid="DBSX"] .DBSX-title.left-title {
+  position: relative;
+}
+[data-ysp-modelid="DBSX"] .DBSX-title.left-title .search-list {
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translate(0px, -50%);
+  -webkit-transform: translate(0px, -50%);
+  width: 100px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: normal;
+  background: #009593;
+  color: white;
+  border-radius: 4px;
+}
+[data-ysp-modelid="DBSX"] .DBSX-Main {
+  margin: 0px;
+  padding: 0px;
+}
+[data-ysp-modelid="DBSX"] .DBSX-Main > .card-body {
+  padding: 0px 10px;
+  display: flex;
+  display: -webkit-flex;
+}
+[data-ysp-modelid="DBSX"] .DBSX-Main > .card-body .searchBox {
+  padding-bottom: 50px;
+  height: 45vh;
+  overflow-y: scroll;
+}
+[data-ysp-modelid="DBSX"] .DBSX-Main > .card-body > div:nth-child(1) {
+  flex: 2;
+}
+[data-ysp-modelid="DBSX"] .DBSX-Main > .card-body > div:nth-child(1) > .card-body {
+  padding: 10px;
+  border-right: solid 1px #d2d2d2;
+}
+[data-ysp-modelid="DBSX"] .DBSX-Main > .card-body > div:nth-child(1) > .card-body > .card-body > div:nth-child(1) {
+  padding: 0px;
+  margin: 0px;
+}
+[data-ysp-modelid="DBSX"] .DBSX-Main > .card-body > div:nth-child(1) > .card-body .left {
+  line-height: 32px;
+  height: 32px;
+}
+[data-ysp-modelid="DBSX"] .DBSX-Main > .card-body > div:nth-child(1) > .card-body .right {
+  margin-bottom: 10px;
+}
+[data-ysp-modelid="DBSX"] .DBSX-Main > .card-body > div:nth-child(1) > .card-body input {
+  width: 100%;
+  padding-left: 10px;
+  border: solid 1px #d2d2d2;
+  border-radius: 4px;
+  line-height: 40px;
+  height: 40px;
+  padding: 0px;
+  margin: 0px;
+}
+[data-ysp-modelid="DBSX"] .DBSX-Main > .card-body > div:nth-child(1) > .card-body select {
+  width: 100%;
+  border: solid 1px #d2d2d2;
+  border-radius: 4px;
+  line-height: 40px;
+  height: 40px;
+  padding: 0px;
+  margin: 0px;
+}
+[data-ysp-modelid="DBSX"] .DBSX-Main > .card-body > div:nth-child(2) {
+  flex: 5;
+}
+[data-ysp-modelid="DBSX"] .DBSX-Main > .card-body > div:nth-child(2) > .card-body {
+  padding: 10px;
+}
+[data-ysp-modelid="DBSX"] .DBSX-Main > .card-body > div:nth-child(2) > .card-body .listCardBox {
+  height: 45vh;
+  overflow-y: scroll;
+}
+[data-ysp-modelid="DBSX"] .DBSX-Main > .card-body > div:nth-child(2) > .card-body .listCardBox .listCardBox-scroll {
+  width: 100%;
+}
+[data-ysp-modelid="DBSX"] .DBSX-Main > .card-body > div:nth-child(2) > .card-body .listCardBox .listCardBox-scroll .listCard {
+  margin: 10px 0px;
+  border-bottom: solid 1px #d2d2d2;
+}
+[data-ysp-modelid="DBSX"] .DBSX-Main > .card-body > div:nth-child(2) > .card-body .listCardBox .listCardBox-scroll .listCard .listCard-line1 {
+  display: flex;
+  display: -webkit-flex;
+  color: black;
+}
+[data-ysp-modelid="DBSX"] .DBSX-Main > .card-body > div:nth-child(2) > .card-body .listCardBox .listCardBox-scroll .listCard .listCard-line1 .listCard-flex:nth-child(1) {
+  flex: 1;
+  text-align: left;
+  padding-left: 10px;
+  line-height: 36px;
+  height: 36px;
+  font-weight: bold;
+}
+[data-ysp-modelid="DBSX"] .DBSX-Main > .card-body > div:nth-child(2) > .card-body .listCardBox .listCardBox-scroll .listCard .listCard-line1 .listCard-flex:nth-child(2) {
+  flex: 1;
+  text-align: left;
+  padding-left: 10px;
+  line-height: 36px;
+  height: 36px;
+  font-weight: bold;
+}
+[data-ysp-modelid="DBSX"] .DBSX-Main > .card-body > div:nth-child(2) > .card-body .listCardBox .listCardBox-scroll .listCard .listCard-line1 .listCard-flex:nth-child(3) {
+  flex: 2;
+  text-align: right;
+  padding-right: 10px;
+  line-height: 36px;
+  height: 36px;
+}
+[data-ysp-modelid="DBSX"] .DBSX-Main > .card-body > div:nth-child(2) > .card-body .listCardBox .listCardBox-scroll .listCard .listCard-line2 {
+  padding: 10px;
+}
+[data-ysp-modelid="DBSX"] .DBSX-Main > .card-body > div:nth-child(2) > .card-body .listCardBox .listCardBox-scroll .listCard .listCard-line3 {
+  padding: 10px;
+  display: flex;
+  display: -webkit-flex;
+}
+[data-ysp-modelid="DBSX"] .DBSX-Main > .card-body > div:nth-child(2) > .card-body .listCardBox .listCardBox-scroll .listCard .listCard-line3 .listCard-flex {
+  flex: 8;
+  line-height: 30px;
+  height: 30px;
+  text-align: left;
+  font-size: 16px;
+  color: black;
+}
+[data-ysp-modelid="DBSX"] .DBSX-Main > .card-body > div:nth-child(2) > .card-body .listCardBox .listCardBox-scroll .listCard .listCard-line3 .searchBtn {
+  flex: 1.5;
+  line-height: 30px;
+  height: 30px;
+  text-align: center;
+  font-size: 16px;
+  background: #009593;
+  border-radius: 4px;
+  color: white;
+}
+[data-ysp-modelid="DBSX"] .DBSX-Main > .card-body > div:nth-child(2) > .card-body .listCardBox .listCardBox-scroll .listCard:last-child {
+  border-bottom: none;
+}
+[data-ysp-modelid="production"] .production-mainTitle {
+  display: "block";
+  line-height: 60px;
+  height: 60px;
+  padding-left: 20px;
+  font-size: 20px;
+  color: #202020;
+  background: #f8f8f8;
+  font-weight: bold;
+}
+[data-ysp-modelid="production"] .selectPd {
+  padding: 10px;
+  text-align: right;
+}
+[data-ysp-modelid="production"] .selectPd select {
+  width: 300px;
+  display: inline-block;
+}
+[data-ysp-modelid="production"] .detailBox {
+  padding: 10px;
+}
+[data-ysp-modelid="signContractAuthority"] .contractForm .mainCard {
+  padding: 10px;
+}
+[data-ysp-modelid="signContractAuthority"] .contractForm .mainCard .cardTitle {
+  display: block;
+  font-weight: bold;
+}
+[data-ysp-modelid="signContractAuthority"] .contractForm .mainCard .group {
+  display: inline-block;
+  width: 50%;
+  padding: 0 10px;
+}
+[data-ysp-modelid="signContractAuthority"] .contractForm .mainCard .group.multiSelect,
+[data-ysp-modelid="signContractAuthority"] .contractForm .mainCard .group.multiCheckBox,
+[data-ysp-modelid="signContractAuthority"] .contractForm .mainCard .group.inputButton {
+  width: 100%;
+}
+[data-ysp-modelid="signContractAuthority"] .contractForm .mainCard .group.multiSelect .key,
+[data-ysp-modelid="signContractAuthority"] .contractForm .mainCard .group.multiCheckBox .key,
+[data-ysp-modelid="signContractAuthority"] .contractForm .mainCard .group.inputButton .key {
+  width: 20%;
+}
+[data-ysp-modelid="signContractAuthority"] .contractForm .mainCard .group.multiSelect .value,
+[data-ysp-modelid="signContractAuthority"] .contractForm .mainCard .group.multiCheckBox .value,
+[data-ysp-modelid="signContractAuthority"] .contractForm .mainCard .group.inputButton .value {
+  text-align: left;
+  width: 80%;
+}
+[data-ysp-modelid="signContractAuthority"] .contractForm .mainCard .group.multiSelect .value > div,
+[data-ysp-modelid="signContractAuthority"] .contractForm .mainCard .group.multiCheckBox .value > div,
+[data-ysp-modelid="signContractAuthority"] .contractForm .mainCard .group.inputButton .value > div {
+  display: inline-block;
+  width: 33%;
+}
+[data-ysp-modelid="signContractAuthority"] .contractForm .mainCard .group.multiSelect .value > div select,
+[data-ysp-modelid="signContractAuthority"] .contractForm .mainCard .group.multiCheckBox .value > div select,
+[data-ysp-modelid="signContractAuthority"] .contractForm .mainCard .group.inputButton .value > div select {
+  width: 80%;
+  display: inline-block;
+  margin-right: 5px;
+}
+[data-ysp-modelid="signContractAuthority"] .contractForm .mainCard .group.multiSelect .value > span,
+[data-ysp-modelid="signContractAuthority"] .contractForm .mainCard .group.multiCheckBox .value > span,
+[data-ysp-modelid="signContractAuthority"] .contractForm .mainCard .group.inputButton .value > span {
+  display: inline-block;
+  margin-right: 10px;
+}
+[data-ysp-modelid="signContractAuthority"] .contractForm .mainCard .group.multiSelect .value > span > input[type='checkbox'],
+[data-ysp-modelid="signContractAuthority"] .contractForm .mainCard .group.multiCheckBox .value > span > input[type='checkbox'],
+[data-ysp-modelid="signContractAuthority"] .contractForm .mainCard .group.inputButton .value > span > input[type='checkbox'] {
+  margin-right: 5px;
+}
+[data-ysp-modelid="signContractAuthority"] .contractForm .mainCard .group.multiSelect .value select[disabled],
+[data-ysp-modelid="signContractAuthority"] .contractForm .mainCard .group.multiCheckBox .value select[disabled],
+[data-ysp-modelid="signContractAuthority"] .contractForm .mainCard .group.inputButton .value select[disabled],
+[data-ysp-modelid="signContractAuthority"] .contractForm .mainCard .group.multiSelect .value select[readonly],
+[data-ysp-modelid="signContractAuthority"] .contractForm .mainCard .group.multiCheckBox .value select[readonly],
+[data-ysp-modelid="signContractAuthority"] .contractForm .mainCard .group.inputButton .value select[readonly] {
+  background-color: #f2f2f2;
+}
+[data-ysp-modelid="signContractAuthority"] .contractForm .mainCard .group.inputButton .value input {
+  display: inline-block;
+  width: 60%;
+}
+[data-ysp-modelid="signContractAuthority"] .contractForm .mainCard .group.inputButton .value input[type='button'] {
+  width: 30%;
+  background: transparent;
+  border: 0;
+  color: #c9302c;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+[data-ysp-modelid="List"] .ListBox {
+  padding: 20px 20%;
+}
+[data-ysp-modelid="List"] .ListBox > div {
+  display: flex;
+  display: -webkit-flex;
+  margin: 30px 0px;
+}
+[data-ysp-modelid="List"] .ListBox > div .title {
+  flex: 1;
+  -webkit-flex: 1;
+  text-align: left;
+  line-height: 40px;
+}
+[data-ysp-modelid="List"] .ListBox > div .content {
+  flex: 3;
+  -webkit-flex: 3;
+}
+[data-ysp-modelid="List"] .ListBox > div .content select {
+  width: 100%;
+  padding: 0px;
+  padding-left: 10px;
+  margin: 0px;
+  line-height: 40px;
+}
+/* 贷款试算器 */
+[data-ysp-modelid="loanthetrial"] .menuList,
+[data-ysp-modelid="loantheinfo"] .menuList {
+  position: initial;
+}
+[data-ysp-modelid="loanthetrial"] .iconleftstyle,
+[data-ysp-modelid="loantheinfo"] .iconleftstyle {
+  wdith: 15px;
+}
+[data-ysp-modelid="loanthetrial"] .calcSearch,
+[data-ysp-modelid="loantheinfo"] .calcSearch {
+  padding: 10px;
+}
+[data-ysp-modelid="loanthetrial"] .mainContainer,
+[data-ysp-modelid="loantheinfo"] .mainContainer {
+  height: 80vh;
+}
+[data-ysp-modelid="loanthetrial"] .mainContainer .col-3:first-child,
+[data-ysp-modelid="loantheinfo"] .mainContainer .col-3:first-child {
+  overflow-y: scroll;
+  height: 80vh;
+  border-right: 1px solid #f6f6f6;
+}
+[data-ysp-modelid="loanthetrial"] .mainContainer .col-3:first-child select,
+[data-ysp-modelid="loantheinfo"] .mainContainer .col-3:first-child select,
+[data-ysp-modelid="loanthetrial"] .mainContainer .col-3:first-child input,
+[data-ysp-modelid="loantheinfo"] .mainContainer .col-3:first-child input {
+  border: 0;
+  border-bottom: 1px solid #f6f6f6;
+}
+[data-ysp-modelid="loanthetrial"] .mainContainer .col-3:last-child,
+[data-ysp-modelid="loantheinfo"] .mainContainer .col-3:last-child {
+  height: 80vh;
+}
+[data-ysp-modelid="loanthetrial"] .mainContainer .col-3:last-child .tableBoxWithIcon .tableBox,
+[data-ysp-modelid="loantheinfo"] .mainContainer .col-3:last-child .tableBoxWithIcon .tableBox {
+  z-index: 999;
+}
+[data-ysp-modelid="loanthetrial"] .mainContainer .col-3:last-child .tableBoxWithIcon span.icon,
+[data-ysp-modelid="loantheinfo"] .mainContainer .col-3:last-child .tableBoxWithIcon span.icon {
+  display: none;
+}
+[data-ysp-modelid="loanthetrial"] .mainContainer .col-3:last-child .bottomBtns .loanBottomBtn,
+[data-ysp-modelid="loantheinfo"] .mainContainer .col-3:last-child .bottomBtns .loanBottomBtn {
+  position: relative;
+}
+[data-ysp-modelid="loanthetrial"] .mainContainer .col-3:last-child .bottomBtns .loanBottomBtn .btn[data-index='3'],
+[data-ysp-modelid="loantheinfo"] .mainContainer .col-3:last-child .bottomBtns .loanBottomBtn .btn[data-index='3'] {
+  border: 0;
+  color: #009593;
+  position: absolute;
+  left: 15px;
+  width: 80px;
+  background: transparent url(img/calcIcon.png) no-repeat left center;
+  background-size: 20px 20px;
+}
+[data-ysp-modelid="loanthetrial"] .tableBoxNoIcon .TableBox_body table tr th,
+[data-ysp-modelid="loantheinfo"] .tableBoxNoIcon .TableBox_body table tr th,
+[data-ysp-modelid="loanthetrial"] .tableBoxNoIcon .TableBox_body table tr td,
+[data-ysp-modelid="loantheinfo"] .tableBoxNoIcon .TableBox_body table tr td {
+  white-space: normal;
+}
+[data-ysp-modelid="loanthetrial"] .menuList .header .icon-left {
+  width: 100%;
+}
+[data-ysp-modelid="signContract"] .icon-backtop {
+  background: url(http://10.1.235.135:28080/mmecserver3.0/images/icon-backtop.png) no-repeat center center;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  line-height: 20px;
+  padding: 5px;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.signContractPage {
+  padding: 10px;
+  /* HTML5 display definitions
+     ========================================================================== */
+  /**
+   * Correct `block` display not defined for any HTML5 element in IE 8/9.
+   * Correct `block` display not defined for `details` or `summary` in IE 10/11 and Firefox.
+   * Correct `block` display not defined for `main` in IE 11.
+   */
+  /**
+   * 1. Correct `inline-block` display not defined in IE 8/9.
+   * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+   */
+  /**
+   * Prevent modern browsers from displaying `audio` without controls.
+   * Remove excess height in iOS 5 devices.
+   */
+  /**
+   * Address `[hidden]` styling not present in IE 8/9/10.
+   * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+   */
+  /* Links
+     ========================================================================== */
+  /**
+   * Remove the gray background color from active links in IE 10.
+   */
+  /**
+   * Improve readability when focused and also mouse hovered in all browsers.
+   */
+  /* Text-level semantics
+     ========================================================================== */
+  /**
+   * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+   */
+  /**
+   * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+   */
+  /**
+   * Address styling not present in Safari and Chrome.
+   */
+  /**
+   * Address variable `h1` font-size and margin within `section` and `article`
+   * contexts in Firefox 4+, Safari, and Chrome.
+   */
+  /**
+   * Address styling not present in IE 8/9.
+   */
+  /**
+   * Address inconsistent and variable font size in all browsers.
+   */
+  /**
+   * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+   */
+  /* Embedded content
+     ========================================================================== */
+  /**
+   * Remove border when inside `a` element in IE 8/9/10.
+   */
+  /**
+   * Correct overflow not hidden in IE 9/10/11.
+   */
+  /* Grouping content
+     ========================================================================== */
+  /**
+   * Address margin not present in IE 8/9 and Safari.
+   */
+  /**
+   * Address differences between Firefox and other browsers.
+   */
+  /**
+   * Contain overflow in all browsers.
+   */
+  /**
+   * Address odd `em`-unit font size rendering in all browsers.
+   */
+  /* Forms
+     ========================================================================== */
+  /**
+   * Known limitation: by default, Chrome and Safari on OS X allow very limited
+   * styling of `select`, unless a `border` property is set.
+   */
+  /**
+   * 1. Correct color not being inherited.
+   *    Known issue: affects color of disabled elements.
+   * 2. Correct font properties not being inherited.
+   * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+   */
+  /**
+   * Address `overflow` set to `hidden` in IE 8/9/10/11.
+   */
+  /**
+   * Address inconsistent `text-transform` inheritance for `button` and `select`.
+   * All other form control elements do not inherit `text-transform` values.
+   * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+   * Correct `select` style inheritance in Firefox.
+   */
+  /**
+   * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+   *    and `video` controls.
+   * 2. Correct inability to style clickable `input` types in iOS.
+   * 3. Improve usability and consistency of cursor style between image-type
+   *    `input` and others.
+   */
+  /**
+   * Re-set default cursor for disabled elements.
+   */
+  /**
+   * Remove inner padding and border in Firefox 4+.
+   */
+  /**
+   * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+   * the UA stylesheet.
+   */
+  /**
+   * It's recommended that you don't attempt to style these elements.
+   * Firefox's implementation doesn't respect box-sizing, padding, or width.
+   *
+   * 1. Address box sizing set to `content-box` in IE 8/9/10.
+   * 2. Remove excess padding in IE 8/9/10.
+   */
+  /**
+   * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+   * `font-size` values of the `input`, it causes the cursor style of the
+   * decrement button to change from `default` to `text`.
+   */
+  /**
+   * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+   * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+   *    (include `-moz` to future-proof).
+   */
+  /**
+   * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+   * Safari (but not Chrome) clips the cancel button when the search input has
+   * padding (and `textfield` appearance).
+   */
+  /**
+   * Define consistent border, margin, and padding.
+   */
+  /**
+   * 1. Correct `color` not being inherited in IE 8/9/10/11.
+   * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+   */
+  /**
+   * Remove default vertical scrollbar in IE 8/9/10/11.
+   */
+  /**
+   * Don't inherit the `font-weight` (applied by a rule above).
+   * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+   */
+  /* Tables
+     ========================================================================== */
+  /**
+   * Remove most spacing between table cells.
+   */
+}
+.signContractPage article,
+.signContractPage aside,
+.signContractPage details,
+.signContractPage figcaption,
+.signContractPage figure,
+.signContractPage footer,
+.signContractPage header,
+.signContractPage hgroup,
+.signContractPage main,
+.signContractPage nav,
+.signContractPage section,
+.signContractPage summary {
+  display: block;
+}
+.signContractPage audio,
+.signContractPage canvas,
+.signContractPage progress,
+.signContractPage video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+.signContractPage audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+.signContractPage [hidden],
+.signContractPage template {
+  display: none;
+}
+.signContractPage a {
+  background: transparent;
+}
+.signContractPage a:active,
+.signContractPage a:hover {
+  outline: 0;
+}
+.signContractPage abbr[title] {
+  border-bottom: 1px dotted;
+}
+.signContractPage b,
+.signContractPage strong {
+  font-weight: bold;
+}
+.signContractPage dfn {
+  font-style: italic;
+}
+.signContractPage h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+.signContractPage mark {
+  background: #ff0;
+  color: #000;
+}
+.signContractPage small {
+  font-size: 80%;
+}
+.signContractPage sub,
+.signContractPage sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+.signContractPage sup {
+  top: -0.5em;
+}
+.signContractPage sub {
+  bottom: -0.25em;
+}
+.signContractPage img {
+  border: 0;
+}
+.signContractPage svg:not(:root) {
+  overflow: hidden;
+}
+.signContractPage figure {
+  margin: 1em 40px;
+}
+.signContractPage hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+.signContractPage pre {
+  overflow: auto;
+}
+.signContractPage code,
+.signContractPage kbd,
+.signContractPage pre,
+.signContractPage samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+.signContractPage button,
+.signContractPage input,
+.signContractPage optgroup,
+.signContractPage select,
+.signContractPage textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+.signContractPage button {
+  overflow: visible;
+}
+.signContractPage button,
+.signContractPage select {
+  text-transform: none;
+}
+.signContractPage button,
+.signContractPage html input[type="button"],
+.signContractPage input[type="reset"],
+.signContractPage input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+.signContractPage button[disabled],
+.signContractPage html input[disabled] {
+  cursor: default;
+}
+.signContractPage button::-moz-focus-inner,
+.signContractPage input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+.signContractPage input {
+  line-height: normal;
+}
+.signContractPage input[type="checkbox"],
+.signContractPage input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+.signContractPage input[type="number"]::-webkit-inner-spin-button,
+.signContractPage input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+.signContractPage input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+.signContractPage input[type="search"]::-webkit-search-cancel-button,
+.signContractPage input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+.signContractPage fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+.signContractPage legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+.signContractPage textarea {
+  overflow: auto;
+}
+.signContractPage optgroup {
+  font-weight: bold;
+}
+.signContractPage table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.signContractPage td,
+.signContractPage th {
+  padding: 0;
+}
+.signContractPage body {
+  font: 14px/1.5 "微软雅黑";
+  background: #efeff0;
+}
+.signContractPage .page {
+  background: #fff;
+  width: 100%;
+  text-align: center;
+  margin: 20px auto;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+.signContractPage .page-01 {
+  padding: 20px;
+  margin-top: 40px;
+  background: #fff;
+}
+.signContractPage .page-01 h1 {
+  font-size: 38px;
+  text-align: center;
+}
+.signContractPage .page-01 h2 {
+  font-size: 14px;
+  text-align: right;
+  margin-bottom: 50px;
+}
+.signContractPage a {
+  color: #007BD1;
+  text-decoration: none;
+}
+.signContractPage .data {
+  border: 1px solid #D7D7D7;
+  line-height: 30px;
+  margin: 50px;
+  width: 580px;
+}
+.signContractPage .data th {
+  text-align: left;
+  padding-left: 38px;
+}
+.signContractPage .data .padding {
+  padding: 50px;
+}
+.signContractPage .hr {
+  border: 0 none;
+  border-top: 3px solid #cd141c;
+}
+.signContractPage .red {
+  color: red;
+  font-size: 12px;
+}
+.signContractPage dl {
+  margin-bottom: 20px;
+}
+.signContractPage dt,
+.signContractPage dd {
+  line-height: 20px;
+}
+.signContractPage dt {
+  font-weight: bold;
+}
+.signContractPage dd {
+  margin-left: 10px;
+}
+.signContractPage .dl-horizontal {
+  *zoom: 1;
+  background: #fff;
+  margin: 0 10px 2px;
+}
+.signContractPage .dl-horizontal:before,
+.signContractPage .dl-horizontal:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+.signContractPage .dl-horizontal:after {
+  clear: both;
+}
+.signContractPage .dl-horizontal dt {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  overflow: hidden;
+  clear: left;
+  text-align: right;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.signContractPage .dl-horizontal dd {
+  margin-left: 20%;
+  padding: 10px;
+  text-align: left;
+}
+.signContractPage .dl-horizontal h3 {
+  margin: 0;
+  font-weight: 100;
+}
+.signContractPage .gray {
+  color: gray;
+}
+.signContractPage .top {
+  position: fixed;
+  bottom: 5px;
+  right: 10px;
+  width: 39px;
+  line-height: 53px;
+  height: 53px;
+  background: url(../../images/print.png) 0 -70px no-repeat;
+}
+.signContractPage .title {
+  height: 50px;
+  line-height: 50px;
+  padding-left: 20px;
+  font-size: 16px;
+  color: #CDCDCD;
+  font-weight: 700;
+  width: 840px;
+  margin: 0 auto;
+}
+.signContractPage .footer {
+  width: 840px;
+  margin: 0 auto;
+  height: 55px;
+  color: #C5C5C5;
+  font-size: 12px;
+  line-height: 55px;
+  text-align: center;
+}
+.signContractPage .padding a {
+  display: inline-block;
+  width: 45%;
+  text-align: left;
+  *zoom: 1;
+  margin: 10px 0;
+}
+.signContractPage .popup {
+  background: #000;
+  filter: alpha(opacity=50);
+  opacity: 0.5;
+  display: none;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 100;
+}
+.signContractPage .p_b5_title {
+  font-size: 13px;
+  color: #343434;
+  font-weight: bold;
+  padding: 9px;
+}
+.signContractPage .p_b5_title span {
+  font-weight: normal;
+  color: #707070;
+  font-size: 12px;
+}
+.signContractPage .p_b5 .p_bind_2 {
+  width: 100%;
+  margin-top: 15px;
+}
+.signContractPage .p_tile {
+  height: 25px;
+  line-height: 25px;
+  font-weight: bold;
+  padding-left: 5%;
+  font-size: 14px;
+  font-family: Arial, "宋体";
+  color: #006bae;
+  width: 95%;
+  text-align: left;
+  background-image: -o-linear-gradient(top, #eef9ff, #d1eeff);
+  background-image: -ms-linear-gradient(top, #eef9ff, #d1eeff);
+  background-image: -moz-linear-gradient(top, #eef9ff, #d1eeff);
+  background-image: -webkit-linear-gradient(top, #eef9ff, #d1eeff);
+  background-image: linear-gradient(top, #eef9ff, #d1eeff);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eef9ff', endColorstr='#d1eeff', GradientType='0');
+}
+.signContractPage .p_bind_2 {
+  text-align: right;
+  line-height: 42px;
+  border-top: 1px solid #bae4ff;
+}
+.signContractPage .p_b_ok {
+  width: 55px;
+  height: 23px;
+  line-height: 23px;
+  margin: 5px 15px;
+}
+.signContractPage .all_btn {
+  background: #ff6d00;
+  text-align: center;
+  border: 1px solid #ff4e00;
+  display: inline-block;
+  color: #fff;
+  border-radius: 5px;
+}
+.signContractPage .all_btn:hover {
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid #cf7523;
+  background-image: -moz-linear-gradient(top, #ffc057, #f5870f);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ffc057), color-stop(1, #f5870f));
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffc057', endColorstr='#f5870f', GradientType='0');
+}
+.signContractPage .p_box {
+  width: 600px;
+  height: auto;
+  display: none;
+  border: 1px solid #94cae9;
+  background: #fff;
+  position: fixed;
+  font-size: 14px;
+  z-index: 101;
+}
+.signContractPage #mainContract img {
+  max-width: 840px;
+}
+.signContractPage .mb20 {
+  margin-bottom: 20px;
+}
+.signContractPage .mt20 {
+  margin-top: 20px;
+}
+.signContractPage .mb20 p {
+  margin: 0;
+  line-height: 28px;
+}
+.signContractPage .inblock {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 70px;
+  text-align: right;
+}
+.signContractPage .mr20 {
+  margin-right: 20px;
+}
+@media print {
+  .signContractPage .fixed {
+    display: none;
+  }
+}
+.signContractPage .page-outer {
+  border: 4px solid #005bac;
+  width: 100%;
+  margin: 0 auto;
+}
+.signContractPage .page-inner {
+  border: 1px solid #005bac;
+  margin: 5px;
+  background: #efefef;
+}
+.signContractPage .sign-seal {
+  border: 2px solid #005bac;
+  background: url(http://10.1.235.135:28080/mmecserver3.0/images/zip-line.png) repeat center center;
+  position: relative;
+  z-index: 0;
+  margin: 10px;
+  width: 315px;
+}
+.signContractPage .sign-seal .sign-inner {
+  width: 300px;
+  border: 1px solid #005bac;
+  margin: 5px;
+  font-size: 12px;
+  padding: 5px 15px 5px 70px;
+  background: #fffff0 url(http://10.1.235.135:28080/mmecserver3.0/images/zip-seal.png) no-repeat 20px center;
+}
+.signContractPage .sign-seal i {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  top: 0;
+  width: 59px;
+  height: 50px;
+}
+.signContractPage .sign-seal i.icon-company {
+  background: url(http://10.1.235.135:28080/mmecserver3.0/images/zip-company.png) no-repeat;
+}
+.signContractPage .sign-seal i.icon-personal {
+  background: url(http://10.1.235.135:28080/mmecserver3.0/images/zip-personal.png) no-repeat;
+}
+.signContractPage .timestamp {
+  width: 133px;
+  height: 111px;
+  background: url(http://10.1.235.135:28080/mmecserver3.0/images/timestamp.png) no-repeat;
+  position: relative;
+  z-index: 0;
+}
+.signContractPage .timestamp p {
+  position: absolute;
+  z-index: 1;
+  color: #3e3a39;
+  font-size: 10px;
+  width: 133px;
+  text-align: center;
+  font-weight: 700;
+  top: 53px;
+  transform: scale(0.9);
+}
+.signContractPage .zip-data {
+  border: 1px solid red;
+  background: #fff url(http://10.1.235.135:28080/mmecserver3.0/images/zip-data-bg.png) no-repeat center center;
+  margin: 10px;
+}
+.signContractPage .padding {
+  padding: 10px;
+}
+[data-ysp-modelid="production"] {
+  padding-top: 10vh;
+}
+[data-ysp-modelid="production"] .menuList {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+span.errorMsg {
+  display: block;
+  width: 100%;
+  padding: 50px 20px;
+  color: #FF4E4E;
+  text-align: center;
+}
+#newButton {
+  font-size: 1em;
+  background: #009593;
+  color: #fff;
+  border: 0;
+  border-radius: 5px;
+  margin-top: 15px;
+  padding: 3px 10px;
+}
+[data-ysp-modelid="queryCollecteralSysUserNo"] .UserNoLeft,
+[data-ysp-modelid="queryCollecteralSysUserNo"] .UserNoRight {
+  display: inline-block;
+  width: 30%;
+  box-shadow: none;
+  padding: 0px;
+  margin: 0 10px;
+}
+[data-ysp-modelid="queryCollecteralSysUserNo"] .UserNoLeft .card-body,
+[data-ysp-modelid="queryCollecteralSysUserNo"] .UserNoRight .card-body {
+  padding: 0;
+}
+[data-ysp-modelid="queryCollecteralSysUserNo"] .UserNoLeft .mainCard,
+[data-ysp-modelid="queryCollecteralSysUserNo"] .UserNoRight .mainCard {
+  padding: 10px;
+}
+[data-ysp-modelid="queryCollecteralSysUserNo"] .UserNoRight {
+  width: 60%;
+  vertical-align: top;
+  margin-bottom: 50px;
+}
+.buttons {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #f2f2f2;
+  padding: 10px 20px;
+}
+.buttons input[type="button"] {
+  border: 0;
+  border-bottom: 1px solid #009593;
+  padding: 5px 2px;
+  color: #009593;
+  margin-right: 8px;
+  background-color: transparent;
+  font-size: 0.9em;
+}
+.buttons input[name*="btnQry"] {
+  background: #009593;
+  color: #fff;
+  padding: 5px 15px;
+  font-size: 1em;
+  border-radius: 5px;
+}
+.buttons select {
+  width: 50px;
+  display: inline-block;
+  background-color: transparent;
+  height: 30px;
+  line-height: 30px;
+  margin: 0;
+}
+.buttons input[name="btnQry2"] {
+  float: right;
+}
+#redBorder {
+  border: 1px solid red;
+}
