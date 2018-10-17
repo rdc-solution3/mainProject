@@ -1,0 +1,2706 @@
+// base.less 是整个工程全局的样式文件，会作用到所有的页面模板中
+// Less 的语法与 CSS 兼容，可以直接用 CSS 语法进行编写
+// 如需了解详情，请访问 http://www.lesscss.net/
+// 发布后，base.less 被编译成 base.css 文件
+@main-color: #333;
+@btn-color: #009593;
+@black-font: '黑体';
+@creditBtn-color: #c9302c;
+@signCreditBtn-color: #FF4E4E;
+/**** 隐藏元素 ****/
+.disnone{
+  display: none;
+}
+select{
+  padding: 0;
+  height: 45px;
+  line-height: 45px;
+  padding-left: 10px;
+}
+.editor-state [data-type="card"]{
+  margin: 0;
+  padding: 1px 0 0 0;
+}
+/**** grid 结构 ****/
+.mainContainer{
+  height: 90vh;
+  // box-shadow: 0px 0px 5px 5px #333 inset;
+  .col-3{
+    flex: initial;
+    max-width: none;
+    height: 100vh;
+  }
+  // 左侧步骤导航
+  .col-3:first-child{
+    width: 20%;
+    .sideBar{
+      height: 100vh;
+      background: @main-color;
+      // background: #0164a7; // main color
+      color: #fff;
+      padding-top: 20px;
+      div{
+        padding: 10px 0;
+        padding-left: 20px;
+        position: relative;
+        .dot{
+          width: 15px;
+          height: 15px;
+          line-height: 15px;
+          text-align: center;
+          margin-right: 10px;
+          .num{
+            display: none;
+          }
+        }
+      }
+      .dot:before{
+        content: '';
+        display: inline-block;
+        border-radius: 50%;
+        background: @btn-color;
+        font-size: 13px;
+        display: inline-block;
+        line-height: 15px;
+        text-align: center;
+        padding: 0 2px;
+        width: 5px;
+        height: 5px;
+        margin: 0 auto;
+      }
+      .curStep{
+        -webkit-filter: brightness(1.2);
+        filter: brightness(1.2);
+        background: @main-color;
+        // background: #063E65; // main color
+        .dot:before{
+          display: none;
+        }
+        .dot{
+          padding: 2px 0;
+          color: #000;
+          .num{
+            display: inline-block;
+         		background: #fff;
+            padding: 0 3px;
+            border-radius: 50%;
+            position: relative;
+            left: -4px;
+          }
+        }
+      }
+      .curStep~div{
+        .dot:before{
+          background: #fff;
+        }
+      }
+    }
+  }
+  // 右侧内容部分模块
+  .col-3:last-child{
+    width: 80%;
+    overflow-y: auto;
+    position: relative;
+    // padding-bottom: 11vh;
+    padding-bottom: 100px;
+    /** 借款人详细信息 左右侧分结构 **/
+    .loanerCardTitle{
+      background: #f6f6f6;
+      padding: 15px;
+      font-size: 1.1em;
+    }
+    .loanerInfoLeft,.loanerInfoRight{
+      border: 0;
+      box-shadow: none;
+      float: left;
+      margin: 0;
+      height: 70vh;
+      overflow-y: scroll;
+      position: relative;
+      .card-body{
+        padding: 0;
+      }
+    }
+    .loanerInfoLeft{
+      width: 25%;
+      padding: 10px 10px 10px 15px;
+      .title{
+        padding: 10px 0;
+        color: #aaa;
+      }
+      .curTitle{
+        color: #000;
+      }
+    }
+    .loanerInfoRight{
+      width: 75%;
+      border-left: 1px solid #ddd;
+    }
+    /** 贷款申请底部标题 **/
+    // card 连带还款计划 借款人信息列表中新增等按钮
+    .bottomBtns{
+      position: fixed;
+      // height: 13vh;
+      height: 60px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #f6f6f6;
+      margin: 0;
+      margin-left: 20%;
+      padding: 0;
+      box-shadow: none;
+      z-index: 2;
+      .card-body{
+        margin: 0;
+        padding: 0;
+      }
+      // 统一底部按钮样式
+      .loanBottomBtn{
+        background: #fff;
+        z-index: 1;
+        padding: 10px 10px 0;
+        background: #f6f6f6;
+        padding-left: 60%;
+        .btn{
+          margin-bottom: 0;
+          background: @btn-color;
+          color: #fff;
+          padding: 8px 0;
+          border-color: transparent;
+        }
+        .btn:first-child{
+          background-color: #e8e8e8;
+          color: @btn-color;
+        }
+        .btn#confirmBtn{
+          background-color: @btn-color;
+          color: #fff;
+        }
+        .btn#confirmBtn+.btn,.btn#cancelBtn{
+          background-color: #e8e8e8;
+          color: @btn-color;
+        }
+      }
+      // 带有查看影像的底部按钮样式
+      .btnWithIcon{
+        // padding-left: 10px;
+        padding-left: 50%;
+        .btn:nth-child(2){
+          background-color: #e8e8e8;
+          color: @btn-color;
+          border-color: #e8e8e8;
+        }
+        .btn.iconImgBtn{
+          background: transparent;
+          border: none;
+          color: @btn-color;
+          margin-right: 40%;
+          background:transparent url(./img/video.png) no-repeat left 47%;
+          background-size: 18px 15px;
+          padding-left: 28px;
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+    /*** 贷前初审 获取内评结果按钮 ***/
+    .getInternalAssess{
+      padding-left: 15px;
+      height: 1px;
+      position: relative;
+      // top: 2vh;
+      top: -0.2vh;
+      color: @btn-color;
+      >span{
+        position: relative;
+        // top: 5px;
+        top: 15px;
+        padding-left: 20px;
+        background: url(./img/internalAssess.png) no-repeat left center;
+        background-size: 15px 15px;
+      }
+      /** 贷前初审 内评结果 **/
+      .assessResultCard{
+        padding: 10px;
+        background-color: #f9f9f9;
+        box-shadow: 0px -1px 2px 1px #ddd;
+        // border: 1px solid #999;
+        margin-top: 15px;
+        font-family: @black-font;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        .assessGrp{
+          display: inline-block;
+        	width: 50%;
+          padding-bottom: 5px;
+          .key,.value{
+            display: inline-block;
+          }
+          .key{
+            color: #333;
+            width: 30%;
+          }
+          .value{
+            width: 70%;
+            input{
+              width: 100%;
+              border: 1px solid #eee;
+              padding: 10px;
+              background: #fff;
+              font-size: 0.9em;
+              border-radius: 2px;
+            }
+            input[disabled],input[readonly]{
+              background: #f2f2f2;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/**** 新增贷款 ****/
+// [data-ysp-modelid="YAJloan"]{
+//   .menuList{
+//     position: static;
+//   }
+// }
+/**** 借款人信息列表-bottombtn左侧底部按钮 ****/
+[data-ysp-modelid="loanerInfoList"]{
+  .bottomBtns{
+    // position: relative;
+    .btnLeft,.btnRight{
+      // position: absolute;
+      // left: 0;
+      float: left;
+      padding: 0;
+      margin: 0;
+      width: 50%;
+      background: #fff;
+      z-index: 1;
+      background: #f6f6f6;
+      box-shadow: none;
+      .card-body{
+        padding: 0;
+        margin: 0;
+        border: 0;
+      }
+    }
+    .btnLeft{
+      .loanBtns{
+        padding-right: 40%;
+        background: #fff;
+        z-index: 1;
+        background: #f6f6f6;
+        .btn{
+          margin-bottom: 0;
+          color: @btn-color;
+          background: transparent;
+          border: 0;
+          padding: 8px 0;
+          width: 30%;
+          padding-right: 5px;
+        }
+        .btn[data-gray='gray']{
+          -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+          filter: gray;
+        }
+        #add{
+          background: url(./img/add.png) no-repeat;
+        }
+        #detail{
+          background: url(./img/detail.png) no-repeat;
+        }
+        #delete{
+          background: url(./img/delete.png) no-repeat;
+        }
+        #add,#delete,#detail{
+          background-size: 15px 15px;
+          background-position: 5px 48%;
+          padding-left: 13px;
+        }
+      }
+    }
+    .btnRight{
+      // background: #fff;
+      // z-index: 1;
+      // background: #f6f6f6;
+      .loanBtns{
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        padding: 7px 8px;
+        .btn{
+          display: inline-block;
+          width: 100%;
+          border-radius: 5px;
+          border: 1px solid #4B9BEC;
+          background: #fff;
+          color: #4B9BEC;
+          margin-right: 5px;
+        }
+        .btn:last-child{
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+/**** 贷前初审 ****/
+[data-ysp-modelid="checkBeforeLoan"]{
+  .mainContainer .col-3:last-child{
+    padding-bottom: 30%;
+  }
+  .tableContainer{
+    .StandardTable{
+      table{
+        td{
+          .btn_me:nth-child(2){
+						color: @signCreditBtn-color;
+            padding: 5px 0;
+          }
+        }
+      }
+    }
+  }
+}
+/**** tableBoxWithIcon,tableBoxNoIcon ****/
+.tableBoxWithIcon,.tableBoxNoIcon{
+  .TableBox{
+    background: #f8f8f8;
+  	box-shadow: #ddd 0px -5px 5px 0px;
+    z-index: 999;
+    .TableBox_title{
+      background: #f6f6f6;
+      padding: 15px;
+      font-size: 1.1em;
+      .hideSelf{
+        font-size: 0.9em;
+        display: inline-block;
+        color: @btn-color;
+      }
+      .TableBox_switch{
+        font-size: 0.9em;
+        color: @btn-color;
+      }
+    }
+    .TableBox_body{
+      table{
+        text-align: center;
+        tbody{
+          tr:first-child{
+            color: #aaa;
+          }
+          tr.activeRow{
+            background: @btn-color;
+            color: #fff;
+          }
+          tr{
+            border-bottom: 1px solid #ddd;
+            td:last-child{
+              white-space: normal;
+            }
+          }
+        }
+      }
+    }
+    .TableBox_chose{
+      .TableBox_chose_top{
+        // margin-top: 10vh;
+      }
+      .type-list:before{
+        content: '';
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        margin-right: 10px;
+        border-radius: 50%;
+        border: 1px solid @btn-color;
+        background: transparent;
+      }
+      .active:before{
+        background: @btn-color;
+        border: 3px solid @main-color;
+        box-shadow: 0px 0px 1px 1px @btn-color;
+      }
+    }
+  }
+}
+.tableBoxWithIcon{
+  height: 1px;
+  .icon{
+    height: 10vh;
+    line-height: 10vh;
+    text-align: center;
+    padding: 0 30px;
+    font-size: 1.0rem;
+    margin-left: 10px;
+    color: @btn-color;
+  }
+  .icon-open{
+    background: url(./img/repaymentOpen.png) no-repeat;
+  }
+  .icon-fold{
+    background: url(./img/repaymentFold.png) no-repeat;
+  }
+  .icon-fold,.icon-open{
+    background-size: 15px 15px;
+    background-position: left 48%;
+    padding-left: 20px;
+  }
+  .TableBox{
+    position: fixed;
+    left: 20%;
+    right: 0;
+    bottom: 10vh;
+    background: #f8f8f8;
+  	box-shadow: #ddd 0px -5px 5px 0px;
+    .activeRow{
+      background: @btn-color;
+    }
+    .TableBox_body{
+      max-height: 40vh;
+      overflow-y: scroll;
+      table{
+        text-align: center;
+        tbody{
+          tr:first-child{
+            color: #aaa;
+          }
+          tr{
+            border-bottom: 1px solid #ddd;
+          }
+        }
+      }
+    }
+  }
+}
+.tableBoxNoIcon{
+  .TableBox{
+    background-color: #fff;
+    z-index: 1000;
+  }
+  .TableBox_body{
+    padding: 0;
+    table{
+      border-collapse: collapse;
+      width: 100%;
+      font-family: '黑体';
+      border-bottom: 1px solid #f6f6f6;
+      tbody{
+        tr:nth-child(odd){
+          background: #f6f6f6;
+        }
+        tr:first-child{
+          border-bottom: 1px solid #eee;
+          text-align: center;
+          td{
+            font-weight: normal;
+            color: #666;
+          }
+        }
+      }
+      tr{
+        th,td{
+          white-space: nowrap;
+          padding: 5px;
+          text-align: center;
+        }
+        td:last-child{
+          white-space: normal;
+        }
+      }
+    }
+  }
+}
+/**** menuList 主菜单公共组件样式菜单样式 ****/
+.menuList{
+  box-shadow: 0px 1px 10px 1px #000;
+  position: relative;
+  z-index: 1;
+  height: 10vh;
+  .header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: @main-color;
+    // background-color: #0164a7; // main color
+    padding: 7px 0;
+    height: 10vh;
+    span{
+      color: #fff;
+      text-align: center;
+      display: inline-block;
+      width: 50%;
+    }
+    span:first-child{
+      font-size: 1.1em;
+      text-align: left;
+      padding-left: 30px;
+    }
+    span:nth-child(2){
+      text-align: right;
+      padding-right: 30px;
+    }
+    span.refreshBtn:before{
+      background: url(./img/refresh.png) no-repeat center center;
+      background-size: 100%;
+      content: '';
+      display: inline-block;
+      width: 13px;
+      height: 13px;
+    }
+  }
+}
+/**** StandardTable 公共组件样式 ****/
+.tableContainer{
+  .cardTitle{
+    background: #f6f6f6;
+    padding: 15px;
+    font-size: 1.1em;
+  }
+  .StandardTable{
+    // overflow-x: scroll;
+    table{
+      border-collapse: collapse;
+      width: 100%;
+      font-family: '黑体';
+      border-bottom: 1px solid #f6f6f6;
+      thead{
+        tr{
+          border-bottom: 1px solid #eee;
+          text-align: center;
+          th{
+            font-weight: normal;
+            color: #666;
+          }
+        }
+      }
+      tbody{
+        tr:nth-child(even){
+          background: #f6f6f6;
+        }
+        tr.selectedTr{
+          background: @btn-color;
+          color: #fff;
+        }
+      }
+      tr{
+        th,td{
+          white-space: nowrap;
+          padding: 5px;
+          text-align: center;
+        }
+        td:last-child{
+          white-space: normal;
+        }
+      }
+    }
+    table.btnTable{
+      tbody{
+        tr{
+          td{
+            .btn_me{
+              color: @btn-color;
+            }
+          }
+        }
+      }
+    }
+  }
+  .confirmSignBtn{
+    color: @creditBtn-color;
+  }
+}
+/**** pageBtns 分页页码公共组件样式 ****/
+.pageBtns{
+  margin: 20px 0;
+  .curPage{
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .btns{
+    display: flex;
+    button{
+      margin: 0 3px;
+      width: 100%;
+      color: #333;
+      border-radius: 5px;
+      padding: 5px 10px;
+    }
+  }
+}
+/**** inboxMenus 公共组件样式 ****/
+.inboxMenusContainer::-webkit-scrollbar{ // 暂不做操作，注意：上传手机端后需要放开注释！
+  // display: none;
+  // width: 1px;
+  // background-color: #f1f1f1;
+}
+.inboxMenusContainer{
+  width: 100%;
+  overflow: scroll;
+  overflow-y: hidden;
+  margin: 10px 0;
+  .inboxMenus{
+    width: 250%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    span{
+      width: 100%;
+      padding: 10px 0;
+      text-align: center;
+    }
+    span.curMenu{
+      position: relative;
+      color: #44CDEF;
+    }
+    span.curMenu:after{
+      content: '';
+			display: block;
+      width: 50%;
+      position: absolute;
+      left: 10%;
+      bottom: 0;
+      border-bottom: 2px solid #44CDEF;
+    }
+  }
+}
+/**** 客户信息采集 ****/
+.ocrCard{
+  padding-bottom: 10vh;
+  .ocrCardGroup{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    >div{
+      width: 50%;
+      padding: 10px 25px;
+      .picName{
+        font-family: '黑体';
+        font-size: 1.1em;
+      }
+      .picShow{
+        width: 15em;
+        height: 10em;
+        position: relative;
+        margin: 10px 0px;
+        img{
+          width: 100%;
+          height: 100%;
+          border: 0;
+        }
+        .icon-plus{
+          position: absolute;
+          left: 45%;
+          right: 45%;
+          top: 45%;
+          bottom: 45%;
+          color: #fff;
+          font-weight: bold;
+        }
+        .icon-plus:before{
+          background: #a8b9c9;
+          border-radius: 50%;
+          padding: 5px;
+        }
+        .picChoose{
+          position: absolute;
+          left: 45%;
+          top: 60%;
+          border-radius: 3px;
+          box-shadow: 0px 2px 5px 1px #CACACA;
+          background: #fff;
+          span{
+            display: inline-block;
+            width: 100%;
+            padding: 10px;
+          }
+        }
+      }
+    }
+    >div:first-child{
+      .picShow{
+        background: url(./img/idFront.png) no-repeat center center;
+        background-size: 100%;
+      }
+    }
+    >div:nth-child(2){
+      .picShow{
+        background: url(./img/idBack.png) no-repeat center center;
+        background-size: 100%;
+      }
+    }
+    >div:nth-child(3),>div:nth-child(4){
+      .picShow{
+        background: url(./img/picEmpty.png) no-repeat center center;
+        background-size: 100%;
+      }
+    }
+  }
+}
+/**** singleSelect 模拟 ****/
+.singleSelect{
+  padding-left: 60%;
+  background: #eee;
+  .singleSelectLi{
+    padding: 10px;
+    .title,.value{
+      display: inline-block;
+    }
+    .title{
+      width: 44%;
+      margin-left: 2px;
+      color: @btn-color;
+    }
+    .value{
+      width: 52%;
+      select{
+        background-color: transparent;
+        border: 0;
+        padding: 0;
+        height: 45px;
+      }
+    }
+  }
+}
+/**** mainCard ****/
+.mainCard{
+  padding: 10px 20%;
+  border-bottom: 1px solid #eee;
+  .cardTitle{
+    padding-bottom: 10px;
+    font-size: 1.1em;
+    display: none;
+  }
+  .groups{
+    .group{
+      margin: 10px 0;
+      padding: 10px 0;
+      // border-bottom: 1px solid #eee;
+      display: flex;
+      justify-content: center;
+      .key,.value{
+        display: inline-block;
+      }
+      .key{
+        width: 30%;
+      }
+      .value{
+        width: 70%;
+        text-align: right;
+        input{
+          // border: 0;
+          margin: 0;
+        }
+        select{
+          background-color: #fff;
+          padding: 0;
+          padding-left: 10px;
+        	height: 45px;
+        }
+        select[disabled],select[readonly]{
+          background-color: #f2f2f2;
+        }
+      }
+    }
+  }
+}
+/**** 登录框 ****/
+[data-ysp-modelid="login"]{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  [data-componentsid="uiControl14_eAWq8P"]{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.loginBox{
+  width: 40%;
+  // width: 60%;
+  padding: 20% 5% 5% 5%;
+  // padding: 28% 5% 5% 5%;
+  border-radius: 5px;
+  background: url(./img/logo.png) no-repeat center 5%;
+  background-size: 50%;
+  .loginGrp{
+    padding-top: 10px;
+    position: relative;
+    .btn#reset{
+    	position: absolute;
+      right: 0px;
+      bottom: 0px;
+      width: auto;
+      background: transparent;
+      color: @btn-color;
+      border: 0;
+    }
+    input{
+      display: inline-block;
+      width: 100%;
+      border: 0;
+      border-bottom: 1px solid #ddd;
+      padding-left: 2em;
+    }
+    input[type='text']{
+      background: url(./img/user.png) no-repeat left center;
+      background-size: 1.2em 1.2em;
+    }
+    input[type='password']{
+      padding-right: 55px;
+      background: url(./img/pwd.png) no-repeat left center;
+      background-size: 1.2em 1.5em;
+    }
+  }
+  .btnGrp{
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+  	.btn#submit{
+      display: inline-block;
+      width: 100%;
+      border-radius: 5px;
+      background:@btn-color;
+      color: #fff;
+      border: 0;
+    }
+  }
+}
+/******* 云按揭贷款申请 *******/
+/** 卡片样式 **/
+// .card{
+//   margin: 10px;
+//   padding: 10px;
+//   background: #fff;
+//   box-shadow: 0 2px 5px 1px #ddd;
+//   border-radius: 5px;
+// }
+/** 新增贷款表格下按钮 **/
+.loanBtns{
+  display: flex;
+  justify-content: center;
+  padding: 7px 8px;
+  .btn{
+    display: inline-block;
+    width: 100%;
+    border-radius: 5px;
+    margin-right: 5px;
+  }
+}
+/** 概要 **/
+.summaryTab{
+  padding: 15px 0 15px 20%;
+  border-bottom: 1px solid #eee;
+  .sumLi{
+    display: inline-block;
+    width: 50%;
+    padding-right: 20px;
+    .sumTit{
+      display: inline-block;
+      width: 45%;
+      text-align:left;
+      white-space: nowrap;
+      color: #666;
+    }
+    .sumCont{
+    	display: inline-block;
+    	width: 55%;
+      text-align: right;
+      color: #333;
+      font-weight: bold;
+      input{
+        display: inline-block;
+        width: 80%;
+        border: 0;
+        margin: 0;
+        padding: 0;
+        background-color: transparent;
+        margin-right: 3%;
+        text-align: right;
+      }
+    }
+  }
+}
+/**** 问卷调查 ****/
+[data-ysp-modelid="personaQuestionare"]{
+  div.questionare{
+    padding: 10px 10px 50px 10px;
+    table{
+      tbody{
+        td{
+          padding: 10px 0;
+        }
+      }
+    }
+    input[type='radio']{
+      margin: 0 10px 0 15px;
+    }
+    input[type='text']{
+      display: inline-block;
+      width: 100px;
+      height: 20px;
+      border: 0;
+      margin: 0px 5px;
+      border-bottom: 1px solid #f2f2f2;
+      width: 200px;
+    }
+    select{
+      width: 20%;
+      display: inline-block;
+      margin-right: 5px;
+      border: 1px solid #e2e2e2;
+      background-color: #fff;
+    }
+    select[disabled],select[readonly]{
+			background-color: #f2f2f2;
+    }
+  }
+}
+/**** 目录页 ****/
+.directoryList{
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    padding: 20% 0;
+    background: url(./img/bg1.jpg) no-repeat center center;
+    background-size: auto 100%;
+    i.icon{
+      display: inline-block;
+      width: 120px;
+      height: 120px;
+      font-style: normal;
+      text-align: center;
+      font-size: 1em;
+      padding: 70px 20px 20px 20px;
+      background: url(./img/loanApply.png) no-repeat center 25px;
+      background-size: 30px 30px;
+      border-radius: 50%;
+      background-color: #fff;
+      font-weight: bold;
+    }
+  }
+  div:nth-child(2){
+    background-image: url(./img/bg2.jpg);
+    i.icon{
+      background-image: url(./img/todoList.png);
+    }
+  }
+  div:nth-child(3){
+    background-image: url(./img/bg3.jpg);
+    i.icon{
+      background-image: url(./img/loanCalc.png);
+    }
+  }
+  div:nth-child(4){
+    background-image: url(./img/bg4.jpg);
+    i.icon{
+      background-image: url(./img/prodIntro.png);
+    }
+  }
+}
+/**** 头部返回 ****/
+.backHeader{
+  background-color: @main-color;
+  color: #fff;
+  box-shadow: 0px 0px 5px 1px #333;
+  border: 0;
+  padding: 5px 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  // height: auto;
+  .btn{
+    background-color: @main-color;
+    border-color: transparent;
+    margin-top: 5px;
+    border: 0;
+    margin: 0;
+  }
+}
+/**** 黑名单信息 ****/
+[data-ysp-modelid="blackList"]{
+  .name_id{
+    background: #f9f9f9;
+    padding: 10px 30px;
+    .name{
+      color: #000;
+      font-size: 1.1em;
+      padding-right: 20px;
+      border-right: 1px solid #e0e0e0;
+    }
+    .id{
+      color: #999;
+      padding-left: 20px;
+    }
+  }
+  .tableContainer{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    margin-bottom: 10px;
+    .cardTitle{
+      background: transparent;
+      font-size: 1em;
+      color: @btn-color;
+    }
+    .StandardTable{
+      overflow-x: auto;
+      border: 0;
+      table{
+        border: 0;
+        padding: 10px;
+        thead{
+          background: #ddd;
+          th{
+            color: #000;
+          }
+        }
+        tbody{
+          padding: 10px;
+          tr:nth-child(even){
+            background: #f9f9f9;
+          }
+        }
+      }
+    }
+  }
+}
+/**** 客户信息采集表格页 ****/
+[data-ysp-modelid="OCRCollectInfo"]{
+  table.infoCollect{
+    tbody{
+      tr{
+        td:nth-child(2){
+          color: @btn-color;
+        }
+        td[data-gray='gray']{
+          -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+          filter: gray(100%);
+        }
+      }
+    }
+  }
+  .col-3:last-child{
+    .bottomBtns{
+      .loanBottomBtn{
+        // 覆盖统一设置的按钮左边距
+        padding-left: 10px;
+      }
+    }
+  }
+}
+/**** 获取内评结果弹出页面 ****/
+.assessHeader{
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  height: 10vh;
+  >div{
+    display: inline-block;
+    width: 50%;
+    .icon{
+      font-size: 1em;
+    }
+    .icon:before{
+      margin-right: 10px;
+    }
+  }
+  >div:nth-child(2){
+    text-align: right;
+    height: 20px;
+    .icon{
+      background: url(./img/check_self.png) no-repeat center center;
+      background-size: 100%;
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+/**** 内评 ****/
+[data-ysp-modelid="internalAssess"]{
+  .name_id{
+    background: #f9f9f9;
+    padding: 10px 30px;
+    .name{
+      color: #000;
+      font-size: 1.1em;
+      padding-right: 20px;
+      border-right: 1px solid #e0e0e0;
+    }
+    .id{
+      color: #999;
+      padding-left: 20px;
+    }
+  }
+  .tableContainer{
+    overflow-x: scroll;
+  }
+  .assessTwoLineTable{
+    border-bottom: 1px solid #eee;
+    .grp{
+      padding: 15px 8px;
+      .key,.value{
+        display: inline-block;
+        width: 70%;
+      }
+      .value{
+        width: 30%;
+        text-align: right;
+        border-left: 1px solid #eee;
+        padding-left: 10px;
+      }
+    }
+    .grp:last-child{
+      color: #ccc;
+    }
+  }
+}
+/**** 个人征信报告 ****/
+.creditReport{
+  padding: 10px;
+  table{
+    width: 100%;
+    td{
+      width: auto;
+      white-space: normal;
+    }
+  }
+}
+.creditHeader{
+  background: @main-color;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  .btn{
+    width: 50%;
+    text-align: left;
+    background: @main-color;
+    border: 0;
+  }
+}
+// 签订征信授权书
+[data-ysp-modelid="signCreditAuthority"],[data-ysp-modelid="signContractAuthority"]{
+  position: relative;
+  padding-bottom: 250px;
+  .authorityContainer{
+    .authGrp{
+      border-bottom: 5px solid #eee;
+      .authKey,.authValue{
+        padding: 10px 15px;
+      }
+      .authKey{
+        border-bottom: 1px solid #eee;
+        font-size: 1.1em;
+        color: #000;
+      }
+      .authValue{
+        p:empty{
+          display: none;
+        }
+        p{
+          margin: 0;
+        	padding: 5px;
+        }
+      }
+    }
+  }
+  .contractTit{
+    border-bottom: 1px solid #eee;
+    font-size: 1.1em;
+    color: #000;
+    padding: 10px 15px;
+  }
+  .contractCont{
+    padding: 10px 20px;
+    font-family: '黑体';
+    h1{
+      text-align: center;
+    }
+    p{
+      margin: 0;
+      text-indent: 2em;
+    }
+    table{
+      text-align: left;
+      tr{
+        padding: 5px;
+      }
+    }
+  }
+  .signBottomBtn{
+    background: #fff;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    height: 60px;
+    box-shadow: 0 0 5px 0 #333;
+    .btn{
+    	background: @creditBtn-color;
+      border-radius: 5px;
+      color: #fff;
+    }
+  }
+  .dialog{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 10;
+    .dialogCont{
+      position: absolute;
+      background: #fff;
+      top: 30%;
+      bottom: 30%;
+      left: 25%;
+      right: 25%;
+      width: 40%;
+      height: 250px;
+      border-radius: 5px;
+      box-shadow: 0 0 5px 2px #333;
+      header{
+        background: #f6f6f6;
+        border-radius: 5px;
+        height: 20%;
+        span{
+          display: inline-block;
+          width: 50%;
+          padding: 10px;
+        }
+        span.dialogClose{
+          text-align: right;
+          color: #666;
+        }
+      }
+      section{
+				padding: 10px;
+        height: 55%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      footer{
+        display: flex;
+        padding: 5px;
+        height:20%;
+        .btn{
+          width: 100%;
+          margin: 0;
+          border-radius: 5px;
+          padding: 8px 3px;
+          border: 1px solid @creditBtn-color;
+          color: @creditBtn-color;
+          background: #fff;
+        }
+        .btn:nth-child(2){
+          margin-left: 5px;
+          background: @creditBtn-color;
+          color: #fff;
+        }
+      }
+    }
+  }
+  .dialog.codeMsg{
+    .dialogCont{
+      top: 25%;
+      bottom: 25%;
+    }
+    section{
+      height: 80%;
+      display: block;
+      >div{
+        padding: 10px 5px;
+        .value{
+          position: relative;
+          padding: 10px 0;
+          input{
+            display: inline-block;
+            border: 0;
+            border-bottom: 1px solid #ddd;
+            margin: 0;
+            padding: 3px 2px;
+          }
+          .btn{
+            display: inline-block;
+            position: absolute;
+            right: 0;
+            bottom: 10px;
+            margin: 0;
+            padding: 0;
+            padding-bottom: 2px;
+            background: transparent;
+            border: 0;
+            color: @creditBtn-color;
+          }
+        }
+      }
+    }
+    footer{
+      height: 18%;
+    }
+  }
+  #signatureSection{
+    #base64signature{// 图片
+      // width: 330px;
+      // height: 200px;
+      // position: fixed;
+      // top: 300px;
+      // left: 300px;
+    }
+    .signBtn{// 切换出签名部分的按钮
+      position: fixed;
+      bottom: 70px;
+      right: 50px;
+      i{
+        background: url('http://10.1.41.169:7001/grxd/images/icon.png') no-repeat center -60px;
+        display: block;
+        width: 50px;
+        height: 50px;
+      	background-size: 60px;
+        margin: 0 auto;
+      }
+      background: #fff;
+      border: 1px solid @creditBtn-color;
+      color: @creditBtn-color;
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+      text-align: center;
+    }
+    .signBox{// 签名部分
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 2;
+      background: rgba(255,255,255,0.5);
+    }
+    .signature{
+      position: fixed;
+      top: 50px;
+      left: 0px;
+      right: 0px;
+      bottom: 0px;
+      z-index: 200;
+      canvas{
+        background: rgba(255,255,255,.3)!important;
+      }
+    }
+    .controlBox{
+      z-index: 200;
+      background: #333;
+      width: 100%;
+      height: 50px;
+      display: flex;
+			align-items: center;
+      .btn{
+        width: 100%;
+        background: transparent;
+        color: #fff;
+        border: 0;
+        margin: 0;
+        border-right: 1px solid #eee;
+        background: url('http://10.1.41.169:7001/grxd/images/icon.png') no-repeat center -180px;
+        background-size: 30px;
+      }
+      .btn.clear{
+        background-position: center -92px;
+      }
+      .btn.save{
+        background-position: center -212px;
+      }
+    }
+  }
+}
+// 签名面板
+[data-ysp-modelid="signPanel"]{
+  #signatureSection{
+    .signBox{// 签名部分
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 2;
+      background: rgba(255,255,255,0.5);
+    }
+    .signature{
+      position: fixed;
+      top: 50px;
+      left: 0px;
+      right: 0px;
+      bottom: 0px;
+      z-index: 200;
+      canvas{
+        background: rgba(255,255,255,.3)!important;
+      }
+    }
+    .controlBox{
+      z-index: 200;
+      background: #333;
+      width: 100%;
+      height: 50px;
+      display: flex;
+			align-items: center;
+      .btn{
+        width: 100%;
+        background: transparent;
+        color: #fff;
+        border: 0;
+        margin: 0;
+        border-right: 1px solid #eee;
+        background: url('http://10.1.41.169:7001/grxd/images/icon.png') no-repeat center -180px;
+        background-size: 30px;
+      }
+      .btn.clear{
+        background-position: center -92px;
+      }
+      .btn.save{
+        background-position: center -212px;
+      }
+    }
+  }
+}
+
+/**** 征信签名&&合同签名 合同按钮 ****/
+.checkContractBtns{
+  text-align: right;
+  .btn{
+    border-radius: 5px;
+    color: @creditBtn-color;
+    background: transparent;
+    border: 1px solid @creditBtn-color;
+  }
+  .btn:first-child{
+    background: @creditBtn-color;
+    color: #fff;
+    border: 0;
+  }
+}
+
+[data-ysp-modelid="infoAdded"]{
+  .mainCard{
+    padding: 10px 5px;
+    .groups{
+      .cardTitle{
+        display: block;
+        font-weight: bold;
+      }
+      .group{
+        padding: 10px 20%;
+        .value{
+          select[disabled],select[readonly]{
+            background-color: #f2f2f2;
+          }
+        }
+      }
+    }
+  }
+}
+
+//shanjianhang code
+[data-ysp-modelid="DBSX"]{
+  .card{
+    box-shadow: none;
+    margin: 0px;
+    .card-body{
+      margin: 0px;
+      padding: 0px;
+    }
+  }
+  .todoListBelow{
+    height: 90vh;
+    overflow-y: scroll;
+  }
+  .DBSX-head{
+    display: flex;
+    padding: 5px 0px;
+    border-bottom: solid 1px #d8d8d8;
+    .list{
+      flex: 1;
+      margin: 10px 10px;
+      padding: 5px 5px;
+      text-align: center;
+      color: block;
+      font-weight: bold;
+    }
+    .list:nth-child(1){
+      border-right: solid 1px #d8d8d8;
+    }
+    .list:nth-child(2){
+      border-right: solid 1px #d8d8d8;
+    }
+  }
+  .DBSX-mainTitle{
+    display: "block";
+    line-height: 60px;
+    height: 60px;
+    padding-left: 20px;
+    font-size: 20px;
+    color: #202020;
+    background: #f8f8f8;
+    font-weight: bold;
+  }
+  .DBSX-title{
+    color: #202020;
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    line-height: 60px;
+    height: 60px;
+    position: relative;
+  }
+  .DBSX-title.right-title{
+    border-bottom: solid 1px #d2d2d2;
+    overflow: hidden;
+    .right-title_title{
+      float: left;
+    }
+    .pageBox{
+      float: right;
+      font-size: 16px;
+      color: #202020;
+      font-weight: normal;
+      select{
+        width: 100px;
+        padding: 0px;
+        margin: 0px 10px;
+        line-height: 36px;
+        height: 36px;
+        padding-left: 10px;
+        display: inline-block;
+      }
+    }
+  }
+  .DBSX-title.left-title{
+    position: relative;
+    .search-list{
+      position: absolute;
+      right: 0px;
+      top: 50%;
+      transform: translate(0px,-50%);
+      -webkit-transform: translate(0px,-50%);
+      width: 100px;
+      height: 36px;
+      line-height: 36px;
+      text-align: center;
+      font-size: 16px;
+      font-weight: normal;
+      background: #009593;
+      color: white;
+      border-radius: 4px;
+    }
+  }
+  .DBSX-Main{
+    margin: 0px;
+    padding: 0px;
+    >.card-body{
+      padding: 0px 10px;
+      display: flex;
+      display: -webkit-flex;
+      
+      // 添加滚动
+      .searchBox{
+        padding-bottom: 50px;
+        height: 45vh;
+        overflow-y: scroll;
+      }
+      
+      //.DBSX-left
+      >div:nth-child(1){
+        flex: 2;
+        >.card-body{
+          padding: 10px;
+          border-right: solid 1px #d2d2d2;
+          >.card-body{
+            >div:nth-child(1){
+              padding: 0px;
+              margin: 0px;
+            }
+          }
+          .left{
+            line-height: 32px;
+            height: 32px;
+          }
+          .right{
+            margin-bottom: 10px;
+          }
+          input{
+            width: 100%;
+            padding-left: 10px;
+            border: solid 1px #d2d2d2;
+            border-radius: 4px;
+            line-height: 40px;
+            height: 40px;
+            padding: 0px;
+            margin: 0px;
+          }
+          select{
+            width: 100%;
+            border: solid 1px #d2d2d2;
+            border-radius: 4px;
+            line-height: 40px;
+            height: 40px;
+            padding: 0px;
+            margin: 0px;
+          }
+        }
+      }
+      //.DBSX-right
+      >div:nth-child(2){
+        flex: 5;
+        >.card-body{
+  				padding: 10px;
+          .listCardBox{
+            // height: 60vh;
+            height: 45vh;
+    				overflow-y: scroll;
+            .listCardBox-scroll{
+              width: 100%;
+              .listCard{
+                margin: 10px 0px;
+                border-bottom: solid 1px #d2d2d2;
+                .listCard-line1{
+                  display: flex;
+                  display: -webkit-flex;
+                  color: black;
+                  .listCard-flex:nth-child(1){
+                    flex: 1;
+                    text-align: left;
+                    padding-left: 10px;
+                    line-height: 36px;
+                    height: 36px;
+                    font-weight: bold;
+                  }
+                  .listCard-flex:nth-child(2){
+                    flex: 1;
+                    text-align: left;
+                    padding-left: 10px;
+                    line-height: 36px;
+                    height: 36px;
+                    font-weight: bold;
+                  }
+                  .listCard-flex:nth-child(3){
+                    flex: 2;
+                    text-align: right;
+                    padding-right: 10px;
+                    line-height: 36px;
+                    height: 36px;
+                  }
+                }
+                .listCard-line2{
+                  padding: 10px;
+                }
+                .listCard-line3{
+                  padding: 10px;
+                  display: flex;
+                  display: -webkit-flex;
+                  .listCard-flex{
+                    flex: 8;
+                    line-height: 30px;
+                    height: 30px;
+                    text-align: left;
+                    font-size: 16px;
+                    color: black;
+                  }
+                  .searchBtn{
+                    flex: 1.5;
+                    line-height: 30px;
+                    height: 30px;
+                    text-align: center;
+                    font-size: 16px;
+                    background: #009593;
+                    border-radius: 4px;
+                    color: white;
+                  }
+                }
+              }
+              .listCard:last-child{
+                border-bottom: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+[data-ysp-modelid="production"]{
+  .production-mainTitle{
+    display: "block";
+    line-height: 60px;
+    height: 60px;
+    padding-left: 20px;
+    font-size: 20px;
+    color: #202020;
+    background: #f8f8f8;
+    font-weight: bold;
+  }
+  .selectPd{
+    padding: 10px;
+    text-align: right;
+    select{
+      width: 300px;
+      display: inline-block;
+    }
+  }
+  .detailBox{
+    padding: 10px;
+  }
+}
+
+[data-ysp-modelid="signContractAuthority"]{
+  .contractForm{
+    .mainCard{
+      padding: 10px;
+      .cardTitle{
+        display: block;
+        font-weight: bold;
+      }
+      .group{
+        display: inline-block;
+        width: 50%;
+        padding: 0 10px;
+      }
+      .group.multiSelect,.group.multiCheckBox,.group.inputButton{
+        width: 100%;
+        .key{
+          width: 20%;
+        }
+        .value{
+          text-align: left;
+          width: 80%;
+          >div{
+            display: inline-block;
+            width: 33%;
+            select{
+              width: 80%;
+              display: inline-block;
+              margin-right: 5px;
+            }
+          }
+          >span{
+            display: inline-block;
+            margin-right: 10px;
+            >input[type='checkbox']{
+              margin-right: 5px;
+            }
+          }
+          select[disabled],select[readonly]{
+            background-color: #f2f2f2;
+          }
+        }
+      }
+      .group.inputButton{
+        .value{
+          input{
+            display: inline-block;
+            width: 60%;
+          }
+          input[type='button']{
+            width: 30%;
+            background: transparent;
+            border: 0;
+            color: @creditBtn-color;
+            font-size: 1.1em;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}
+// 树结构
+[data-ysp-modelid="List"]{
+  .ListBox{
+    padding: 20px 20%;
+    >div{
+      display: flex;
+      display: -webkit-flex;
+      margin: 30px 0px;
+      .title{
+        flex: 1;
+        -webkit-flex: 1;
+        text-align: left;
+        line-height: 40px;
+      }
+      .content{
+        flex: 3;
+        -webkit-flex: 3;
+        select{
+          width: 100%;
+          padding: 0px;
+          padding-left: 10px;
+          margin: 0px;
+          line-height: 40px;
+        }
+      }
+    }
+  }
+}
+
+/* 贷款试算器 */
+[data-ysp-modelid="loanthetrial"],[data-ysp-modelid="loantheinfo"]{
+  .menuList{
+    position: initial;
+  }
+  .iconleftstyle{
+    wdith:15px;
+  }
+  .calcSearch{
+    padding: 10px;
+  }
+  .mainContainer{
+    height: 80vh;
+    .col-3:first-child{
+      overflow-y: scroll;
+      height: 80vh;
+      border-right: 1px solid #f6f6f6;
+      select,input{
+        border: 0;
+        border-bottom: 1px solid #f6f6f6;
+      }
+    }
+    .col-3:last-child{
+      height: 80vh;
+      .tableBoxWithIcon{
+        .tableBox{
+          z-index: 999;
+        }
+        span.icon{
+          display: none;
+        }
+      }
+      .bottomBtns{
+        .loanBottomBtn{
+          position: relative;
+          .btn[data-index='3']{
+            border: 0;
+            color: @btn-color;
+            position: absolute;
+            left: 15px;
+            width: 80px;
+            background: transparent url(./img/calcIcon.png) no-repeat left center;
+            background-size: 20px 20px;
+          }
+        }
+      }
+    }
+  }
+  .tableBoxNoIcon .TableBox_body table tr th, .tableBoxNoIcon .TableBox_body table tr td{
+			white-space: normal;
+  }
+}
+[data-ysp-modelid="loanthetrial"]{
+  .menuList{
+    .header{
+      .icon-left{
+        width: 100%;
+      }
+    }
+  }
+}
+// 云签电子合同页
+[data-ysp-modelid="signContract"]{
+  .icon-backtop {
+    background: url(http://10.1.41.170:8080/mmecserver3.0/images/icon-backtop.png) no-repeat center center;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    line-height: 20px;
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255,255,255,.3);
+  }
+}
+.signContractPage{
+	padding: 10px;
+  /* HTML5 display definitions
+     ========================================================================== */
+
+  /**
+   * Correct `block` display not defined for any HTML5 element in IE 8/9.
+   * Correct `block` display not defined for `details` or `summary` in IE 10/11 and Firefox.
+   * Correct `block` display not defined for `main` in IE 11.
+   */
+
+  article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+    display: block;
+  }
+  /**
+   * 1. Correct `inline-block` display not defined in IE 8/9.
+   * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+   */
+
+  audio, canvas, progress, video {
+    display: inline-block; /* 1 */
+    vertical-align: baseline; /* 2 */
+  }
+  /**
+   * Prevent modern browsers from displaying `audio` without controls.
+   * Remove excess height in iOS 5 devices.
+   */
+
+  audio:not([controls]) {
+    display: none;
+    height: 0;
+  }
+  /**
+   * Address `[hidden]` styling not present in IE 8/9/10.
+   * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+   */
+
+  [hidden], template {
+    display: none;
+  }
+  /* Links
+     ========================================================================== */
+
+  /**
+   * Remove the gray background color from active links in IE 10.
+   */
+
+  a {
+    background: transparent;
+  }
+  /**
+   * Improve readability when focused and also mouse hovered in all browsers.
+   */
+
+  a:active, a:hover {
+    outline: 0;
+  }
+  /* Text-level semantics
+     ========================================================================== */
+
+  /**
+   * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+   */
+
+  abbr[title] {
+    border-bottom: 1px dotted;
+  }
+  /**
+   * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+   */
+
+  b, strong {
+    font-weight: bold;
+  }
+  /**
+   * Address styling not present in Safari and Chrome.
+   */
+
+  dfn {
+    font-style: italic;
+  }
+  /**
+   * Address variable `h1` font-size and margin within `section` and `article`
+   * contexts in Firefox 4+, Safari, and Chrome.
+   */
+
+  h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+  }
+  /**
+   * Address styling not present in IE 8/9.
+   */
+
+  mark {
+    background: #ff0;
+    color: #000;
+  }
+  /**
+   * Address inconsistent and variable font size in all browsers.
+   */
+
+  small {
+    font-size: 80%;
+  }
+  /**
+   * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+   */
+
+  sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+  }
+  sup {
+    top: -0.5em;
+  }
+  sub {
+    bottom: -0.25em;
+  }
+  /* Embedded content
+     ========================================================================== */
+
+  /**
+   * Remove border when inside `a` element in IE 8/9/10.
+   */
+
+  img {
+    border: 0;
+  }
+  /**
+   * Correct overflow not hidden in IE 9/10/11.
+   */
+
+  svg:not(:root) {
+    overflow: hidden;
+  }
+  /* Grouping content
+     ========================================================================== */
+
+  /**
+   * Address margin not present in IE 8/9 and Safari.
+   */
+
+  figure {
+    margin: 1em 40px;
+  }
+  /**
+   * Address differences between Firefox and other browsers.
+   */
+
+  hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
+  }
+  /**
+   * Contain overflow in all browsers.
+   */
+
+  pre {
+    overflow: auto;
+  }
+  /**
+   * Address odd `em`-unit font size rendering in all browsers.
+   */
+
+  code, kbd, pre, samp {
+    font-family: monospace, monospace;
+    font-size: 1em;
+  }
+  /* Forms
+     ========================================================================== */
+
+  /**
+   * Known limitation: by default, Chrome and Safari on OS X allow very limited
+   * styling of `select`, unless a `border` property is set.
+   */
+
+  /**
+   * 1. Correct color not being inherited.
+   *    Known issue: affects color of disabled elements.
+   * 2. Correct font properties not being inherited.
+   * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+   */
+
+  button, input, optgroup, select, textarea {
+    color: inherit; /* 1 */
+    font: inherit; /* 2 */
+    margin: 0; /* 3 */
+  }
+  /**
+   * Address `overflow` set to `hidden` in IE 8/9/10/11.
+   */
+
+  button {
+    overflow: visible;
+  }
+  /**
+   * Address inconsistent `text-transform` inheritance for `button` and `select`.
+   * All other form control elements do not inherit `text-transform` values.
+   * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+   * Correct `select` style inheritance in Firefox.
+   */
+
+  button, select {
+    text-transform: none;
+  }
+  /**
+   * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+   *    and `video` controls.
+   * 2. Correct inability to style clickable `input` types in iOS.
+   * 3. Improve usability and consistency of cursor style between image-type
+   *    `input` and others.
+   */
+
+  button, html input[type="button"], /* 1 */ input[type="reset"], input[type="submit"] {
+    -webkit-appearance: button; /* 2 */
+    cursor: pointer; /* 3 */
+  }
+  /**
+   * Re-set default cursor for disabled elements.
+   */
+
+  button[disabled], html input[disabled] {
+    cursor: default;
+  }
+
+  /**
+   * Remove inner padding and border in Firefox 4+.
+   */
+
+  button::-moz-focus-inner, input::-moz-focus-inner {
+   border: 0;
+   padding: 0;
+  }
+  /**
+   * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+   * the UA stylesheet.
+   */
+
+  input {
+    line-height: normal;
+  }
+  /**
+   * It's recommended that you don't attempt to style these elements.
+   * Firefox's implementation doesn't respect box-sizing, padding, or width.
+   *
+   * 1. Address box sizing set to `content-box` in IE 8/9/10.
+   * 2. Remove excess padding in IE 8/9/10.
+   */
+
+  input[type="checkbox"], input[type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+  }
+
+  /**
+   * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+   * `font-size` values of the `input`, it causes the cursor style of the
+   * decrement button to change from `default` to `text`.
+   */
+
+  input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+   height: auto;
+  }
+  /**
+   * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+   * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+   *    (include `-moz` to future-proof).
+   */
+
+  input[type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box; /* 2 */
+    box-sizing: content-box;
+  }
+
+  /**
+   * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+   * Safari (but not Chrome) clips the cancel button when the search input has
+   * padding (and `textfield` appearance).
+   */
+
+  input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+   -webkit-appearance: none;
+  }
+  /**
+   * Define consistent border, margin, and padding.
+   */
+
+  fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+  }
+  /**
+   * 1. Correct `color` not being inherited in IE 8/9/10/11.
+   * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+   */
+
+  legend {
+    border: 0; /* 1 */
+    padding: 0; /* 2 */
+  }
+  /**
+   * Remove default vertical scrollbar in IE 8/9/10/11.
+   */
+
+  textarea {
+    overflow: auto;
+  }
+  /**
+   * Don't inherit the `font-weight` (applied by a rule above).
+   * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+   */
+
+  optgroup {
+    font-weight: bold;
+  }
+  /* Tables
+     ========================================================================== */
+
+  /**
+   * Remove most spacing between table cells.
+   */
+
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  td, th {
+    padding: 0;
+  }
+  body {
+    font: 14px/1.5 "微软雅黑";
+    background: #efeff0;
+  }
+  .page {
+    background: #fff;
+    // width: 950px;
+    // -yn
+    width: 100%;
+    text-align: center;
+    margin: 20px auto;
+    box-shadow: 0 0 15px rgba(0,0,0,0.10)
+  }
+  .page-01 {
+    // padding: 50px 0;
+    // -yn
+    padding: 20px;
+    margin-top: 40px;
+    background: #fff;
+  }
+  .page-01 h1 {
+    font-size: 38px;
+    text-align: center
+  }
+  .page-01 h2 {
+    font-size: 14px;
+    text-align: right;
+    margin-bottom: 50px
+  }
+  a {
+    color: #007BD1;
+    text-decoration: none
+  }
+  .data {
+    border: 1px solid #D7D7D7;
+    line-height: 30px;
+    margin: 50px;
+    width: 580px;
+  }
+  .data th {
+    text-align: left;
+    padding-left: 38px;
+  }
+  .data .padding {
+    padding: 50px;
+  }
+  .hr {
+    border: 0 none;
+    border-top: 3px solid #cd141c;
+  }
+  .red {
+    color: red;
+    font-size: 12px
+  }
+  dl {
+    margin-bottom: 20px
+  }
+  dt, dd {
+    line-height: 20px
+  }
+  dt {
+    font-weight: bold
+  }
+  dd {
+    margin-left: 10px
+  }
+  .dl-horizontal {
+   *zoom: 1;
+    background: #fff;
+    margin: 0 10px 2px
+  }
+  .dl-horizontal:before, .dl-horizontal:after {
+    display: table;
+    line-height: 0;
+    content: ""
+  }
+  .dl-horizontal:after {
+    clear: both
+  }
+  .dl-horizontal dt {
+    float: left;
+    // width: 160px;
+    // -yn
+    width: 20%;
+    padding: 10px;
+    overflow: hidden;
+    clear: left;
+    text-align: right;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .dl-horizontal dd {
+    // margin-left: 200px;
+    // yn
+    margin-left: 20%;
+    padding: 10px;
+    text-align: left
+  }
+  .dl-horizontal h3 {
+    margin: 0;
+    font-weight: 100
+  }
+  .gray {
+    color: gray;
+  }
+  // .print {
+  //   width: 70px;
+  //   height: 27px;
+  //   line-height: 27px;
+  //   display: inline-block;
+  //   background: url(../images/print.png) -1px -1px no-repeat;
+  //   vertical-align: middle;
+  //   margin-left: 10px;
+  // }
+  // .print:hover {
+  //   background-position: -1px -36px;
+  // }
+  .top {
+    position: fixed;
+    bottom: 5px;
+    right: 10px;
+    width: 39px;
+    line-height: 53px;
+    height: 53px;
+    background: url(../../images/print.png) 0 -70px no-repeat;
+  }
+  // .top:hover {
+  //   background-position: -47px -70px;
+  // }
+  .title {
+    height: 50px;
+    line-height: 50px;
+    padding-left: 20px;
+    font-size: 16px;
+    color: #CDCDCD;
+    font-weight: 700;
+    width: 840px;
+    margin: 0 auto;
+  }
+  .footer {
+    width: 840px;
+    margin: 0 auto;
+    height: 55px;
+    color: #C5C5C5;
+    font-size: 12px;
+    line-height: 55px;
+    text-align: center
+  }
+  .padding a {
+    display: inline-block;
+    width: 45%;
+    text-align: left;
+   *zoom:1;
+    margin: 10px 0;
+  }
+  .popup {
+    background: #000;
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+    display: none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 100;
+  }
+  .p_b5 {
+  }
+  .p_b5_title {
+    font-size: 13px;
+    color: #343434;
+    font-weight: bold;
+    padding: 9px;
+  }
+  .p_b5_title span {
+    font-weight: normal;
+    color: #707070;
+    font-size: 12px;
+  }
+  .p_b5 .p_bind_2 {
+    width: 100%;
+    margin-top: 15px;
+  }
+  .p_tile {
+    height: 25px;
+    line-height: 25px;
+    font-weight: bold;
+    padding-left: 5%;
+    font-size: 14px;
+    font-family: Arial, "宋体";
+    color: #006bae;
+    width: 95%;
+    text-align: left;
+    background-image: -o-linear-gradient(top, #eef9ff, #d1eeff);
+    background-image: -ms-linear-gradient(top, #eef9ff, #d1eeff);
+    background-image: -moz-linear-gradient(top, #eef9ff, #d1eeff);
+    background-image: -webkit-linear-gradient(top, #eef9ff, #d1eeff);
+    background-image: linear-gradient(top, #eef9ff, #d1eeff );
+   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eef9ff', endColorstr='#d1eeff', GradientType='0');
+  }
+  .p_bind_2 {
+    text-align: right;
+    line-height: 42px;
+    border-top: 1px solid #bae4ff;
+  }
+  .p_b_ok {
+    width: 55px;
+    height: 23px;
+    line-height: 23px;
+    margin: 5px 15px;
+  }
+  .all_btn {
+    background: #ff6d00;
+    text-align: center;
+    border: 1px solid #ff4e00;
+    display: inline-block;
+    color: #fff;
+    border-radius: 5px;
+  }
+  .all_btn:hover {
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #cf7523;
+    background-image: -moz-linear-gradient(top, #ffc057, #f5870f);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ffc057), color-stop(1, #f5870f));
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffc057', endColorstr='#f5870f', GradientType='0');
+  }
+  .p_box {
+    width: 600px;
+    height: auto;
+    display: none;
+    border: 1px solid #94cae9;
+    background: #fff;
+    position: fixed;
+    font-size: 14px;
+    z-index: 101;
+  }
+  #mainContract img {
+    max-width: 840px
+  }
+  .mb20 {
+    margin-bottom: 20px;
+  }
+  .mt20 {
+    margin-top: 20px;
+  }
+  .mb20 p {
+    margin: 0;
+    line-height: 28px
+  }
+  .inblock {
+    display: inline-block;
+  *display:inline;
+  *zoom:1;
+    width: 70px;
+    text-align: right;
+  }
+  .mr20 {
+    margin-right: 20px;
+  }
+
+  @media print {
+  .fixed {
+    display: none;
+  }
+  }
+  .page-outer {
+    border: 4px solid #005bac;
+    // width: 802px;
+    // -yn
+    width: 100%;
+    margin: 0 auto;
+  }
+  .page-inner {
+    border: 1px solid #005bac;
+    margin: 5px;
+    background: #efefef;
+  }
+  .sign-seal {
+    border: 2px solid #005bac;
+    background: url(http://10.1.41.170:8080/mmecserver3.0/images/zip-line.png) repeat center center;
+    position: relative;
+    z-index: 0;
+    margin: 10px;
+    // -yn
+    width: 315px;
+  }
+  .sign-seal .sign-inner {
+    // width: 240px;
+    // -yn
+    width: 300px;
+    border: 1px solid #005bac;
+    margin: 5px;
+    font-size: 12px;
+    padding: 5px 15px 5px 70px;
+    background: #fffff0 url(http://10.1.41.170:8080/mmecserver3.0/images/zip-seal.png) no-repeat 20px center;
+  }
+  .sign-seal i {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: 0;
+    width: 59px;
+    height: 50px;
+  }
+  .sign-seal i.icon-company {
+    background: url(http://10.1.41.170:8080/mmecserver3.0/images/zip-company.png) no-repeat;
+  }
+  .sign-seal i.icon-personal {
+    background: url(http://10.1.41.170:8080/mmecserver3.0/images/zip-personal.png) no-repeat;
+  }
+  .timestamp {
+    width: 133px;
+    height: 111px;
+    background: url(http://10.1.41.170:8080/mmecserver3.0/images/timestamp.png) no-repeat;
+    position: relative;
+    z-index: 0;
+  }
+  .timestamp p {
+    position: absolute;
+    z-index: 1;
+    color: #3e3a39;
+    font-size: 10px;
+    width: 133px;
+    text-align: center;
+    font-weight: 700;
+    top: 53px;
+    transform: scale(.9);
+  }
+  .zip-data {
+    border: 1px solid red;
+    background: #fff url(http://10.1.41.170:8080/mmecserver3.0/images/zip-data-bg.png) no-repeat center center;
+    margin: 10px;
+  }
+  .padding{ padding:10px;}
+}
+// 产品介绍
+[data-ysp-modelid="production"]{
+  padding-top: 10vh;
+  .menuList {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+}
+span.errorMsg{
+  display: block;
+  width: 100%;
+  padding: 50px 20px;
+  color: @signCreditBtn-color;
+  text-align: center;
+}
+// 新增查询押品用户号
+// 按钮
+#newButton{
+  font-size: 1em;
+  background: @btn-color;
+  color: #fff;
+  border: 0;
+  border-radius: 5px;
+  margin-top: 15px;
+  padding: 3px 10px;
+}
+// 模板
+[data-ysp-modelid="queryCollecteralSysUserNo"]{
+  .UserNoLeft,.UserNoRight{
+    display: inline-block;
+    width: 30%;
+    box-shadow: none;
+    padding: 0px;
+    margin: 0 10px;
+    .card-body{
+      padding: 0;
+    }
+    .mainCard{
+      padding: 10px;
+    }
+  }
+  .UserNoRight{
+    width: 60%;
+    vertical-align: top;
+    margin-bottom: 50px;
+  }
+}
+// 底部按钮
+.buttons{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #f2f2f2;
+  padding: 10px 20px;
+  input[type="button"]{
+    border: 0;
+    border-bottom: 1px solid @btn-color;
+    padding: 5px 2px;
+    color: @btn-color;
+    margin-right: 8px;
+    background-color: transparent;
+    font-size: 0.9em;
+  }
+  input[name*="btnQry"]{
+    background: @btn-color;
+    color: #fff;
+    padding: 5px 15px;
+    font-size: 1em;
+    border-radius: 5px;
+  }
+  select{
+    width: 50px;
+    display: inline-block;
+    background-color: transparent;
+    height: 30px;
+    line-height: 30px;
+    margin: 0;
+  }
+  input[name="btnQry2"]{
+    float: right;
+  }
+}
+#redBorder{
+	border: 1px solid red;
+}

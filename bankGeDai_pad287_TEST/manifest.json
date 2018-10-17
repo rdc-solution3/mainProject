@@ -1,0 +1,84 @@
+{
+  "type": "adapter",
+  "short_name": "",
+  "version": "0.0.1",
+  "runtime_version": "2.5.1",
+  "runtime_env": "1webview",
+  "description": "",
+  "options": {
+    "resource_intercept": {
+      "type": [],
+      "ignore": []
+    },
+    "resource_inject": [],
+    "unadapted": {
+      "timeout": 600000,
+      "rules": [
+        {
+          "match": "*",
+          "type": "block"
+        }
+      ]
+    }
+  },
+  "override_urls": [
+    {
+      "origin_url": [
+        "http:\\/\\/10\\.1\\.41\\.169:7001\\/grxd\\/js\\/ShieldKey\\.js"
+      ],
+      "target_url": "override/ShieldKey.js"
+    },
+    {
+      "origin_url": [
+        "http:\\/\\/10\\.1\\.41\\.169:7001\\/grxd\\/js\\/loan\\.js"
+      ],
+      "target_url": "override/loan.js"
+    },
+    {
+      "origin_url": [
+        "http:\\/\\/10\\.1\\.41\\.169:7001\\/grxd\\/js\\/formvalidate\\.js"
+      ],
+      "target_url": "override/formvalidate.js"
+    },
+    {
+      "origin_url": [
+        "http:\\/\\/10\\.1\\.41\\.169:7001\\/grxd\\/js\\/dtree3\\.js"
+      ],
+      "target_url": "override/dtree3.js"
+    },
+    {
+      "origin_url": [
+        "http:\\/\\/10\\.1\\.41\\.169:7001\\/close\\.jsp"
+      ],
+      "target_url": "override/close.html"
+    }
+  ],
+  "adapter_urls": [
+    {
+      "title": "login",
+      "url": "adapter://bankGeDai_pad/plan/login/index.json",
+      "matcher": [
+        "^http:\\/\\/10\\.1\\.41\\.169:7001\\/grxd\\?_devicetype_custom=pad.*"
+      ],
+      "demo": [
+        "http://10.1.41.169:7001/grxd"
+      ]
+    },
+    {
+      "title": "index",
+      "url": "adapter://bankGeDai_pad/plan/index/index.json",
+      "matcher": [
+        "^http:\\/\\/10\\.1\\.41\\.169:7001\\/grxd\\/LoginAction\\.do.*"
+      ],
+      "demo": [
+        "http://10.1.41.169:7001/grxd/LoginAction.do"
+      ]
+    }
+  ],
+  "name": "江西银行个贷系统pad",
+  "default_url": "http://10.1.41.169:7001/grxd?_devicetype_custom=pad",
+  "scope": "bankGeDai_pad",
+  "start_url": "http://10.1.41.169:7001/grxd?_devicetype_custom=pad",
+  "fixed_version": 1,
+  "update_time": 1539743246973
+}
