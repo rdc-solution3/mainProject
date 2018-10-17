@@ -1,0 +1,89 @@
+{
+  "type": "adapter",
+  "short_name": "",
+  "version": "0.0.1",
+  "runtime_version": "2.6.2",
+  "runtime_env": "1webview",
+  "description": "",
+  "options": {
+    "resource_intercept": {
+      "type": [],
+      "ignore": []
+    },
+    "resource_inject": [],
+    "unadapted": {
+      "timeout": 9000,
+      "rules": [
+        {
+          "match": "*",
+          "type": "block"
+        }
+      ]
+    },
+    "component_match_mode": "polling"
+  },
+  "override_urls": [
+    {
+      "origin_url": [
+        "http:\\/\\/10\\.1\\.24\\.207:7001\\/grxd\\/js\\/ShieldKey\\.js"
+      ],
+      "target_url": "override/ShieldKey.js"
+    },
+    {
+      "origin_url": [
+        "http:\\/\\/10\\.1\\.24\\.207:7001\\/grxd\\/js\\/loan\\.js"
+      ],
+      "target_url": "override/loan.js"
+    },
+    {
+      "origin_url": [
+        "http:\\/\\/10\\.1\\.24\\.207:7001\\/grxd\\/js\\/formvalidate\\.js"
+      ],
+      "target_url": "override/formvalidate.js"
+    },
+    {
+      "origin_url": [
+        "http:\\/\\/10\\.1\\.24\\.207:7001\\/grxd\\/close\\.jsp"
+      ],
+      "target_url": "override/close.html"
+    }
+  ],
+  "adapter_urls": [
+    {
+      "title": "login",
+      "url": "adapter://gdxt/plan/login/index.json",
+      "matcher": [
+        "^http:\\/\\/10\\.1\\.24\\.207:7001\\/grxd\\/SsoLServlet.*_devicetype_custom=phone.*"
+      ],
+      "demo": [
+        "http://10.1.24.207:7001/grxd/DirectForwardAction.do?pageName=login"
+      ]
+    },
+    {
+      "title": "YAJmsgBox",
+      "url": "adapter://gdxt/plan/YAJmsgBox/index.json",
+      "matcher": [
+        "^http:\\/\\/10\\.1\\.24\\.207:7001\\/grxd\\/LoginAction\\.do.*"
+      ],
+      "demo": [
+        "http://10.1.24.207:7001/grxd/LoginAction.do"
+      ]
+    },
+    {
+      "title": "ViewTheContract",
+      "url": "adapter://gdxt/plan/ViewTheContract/index.json",
+      "matcher": [
+        "^http:\\/\\/10\\.1\\.235\\.135:28080\\/mmecserver3\\.0\\/showContract\\.do.*"
+      ],
+      "demo": [
+        "http://10.1.235.135:28080/mmecserver3.0/showContract.do?appId=45dCU7K0L6&time=1517279329129&sign=71968888defc4eea7429464a7a3669d0&signType=MD5&userId=360421198709105240&orderId=133750"
+      ]
+    }
+  ],
+  "name": "江西银行个贷系统收件箱",
+  "default_url": "http://10.1.24.207:7001/grxd/SsoLServlet?_devicetype_custom=phone",
+  "scope": "gdxt",
+  "start_url": "http://10.1.24.207:7001/grxd/SsoLServlet?_devicetype_custom=phone",
+  "fixed_version": 1,
+  "update_time": 1536042398710
+}

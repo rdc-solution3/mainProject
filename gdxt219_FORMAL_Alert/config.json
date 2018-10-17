@@ -1,0 +1,10 @@
+{
+  "menu": [
+    {
+      "name": "login",
+      "app_id": "login",
+      "icon": "local/img/OA.png",
+      "url": "http://10.1.24.207:7001/grxd/DirectForwardAction.do?pageName=login&a=3"
+    }
+  ]
+}
