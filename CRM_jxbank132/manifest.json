@@ -1,0 +1,85 @@
+{
+  "type": "adapter",
+  "short_name": "",
+  "version": "0.0.1",
+  "runtime_version": "2.7.0",
+  "runtime_env": "1webview",
+  "description": "",
+  "options": {
+    "resource_intercept": {
+      "type": [
+        "image",
+        "css"
+      ],
+      "ignore": []
+    },
+    "resource_filter": [
+      {
+        "url_match": [
+          "^http:\\/\\/10\\.1\\.43\\.44:9080\\/crm1\\/login\\.jsp.*"
+        ],
+        "charset": "utf-8",
+        "replaces": [
+          {
+            "regexp": "\\btop\\b",
+            "sub_str": "_ysp_top"
+          }
+        ]
+      }
+    ],
+    "resource_inject": []
+  },
+  "override_urls": [
+    {
+      "origin_url": [
+        "http:\\/\\/10\\.1\\.43\\.44:9080\\/crm1\\/pages\\/customermanager\\/cust\\/person\\/js\\/custinfo_person_main\\.js"
+      ],
+      "target_url": "override/custinfo_person_main.js",
+      "default_url": "http://10.1.43.44:9080/crm1/pages/customermanager/cust/person/js/custinfo_person_main.js"
+    },
+    {
+      "origin_url": [
+        "http:\\/\\/10\\.1\\.43\\.44:9080\\/crm1\\/pages\\/customermanager\\/cust\\/unit\\/js\\/custinfo_unit_main\\.js"
+      ],
+      "target_url": "override/custinfo_unit_main.js",
+      "default_url": "http://10.1.43.44:9080/crm1/pages/customermanager/cust/unit/js/custinfo_unit_main.js"
+    },
+    {
+      "origin_url": [
+        "http:\\/\\/10\\.1\\.43\\.44:9080\\/crm1\\/pages\\/workplatform\\/js\\/platform_homepage\\.js"
+      ],
+      "target_url": "override/platform_homepage.js",
+      "default_url": "http://10.1.43.44:9080/crm1/pages/workplatform/js/platform_homepage.js"
+    },
+    {
+      "origin_url": [
+        "http:\\/\\/10\\.1\\.43\\.44:9080\\/crm1\\/pages\\/workplatform\\/MoreMyRemind\\.jsp"
+      ],
+      "target_url": "override/MoreMyRemind.html",
+      "default_url": "http://10.1.43.44:9080/crm1/pages/workplatform/MoreMyRemind.jsp"
+    }
+  ],
+  "adapter_urls": [
+    {
+      "title": "login",
+      "url": "adapter://CRM_jxbank/plan/login/index.json",
+      "matcher": [
+        "^http:\\/\\/10\\.1\\.43\\.44:9080\\/crm1\\/login\\.jsp.*"
+      ],
+      "demo": []
+    },
+    {
+      "title": "index",
+      "url": "adapter://CRM_jxbank/plan/index/index.json",
+      "matcher": [
+        "^http:\\/\\/10\\.1\\.43\\.44:9080\\/crm1\\/main\\.jsp.*"
+      ],
+      "demo": []
+    }
+  ],
+  "name": "江西银行CRM系统",
+  "default_url": "http://10.1.43.44:9080/crm1/main.jsp",
+  "scope": "CRM_jxbank",
+  "start_url": "http://10.1.43.44:9080/crm1/main.jsp",
+  "update_time": 1539736777713
+}

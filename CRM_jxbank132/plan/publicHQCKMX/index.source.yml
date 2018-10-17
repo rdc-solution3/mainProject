@@ -1,0 +1,158 @@
+getTemplate_uiControl45_SlLMtd: "export default class extends React.Component{\n  constructor(props){\n    super(props)\n  }\n  render(){\n    var data=this.props.customData;\n    var bgColor=\"#5481de\";\n    var fontColor=\"white\";\n    var styleObj={\n      pageHead:{\n        lineHeight: \"60px\",\n        textAlign: \"center\",\n        backgroundColor: bgColor,\n        color: fontColor,\n        position: \"fixed\",\n        top: \"0px\",\n        width: \"100%\",\n        fontSize: \"16px\"\n      },\n      titleBox:{\n        fontSize: \"18px\"\n      }\n    };\n    return data && data.length>0?\n      <div className=\"page-head\" style={styleObj.pageHead}>\n        <div className=\"back\" onClick={this.openTableBox}><span className=\"icon icon-left-nav\"></span>返回</div>\n        <div className=\"title-box\" style={styleObj.titleBox}>{data[0]}</div>\n      </div>\n      :\n\t\t\tnull\n  }\n}"
+getData_control52_qWwh5Q: >-
+  ;var data=[];
+
+  if($(elem).length>0 && $(elem).children("li").length>1 &&
+  $(elem).children("li").children("a").length>0){
+    data[0]=$(elem).children("li").eq(1).children("a").eq(0).attr("title").trim();
+  }
+
+  return data;
+doAction_uiControl45_SlLMtd: ''
+getTemplate_uiControl46_rDtTGQ: "module.exports = React.createClass({\n  onClick:function(e){\n    var target=e.target;\n    var handler=this.props.customHandler;\n    if(target.tagName===\"LI\"){\n      if(handler){\n        handler({\n          data: target.dataset.index,\n          eventType: \"click\"\n        })\n      }\n    }\n  },\n  render: function() {\n    var data=this.props.customData;\n    var styleObj={\n      pageMenu:{\n        display: \"flex\"\n      }\n    };\n  \tvar index=data && data.length>0?data[0]:0;\n    return (\n      <div className=\"page-menu\" style={styleObj.pageMenu} onClick={this.onClick}>\n      \t<li className={index===0?\"activeList menulist\":\"menulist\"} data-index={0}>客户信息</li>\n        <li className={index===1?\"activeList menulist\":\"menulist\"} data-index={1}>定期存款明细</li>\n        <li className={index===2?\"activeList menulist\":\"menulist\"} data-index={2}>活期存款明细</li>\n      </div>\n    )\n  }\n});"
+getData_control53_PB56II: |-
+  ;var data=[];
+  if($(elem).length>0 && $(elem).find(".menuactive").length>0){
+    var text=$(elem).find(".menuactive").text().trim();
+    if(text==="客户信息"){
+      data[0]=0;
+    }else if(text==="定期存款明细"){
+      data[0]=1;
+    }else if(text==="活期存款明细"){
+      data[0]=2;
+    }
+  }
+  return data;
+doAction_uiControl46_rDtTGQ: |-
+  if(data.eventType=="click"){
+    var index=parseInt(data.dataCustom);
+    if(index===0){
+      var target=$(elem).children("div").eq(0).find("li").eq(0)[0];
+      if(target){
+        target.click();
+      }
+    }else if(index===1){
+      var target=$(elem).children("div").eq(2).find("li").eq(0)[0];
+      if(target){
+        target.click();
+      }
+    }else if(index===2){
+      var target=$(elem).children("div").eq(2).find("li").eq(1)[0];
+      if(target){
+        target.click();
+      }
+    }
+  }
+getTemplate_uiControl47_boJlEc: "export default class extends React.Component{\n  constructor(props){\n    super(props);\n    this.showBox=this.showBox.bind(this);\n    this.changeVal=this.changeVal.bind(this);\n    this.onClick=this.onClick.bind(this);\n    this.state={\n      show:false\n    }\n  }\n  showBox(){\n    this.setState({\n      show:!this.state.show\n    })\n  }\n  changeVal(e){\n    var target=e.target;\n    var handler=this.props.customHandler;\n    if(handler){\n      handler({\n        data:target.value,\n        eventType:target.className\n      })\n    }\n  }\n  onClick(e){\n    e.stopPropagation();\n    var target=e.target;\n    var handler=this.props.customHandler;\n    if(!/lineBtnBox/.test(target.className)){\n    \tif(handler){\n        handler({\n          eventType:target.className\n        })\n      } \n    }\n  }\n  render(){\n    var data=this.props.customData;\n    return (<div className=\"mainSearchBox\">\n      \t<div className={this.state.show?\"mainSearchBox-body\":\"mainSearchBox-body hide\"}>\n        \t<div className=\"line\">\n          \t<div className=\"title\">{data && data.acct_type && data.acct_type.title?data.acct_type.title:\"\"}</div>\n            <div className=\"content\">\n              <select className=\"acct_type\" value={data && data.acct_type && data.acct_type.val?data.acct_type.val:\"\"} onChange={this.changeVal}>\n                {\n                  data && data.acct_type && data.acct_type.options && data.acct_type.options.length>0?\n\t\t\t\t\t\t\t\t\tdata.acct_type.options.map(function(d,idx){\n                    return <option value={d.val}>{d.content}</option>\n                  })\n                  :\n                  null\n                }\n              </select>\n            </div>\n          </div>\n          <div className=\"line\">\n          \t<div className=\"title\">{data && data.acct_no && data.acct_no.title?data.acct_no.title:\"\"}</div>\n            <div className=\"content\">\n              <AInput className=\"acct_no\" value={data && data.acct_no && data.acct_no.val?data.acct_no.val:\"\"} onBlur={this.changeVal} />\n            </div>\n          </div>\n          <div className=\"lineBtnBox\" onClick={this.onClick}>\n          \t<div className=\"left-btn\">重置</div>\n            <div className=\"right-btn\">查找</div>\n          </div>\n        </div>\n        <div className=\"more\" onClick={this.showBox}>查询条件<span className={this.state.show?\"icon icon-up-nav\":\"icon icon-down-nav\"}></span></div>\n      </div>)\n  }\n}"
+getData_control54_I9VzlC: >-
+  ;var data={};
+
+  if(elem && elem.contentDocument &&
+  $(elem.contentDocument).find("#acct_type").length>0){
+    data.acct_type={
+      title: "账户状态",
+      val: $(elem.contentDocument).find("#acct_type").val(),
+      options:[]
+    };
+    $(elem.contentDocument).find("#acct_type").children("option").each(function(idx,d){
+      data.acct_type.options.push({
+        content:d.textContent,
+        val:d.value
+      })
+    })
+  }
+
+  if(elem && elem.contentDocument &&
+  $(elem.contentDocument).find("#acct_no").length>0){
+    data.acct_no={
+      title: "账号",
+      val: $(elem.contentDocument).find("#acct_no").val()
+    };
+  }
+
+  return data;
+doAction_uiControl47_boJlEc: |-
+  if(data.eventType==="acct_type"){
+    var target=$(elem.contentDocument).find("#acct_type")[0];
+    if(target){
+      target.value=data.dataCustom;
+      target.dispatchEvent(new Event("change"));
+    }
+  }else if(data.eventType==="acct_no"){
+    var target=$(elem.contentDocument).find("#acct_no")[0];
+    if(target){
+      target.value=data.dataCustom;
+      target.dispatchEvent(new Event("change"));
+    }
+  }else if(data.eventType==="left-btn"){
+    var target=$(elem.contentDocument).find("#resetbtn")[0];
+    if(target){
+      target.click();
+    }
+  }else if(data.eventType==="right-btn"){
+    var target=$(elem.contentDocument).find("#searchbtn")[0];
+    if(target){
+      target.click();
+    }
+  }
+getTemplate_uiControl48_TXlZx8: "export default class extends React.Component{\n  constructor(props){\n    super(props);\n    var data=this.props.customData;\n    this.openBox=this.openBox.bind(this);\n    this.state={};\n    if(data && data.dataContent && data.dataContent.length>0){\n      for(var i=0; i<data.dataContent.length; i++){\n        this.state['list'+i]=false;\n      }\n    }\n  }\n  openBox(e){\n    var target=e.target;\n    var index=parseInt(target.dataset.index);\n    var stateObj={};\n    stateObj[\"list\"+index]=!this.state[\"list\"+index];\n    this.setState(stateObj);\n  }\n  render(){\n    var _this=this;\n    var data=this.props.customData;\n    var _contentBox=data && data.dataContent && data.dataContent.length>0?data.dataContent.map(function(d,idx){\n      return <div className=\"contentList\">\n      \t<div className=\"contentList-top\">\n        \t<div className=\"line\">\n          \t<div>{d[0].content}</div>\n            <div>{d[3].content}</div>\n          </div>\n          <div className=\"line\">\n          \t<div className=\"title\">{d[1].title}</div>\n            <div className=\"content\">{d[1].content}</div>\n            <span className={_this.state[\"list\"+idx]?\"icon icon-up-nav\":\"icon icon-down-nav\"} data-index={idx} onClick={_this.openBox}></span>\n          </div>\n        </div>\n        <div className={_this.state[\"list\"+idx]?\"contentList-bottom\":\"contentList-bottom hide\"}>\n        \t{d.map(function(d1,idx1){\n            if(idx1!==0 && idx1!==3 && idx1!==8){\n             \treturn <div className=\"line\">\n                <div className=\"title\">{d1.title}</div>\n                <div className=\"content\">{d1.content}</div>\n              </div> \n            }\n          })}\n        </div>\n      </div>\n    }):null;\n    var contentBox=data && data.dataContent && data.dataContent.length>0?<div className=\"contentBox\">{_contentBox}</div>:null;\n    return data && data.isArray?contentBox:<div className=\"dataNone\">没有数据返回</div>\n  }\n}"
+getData_control55_y3kfOT: >-
+  ;var data={
+    dataContent:[],
+    isArray:true
+  };
+
+  if($(elem).length>0 && $(elem).children("#tabbody").length>0 &&
+  $(elem).children("#tabbody").children("tr:visible").length>0 &&
+  $(elem).children("#tabbody").children("tr:visible").eq(0).children("td:visible").length>0){
+    if($(elem).children("#tabbody").children("tr:visible").length===1 && $(elem).children("#tabbody").children("tr:visible").eq(0).children("td:visible").length===1){
+      data.isArray=false;
+      return data;
+    }else{
+      $(elem).children("#tabbody").children("tr:visible").each(function(idx,d){
+        data.dataContent[idx]=[];
+        $(d).children("td:visible").each(function(idx1,d1){
+          data.dataContent[idx].push({
+            title:$(elem).children("#tabhead").find("th:visible").eq(idx1).text().trim(),
+            content:$(d1).text().trim()
+          })
+        })
+      })
+    }
+  }
+
+  return data;
+doAction_uiControl48_TXlZx8: ''
+getTemplate_uiControl49_Ml5577: "export default class extends React.Component{\n  constructor(props){\n    super(props);\n    this.onClick=this.onClick.bind(this);\n  }\n  onClick(e){\n    var target=e.target;\n    var handler=this.props.customHandler;\n    e.stopPropagation();\n    if(/pageBox-bottom/.test(target.className)){\n      if(handler){\n        handler({\n          eventType:target.className\n        })\n      }\n    }\n  }\n  render(){\n    var data=this.props.customData;\n    return <div className=\"pageBox\">\n    \t<div className=\"pageBox-top\">第{data && data.nowpage?data.nowpage:\"\"}页/共{data && data.totalpage?data.totalpage:\"\"}页</div>\n      <div className=\"pageBox-bottom\" onClick={this.onClick}>\n      \t<div className=\"prevBtn\">上一页</div>\n        <div className=\"nextBtn\">下一页</div>\n      </div>\n    </div>\n  }\n}"
+getData_control56_3MA0P9: |-
+  ;var data={
+    nowpage:"",
+    totalpage:"",
+    uppage:false,
+    nextpage:false
+  };
+  if($(elem).length>0 && $(elem).find("#nowpage").length>0){
+    data.nowpage=$(elem).find("#nowpage").text();
+  }
+  if($(elem).length>0 && $(elem).find("#totalpage").length>0){
+    data.totalpage=$(elem).find("#totalpage").text();
+  }
+  if($(elem).length>0 && $(elem).find("#uppage").length>0){
+    data.uppage=$(elem).find("#uppage")[0].disabled;
+  }
+  if($(elem).length>0 && $(elem).find("#nextpage").length>0){
+    data.nextpage=$(elem).find("#nextpage")[0].disabled;
+  }
+  return data;
+doAction_uiControl49_Ml5577: |-
+  if(data.eventType=="prevBtn"){
+    var target=$(elem).find("#uppage")[0];
+    if(target){
+      target.click();
+    }
+  }else if(data.eventType=="nextBtn"){
+    var target=$(elem).find("#nextpage")[0];
+    if(target){
+      target.click();
+    }
+  }

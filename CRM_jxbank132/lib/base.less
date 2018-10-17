@@ -1,0 +1,1445 @@
+// base.less 是整个工程全局的样式文件，会作用到所有的页面模板中
+// Less 的语法与 CSS 兼容，可以直接用 CSS 语法进行编写
+// 如需了解详情，请访问 http://www.lesscss.net/
+// 发布后，base.less 被编译成 base.css 文件
+@headerColor: #5481de;
+@valueColor: #999;
+@yellowColor: #f5a623;
+@valueColor: #455CA9;
+@tableTrColor: #e4edff;
+.loginBox{
+  margin: 25% 0;
+  padding: 0 15px;
+  h4{
+    text-align: center;
+  }
+}
+.header{
+  height: 40px;
+  header{
+    height: 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  	justify-content: center;
+    display: flex;
+    align-items: center;
+    background-color: @headerColor;
+    color: #fff;
+    font-size: 1.1em;
+    z-index: 11;
+    // -webkit-overflow-scrolling: touch;
+  }
+  .icon{
+    width: 20%;
+    text-align: center;
+    font-size: 0.9em;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+  }
+  .icon-left-nav{
+    left: 5px;
+  }
+  .icon:last-child{
+    right: 10px;
+    width: auto;
+  }
+  .title{
+    width: 100%;
+    // padding-left: 25%;
+    text-align: center;
+  }
+}
+#entrancePage{
+  height: 100vh;
+  background-color: #f2f2f2;
+  .banner{
+    margin: 0 auto;
+    width: 100%;
+    height: 150px;
+    background: #fff url(./img/banner.png) no-repeat center center;
+    background-size: 100%;
+    // border-radius: 10px;
+  }
+  .entrance{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    background-color: #fff;
+    li:nth-child(1){
+      background-image: url(./img/index.png);
+    }
+    li:nth-child(2){
+      background-image: url(./img/geRenKehu.png);
+    }
+    li:nth-child(3){
+      background-image: url(./img/duiGongKehu.png);
+    }
+    li:nth-child(4){
+      background-image: url(./img/geRenChaxun.png);
+    }
+    li:nth-child(5){
+      background-image: url(./img/duiGongChaxun.png);
+    }
+    li:nth-child(6){
+      background-image: url(./img/tiXingChaxun.png);
+    }
+    li{
+      width: 33%;
+      height: 130px;
+      background-position: center 20%;
+      background-repeat: no-repeat;
+      background-size: 50px;
+      padding-top: 80px;
+      text-align: center;
+      font-family: '黑体';
+      border-left: 1px solid #ddd;
+      border-bottom: 1px solid #ddd;
+    }
+  }
+}
+#tabsPage{
+  height: auto;
+  overflow-y: auto;
+  .amt-tabs{
+    .amt-tabs-body{
+      .amt-tab-panel{
+        padding: 0;
+      }
+      .amt-tab-panel div{
+        border-bottom: 1px solid #eee;
+        padding: 8px 0 8px 50px;
+        position: relative;
+        span.icon{
+          font-size: 0.9em;
+          color: #ccc;
+          position: absolute;
+          right: 10px;
+          top: 0;
+          bottom: 0;
+          display: flex;
+          align-items: center;
+        }
+      }
+      .amt-tab-panel[title="汇总指标"]{
+        div:nth-child(1){
+          background-image: url(./img/huiZong1.png);
+        }
+        div:nth-child(2){
+          background-image: url(./img/huiZong2.png);
+        }
+        div:nth-child(3){
+          background-image: url(./img/huiZong3.png);
+        }
+        div:nth-child(4){
+          background-image: url(./img/huiZong4.png);
+        }
+        div:nth-child(5){
+          background-image: url(./img/huiZong5.png);
+        }
+        div:nth-child(6){
+          background-image: url(./img/huiZong6.png);
+        }
+        div:nth-child(7){
+          background-image: url(./img/huiZong7.png);
+        }
+        div:nth-child(8){
+          background-image: url(./img/huiZong8.png);
+        }
+        div:nth-child(9){
+          background-image: url(./img/huiZong9.png);
+        }
+        div:nth-child(10){
+          background-image: url(./img/huiZong10.png);
+        }
+        div:nth-child(11){
+          background-image: url(./img/huiZong11.png);
+        }
+        div:nth-child(12){
+          background-image: url(./img/huiZong12.png);
+        }
+        div:nth-child(13){
+          background-image: url(./img/huiZong13.png);
+        }
+        div:nth-child(14){
+          background-image: url(./img/huiZong14.png);
+        }
+        div:nth-child(15){
+          background-image: url(./img/huiZong15.png);
+        }
+      }
+      .amt-tab-panel[title="日常事务"]{
+        div:nth-child(1){
+          background-image: url(./img/riChang1.png);
+        }
+        div:nth-child(2){
+          background-image: url(./img/riChang2.png);
+        }
+        div:nth-child(3){
+          background-image: url(./img/riChang3.png);
+        }
+      }
+      .amt-tab-panel[title="业务指标"]{
+        div:nth-child(1){
+          background-image: url(./img/yeWu1.png);
+        }
+        div:nth-child(2){
+          background-image: url(./img/yeWu2.png);
+        }
+        div:nth-child(3){
+          background-image: url(./img/yeWu3.png);
+        }
+        div:nth-child(4){
+          background-image: url(./img/yeWu4.png);
+        }
+        div:nth-child(5){
+          background-image: url(./img/yeWu5.png);
+        }
+      }
+      .amt-tab-panel div[aria-controls]{
+        background-repeat: no-repeat;
+        background-position: 15px center;
+        background-size: 23px 23px;
+      }
+    }
+  }
+}
+.customSelect{
+  .selValue{
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    color: @valueColor;
+    .icon{
+      position: absolute;
+      right: 5px;
+      top: 0;
+      bottom: 0;
+      display: flex;
+      align-items: center;
+      font-size: 0.9em;
+      color: #ddd;
+    }
+  }
+  #optionsPanel{
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,.3);
+    display: flex;
+    align-items: center;
+    z-index: 102;
+    .optionsBox{
+      background-color: #fff;
+      margin: 0 5px;
+      width: 100%;
+      padding: 10px 15px;
+      border-radius: 3px;
+    }
+    .optHeader{
+      text-align: center;
+      position: relative;
+      color: #333;
+      border-bottom: 1px solid #ddd;
+      font-weight: bold;
+      padding: 8px 0;
+      .icon{
+        position: absolute;
+        right: 5px;
+        color: #ccc;
+        font-weight: normal;
+      }
+    }
+    .opts div{
+      padding: 8px 0;
+      border-top: 1px solid #eee;
+      text-align: center;
+      color: #999;
+    }
+    .opts div.selected{
+      background-color: @headerColor;
+      color: #fff;
+    }
+  }
+}
+#searchPanel{
+  display: block;
+  height: 100vh;
+  position: fixed;
+  background-color: #fff;
+  z-index: 101;
+  left: 0;
+  right: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-bottom: 30px;
+}
+#searchPanel .header{
+  // height: 0;
+}
+#searchPanel .maincard{
+  margin: 0 8px;
+  border-bottom: 1px solid #eee;
+ 	margin-bottom: 50px;
+  .kvGrp{
+    display: flex;
+    .key{
+      min-width: 30%;
+      font-size: 0.9em;
+      padding: 10px;
+    }
+    .value{
+      max-width: 70%;
+      width: 70%;
+      color: @valueColor;
+      border-bottom: 1px solid #eee;
+  		vertical-align: middle;
+      padding: 10px 0;
+      input{
+        border: 0;
+        font-size: 1em;
+        padding: 0;
+      }
+      input[readonly],input[disabled]{
+        background-color: transparent;
+      }
+      input[type="date"]{
+        border: 1px solid #eee;
+        height: auto;
+    		padding: 8px 5px;
+      }
+      input:disabled[type="date"]{
+        background-color: #f2f2f2;
+      }
+      input[type='button']{
+        color: #fff;
+        background-color: @yellowColor;
+        padding: 5px 10px;
+        border-radius: 10px;
+      }
+      label{
+        display: inline-block;
+        width: 50%;
+        color: @valueColor;
+        input[type="radio"]{
+          visibility: hidden;
+        }
+      }
+      label:before{
+        content: "";
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        border: 1px solid @yellowColor;
+        border-radius: 50%;
+      }
+      label[data-checked="true"]:before{
+				width: 15px;
+        height: 15px;
+        border: 2px solid #fff;
+        background-color: @yellowColor;
+        box-shadow: 0px 0px 0px 1px @yellowColor;
+      }
+    }
+    .inputBtnValue{
+      position: relative;
+      input[type="button"]{
+        position: absolute;
+        right: 5px;
+        font-size: 0.95em;
+      }
+    }
+  }
+}
+#searchPanel .bottomBtns{
+  display: flex;
+  padding: 5px 8px;
+  background-color: #fff;
+  box-shadow: 0px -2px 5px #ccc;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  .btn{
+    width: 100%;
+    margin: 0;
+    padding: 8px 0;
+    
+  }
+  .btn:first-child{
+    background-color: transparent;
+    border: 1px solid @headerColor;
+    color: @headerColor;
+    margin-right: 8px;
+  }
+}
+#treePanel{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  height: 100vh;
+  overflow: auto;
+}
+#listPanel{
+	min-height: 90vh;
+  background-color: #f2f2f2;
+  font-family: "黑体";
+  overflow: auto;
+  .tableList .list{
+    margin: 0px 0px 8px;
+    padding: 10px 8px 5px;
+    .li{
+      display: flex;
+      padding-bottom: 5px;
+      font-size: 0.95em;
+    }
+    .key{
+      width: 30%;
+      color: #666;
+    }
+    .value{
+      color: @valueColor;
+      font-size: 1.1em;
+    }
+    #custNo{
+      font-size: 1.1em;
+    	color: #333;
+      position: relative;
+      display: inline-block;
+      width: 100%;
+      .custLevel{
+        position: absolute;
+        right: 0;
+        color: @yellowColor;
+        font-size: 0.95em;
+      }
+    }
+    .clickMore{
+      border-top: 1px solid #ddd;
+      text-align: center;
+      padding-top: 10px;
+      margin-top: 10px;
+      color: #bbb;
+      .icon{
+      	margin-left: 5px;
+        color: #ddd;
+        font-size: 0.9em;
+        font-weight: normal;
+      }
+    }
+    .hiddenListPanel{
+			position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      min-height: 100vh;
+      height: 100vh;
+      background-color: #fff;
+      overflow: auto;
+      z-index: 105;
+      padding: 5px 10px 0 10px;
+      header{
+        position: absolute;
+      }
+      .hiddenList{
+        height: 92vh;
+        overflow-y: auto;
+      }
+      .hiddenList::-webkit-scrollbar{
+        height: 0px;
+        width: 0px;
+        background-color: transparent;
+      }
+      .li{
+        display: flex;
+        padding: 8px 0;
+      }
+      .key{
+        width: 35%;
+        color: #666;
+      }
+      .value{
+        width: 65%;
+        border-bottom: 1px solid #ddd;
+        color: #333;
+        
+      }
+    }
+  }
+  .pageContent{
+    padding: 15px 0;
+    .nowpage,.pageBtns{
+      width: 100%;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .pageBtns{
+      display: flex;
+      padding: 10px 5px 0;
+      .btn{
+				width: 100%;
+        background-color: #fff;
+        color: @yellowColor;
+        padding: 8px 0;
+        margin: 0;
+        border: 0;
+      }
+      .btn:first-child{
+        margin-right: 5px;
+      }
+    }
+  }
+  div.noData{
+    text-align: center;
+    padding: 15px 0;
+    font-size: 1.1em;
+  }
+}
+
+// 首页表格统一可滑动样式
+.indexTablePanel{
+  .tableTabs{
+    width: 100%;
+    padding: 10px 5px 0px 10px;
+    text-align: right;
+    span{
+      display: inline-block;
+      padding: 0px 10px;
+      margin-right: 5px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      border: 1px solid @headerColor;
+      background-color: #fff;
+      color: @headerColor;
+    }
+    span[aria-selected="true"]{
+      background-color: @headerColor;
+      color: #fff;
+    }
+  }
+  .tablePanelScroll{
+    width: 100%;
+    overflow-y: hidden;
+    font-size: 0.9em;
+  	height: 85vh;
+    .topLeftSection{
+      position: fixed;
+      left: 0;
+      top: 80px;
+      width: 45vw;
+      border: 1px solid @headerColor;
+      color: @headerColor;
+      border-right: 0;
+      padding: 5px 0;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .topRightSection{
+      height: 50px;
+      overflow: hidden;
+      border: 1px solid @headerColor;
+      width: 55vw;
+      position: fixed;
+      top: 80px;
+      left: 45vw;
+      background-color: #fff;
+      color: @headerColor;
+      .topRightContainer{
+        // width: 400px;
+        width: 350px;
+      }
+      span{
+        display: inline-block;
+        width: 33.3%;
+        border-left: 1px solid @headerColor;
+        text-align: center;
+        height: 50px;
+        line-height: 40px;
+        padding: 5px 0;
+      }
+      span:first-child{
+        border: 0;
+      }
+    }
+    .bottomLeftSection{
+      overflow: auto;
+      overflow-y: hidden;
+      position: fixed;
+      top: 130px;
+      left: 0;
+      background-color: #fff;
+      height: 70vh;
+      .bottomLeftSectionContainer{
+        overflow-x: auto;
+        width: 45vw;
+        table{
+          // max-width: 300px;
+          min-width: 100%;
+        }
+        td[rowspan]{
+          width: 90px;
+          // white-space: normal;
+          padding: 0 5px;
+          border-bottom: 1px solid @tableTrColor;
+          border-right: 1px solid #B9CEF7;
+          background-color: #fff;
+        }
+        td:first-child{
+          vertical-align: middle;
+          text-align: center;
+        }
+        td:last-child{
+          text-align: left;
+          padding: 0 5px;
+        }
+        div,tr{
+          width: 45vw;
+          white-space: nowrap;
+          height: 30px;
+          padding-left: 10px;
+        }
+        div{
+          line-height: 30px;
+        }
+        div:nth-child(odd),tr:nth-child(odd){
+          background-color: #fff;
+        }
+        div:nth-child(even),tr:nth-child(even){
+          background-color: @tableTrColor;
+        }
+      }
+    }
+    .bottomRightSection{
+      // overflow-x: auto;
+      // overflow-y: auto;
+      overflow: hidden;
+      height: 70vh;
+      position: fixed;
+      left: 45vw;
+      top: 130px;
+      width: 55vw;
+      background-color: #fff;
+      .bottomRightSectionContainer{
+        // width: 400px;
+        width: 350px;
+        div{
+          width: 100%;
+          height: 30px;
+        }
+      }
+      div:nth-child(odd){
+        background-color: #fff;
+      }
+      div:nth-child(even){
+        background-color: @tableTrColor;
+      }
+      div span{
+        height: 30px;
+        line-height: 30px;
+        display: inline-block;
+        width: 33.3%;
+        align-items: center;
+        text-align: center;
+        vertical-align: middle;
+      }
+      #kehuCunkuanbody1,#kehuCunkuanbody2{
+        width: 100%;
+      }
+    }
+    .bottomRightSection::-webkit-scrollbar,.bottomLeftSection::-webkit-scrollbar,.topRightSection::-webkit-scrollbar,#kehuCunkuanbody1::-webkit-scrollbar,#kehuCunkuanbody2::-webkit-scrollbar{
+      width: 1px;
+      background: #f1f1f1;
+      height: 1px;
+    }
+  }
+}
+// 金融资产（个人）
+#jinrongzichan_unit.indexTablePanel .tablePanelScroll .bottomLeftSection .bottomLeftSectionContainer td[rowspan]{
+  white-space: normal;
+  padding: 0 10px;
+}
+
+// 汇总指标 tab 下表格
+#hzzbPanel{
+  // 单独处理【客户(对公)】
+  #kehu_unit.indexTablePanel{ 
+    .tablePanelScroll{
+      .bottomLeftSection{
+        .bottomLeftSectionContainer{
+          div:nth-child(odd),tr:nth-child(odd){
+            td:first-child{
+              background-color: #fff;
+            }
+          }
+          div:nth-child(even),tr:nth-child(even){
+            td:last-child{
+              background-color: @tableTrColor;
+            }
+          }
+        }
+      }
+    }
+  }
+  // 单独处理【资产变动(对公)】
+  #zichanbiandong_unit.indexTablePanel{
+    .tablePanelScroll{
+      .topRightSection{
+        .topRightContainer{
+          width: 800px;
+          display: flex;
+        }
+      }
+      .bottomRightSection{
+        .bottomRightSectionContainer{
+          width: 800px;
+          >div{
+            width: 100%;
+            display: flex;
+          }
+        }
+      }
+    }
+  }
+}
+
+// 【日常事务】tab 下表格
+#rcswPanel{
+  .indexTablePanel{
+    .tablePanelScroll{
+      .topRightSection{
+        left: 0;
+        width: 100%;
+        .topRightContainer{
+          width: 700px;
+          display: flex;
+          span:first-child,span:last-child{
+            width: 40%;
+          }
+          span:nth-child(4){
+            width: 12%;
+          }
+        }
+      }
+      .bottomRightSection{
+        left: 0;
+        width: 100%;
+        .bottomRightSectionContainer{
+          width: 700px;
+          div{
+            display: flex;
+            span:first-child,span:last-child{
+              width: 40%;
+            }
+            span:nth-child(4){
+              width: 12%;
+            }
+          }
+        }
+      }
+    }
+  }
+  #wodetixing.indexTablePanel{
+    .tablePanelScroll{
+      .topRightSection{
+        .topRightContainer{
+          span{
+            width: 10%;
+          }
+          span:first-child,span:nth-child(2),span:nth-child(5){
+            width: 20%;
+          }
+        }
+      }
+      .bottomRightSection{
+        .bottomRightSectionContainer{
+          div{
+            span{
+							width: 10%;
+            }
+            span:first-child,span:nth-child(2),span:nth-child(5){
+              width: 20%;
+          	}
+          }
+        }
+      }
+    }
+  }
+  #guanzhukehu.indexTablePanel{
+    .tablePanelScroll .topRightSection .topRightContainer span:nth-child(3){
+      width: 15%;
+    }
+    .tablePanelScroll .topRightSection .topRightContainer span:nth-child(4){
+      width: 25%;
+    }
+    .tablePanelScroll .bottomRightSection .bottomRightSectionContainer div span:nth-child(3){
+      width: 15%;
+    }
+    .tablePanelScroll .bottomRightSection .bottomRightSectionContainer div span:nth-child(4){
+      width: 25%;
+    }
+  }
+}
+
+#rcswPanel,#ywzbPanel{
+  .indexTablePanel:not(#vipkehuqingkuang){
+    table{
+      width: 1300px;
+      table-layout: fixed;
+      td{
+        text-align: center;
+      }
+      th{
+        border: 1px solid @headerColor;
+        color: @headerColor;
+        background-color: #fff;
+      }
+    }
+    .scrollTable{
+      overflow-y: auto;
+      table{
+        tr:nth-child(even){
+          background-color: @tableTrColor;
+        }
+        td{
+          padding: 2px 0;
+        }
+      }
+    }
+    .scrollTable::-webkit-scrollbar{
+      height: 0;
+      width: 0;
+      background-color: transparent;
+    }
+  }
+  #cunkuanqushi,#daikuanqushi{
+    width: 100%;
+    overflow: auto;
+    th,td{
+      padding: 5px;
+      border: 1px solid @headerColor;
+      color: @headerColor;
+    }
+    td{
+      color: #333;
+    }
+  }
+  #cunkuanqushi::-webkit-scrollbar,#daikuanqushi::-webkit-scrollbar{
+    height: 1px;
+    background: transparent;
+  }
+  #jinrongzichanfenbu{
+    .indexTablePanel{
+      table{
+        width: 100%;
+        tr:nth-child(even){
+          background-color: @tableTrColor;
+        }
+      }
+    }
+  }
+  #dengjiPerChart{
+    border-bottom: 5px solid #f2f2f2;
+  }
+}
+
+// 【VIP客户情况】
+#vipkehuqingkuang{
+  table{
+    table-layout: fixed;
+    border-collapse: collapse;
+  }
+  td{
+    text-align: center;
+  }
+  .tablePanelScroll{
+    .topLeftSection{
+      width: 40vw;
+      padding: 5px 0;
+      display: table;
+      border: 0;
+      th{
+        border: 1px solid @headerColor;
+        text-align: center;
+        vertical-align: center;
+        color: @headerColor;
+      }
+      th:last-child{
+        border-right: 0;
+      }
+    }
+    .topRightSection{
+      width: 60vw;
+      top: 80px;
+      left: 40vw;
+      height: 50px;
+      border-top: 1px solid @headerColor;
+      border-left: 1px solid @headerColor;
+      th{
+        border-right: 1px solid @headerColor;
+        border-bottom: 1px solid @headerColor;
+        color: @headerColor;
+        background-color: #fff;
+      }
+      .topRightContainer{
+        width: 1200px;
+        height: 100%;
+      }
+    }
+    .bottomLeftSection{
+      overflow: hidden;
+      width: 40vw;
+      .bottomLeftSectionContainer{
+        overflow: hidden;
+        width: 100%;
+        table{
+          max-width: 300px;
+          min-width: 100%;
+        }
+        tr{
+          width: 40vw;
+          white-space: nowrap;
+          height: 30px;
+          padding-left: 10px;
+        }
+        tr:nth-child(odd){
+          background-color: #fff;
+        }
+        tr:nth-child(even){
+          background-color: @tableTrColor;
+        }
+      }
+    }
+    .bottomRightSection{
+      overflow: hidden;
+      height: 70vh;
+      position: fixed;
+      left: 40vw;
+      top: 130px;
+      width: 60vw;
+      background-color: #fff;
+      .bottomRightSectionContainer{
+        width: 1200px;
+        table{
+          max-width: 300px;
+          min-width: 100%;
+        }
+        tr{
+          width: 40vw;
+          white-space: nowrap;
+          height: 30px;
+          padding-left: 10px;
+        }
+        tr:nth-child(odd){
+          background-color: #fff;
+        }
+        tr:nth-child(even){
+          background-color: @tableTrColor;
+        }
+      }
+    }
+  }
+}
+@fontColorB:#333333;
+@fontColorBlue:#5481de;
+@borderColor:#e5e5e5;
+@mainFontColor:#666666;
+@bgColor:#f5a623;
+@borderColor1:#d8d8d8;
+//个人详情公共样式
+div[data-ysp-modelid="personDetail"],div[data-ysp-modelid="personCKXX"],div[data-ysp-modelid="personDKXX"],div[data-ysp-modelid="personYYK"],div[data-ysp-modelid="publicDetail"],div[data-ysp-modelid="publicDQCKMX"],div[data-ysp-modelid="publicHQCKMX"]{
+  min-height: 100vh;
+  background-color: #f2f2f2;
+  padding-top: 40px;
+  .page-head{
+    .back{
+      position: absolute;
+      left: 10px;
+      top: 50%;
+      transform: translate(0px,-50%);
+      font-size: 16px;
+      span{
+        font-size: 16px;
+      }
+    }
+  }
+  .page-menu{
+    background-color: white;
+    .menulist{
+      text-align: center;
+      flex: 1;
+      // line-height: 60px;
+      line-height: 40px;
+      list-style: none;
+      border-bottom: solid 1px #d2d2d2;
+      color: @fontColorB;
+    }
+    .menulist.activeList{
+      border-bottom: solid 2px #5481de;
+      color: @fontColorBlue;
+    }
+  }
+}
+//个人客户信息样式
+div[data-ysp-modelid="personDetail"],div[data-ysp-modelid="publicDetail"]{
+  .mainBox1,.mainBox2,.mainBox3{
+    margin-bottom: 20px;
+    background-color: white;
+    .mainBox1-title,.mainBox2-title,.mainBox3-title{
+      padding-top: 15px;
+      padding-bottom: 15px;
+      font-size: 18px;
+      color: @fontColorB;
+      span{
+        border-left: 6px solid @fontColorBlue;
+        padding-left: 10px;
+      }
+    }
+    .mainBox1-box{
+      padding-left: 10px;
+      table{
+        th,td{
+          border: 1px solid @headerColor;
+          white-space: nowrap;
+          text-align: center;
+          padding: 3px 5px;
+        }
+        th{
+          color: @headerColor;
+        }
+      }
+      #div_yingyezhizhao,#div_guanhu{
+        width: 100%;
+        overflow-x: auto;
+        padding: 5px 0;
+      }
+      #div_yingyezhizhao::-webkit-scrollbar,#div_guanhu::-webkit-scrollbar{
+        height: 0px;
+        width: 0px;
+      }
+      .listBox{
+        display: flex;
+        border-bottom: solid 1px @borderColor;
+        font-size: 16px;
+        color: @mainFontColor;
+        .title{
+          padding-top: 12px;
+          padding-bottom: 12px;
+          flex:1;
+          text-align: left;
+        }
+        .content{
+          padding-top: 12px;
+          padding-bottom: 12px;
+          padding-right: 10px;
+          flex:2;
+          text-align: right;
+        }
+      }
+      .listBox:last-child{
+        border-bottom: none;
+      }
+    }
+    .mainBox2-box,.mainBox3-box{
+      padding-left: 10px;
+      .listBox{
+        display: flex;
+        border-bottom: solid 1px @borderColor;
+        font-size: 16px;
+        color: @mainFontColor;
+        .title{
+          padding-top: 12px;
+          padding-bottom: 12px;
+          flex:1;
+          text-align: left;
+        }
+        .content{
+          padding-top: 12px;
+          padding-bottom: 12px;
+          padding-right: 10px;
+          flex:1;
+          text-align: right;
+        }
+      }
+      .listBox:last-child{
+        border-bottom: none;
+      }
+    }
+    .mainBox1-box.hide{
+      .listBox:nth-child(n+10){
+        display: none;
+      }
+    }
+    .mainBox2-box.hide{
+      .listBox:nth-child(n+10){
+        display: none;
+      }
+    }
+    .more{
+      display: block!important;
+      border-top: solid 1px @borderColor;
+      line-height: 42px;
+      text-align: center;
+      // font-size: 18px;
+      font-size: 1em;
+      color: @fontColorB;
+    }
+  }
+}
+
+.page-head{
+  z-index: 1;
+}
+
+//个人客户存款信息样式
+div[data-ysp-modelid="personCKXX"],div[data-ysp-modelid="personDKXX"],div[data-ysp-modelid="personYYK"],div[data-ysp-modelid="publicDQCKMX"],div[data-ysp-modelid="publicHQCKMX"]{
+  .tab-titleBox{
+    background-color: white;
+    border-bottom: solid 1px #d2d2d2;
+    .tabTitle{
+      text-align: center;
+      flex: 1;
+      // line-height: 60px;
+      line-height: 40px;
+      list-style: none;
+      color: @fontColorB;
+    }
+    .tabTitle.activeTabTtile{
+      color: @fontColorBlue;
+    }
+  }
+  .mainSearchBox{
+    background-color: white;
+    margin-bottom: 20px;
+    .mainSearchBox-body{
+      border-bottom: solid 1px #f2f2f2;
+      .lineBtnBox{
+        border-top: solid 1px @borderColor1;
+        display: flex;
+        padding: 15px 10px;
+        .left-btn,.right-btn,.center-btn{
+          border-radius: 4px;
+          margin:0px 10px;
+          border: solid 1px @fontColorBlue;
+          line-height: 40px;
+          text-align: center;
+          font-size: 16px;
+          flex: 1;
+        }
+        .left-btn{
+          background-color: white;
+          color: @fontColorBlue;
+        }
+        .right-btn{
+          background-color: @fontColorBlue;
+          color: white;
+        }
+        .center-btn{
+          background-color: @fontColorBlue;
+          color: white;
+        }
+      }
+      .line{
+        display: flex;
+        .title{
+          text-align: left;
+          padding: 4px;
+          padding-left: 10px;
+          flex:1;
+          line-height: 40px;
+          font-size: 16px;
+          color: @fontColorB;
+        }
+        .content{
+          border-bottom: solid 1px @borderColor1;
+          padding: 4px;
+          flex:2;
+          select{
+            width: 100%;
+            border: none;
+            line-height: 40px;
+            height: 40px;
+            font-size: 16px;
+            color: @fontColorB;
+            margin: 0px;
+            padding: 0px;
+            background-color: white;
+            background-image: url("../local/img/left_arrow.png");
+            background-size: 20px;
+          }
+          input{
+            width: 100%;
+            border: none;
+            line-height: 40px;
+            height: 40px;
+            font-size: 16px;
+            color: @fontColorB;
+            margin: 0px;
+            padding: 0px;
+            background-color: white;
+          }
+        }
+      }
+    }
+    .mainSearchBox-body.hide{
+      display: none;
+    }
+    .more{
+      display: block!important;
+      // line-height: 60px;
+      line-height: 40px;
+      text-align: center;
+      // font-size: 16px;
+      font-size: 1em;
+      color: @bgColor;
+      span{
+        font-size: 18px;
+      }
+    }
+  }
+  .dataNone{
+    padding: 20px;
+    background-color: white;
+    font-size: 18px;
+    text-align: center;
+    color: @bgColor;
+  }
+  .contentBox{
+    margin-bottom: 20px;
+    .contentList{
+     	background-color: white;
+      padding: 10px;
+      margin-bottom: 10px;
+      .contentList-top1{
+        .line:nth-child(1){
+          padding: 10px 0px;
+          display: flex;
+          div.title{
+            text-align: left;
+            flex:1;
+            font-size: 16px;
+            color: #999999;
+          }
+          div.content{
+            text-align: left;
+            flex:3;
+            font-size: 16px;
+            color: #414e79;
+          }
+        }
+        .line:nth-child(2){
+          position: relative;
+          display: flex;
+          >div:nth-child(1){
+            text-align: left;
+            flex:1;
+            font-size: 16px;
+            color: #999999;
+          }
+          >div:nth-child(2){
+            text-align: left;
+            flex:3;
+            font-size: 16px;
+            color: #414e79;
+          }
+          >span:nth-child(3){
+            position: absolute;
+            right: 0px;
+            top: 50%;
+            transform: translate(0px,-50%);
+            font-size: 16px;
+            color: #cbcbcb;
+          }
+        }
+      }
+      .contentList-top{
+        .line{
+          padding: 10px 0px;
+          overflow: hidden;
+        }
+        .line:nth-child(1){
+          >div:nth-child(1){
+            float: left;
+            font-size: 18px;
+            color: @fontColorB;
+            font-weight: bold;
+          }
+          >div:nth-child(2){
+            float: right;
+            font-size: 16px;
+            color: #686868;
+          }
+        }
+        .line:nth-child(2){
+          position: relative;
+          display: flex;
+          >div:nth-child(1){
+            text-align: left;
+            flex:1;
+            font-size: 16px;
+            color: #999999;
+          }
+          >div:nth-child(2){
+            text-align: left;
+            flex:3;
+            font-size: 16px;
+            color: #414e79;
+          }
+          >span:nth-child(3){
+            position: absolute;
+            right: 0px;
+            top: 50%;
+            transform: translate(0px,-50%);
+            font-size: 16px;
+            color: #cbcbcb;
+          }
+        }
+      }
+      .contentList-bottom{
+        border-top: solid 1px #cdcdcd;
+        .line{
+          padding: 10px 0px;
+          display: flex;
+          div.title{
+            text-align: left;
+            flex:1;
+            font-size: 16px;
+            color: #999999;
+          }
+          div.content{
+            text-align: left;
+            flex:3;
+            font-size: 16px;
+            color: #414e79;
+          }
+        }
+      }
+      .contentList-bottom.hide{
+        border-top: none;
+        display: none;
+      }
+    }
+  }
+  .pageBox{
+    padding:30px 10px 110px 10px;
+    .pageBox-top{
+      text-align: center;
+      font-size: 16px;
+      color: @fontColorB;
+      margin-bottom: 10px;
+    }
+    .pageBox-bottom{
+      display: flex;
+      .prevBtn,.nextBtn{
+        flex:1;
+        margin: 0px 10px;
+        border-radius: 4px;
+        line-height: 40px;
+        text-align: center;
+        font-size: 16px;
+        background-color: white;
+        color: @bgColor;
+      }
+    }
+  }
+  .flexBox{
+    .flexBox-switch{
+      position: fixed;
+      bottom: 0px;
+      width: 100%;
+      line-height: 54px;
+      padding: 0px 10px;
+      text-align: left;
+      background-color: @bgColor;
+      color: white;
+      font-size: 16px;
+      >span{
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translate(0px,-50%);
+        font-size: 16px;
+        color: white;
+      }
+    }
+    .flexBox-body.hide{
+      display: none;
+    }
+    .flexBox-body{
+      background-color: white;
+      position: fixed;
+      top: 0px;
+      right: 0px;
+      left: 0px;
+      bottom: 0px;
+      z-index: 1000;
+      .flexBox-title{
+        // line-height: 60px;
+        line-height: 40px;
+        position: relative;
+        text-align: center;
+        color: white;
+        background-color:@fontColorBlue;
+        font-size: 18px;
+        .back{
+          position: absolute;
+          left: 10px;
+          top: 50%;
+        	transform: translate(0px,-50%);
+          font-size: 16px;
+          span{
+						font-size: 16px;
+          }
+        }
+      }
+      .flexBox-table::-webkit-scrollbar{
+        height: 1px;
+        width: 0px;
+      }
+      .flexBox-table{
+        overflow-x: scroll;
+        table{
+          width: 1400px;
+          tr{
+            height: 50px;
+            line-height: 50px;
+          }
+          td{
+            text-align: center;
+            font-size: 16px;
+            font-weight: normal;
+          }
+          #tabhead{
+            th{
+              border: solid 1px @fontColorBlue;
+              color: @fontColorBlue;
+              text-align: center;
+              font-size: 16px;
+              font-weight: normal;
+            }
+          }
+          #tabbody{
+            tr{
+              background-color:#e4edff;
+            }
+            td{
+              color: @fontColorB;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,1800 @@
+.loginBox {
+  margin: 25% 0;
+  padding: 0 15px;
+}
+.loginBox h4 {
+  text-align: center;
+}
+.header {
+  height: 40px;
+}
+.header header {
+  height: 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  background-color: #5481de;
+  color: #fff;
+  font-size: 1.1em;
+  z-index: 11;
+}
+.header .icon {
+  width: 20%;
+  text-align: center;
+  font-size: 0.9em;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+}
+.header .icon-left-nav {
+  left: 5px;
+}
+.header .icon:last-child {
+  right: 10px;
+  width: auto;
+}
+.header .title {
+  width: 100%;
+  text-align: center;
+}
+#entrancePage {
+  height: 100vh;
+  background-color: #f2f2f2;
+}
+#entrancePage .banner {
+  margin: 0 auto;
+  width: 100%;
+  height: 150px;
+  background: #fff url(img/banner.png) no-repeat center center;
+  background-size: 100%;
+}
+#entrancePage .entrance {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  background-color: #fff;
+}
+#entrancePage .entrance li:nth-child(1) {
+  background-image: url(img/index.png);
+}
+#entrancePage .entrance li:nth-child(2) {
+  background-image: url(img/geRenKehu.png);
+}
+#entrancePage .entrance li:nth-child(3) {
+  background-image: url(img/duiGongKehu.png);
+}
+#entrancePage .entrance li:nth-child(4) {
+  background-image: url(img/geRenChaxun.png);
+}
+#entrancePage .entrance li:nth-child(5) {
+  background-image: url(img/duiGongChaxun.png);
+}
+#entrancePage .entrance li:nth-child(6) {
+  background-image: url(img/tiXingChaxun.png);
+}
+#entrancePage .entrance li {
+  width: 33%;
+  height: 130px;
+  background-position: center 20%;
+  background-repeat: no-repeat;
+  background-size: 50px;
+  padding-top: 80px;
+  text-align: center;
+  font-family: '黑体';
+  border-left: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+#tabsPage {
+  height: auto;
+  overflow-y: auto;
+}
+#tabsPage .amt-tabs .amt-tabs-body .amt-tab-panel {
+  padding: 0;
+}
+#tabsPage .amt-tabs .amt-tabs-body .amt-tab-panel div {
+  border-bottom: 1px solid #eee;
+  padding: 8px 0 8px 50px;
+  position: relative;
+}
+#tabsPage .amt-tabs .amt-tabs-body .amt-tab-panel div span.icon {
+  font-size: 0.9em;
+  color: #ccc;
+  position: absolute;
+  right: 10px;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+}
+#tabsPage .amt-tabs .amt-tabs-body .amt-tab-panel[title="汇总指标"] div:nth-child(1) {
+  background-image: url(img/huiZong1.png);
+}
+#tabsPage .amt-tabs .amt-tabs-body .amt-tab-panel[title="汇总指标"] div:nth-child(2) {
+  background-image: url(img/huiZong2.png);
+}
+#tabsPage .amt-tabs .amt-tabs-body .amt-tab-panel[title="汇总指标"] div:nth-child(3) {
+  background-image: url(img/huiZong3.png);
+}
+#tabsPage .amt-tabs .amt-tabs-body .amt-tab-panel[title="汇总指标"] div:nth-child(4) {
+  background-image: url(img/huiZong4.png);
+}
+#tabsPage .amt-tabs .amt-tabs-body .amt-tab-panel[title="汇总指标"] div:nth-child(5) {
+  background-image: url(img/huiZong5.png);
+}
+#tabsPage .amt-tabs .amt-tabs-body .amt-tab-panel[title="汇总指标"] div:nth-child(6) {
+  background-image: url(img/huiZong6.png);
+}
+#tabsPage .amt-tabs .amt-tabs-body .amt-tab-panel[title="汇总指标"] div:nth-child(7) {
+  background-image: url(img/huiZong7.png);
+}
+#tabsPage .amt-tabs .amt-tabs-body .amt-tab-panel[title="汇总指标"] div:nth-child(8) {
+  background-image: url(img/huiZong8.png);
+}
+#tabsPage .amt-tabs .amt-tabs-body .amt-tab-panel[title="汇总指标"] div:nth-child(9) {
+  background-image: url(img/huiZong9.png);
+}
+#tabsPage .amt-tabs .amt-tabs-body .amt-tab-panel[title="汇总指标"] div:nth-child(10) {
+  background-image: url(img/huiZong10.png);
+}
+#tabsPage .amt-tabs .amt-tabs-body .amt-tab-panel[title="汇总指标"] div:nth-child(11) {
+  background-image: url(img/huiZong11.png);
+}
+#tabsPage .amt-tabs .amt-tabs-body .amt-tab-panel[title="汇总指标"] div:nth-child(12) {
+  background-image: url(img/huiZong12.png);
+}
+#tabsPage .amt-tabs .amt-tabs-body .amt-tab-panel[title="汇总指标"] div:nth-child(13) {
+  background-image: url(img/huiZong13.png);
+}
+#tabsPage .amt-tabs .amt-tabs-body .amt-tab-panel[title="汇总指标"] div:nth-child(14) {
+  background-image: url(img/huiZong14.png);
+}
+#tabsPage .amt-tabs .amt-tabs-body .amt-tab-panel[title="汇总指标"] div:nth-child(15) {
+  background-image: url(img/huiZong15.png);
+}
+#tabsPage .amt-tabs .amt-tabs-body .amt-tab-panel[title="日常事务"] div:nth-child(1) {
+  background-image: url(img/riChang1.png);
+}
+#tabsPage .amt-tabs .amt-tabs-body .amt-tab-panel[title="日常事务"] div:nth-child(2) {
+  background-image: url(img/riChang2.png);
+}
+#tabsPage .amt-tabs .amt-tabs-body .amt-tab-panel[title="日常事务"] div:nth-child(3) {
+  background-image: url(img/riChang3.png);
+}
+#tabsPage .amt-tabs .amt-tabs-body .amt-tab-panel[title="业务指标"] div:nth-child(1) {
+  background-image: url(img/yeWu1.png);
+}
+#tabsPage .amt-tabs .amt-tabs-body .amt-tab-panel[title="业务指标"] div:nth-child(2) {
+  background-image: url(img/yeWu2.png);
+}
+#tabsPage .amt-tabs .amt-tabs-body .amt-tab-panel[title="业务指标"] div:nth-child(3) {
+  background-image: url(img/yeWu3.png);
+}
+#tabsPage .amt-tabs .amt-tabs-body .amt-tab-panel[title="业务指标"] div:nth-child(4) {
+  background-image: url(img/yeWu4.png);
+}
+#tabsPage .amt-tabs .amt-tabs-body .amt-tab-panel[title="业务指标"] div:nth-child(5) {
+  background-image: url(img/yeWu5.png);
+}
+#tabsPage .amt-tabs .amt-tabs-body .amt-tab-panel div[aria-controls] {
+  background-repeat: no-repeat;
+  background-position: 15px center;
+  background-size: 23px 23px;
+}
+.customSelect .selValue {
+  position: relative;
+  width: 100%;
+  display: inline-block;
+  color: #455CA9;
+}
+.customSelect .selValue .icon {
+  position: absolute;
+  right: 5px;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  font-size: 0.9em;
+  color: #ddd;
+}
+.customSelect #optionsPanel {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  z-index: 102;
+}
+.customSelect #optionsPanel .optionsBox {
+  background-color: #fff;
+  margin: 0 5px;
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 3px;
+}
+.customSelect #optionsPanel .optHeader {
+  text-align: center;
+  position: relative;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+  font-weight: bold;
+  padding: 8px 0;
+}
+.customSelect #optionsPanel .optHeader .icon {
+  position: absolute;
+  right: 5px;
+  color: #ccc;
+  font-weight: normal;
+}
+.customSelect #optionsPanel .opts div {
+  padding: 8px 0;
+  border-top: 1px solid #eee;
+  text-align: center;
+  color: #999;
+}
+.customSelect #optionsPanel .opts div.selected {
+  background-color: #5481de;
+  color: #fff;
+}
+#searchPanel {
+  display: block;
+  height: 100vh;
+  position: fixed;
+  background-color: #fff;
+  z-index: 101;
+  left: 0;
+  right: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-bottom: 30px;
+}
+#searchPanel .maincard {
+  margin: 0 8px;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 50px;
+}
+#searchPanel .maincard .kvGrp {
+  display: flex;
+}
+#searchPanel .maincard .kvGrp .key {
+  min-width: 30%;
+  font-size: 0.9em;
+  padding: 10px;
+}
+#searchPanel .maincard .kvGrp .value {
+  max-width: 70%;
+  width: 70%;
+  color: #455CA9;
+  border-bottom: 1px solid #eee;
+  vertical-align: middle;
+  padding: 10px 0;
+}
+#searchPanel .maincard .kvGrp .value input {
+  border: 0;
+  font-size: 1em;
+  padding: 0;
+}
+#searchPanel .maincard .kvGrp .value input[readonly],
+#searchPanel .maincard .kvGrp .value input[disabled] {
+  background-color: transparent;
+}
+#searchPanel .maincard .kvGrp .value input[type="date"] {
+  border: 1px solid #eee;
+  height: auto;
+  padding: 8px 5px;
+}
+#searchPanel .maincard .kvGrp .value input:disabled[type="date"] {
+  background-color: #f2f2f2;
+}
+#searchPanel .maincard .kvGrp .value input[type='button'] {
+  color: #fff;
+  background-color: #f5a623;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+#searchPanel .maincard .kvGrp .value label {
+  display: inline-block;
+  width: 50%;
+  color: #455CA9;
+}
+#searchPanel .maincard .kvGrp .value label input[type="radio"] {
+  visibility: hidden;
+}
+#searchPanel .maincard .kvGrp .value label:before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #f5a623;
+  border-radius: 50%;
+}
+#searchPanel .maincard .kvGrp .value label[data-checked="true"]:before {
+  width: 15px;
+  height: 15px;
+  border: 2px solid #fff;
+  background-color: #f5a623;
+  box-shadow: 0px 0px 0px 1px #f5a623;
+}
+#searchPanel .maincard .kvGrp .inputBtnValue {
+  position: relative;
+}
+#searchPanel .maincard .kvGrp .inputBtnValue input[type="button"] {
+  position: absolute;
+  right: 5px;
+  font-size: 0.95em;
+}
+#searchPanel .bottomBtns {
+  display: flex;
+  padding: 5px 8px;
+  background-color: #fff;
+  box-shadow: 0px -2px 5px #ccc;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+#searchPanel .bottomBtns .btn {
+  width: 100%;
+  margin: 0;
+  padding: 8px 0;
+}
+#searchPanel .bottomBtns .btn:first-child {
+  background-color: transparent;
+  border: 1px solid #5481de;
+  color: #5481de;
+  margin-right: 8px;
+}
+#treePanel {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  height: 100vh;
+  overflow: auto;
+}
+#listPanel {
+  min-height: 90vh;
+  background-color: #f2f2f2;
+  font-family: "黑体";
+  overflow: auto;
+}
+#listPanel .tableList .list {
+  margin: 0px 0px 8px;
+  padding: 10px 8px 5px;
+}
+#listPanel .tableList .list .li {
+  display: flex;
+  padding-bottom: 5px;
+  font-size: 0.95em;
+}
+#listPanel .tableList .list .key {
+  width: 30%;
+  color: #666;
+}
+#listPanel .tableList .list .value {
+  color: #455CA9;
+  font-size: 1.1em;
+}
+#listPanel .tableList .list #custNo {
+  font-size: 1.1em;
+  color: #333;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+#listPanel .tableList .list #custNo .custLevel {
+  position: absolute;
+  right: 0;
+  color: #f5a623;
+  font-size: 0.95em;
+}
+#listPanel .tableList .list .clickMore {
+  border-top: 1px solid #ddd;
+  text-align: center;
+  padding-top: 10px;
+  margin-top: 10px;
+  color: #bbb;
+}
+#listPanel .tableList .list .clickMore .icon {
+  margin-left: 5px;
+  color: #ddd;
+  font-size: 0.9em;
+  font-weight: normal;
+}
+#listPanel .tableList .list .hiddenListPanel {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  min-height: 100vh;
+  height: 100vh;
+  background-color: #fff;
+  overflow: auto;
+  z-index: 105;
+  padding: 5px 10px 0 10px;
+}
+#listPanel .tableList .list .hiddenListPanel header {
+  position: absolute;
+}
+#listPanel .tableList .list .hiddenListPanel .hiddenList {
+  height: 92vh;
+  overflow-y: auto;
+}
+#listPanel .tableList .list .hiddenListPanel .hiddenList::-webkit-scrollbar {
+  height: 0px;
+  width: 0px;
+  background-color: transparent;
+}
+#listPanel .tableList .list .hiddenListPanel .li {
+  display: flex;
+  padding: 8px 0;
+}
+#listPanel .tableList .list .hiddenListPanel .key {
+  width: 35%;
+  color: #666;
+}
+#listPanel .tableList .list .hiddenListPanel .value {
+  width: 65%;
+  border-bottom: 1px solid #ddd;
+  color: #333;
+}
+#listPanel .pageContent {
+  padding: 15px 0;
+}
+#listPanel .pageContent .nowpage,
+#listPanel .pageContent .pageBtns {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+#listPanel .pageContent .pageBtns {
+  display: flex;
+  padding: 10px 5px 0;
+}
+#listPanel .pageContent .pageBtns .btn {
+  width: 100%;
+  background-color: #fff;
+  color: #f5a623;
+  padding: 8px 0;
+  margin: 0;
+  border: 0;
+}
+#listPanel .pageContent .pageBtns .btn:first-child {
+  margin-right: 5px;
+}
+#listPanel div.noData {
+  text-align: center;
+  padding: 15px 0;
+  font-size: 1.1em;
+}
+.indexTablePanel .tableTabs {
+  width: 100%;
+  padding: 10px 5px 0px 10px;
+  text-align: right;
+}
+.indexTablePanel .tableTabs span {
+  display: inline-block;
+  padding: 0px 10px;
+  margin-right: 5px;
+  border-radius: 20px;
+  font-size: 0.85em;
+  border: 1px solid #5481de;
+  background-color: #fff;
+  color: #5481de;
+}
+.indexTablePanel .tableTabs span[aria-selected="true"] {
+  background-color: #5481de;
+  color: #fff;
+}
+.indexTablePanel .tablePanelScroll {
+  width: 100%;
+  overflow-y: hidden;
+  font-size: 0.9em;
+  height: 85vh;
+}
+.indexTablePanel .tablePanelScroll .topLeftSection {
+  position: fixed;
+  left: 0;
+  top: 80px;
+  width: 45vw;
+  border: 1px solid #5481de;
+  color: #5481de;
+  border-right: 0;
+  padding: 5px 0;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.indexTablePanel .tablePanelScroll .topRightSection {
+  height: 50px;
+  overflow: hidden;
+  border: 1px solid #5481de;
+  width: 55vw;
+  position: fixed;
+  top: 80px;
+  left: 45vw;
+  background-color: #fff;
+  color: #5481de;
+}
+.indexTablePanel .tablePanelScroll .topRightSection .topRightContainer {
+  width: 350px;
+}
+.indexTablePanel .tablePanelScroll .topRightSection span {
+  display: inline-block;
+  width: 33.3%;
+  border-left: 1px solid #5481de;
+  text-align: center;
+  height: 50px;
+  line-height: 40px;
+  padding: 5px 0;
+}
+.indexTablePanel .tablePanelScroll .topRightSection span:first-child {
+  border: 0;
+}
+.indexTablePanel .tablePanelScroll .bottomLeftSection {
+  overflow: auto;
+  overflow-y: hidden;
+  position: fixed;
+  top: 130px;
+  left: 0;
+  background-color: #fff;
+  height: 70vh;
+}
+.indexTablePanel .tablePanelScroll .bottomLeftSection .bottomLeftSectionContainer {
+  overflow-x: auto;
+  width: 45vw;
+}
+.indexTablePanel .tablePanelScroll .bottomLeftSection .bottomLeftSectionContainer table {
+  min-width: 100%;
+}
+.indexTablePanel .tablePanelScroll .bottomLeftSection .bottomLeftSectionContainer td[rowspan] {
+  width: 90px;
+  padding: 0 5px;
+  border-bottom: 1px solid #e4edff;
+  border-right: 1px solid #B9CEF7;
+  background-color: #fff;
+}
+.indexTablePanel .tablePanelScroll .bottomLeftSection .bottomLeftSectionContainer td:first-child {
+  vertical-align: middle;
+  text-align: center;
+}
+.indexTablePanel .tablePanelScroll .bottomLeftSection .bottomLeftSectionContainer td:last-child {
+  text-align: left;
+  padding: 0 5px;
+}
+.indexTablePanel .tablePanelScroll .bottomLeftSection .bottomLeftSectionContainer div,
+.indexTablePanel .tablePanelScroll .bottomLeftSection .bottomLeftSectionContainer tr {
+  width: 45vw;
+  white-space: nowrap;
+  height: 30px;
+  padding-left: 10px;
+}
+.indexTablePanel .tablePanelScroll .bottomLeftSection .bottomLeftSectionContainer div {
+  line-height: 30px;
+}
+.indexTablePanel .tablePanelScroll .bottomLeftSection .bottomLeftSectionContainer div:nth-child(odd),
+.indexTablePanel .tablePanelScroll .bottomLeftSection .bottomLeftSectionContainer tr:nth-child(odd) {
+  background-color: #fff;
+}
+.indexTablePanel .tablePanelScroll .bottomLeftSection .bottomLeftSectionContainer div:nth-child(even),
+.indexTablePanel .tablePanelScroll .bottomLeftSection .bottomLeftSectionContainer tr:nth-child(even) {
+  background-color: #e4edff;
+}
+.indexTablePanel .tablePanelScroll .bottomRightSection {
+  overflow: hidden;
+  height: 70vh;
+  position: fixed;
+  left: 45vw;
+  top: 130px;
+  width: 55vw;
+  background-color: #fff;
+}
+.indexTablePanel .tablePanelScroll .bottomRightSection .bottomRightSectionContainer {
+  width: 350px;
+}
+.indexTablePanel .tablePanelScroll .bottomRightSection .bottomRightSectionContainer div {
+  width: 100%;
+  height: 30px;
+}
+.indexTablePanel .tablePanelScroll .bottomRightSection div:nth-child(odd) {
+  background-color: #fff;
+}
+.indexTablePanel .tablePanelScroll .bottomRightSection div:nth-child(even) {
+  background-color: #e4edff;
+}
+.indexTablePanel .tablePanelScroll .bottomRightSection div span {
+  height: 30px;
+  line-height: 30px;
+  display: inline-block;
+  width: 33.3%;
+  align-items: center;
+  text-align: center;
+  vertical-align: middle;
+}
+.indexTablePanel .tablePanelScroll .bottomRightSection #kehuCunkuanbody1,
+.indexTablePanel .tablePanelScroll .bottomRightSection #kehuCunkuanbody2 {
+  width: 100%;
+}
+.indexTablePanel .tablePanelScroll .bottomRightSection::-webkit-scrollbar,
+.indexTablePanel .tablePanelScroll .bottomLeftSection::-webkit-scrollbar,
+.indexTablePanel .tablePanelScroll .topRightSection::-webkit-scrollbar,
+.indexTablePanel .tablePanelScroll #kehuCunkuanbody1::-webkit-scrollbar,
+.indexTablePanel .tablePanelScroll #kehuCunkuanbody2::-webkit-scrollbar {
+  width: 1px;
+  background: #f1f1f1;
+  height: 1px;
+}
+#jinrongzichan_unit.indexTablePanel .tablePanelScroll .bottomLeftSection .bottomLeftSectionContainer td[rowspan] {
+  white-space: normal;
+  padding: 0 10px;
+}
+#hzzbPanel #kehu_unit.indexTablePanel .tablePanelScroll .bottomLeftSection .bottomLeftSectionContainer div:nth-child(odd) td:first-child,
+#hzzbPanel #kehu_unit.indexTablePanel .tablePanelScroll .bottomLeftSection .bottomLeftSectionContainer tr:nth-child(odd) td:first-child {
+  background-color: #fff;
+}
+#hzzbPanel #kehu_unit.indexTablePanel .tablePanelScroll .bottomLeftSection .bottomLeftSectionContainer div:nth-child(even) td:last-child,
+#hzzbPanel #kehu_unit.indexTablePanel .tablePanelScroll .bottomLeftSection .bottomLeftSectionContainer tr:nth-child(even) td:last-child {
+  background-color: #e4edff;
+}
+#hzzbPanel #zichanbiandong_unit.indexTablePanel .tablePanelScroll .topRightSection .topRightContainer {
+  width: 800px;
+  display: flex;
+}
+#hzzbPanel #zichanbiandong_unit.indexTablePanel .tablePanelScroll .bottomRightSection .bottomRightSectionContainer {
+  width: 800px;
+}
+#hzzbPanel #zichanbiandong_unit.indexTablePanel .tablePanelScroll .bottomRightSection .bottomRightSectionContainer > div {
+  width: 100%;
+  display: flex;
+}
+#rcswPanel .indexTablePanel .tablePanelScroll .topRightSection {
+  left: 0;
+  width: 100%;
+}
+#rcswPanel .indexTablePanel .tablePanelScroll .topRightSection .topRightContainer {
+  width: 700px;
+  display: flex;
+}
+#rcswPanel .indexTablePanel .tablePanelScroll .topRightSection .topRightContainer span:first-child,
+#rcswPanel .indexTablePanel .tablePanelScroll .topRightSection .topRightContainer span:last-child {
+  width: 40%;
+}
+#rcswPanel .indexTablePanel .tablePanelScroll .topRightSection .topRightContainer span:nth-child(4) {
+  width: 12%;
+}
+#rcswPanel .indexTablePanel .tablePanelScroll .bottomRightSection {
+  left: 0;
+  width: 100%;
+}
+#rcswPanel .indexTablePanel .tablePanelScroll .bottomRightSection .bottomRightSectionContainer {
+  width: 700px;
+}
+#rcswPanel .indexTablePanel .tablePanelScroll .bottomRightSection .bottomRightSectionContainer div {
+  display: flex;
+}
+#rcswPanel .indexTablePanel .tablePanelScroll .bottomRightSection .bottomRightSectionContainer div span:first-child,
+#rcswPanel .indexTablePanel .tablePanelScroll .bottomRightSection .bottomRightSectionContainer div span:last-child {
+  width: 40%;
+}
+#rcswPanel .indexTablePanel .tablePanelScroll .bottomRightSection .bottomRightSectionContainer div span:nth-child(4) {
+  width: 12%;
+}
+#rcswPanel #wodetixing.indexTablePanel .tablePanelScroll .topRightSection .topRightContainer span {
+  width: 10%;
+}
+#rcswPanel #wodetixing.indexTablePanel .tablePanelScroll .topRightSection .topRightContainer span:first-child,
+#rcswPanel #wodetixing.indexTablePanel .tablePanelScroll .topRightSection .topRightContainer span:nth-child(2),
+#rcswPanel #wodetixing.indexTablePanel .tablePanelScroll .topRightSection .topRightContainer span:nth-child(5) {
+  width: 20%;
+}
+#rcswPanel #wodetixing.indexTablePanel .tablePanelScroll .bottomRightSection .bottomRightSectionContainer div span {
+  width: 10%;
+}
+#rcswPanel #wodetixing.indexTablePanel .tablePanelScroll .bottomRightSection .bottomRightSectionContainer div span:first-child,
+#rcswPanel #wodetixing.indexTablePanel .tablePanelScroll .bottomRightSection .bottomRightSectionContainer div span:nth-child(2),
+#rcswPanel #wodetixing.indexTablePanel .tablePanelScroll .bottomRightSection .bottomRightSectionContainer div span:nth-child(5) {
+  width: 20%;
+}
+#rcswPanel #guanzhukehu.indexTablePanel .tablePanelScroll .topRightSection .topRightContainer span:nth-child(3) {
+  width: 15%;
+}
+#rcswPanel #guanzhukehu.indexTablePanel .tablePanelScroll .topRightSection .topRightContainer span:nth-child(4) {
+  width: 25%;
+}
+#rcswPanel #guanzhukehu.indexTablePanel .tablePanelScroll .bottomRightSection .bottomRightSectionContainer div span:nth-child(3) {
+  width: 15%;
+}
+#rcswPanel #guanzhukehu.indexTablePanel .tablePanelScroll .bottomRightSection .bottomRightSectionContainer div span:nth-child(4) {
+  width: 25%;
+}
+#rcswPanel .indexTablePanel:not(#vipkehuqingkuang) table,
+#ywzbPanel .indexTablePanel:not(#vipkehuqingkuang) table {
+  width: 1300px;
+  table-layout: fixed;
+}
+#rcswPanel .indexTablePanel:not(#vipkehuqingkuang) table td,
+#ywzbPanel .indexTablePanel:not(#vipkehuqingkuang) table td {
+  text-align: center;
+}
+#rcswPanel .indexTablePanel:not(#vipkehuqingkuang) table th,
+#ywzbPanel .indexTablePanel:not(#vipkehuqingkuang) table th {
+  border: 1px solid #5481de;
+  color: #5481de;
+  background-color: #fff;
+}
+#rcswPanel .indexTablePanel:not(#vipkehuqingkuang) .scrollTable,
+#ywzbPanel .indexTablePanel:not(#vipkehuqingkuang) .scrollTable {
+  overflow-y: auto;
+}
+#rcswPanel .indexTablePanel:not(#vipkehuqingkuang) .scrollTable table tr:nth-child(even),
+#ywzbPanel .indexTablePanel:not(#vipkehuqingkuang) .scrollTable table tr:nth-child(even) {
+  background-color: #e4edff;
+}
+#rcswPanel .indexTablePanel:not(#vipkehuqingkuang) .scrollTable table td,
+#ywzbPanel .indexTablePanel:not(#vipkehuqingkuang) .scrollTable table td {
+  padding: 2px 0;
+}
+#rcswPanel .indexTablePanel:not(#vipkehuqingkuang) .scrollTable::-webkit-scrollbar,
+#ywzbPanel .indexTablePanel:not(#vipkehuqingkuang) .scrollTable::-webkit-scrollbar {
+  height: 0;
+  width: 0;
+  background-color: transparent;
+}
+#rcswPanel #cunkuanqushi,
+#ywzbPanel #cunkuanqushi,
+#rcswPanel #daikuanqushi,
+#ywzbPanel #daikuanqushi {
+  width: 100%;
+  overflow: auto;
+}
+#rcswPanel #cunkuanqushi th,
+#ywzbPanel #cunkuanqushi th,
+#rcswPanel #daikuanqushi th,
+#ywzbPanel #daikuanqushi th,
+#rcswPanel #cunkuanqushi td,
+#ywzbPanel #cunkuanqushi td,
+#rcswPanel #daikuanqushi td,
+#ywzbPanel #daikuanqushi td {
+  padding: 5px;
+  border: 1px solid #5481de;
+  color: #5481de;
+}
+#rcswPanel #cunkuanqushi td,
+#ywzbPanel #cunkuanqushi td,
+#rcswPanel #daikuanqushi td,
+#ywzbPanel #daikuanqushi td {
+  color: #333;
+}
+#rcswPanel #cunkuanqushi::-webkit-scrollbar,
+#ywzbPanel #cunkuanqushi::-webkit-scrollbar,
+#rcswPanel #daikuanqushi::-webkit-scrollbar,
+#ywzbPanel #daikuanqushi::-webkit-scrollbar {
+  height: 1px;
+  background: transparent;
+}
+#rcswPanel #jinrongzichanfenbu .indexTablePanel table,
+#ywzbPanel #jinrongzichanfenbu .indexTablePanel table {
+  width: 100%;
+}
+#rcswPanel #jinrongzichanfenbu .indexTablePanel table tr:nth-child(even),
+#ywzbPanel #jinrongzichanfenbu .indexTablePanel table tr:nth-child(even) {
+  background-color: #e4edff;
+}
+#rcswPanel #dengjiPerChart,
+#ywzbPanel #dengjiPerChart {
+  border-bottom: 5px solid #f2f2f2;
+}
+#vipkehuqingkuang table {
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+#vipkehuqingkuang td {
+  text-align: center;
+}
+#vipkehuqingkuang .tablePanelScroll .topLeftSection {
+  width: 40vw;
+  padding: 5px 0;
+  display: table;
+  border: 0;
+}
+#vipkehuqingkuang .tablePanelScroll .topLeftSection th {
+  border: 1px solid #5481de;
+  text-align: center;
+  vertical-align: center;
+  color: #5481de;
+}
+#vipkehuqingkuang .tablePanelScroll .topLeftSection th:last-child {
+  border-right: 0;
+}
+#vipkehuqingkuang .tablePanelScroll .topRightSection {
+  width: 60vw;
+  top: 80px;
+  left: 40vw;
+  height: 50px;
+  border-top: 1px solid #5481de;
+  border-left: 1px solid #5481de;
+}
+#vipkehuqingkuang .tablePanelScroll .topRightSection th {
+  border-right: 1px solid #5481de;
+  border-bottom: 1px solid #5481de;
+  color: #5481de;
+  background-color: #fff;
+}
+#vipkehuqingkuang .tablePanelScroll .topRightSection .topRightContainer {
+  width: 1200px;
+  height: 100%;
+}
+#vipkehuqingkuang .tablePanelScroll .bottomLeftSection {
+  overflow: hidden;
+  width: 40vw;
+}
+#vipkehuqingkuang .tablePanelScroll .bottomLeftSection .bottomLeftSectionContainer {
+  overflow: hidden;
+  width: 100%;
+}
+#vipkehuqingkuang .tablePanelScroll .bottomLeftSection .bottomLeftSectionContainer table {
+  max-width: 300px;
+  min-width: 100%;
+}
+#vipkehuqingkuang .tablePanelScroll .bottomLeftSection .bottomLeftSectionContainer tr {
+  width: 40vw;
+  white-space: nowrap;
+  height: 30px;
+  padding-left: 10px;
+}
+#vipkehuqingkuang .tablePanelScroll .bottomLeftSection .bottomLeftSectionContainer tr:nth-child(odd) {
+  background-color: #fff;
+}
+#vipkehuqingkuang .tablePanelScroll .bottomLeftSection .bottomLeftSectionContainer tr:nth-child(even) {
+  background-color: #e4edff;
+}
+#vipkehuqingkuang .tablePanelScroll .bottomRightSection {
+  overflow: hidden;
+  height: 70vh;
+  position: fixed;
+  left: 40vw;
+  top: 130px;
+  width: 60vw;
+  background-color: #fff;
+}
+#vipkehuqingkuang .tablePanelScroll .bottomRightSection .bottomRightSectionContainer {
+  width: 1200px;
+}
+#vipkehuqingkuang .tablePanelScroll .bottomRightSection .bottomRightSectionContainer table {
+  max-width: 300px;
+  min-width: 100%;
+}
+#vipkehuqingkuang .tablePanelScroll .bottomRightSection .bottomRightSectionContainer tr {
+  width: 40vw;
+  white-space: nowrap;
+  height: 30px;
+  padding-left: 10px;
+}
+#vipkehuqingkuang .tablePanelScroll .bottomRightSection .bottomRightSectionContainer tr:nth-child(odd) {
+  background-color: #fff;
+}
+#vipkehuqingkuang .tablePanelScroll .bottomRightSection .bottomRightSectionContainer tr:nth-child(even) {
+  background-color: #e4edff;
+}
+div[data-ysp-modelid="personDetail"],
+div[data-ysp-modelid="personCKXX"],
+div[data-ysp-modelid="personDKXX"],
+div[data-ysp-modelid="personYYK"],
+div[data-ysp-modelid="publicDetail"],
+div[data-ysp-modelid="publicDQCKMX"],
+div[data-ysp-modelid="publicHQCKMX"] {
+  min-height: 100vh;
+  background-color: #f2f2f2;
+  padding-top: 40px;
+}
+div[data-ysp-modelid="personDetail"] .page-head .back,
+div[data-ysp-modelid="personCKXX"] .page-head .back,
+div[data-ysp-modelid="personDKXX"] .page-head .back,
+div[data-ysp-modelid="personYYK"] .page-head .back,
+div[data-ysp-modelid="publicDetail"] .page-head .back,
+div[data-ysp-modelid="publicDQCKMX"] .page-head .back,
+div[data-ysp-modelid="publicHQCKMX"] .page-head .back {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translate(0px, -50%);
+  font-size: 16px;
+}
+div[data-ysp-modelid="personDetail"] .page-head .back span,
+div[data-ysp-modelid="personCKXX"] .page-head .back span,
+div[data-ysp-modelid="personDKXX"] .page-head .back span,
+div[data-ysp-modelid="personYYK"] .page-head .back span,
+div[data-ysp-modelid="publicDetail"] .page-head .back span,
+div[data-ysp-modelid="publicDQCKMX"] .page-head .back span,
+div[data-ysp-modelid="publicHQCKMX"] .page-head .back span {
+  font-size: 16px;
+}
+div[data-ysp-modelid="personDetail"] .page-menu,
+div[data-ysp-modelid="personCKXX"] .page-menu,
+div[data-ysp-modelid="personDKXX"] .page-menu,
+div[data-ysp-modelid="personYYK"] .page-menu,
+div[data-ysp-modelid="publicDetail"] .page-menu,
+div[data-ysp-modelid="publicDQCKMX"] .page-menu,
+div[data-ysp-modelid="publicHQCKMX"] .page-menu {
+  background-color: white;
+}
+div[data-ysp-modelid="personDetail"] .page-menu .menulist,
+div[data-ysp-modelid="personCKXX"] .page-menu .menulist,
+div[data-ysp-modelid="personDKXX"] .page-menu .menulist,
+div[data-ysp-modelid="personYYK"] .page-menu .menulist,
+div[data-ysp-modelid="publicDetail"] .page-menu .menulist,
+div[data-ysp-modelid="publicDQCKMX"] .page-menu .menulist,
+div[data-ysp-modelid="publicHQCKMX"] .page-menu .menulist {
+  text-align: center;
+  flex: 1;
+  line-height: 40px;
+  list-style: none;
+  border-bottom: solid 1px #d2d2d2;
+  color: #333333;
+}
+div[data-ysp-modelid="personDetail"] .page-menu .menulist.activeList,
+div[data-ysp-modelid="personCKXX"] .page-menu .menulist.activeList,
+div[data-ysp-modelid="personDKXX"] .page-menu .menulist.activeList,
+div[data-ysp-modelid="personYYK"] .page-menu .menulist.activeList,
+div[data-ysp-modelid="publicDetail"] .page-menu .menulist.activeList,
+div[data-ysp-modelid="publicDQCKMX"] .page-menu .menulist.activeList,
+div[data-ysp-modelid="publicHQCKMX"] .page-menu .menulist.activeList {
+  border-bottom: solid 2px #5481de;
+  color: #5481de;
+}
+div[data-ysp-modelid="personDetail"] .mainBox1,
+div[data-ysp-modelid="publicDetail"] .mainBox1,
+div[data-ysp-modelid="personDetail"] .mainBox2,
+div[data-ysp-modelid="publicDetail"] .mainBox2,
+div[data-ysp-modelid="personDetail"] .mainBox3,
+div[data-ysp-modelid="publicDetail"] .mainBox3 {
+  margin-bottom: 20px;
+  background-color: white;
+}
+div[data-ysp-modelid="personDetail"] .mainBox1 .mainBox1-title,
+div[data-ysp-modelid="publicDetail"] .mainBox1 .mainBox1-title,
+div[data-ysp-modelid="personDetail"] .mainBox2 .mainBox1-title,
+div[data-ysp-modelid="publicDetail"] .mainBox2 .mainBox1-title,
+div[data-ysp-modelid="personDetail"] .mainBox3 .mainBox1-title,
+div[data-ysp-modelid="publicDetail"] .mainBox3 .mainBox1-title,
+div[data-ysp-modelid="personDetail"] .mainBox1 .mainBox2-title,
+div[data-ysp-modelid="publicDetail"] .mainBox1 .mainBox2-title,
+div[data-ysp-modelid="personDetail"] .mainBox2 .mainBox2-title,
+div[data-ysp-modelid="publicDetail"] .mainBox2 .mainBox2-title,
+div[data-ysp-modelid="personDetail"] .mainBox3 .mainBox2-title,
+div[data-ysp-modelid="publicDetail"] .mainBox3 .mainBox2-title,
+div[data-ysp-modelid="personDetail"] .mainBox1 .mainBox3-title,
+div[data-ysp-modelid="publicDetail"] .mainBox1 .mainBox3-title,
+div[data-ysp-modelid="personDetail"] .mainBox2 .mainBox3-title,
+div[data-ysp-modelid="publicDetail"] .mainBox2 .mainBox3-title,
+div[data-ysp-modelid="personDetail"] .mainBox3 .mainBox3-title,
+div[data-ysp-modelid="publicDetail"] .mainBox3 .mainBox3-title {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 18px;
+  color: #333333;
+}
+div[data-ysp-modelid="personDetail"] .mainBox1 .mainBox1-title span,
+div[data-ysp-modelid="publicDetail"] .mainBox1 .mainBox1-title span,
+div[data-ysp-modelid="personDetail"] .mainBox2 .mainBox1-title span,
+div[data-ysp-modelid="publicDetail"] .mainBox2 .mainBox1-title span,
+div[data-ysp-modelid="personDetail"] .mainBox3 .mainBox1-title span,
+div[data-ysp-modelid="publicDetail"] .mainBox3 .mainBox1-title span,
+div[data-ysp-modelid="personDetail"] .mainBox1 .mainBox2-title span,
+div[data-ysp-modelid="publicDetail"] .mainBox1 .mainBox2-title span,
+div[data-ysp-modelid="personDetail"] .mainBox2 .mainBox2-title span,
+div[data-ysp-modelid="publicDetail"] .mainBox2 .mainBox2-title span,
+div[data-ysp-modelid="personDetail"] .mainBox3 .mainBox2-title span,
+div[data-ysp-modelid="publicDetail"] .mainBox3 .mainBox2-title span,
+div[data-ysp-modelid="personDetail"] .mainBox1 .mainBox3-title span,
+div[data-ysp-modelid="publicDetail"] .mainBox1 .mainBox3-title span,
+div[data-ysp-modelid="personDetail"] .mainBox2 .mainBox3-title span,
+div[data-ysp-modelid="publicDetail"] .mainBox2 .mainBox3-title span,
+div[data-ysp-modelid="personDetail"] .mainBox3 .mainBox3-title span,
+div[data-ysp-modelid="publicDetail"] .mainBox3 .mainBox3-title span {
+  border-left: 6px solid #5481de;
+  padding-left: 10px;
+}
+div[data-ysp-modelid="personDetail"] .mainBox1 .mainBox1-box,
+div[data-ysp-modelid="publicDetail"] .mainBox1 .mainBox1-box,
+div[data-ysp-modelid="personDetail"] .mainBox2 .mainBox1-box,
+div[data-ysp-modelid="publicDetail"] .mainBox2 .mainBox1-box,
+div[data-ysp-modelid="personDetail"] .mainBox3 .mainBox1-box,
+div[data-ysp-modelid="publicDetail"] .mainBox3 .mainBox1-box {
+  padding-left: 10px;
+}
+div[data-ysp-modelid="personDetail"] .mainBox1 .mainBox1-box table th,
+div[data-ysp-modelid="publicDetail"] .mainBox1 .mainBox1-box table th,
+div[data-ysp-modelid="personDetail"] .mainBox2 .mainBox1-box table th,
+div[data-ysp-modelid="publicDetail"] .mainBox2 .mainBox1-box table th,
+div[data-ysp-modelid="personDetail"] .mainBox3 .mainBox1-box table th,
+div[data-ysp-modelid="publicDetail"] .mainBox3 .mainBox1-box table th,
+div[data-ysp-modelid="personDetail"] .mainBox1 .mainBox1-box table td,
+div[data-ysp-modelid="publicDetail"] .mainBox1 .mainBox1-box table td,
+div[data-ysp-modelid="personDetail"] .mainBox2 .mainBox1-box table td,
+div[data-ysp-modelid="publicDetail"] .mainBox2 .mainBox1-box table td,
+div[data-ysp-modelid="personDetail"] .mainBox3 .mainBox1-box table td,
+div[data-ysp-modelid="publicDetail"] .mainBox3 .mainBox1-box table td {
+  border: 1px solid #5481de;
+  white-space: nowrap;
+  text-align: center;
+  padding: 3px 5px;
+}
+div[data-ysp-modelid="personDetail"] .mainBox1 .mainBox1-box table th,
+div[data-ysp-modelid="publicDetail"] .mainBox1 .mainBox1-box table th,
+div[data-ysp-modelid="personDetail"] .mainBox2 .mainBox1-box table th,
+div[data-ysp-modelid="publicDetail"] .mainBox2 .mainBox1-box table th,
+div[data-ysp-modelid="personDetail"] .mainBox3 .mainBox1-box table th,
+div[data-ysp-modelid="publicDetail"] .mainBox3 .mainBox1-box table th {
+  color: #5481de;
+}
+div[data-ysp-modelid="personDetail"] .mainBox1 .mainBox1-box #div_yingyezhizhao,
+div[data-ysp-modelid="publicDetail"] .mainBox1 .mainBox1-box #div_yingyezhizhao,
+div[data-ysp-modelid="personDetail"] .mainBox2 .mainBox1-box #div_yingyezhizhao,
+div[data-ysp-modelid="publicDetail"] .mainBox2 .mainBox1-box #div_yingyezhizhao,
+div[data-ysp-modelid="personDetail"] .mainBox3 .mainBox1-box #div_yingyezhizhao,
+div[data-ysp-modelid="publicDetail"] .mainBox3 .mainBox1-box #div_yingyezhizhao,
+div[data-ysp-modelid="personDetail"] .mainBox1 .mainBox1-box #div_guanhu,
+div[data-ysp-modelid="publicDetail"] .mainBox1 .mainBox1-box #div_guanhu,
+div[data-ysp-modelid="personDetail"] .mainBox2 .mainBox1-box #div_guanhu,
+div[data-ysp-modelid="publicDetail"] .mainBox2 .mainBox1-box #div_guanhu,
+div[data-ysp-modelid="personDetail"] .mainBox3 .mainBox1-box #div_guanhu,
+div[data-ysp-modelid="publicDetail"] .mainBox3 .mainBox1-box #div_guanhu {
+  width: 100%;
+  overflow-x: auto;
+  padding: 5px 0;
+}
+div[data-ysp-modelid="personDetail"] .mainBox1 .mainBox1-box #div_yingyezhizhao::-webkit-scrollbar,
+div[data-ysp-modelid="publicDetail"] .mainBox1 .mainBox1-box #div_yingyezhizhao::-webkit-scrollbar,
+div[data-ysp-modelid="personDetail"] .mainBox2 .mainBox1-box #div_yingyezhizhao::-webkit-scrollbar,
+div[data-ysp-modelid="publicDetail"] .mainBox2 .mainBox1-box #div_yingyezhizhao::-webkit-scrollbar,
+div[data-ysp-modelid="personDetail"] .mainBox3 .mainBox1-box #div_yingyezhizhao::-webkit-scrollbar,
+div[data-ysp-modelid="publicDetail"] .mainBox3 .mainBox1-box #div_yingyezhizhao::-webkit-scrollbar,
+div[data-ysp-modelid="personDetail"] .mainBox1 .mainBox1-box #div_guanhu::-webkit-scrollbar,
+div[data-ysp-modelid="publicDetail"] .mainBox1 .mainBox1-box #div_guanhu::-webkit-scrollbar,
+div[data-ysp-modelid="personDetail"] .mainBox2 .mainBox1-box #div_guanhu::-webkit-scrollbar,
+div[data-ysp-modelid="publicDetail"] .mainBox2 .mainBox1-box #div_guanhu::-webkit-scrollbar,
+div[data-ysp-modelid="personDetail"] .mainBox3 .mainBox1-box #div_guanhu::-webkit-scrollbar,
+div[data-ysp-modelid="publicDetail"] .mainBox3 .mainBox1-box #div_guanhu::-webkit-scrollbar {
+  height: 0px;
+  width: 0px;
+}
+div[data-ysp-modelid="personDetail"] .mainBox1 .mainBox1-box .listBox,
+div[data-ysp-modelid="publicDetail"] .mainBox1 .mainBox1-box .listBox,
+div[data-ysp-modelid="personDetail"] .mainBox2 .mainBox1-box .listBox,
+div[data-ysp-modelid="publicDetail"] .mainBox2 .mainBox1-box .listBox,
+div[data-ysp-modelid="personDetail"] .mainBox3 .mainBox1-box .listBox,
+div[data-ysp-modelid="publicDetail"] .mainBox3 .mainBox1-box .listBox {
+  display: flex;
+  border-bottom: solid 1px #e5e5e5;
+  font-size: 16px;
+  color: #666666;
+}
+div[data-ysp-modelid="personDetail"] .mainBox1 .mainBox1-box .listBox .title,
+div[data-ysp-modelid="publicDetail"] .mainBox1 .mainBox1-box .listBox .title,
+div[data-ysp-modelid="personDetail"] .mainBox2 .mainBox1-box .listBox .title,
+div[data-ysp-modelid="publicDetail"] .mainBox2 .mainBox1-box .listBox .title,
+div[data-ysp-modelid="personDetail"] .mainBox3 .mainBox1-box .listBox .title,
+div[data-ysp-modelid="publicDetail"] .mainBox3 .mainBox1-box .listBox .title {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  flex: 1;
+  text-align: left;
+}
+div[data-ysp-modelid="personDetail"] .mainBox1 .mainBox1-box .listBox .content,
+div[data-ysp-modelid="publicDetail"] .mainBox1 .mainBox1-box .listBox .content,
+div[data-ysp-modelid="personDetail"] .mainBox2 .mainBox1-box .listBox .content,
+div[data-ysp-modelid="publicDetail"] .mainBox2 .mainBox1-box .listBox .content,
+div[data-ysp-modelid="personDetail"] .mainBox3 .mainBox1-box .listBox .content,
+div[data-ysp-modelid="publicDetail"] .mainBox3 .mainBox1-box .listBox .content {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-right: 10px;
+  flex: 2;
+  text-align: right;
+}
+div[data-ysp-modelid="personDetail"] .mainBox1 .mainBox1-box .listBox:last-child,
+div[data-ysp-modelid="publicDetail"] .mainBox1 .mainBox1-box .listBox:last-child,
+div[data-ysp-modelid="personDetail"] .mainBox2 .mainBox1-box .listBox:last-child,
+div[data-ysp-modelid="publicDetail"] .mainBox2 .mainBox1-box .listBox:last-child,
+div[data-ysp-modelid="personDetail"] .mainBox3 .mainBox1-box .listBox:last-child,
+div[data-ysp-modelid="publicDetail"] .mainBox3 .mainBox1-box .listBox:last-child {
+  border-bottom: none;
+}
+div[data-ysp-modelid="personDetail"] .mainBox1 .mainBox2-box,
+div[data-ysp-modelid="publicDetail"] .mainBox1 .mainBox2-box,
+div[data-ysp-modelid="personDetail"] .mainBox2 .mainBox2-box,
+div[data-ysp-modelid="publicDetail"] .mainBox2 .mainBox2-box,
+div[data-ysp-modelid="personDetail"] .mainBox3 .mainBox2-box,
+div[data-ysp-modelid="publicDetail"] .mainBox3 .mainBox2-box,
+div[data-ysp-modelid="personDetail"] .mainBox1 .mainBox3-box,
+div[data-ysp-modelid="publicDetail"] .mainBox1 .mainBox3-box,
+div[data-ysp-modelid="personDetail"] .mainBox2 .mainBox3-box,
+div[data-ysp-modelid="publicDetail"] .mainBox2 .mainBox3-box,
+div[data-ysp-modelid="personDetail"] .mainBox3 .mainBox3-box,
+div[data-ysp-modelid="publicDetail"] .mainBox3 .mainBox3-box {
+  padding-left: 10px;
+}
+div[data-ysp-modelid="personDetail"] .mainBox1 .mainBox2-box .listBox,
+div[data-ysp-modelid="publicDetail"] .mainBox1 .mainBox2-box .listBox,
+div[data-ysp-modelid="personDetail"] .mainBox2 .mainBox2-box .listBox,
+div[data-ysp-modelid="publicDetail"] .mainBox2 .mainBox2-box .listBox,
+div[data-ysp-modelid="personDetail"] .mainBox3 .mainBox2-box .listBox,
+div[data-ysp-modelid="publicDetail"] .mainBox3 .mainBox2-box .listBox,
+div[data-ysp-modelid="personDetail"] .mainBox1 .mainBox3-box .listBox,
+div[data-ysp-modelid="publicDetail"] .mainBox1 .mainBox3-box .listBox,
+div[data-ysp-modelid="personDetail"] .mainBox2 .mainBox3-box .listBox,
+div[data-ysp-modelid="publicDetail"] .mainBox2 .mainBox3-box .listBox,
+div[data-ysp-modelid="personDetail"] .mainBox3 .mainBox3-box .listBox,
+div[data-ysp-modelid="publicDetail"] .mainBox3 .mainBox3-box .listBox {
+  display: flex;
+  border-bottom: solid 1px #e5e5e5;
+  font-size: 16px;
+  color: #666666;
+}
+div[data-ysp-modelid="personDetail"] .mainBox1 .mainBox2-box .listBox .title,
+div[data-ysp-modelid="publicDetail"] .mainBox1 .mainBox2-box .listBox .title,
+div[data-ysp-modelid="personDetail"] .mainBox2 .mainBox2-box .listBox .title,
+div[data-ysp-modelid="publicDetail"] .mainBox2 .mainBox2-box .listBox .title,
+div[data-ysp-modelid="personDetail"] .mainBox3 .mainBox2-box .listBox .title,
+div[data-ysp-modelid="publicDetail"] .mainBox3 .mainBox2-box .listBox .title,
+div[data-ysp-modelid="personDetail"] .mainBox1 .mainBox3-box .listBox .title,
+div[data-ysp-modelid="publicDetail"] .mainBox1 .mainBox3-box .listBox .title,
+div[data-ysp-modelid="personDetail"] .mainBox2 .mainBox3-box .listBox .title,
+div[data-ysp-modelid="publicDetail"] .mainBox2 .mainBox3-box .listBox .title,
+div[data-ysp-modelid="personDetail"] .mainBox3 .mainBox3-box .listBox .title,
+div[data-ysp-modelid="publicDetail"] .mainBox3 .mainBox3-box .listBox .title {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  flex: 1;
+  text-align: left;
+}
+div[data-ysp-modelid="personDetail"] .mainBox1 .mainBox2-box .listBox .content,
+div[data-ysp-modelid="publicDetail"] .mainBox1 .mainBox2-box .listBox .content,
+div[data-ysp-modelid="personDetail"] .mainBox2 .mainBox2-box .listBox .content,
+div[data-ysp-modelid="publicDetail"] .mainBox2 .mainBox2-box .listBox .content,
+div[data-ysp-modelid="personDetail"] .mainBox3 .mainBox2-box .listBox .content,
+div[data-ysp-modelid="publicDetail"] .mainBox3 .mainBox2-box .listBox .content,
+div[data-ysp-modelid="personDetail"] .mainBox1 .mainBox3-box .listBox .content,
+div[data-ysp-modelid="publicDetail"] .mainBox1 .mainBox3-box .listBox .content,
+div[data-ysp-modelid="personDetail"] .mainBox2 .mainBox3-box .listBox .content,
+div[data-ysp-modelid="publicDetail"] .mainBox2 .mainBox3-box .listBox .content,
+div[data-ysp-modelid="personDetail"] .mainBox3 .mainBox3-box .listBox .content,
+div[data-ysp-modelid="publicDetail"] .mainBox3 .mainBox3-box .listBox .content {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-right: 10px;
+  flex: 1;
+  text-align: right;
+}
+div[data-ysp-modelid="personDetail"] .mainBox1 .mainBox2-box .listBox:last-child,
+div[data-ysp-modelid="publicDetail"] .mainBox1 .mainBox2-box .listBox:last-child,
+div[data-ysp-modelid="personDetail"] .mainBox2 .mainBox2-box .listBox:last-child,
+div[data-ysp-modelid="publicDetail"] .mainBox2 .mainBox2-box .listBox:last-child,
+div[data-ysp-modelid="personDetail"] .mainBox3 .mainBox2-box .listBox:last-child,
+div[data-ysp-modelid="publicDetail"] .mainBox3 .mainBox2-box .listBox:last-child,
+div[data-ysp-modelid="personDetail"] .mainBox1 .mainBox3-box .listBox:last-child,
+div[data-ysp-modelid="publicDetail"] .mainBox1 .mainBox3-box .listBox:last-child,
+div[data-ysp-modelid="personDetail"] .mainBox2 .mainBox3-box .listBox:last-child,
+div[data-ysp-modelid="publicDetail"] .mainBox2 .mainBox3-box .listBox:last-child,
+div[data-ysp-modelid="personDetail"] .mainBox3 .mainBox3-box .listBox:last-child,
+div[data-ysp-modelid="publicDetail"] .mainBox3 .mainBox3-box .listBox:last-child {
+  border-bottom: none;
+}
+div[data-ysp-modelid="personDetail"] .mainBox1 .mainBox1-box.hide .listBox:nth-child(n+10),
+div[data-ysp-modelid="publicDetail"] .mainBox1 .mainBox1-box.hide .listBox:nth-child(n+10),
+div[data-ysp-modelid="personDetail"] .mainBox2 .mainBox1-box.hide .listBox:nth-child(n+10),
+div[data-ysp-modelid="publicDetail"] .mainBox2 .mainBox1-box.hide .listBox:nth-child(n+10),
+div[data-ysp-modelid="personDetail"] .mainBox3 .mainBox1-box.hide .listBox:nth-child(n+10),
+div[data-ysp-modelid="publicDetail"] .mainBox3 .mainBox1-box.hide .listBox:nth-child(n+10) {
+  display: none;
+}
+div[data-ysp-modelid="personDetail"] .mainBox1 .mainBox2-box.hide .listBox:nth-child(n+10),
+div[data-ysp-modelid="publicDetail"] .mainBox1 .mainBox2-box.hide .listBox:nth-child(n+10),
+div[data-ysp-modelid="personDetail"] .mainBox2 .mainBox2-box.hide .listBox:nth-child(n+10),
+div[data-ysp-modelid="publicDetail"] .mainBox2 .mainBox2-box.hide .listBox:nth-child(n+10),
+div[data-ysp-modelid="personDetail"] .mainBox3 .mainBox2-box.hide .listBox:nth-child(n+10),
+div[data-ysp-modelid="publicDetail"] .mainBox3 .mainBox2-box.hide .listBox:nth-child(n+10) {
+  display: none;
+}
+div[data-ysp-modelid="personDetail"] .mainBox1 .more,
+div[data-ysp-modelid="publicDetail"] .mainBox1 .more,
+div[data-ysp-modelid="personDetail"] .mainBox2 .more,
+div[data-ysp-modelid="publicDetail"] .mainBox2 .more,
+div[data-ysp-modelid="personDetail"] .mainBox3 .more,
+div[data-ysp-modelid="publicDetail"] .mainBox3 .more {
+  display: block!important;
+  border-top: solid 1px #e5e5e5;
+  line-height: 42px;
+  text-align: center;
+  font-size: 1em;
+  color: #333333;
+}
+.page-head {
+  z-index: 1;
+}
+div[data-ysp-modelid="personCKXX"] .tab-titleBox,
+div[data-ysp-modelid="personDKXX"] .tab-titleBox,
+div[data-ysp-modelid="personYYK"] .tab-titleBox,
+div[data-ysp-modelid="publicDQCKMX"] .tab-titleBox,
+div[data-ysp-modelid="publicHQCKMX"] .tab-titleBox {
+  background-color: white;
+  border-bottom: solid 1px #d2d2d2;
+}
+div[data-ysp-modelid="personCKXX"] .tab-titleBox .tabTitle,
+div[data-ysp-modelid="personDKXX"] .tab-titleBox .tabTitle,
+div[data-ysp-modelid="personYYK"] .tab-titleBox .tabTitle,
+div[data-ysp-modelid="publicDQCKMX"] .tab-titleBox .tabTitle,
+div[data-ysp-modelid="publicHQCKMX"] .tab-titleBox .tabTitle {
+  text-align: center;
+  flex: 1;
+  line-height: 40px;
+  list-style: none;
+  color: #333333;
+}
+div[data-ysp-modelid="personCKXX"] .tab-titleBox .tabTitle.activeTabTtile,
+div[data-ysp-modelid="personDKXX"] .tab-titleBox .tabTitle.activeTabTtile,
+div[data-ysp-modelid="personYYK"] .tab-titleBox .tabTitle.activeTabTtile,
+div[data-ysp-modelid="publicDQCKMX"] .tab-titleBox .tabTitle.activeTabTtile,
+div[data-ysp-modelid="publicHQCKMX"] .tab-titleBox .tabTitle.activeTabTtile {
+  color: #5481de;
+}
+div[data-ysp-modelid="personCKXX"] .mainSearchBox,
+div[data-ysp-modelid="personDKXX"] .mainSearchBox,
+div[data-ysp-modelid="personYYK"] .mainSearchBox,
+div[data-ysp-modelid="publicDQCKMX"] .mainSearchBox,
+div[data-ysp-modelid="publicHQCKMX"] .mainSearchBox {
+  background-color: white;
+  margin-bottom: 20px;
+}
+div[data-ysp-modelid="personCKXX"] .mainSearchBox .mainSearchBox-body,
+div[data-ysp-modelid="personDKXX"] .mainSearchBox .mainSearchBox-body,
+div[data-ysp-modelid="personYYK"] .mainSearchBox .mainSearchBox-body,
+div[data-ysp-modelid="publicDQCKMX"] .mainSearchBox .mainSearchBox-body,
+div[data-ysp-modelid="publicHQCKMX"] .mainSearchBox .mainSearchBox-body {
+  border-bottom: solid 1px #f2f2f2;
+}
+div[data-ysp-modelid="personCKXX"] .mainSearchBox .mainSearchBox-body .lineBtnBox,
+div[data-ysp-modelid="personDKXX"] .mainSearchBox .mainSearchBox-body .lineBtnBox,
+div[data-ysp-modelid="personYYK"] .mainSearchBox .mainSearchBox-body .lineBtnBox,
+div[data-ysp-modelid="publicDQCKMX"] .mainSearchBox .mainSearchBox-body .lineBtnBox,
+div[data-ysp-modelid="publicHQCKMX"] .mainSearchBox .mainSearchBox-body .lineBtnBox {
+  border-top: solid 1px #d8d8d8;
+  display: flex;
+  padding: 15px 10px;
+}
+div[data-ysp-modelid="personCKXX"] .mainSearchBox .mainSearchBox-body .lineBtnBox .left-btn,
+div[data-ysp-modelid="personDKXX"] .mainSearchBox .mainSearchBox-body .lineBtnBox .left-btn,
+div[data-ysp-modelid="personYYK"] .mainSearchBox .mainSearchBox-body .lineBtnBox .left-btn,
+div[data-ysp-modelid="publicDQCKMX"] .mainSearchBox .mainSearchBox-body .lineBtnBox .left-btn,
+div[data-ysp-modelid="publicHQCKMX"] .mainSearchBox .mainSearchBox-body .lineBtnBox .left-btn,
+div[data-ysp-modelid="personCKXX"] .mainSearchBox .mainSearchBox-body .lineBtnBox .right-btn,
+div[data-ysp-modelid="personDKXX"] .mainSearchBox .mainSearchBox-body .lineBtnBox .right-btn,
+div[data-ysp-modelid="personYYK"] .mainSearchBox .mainSearchBox-body .lineBtnBox .right-btn,
+div[data-ysp-modelid="publicDQCKMX"] .mainSearchBox .mainSearchBox-body .lineBtnBox .right-btn,
+div[data-ysp-modelid="publicHQCKMX"] .mainSearchBox .mainSearchBox-body .lineBtnBox .right-btn,
+div[data-ysp-modelid="personCKXX"] .mainSearchBox .mainSearchBox-body .lineBtnBox .center-btn,
+div[data-ysp-modelid="personDKXX"] .mainSearchBox .mainSearchBox-body .lineBtnBox .center-btn,
+div[data-ysp-modelid="personYYK"] .mainSearchBox .mainSearchBox-body .lineBtnBox .center-btn,
+div[data-ysp-modelid="publicDQCKMX"] .mainSearchBox .mainSearchBox-body .lineBtnBox .center-btn,
+div[data-ysp-modelid="publicHQCKMX"] .mainSearchBox .mainSearchBox-body .lineBtnBox .center-btn {
+  border-radius: 4px;
+  margin: 0px 10px;
+  border: solid 1px #5481de;
+  line-height: 40px;
+  text-align: center;
+  font-size: 16px;
+  flex: 1;
+}
+div[data-ysp-modelid="personCKXX"] .mainSearchBox .mainSearchBox-body .lineBtnBox .left-btn,
+div[data-ysp-modelid="personDKXX"] .mainSearchBox .mainSearchBox-body .lineBtnBox .left-btn,
+div[data-ysp-modelid="personYYK"] .mainSearchBox .mainSearchBox-body .lineBtnBox .left-btn,
+div[data-ysp-modelid="publicDQCKMX"] .mainSearchBox .mainSearchBox-body .lineBtnBox .left-btn,
+div[data-ysp-modelid="publicHQCKMX"] .mainSearchBox .mainSearchBox-body .lineBtnBox .left-btn {
+  background-color: white;
+  color: #5481de;
+}
+div[data-ysp-modelid="personCKXX"] .mainSearchBox .mainSearchBox-body .lineBtnBox .right-btn,
+div[data-ysp-modelid="personDKXX"] .mainSearchBox .mainSearchBox-body .lineBtnBox .right-btn,
+div[data-ysp-modelid="personYYK"] .mainSearchBox .mainSearchBox-body .lineBtnBox .right-btn,
+div[data-ysp-modelid="publicDQCKMX"] .mainSearchBox .mainSearchBox-body .lineBtnBox .right-btn,
+div[data-ysp-modelid="publicHQCKMX"] .mainSearchBox .mainSearchBox-body .lineBtnBox .right-btn {
+  background-color: #5481de;
+  color: white;
+}
+div[data-ysp-modelid="personCKXX"] .mainSearchBox .mainSearchBox-body .lineBtnBox .center-btn,
+div[data-ysp-modelid="personDKXX"] .mainSearchBox .mainSearchBox-body .lineBtnBox .center-btn,
+div[data-ysp-modelid="personYYK"] .mainSearchBox .mainSearchBox-body .lineBtnBox .center-btn,
+div[data-ysp-modelid="publicDQCKMX"] .mainSearchBox .mainSearchBox-body .lineBtnBox .center-btn,
+div[data-ysp-modelid="publicHQCKMX"] .mainSearchBox .mainSearchBox-body .lineBtnBox .center-btn {
+  background-color: #5481de;
+  color: white;
+}
+div[data-ysp-modelid="personCKXX"] .mainSearchBox .mainSearchBox-body .line,
+div[data-ysp-modelid="personDKXX"] .mainSearchBox .mainSearchBox-body .line,
+div[data-ysp-modelid="personYYK"] .mainSearchBox .mainSearchBox-body .line,
+div[data-ysp-modelid="publicDQCKMX"] .mainSearchBox .mainSearchBox-body .line,
+div[data-ysp-modelid="publicHQCKMX"] .mainSearchBox .mainSearchBox-body .line {
+  display: flex;
+}
+div[data-ysp-modelid="personCKXX"] .mainSearchBox .mainSearchBox-body .line .title,
+div[data-ysp-modelid="personDKXX"] .mainSearchBox .mainSearchBox-body .line .title,
+div[data-ysp-modelid="personYYK"] .mainSearchBox .mainSearchBox-body .line .title,
+div[data-ysp-modelid="publicDQCKMX"] .mainSearchBox .mainSearchBox-body .line .title,
+div[data-ysp-modelid="publicHQCKMX"] .mainSearchBox .mainSearchBox-body .line .title {
+  text-align: left;
+  padding: 4px;
+  padding-left: 10px;
+  flex: 1;
+  line-height: 40px;
+  font-size: 16px;
+  color: #333333;
+}
+div[data-ysp-modelid="personCKXX"] .mainSearchBox .mainSearchBox-body .line .content,
+div[data-ysp-modelid="personDKXX"] .mainSearchBox .mainSearchBox-body .line .content,
+div[data-ysp-modelid="personYYK"] .mainSearchBox .mainSearchBox-body .line .content,
+div[data-ysp-modelid="publicDQCKMX"] .mainSearchBox .mainSearchBox-body .line .content,
+div[data-ysp-modelid="publicHQCKMX"] .mainSearchBox .mainSearchBox-body .line .content {
+  border-bottom: solid 1px #d8d8d8;
+  padding: 4px;
+  flex: 2;
+}
+div[data-ysp-modelid="personCKXX"] .mainSearchBox .mainSearchBox-body .line .content select,
+div[data-ysp-modelid="personDKXX"] .mainSearchBox .mainSearchBox-body .line .content select,
+div[data-ysp-modelid="personYYK"] .mainSearchBox .mainSearchBox-body .line .content select,
+div[data-ysp-modelid="publicDQCKMX"] .mainSearchBox .mainSearchBox-body .line .content select,
+div[data-ysp-modelid="publicHQCKMX"] .mainSearchBox .mainSearchBox-body .line .content select {
+  width: 100%;
+  border: none;
+  line-height: 40px;
+  height: 40px;
+  font-size: 16px;
+  color: #333333;
+  margin: 0px;
+  padding: 0px;
+  background-color: white;
+  background-image: url("../local/img/left_arrow.png");
+  background-size: 20px;
+}
+div[data-ysp-modelid="personCKXX"] .mainSearchBox .mainSearchBox-body .line .content input,
+div[data-ysp-modelid="personDKXX"] .mainSearchBox .mainSearchBox-body .line .content input,
+div[data-ysp-modelid="personYYK"] .mainSearchBox .mainSearchBox-body .line .content input,
+div[data-ysp-modelid="publicDQCKMX"] .mainSearchBox .mainSearchBox-body .line .content input,
+div[data-ysp-modelid="publicHQCKMX"] .mainSearchBox .mainSearchBox-body .line .content input {
+  width: 100%;
+  border: none;
+  line-height: 40px;
+  height: 40px;
+  font-size: 16px;
+  color: #333333;
+  margin: 0px;
+  padding: 0px;
+  background-color: white;
+}
+div[data-ysp-modelid="personCKXX"] .mainSearchBox .mainSearchBox-body.hide,
+div[data-ysp-modelid="personDKXX"] .mainSearchBox .mainSearchBox-body.hide,
+div[data-ysp-modelid="personYYK"] .mainSearchBox .mainSearchBox-body.hide,
+div[data-ysp-modelid="publicDQCKMX"] .mainSearchBox .mainSearchBox-body.hide,
+div[data-ysp-modelid="publicHQCKMX"] .mainSearchBox .mainSearchBox-body.hide {
+  display: none;
+}
+div[data-ysp-modelid="personCKXX"] .mainSearchBox .more,
+div[data-ysp-modelid="personDKXX"] .mainSearchBox .more,
+div[data-ysp-modelid="personYYK"] .mainSearchBox .more,
+div[data-ysp-modelid="publicDQCKMX"] .mainSearchBox .more,
+div[data-ysp-modelid="publicHQCKMX"] .mainSearchBox .more {
+  display: block!important;
+  line-height: 40px;
+  text-align: center;
+  font-size: 1em;
+  color: #f5a623;
+}
+div[data-ysp-modelid="personCKXX"] .mainSearchBox .more span,
+div[data-ysp-modelid="personDKXX"] .mainSearchBox .more span,
+div[data-ysp-modelid="personYYK"] .mainSearchBox .more span,
+div[data-ysp-modelid="publicDQCKMX"] .mainSearchBox .more span,
+div[data-ysp-modelid="publicHQCKMX"] .mainSearchBox .more span {
+  font-size: 18px;
+}
+div[data-ysp-modelid="personCKXX"] .dataNone,
+div[data-ysp-modelid="personDKXX"] .dataNone,
+div[data-ysp-modelid="personYYK"] .dataNone,
+div[data-ysp-modelid="publicDQCKMX"] .dataNone,
+div[data-ysp-modelid="publicHQCKMX"] .dataNone {
+  padding: 20px;
+  background-color: white;
+  font-size: 18px;
+  text-align: center;
+  color: #f5a623;
+}
+div[data-ysp-modelid="personCKXX"] .contentBox,
+div[data-ysp-modelid="personDKXX"] .contentBox,
+div[data-ysp-modelid="personYYK"] .contentBox,
+div[data-ysp-modelid="publicDQCKMX"] .contentBox,
+div[data-ysp-modelid="publicHQCKMX"] .contentBox {
+  margin-bottom: 20px;
+}
+div[data-ysp-modelid="personCKXX"] .contentBox .contentList,
+div[data-ysp-modelid="personDKXX"] .contentBox .contentList,
+div[data-ysp-modelid="personYYK"] .contentBox .contentList,
+div[data-ysp-modelid="publicDQCKMX"] .contentBox .contentList,
+div[data-ysp-modelid="publicHQCKMX"] .contentBox .contentList {
+  background-color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+div[data-ysp-modelid="personCKXX"] .contentBox .contentList .contentList-top1 .line:nth-child(1),
+div[data-ysp-modelid="personDKXX"] .contentBox .contentList .contentList-top1 .line:nth-child(1),
+div[data-ysp-modelid="personYYK"] .contentBox .contentList .contentList-top1 .line:nth-child(1),
+div[data-ysp-modelid="publicDQCKMX"] .contentBox .contentList .contentList-top1 .line:nth-child(1),
+div[data-ysp-modelid="publicHQCKMX"] .contentBox .contentList .contentList-top1 .line:nth-child(1) {
+  padding: 10px 0px;
+  display: flex;
+}
+div[data-ysp-modelid="personCKXX"] .contentBox .contentList .contentList-top1 .line:nth-child(1) div.title,
+div[data-ysp-modelid="personDKXX"] .contentBox .contentList .contentList-top1 .line:nth-child(1) div.title,
+div[data-ysp-modelid="personYYK"] .contentBox .contentList .contentList-top1 .line:nth-child(1) div.title,
+div[data-ysp-modelid="publicDQCKMX"] .contentBox .contentList .contentList-top1 .line:nth-child(1) div.title,
+div[data-ysp-modelid="publicHQCKMX"] .contentBox .contentList .contentList-top1 .line:nth-child(1) div.title {
+  text-align: left;
+  flex: 1;
+  font-size: 16px;
+  color: #999999;
+}
+div[data-ysp-modelid="personCKXX"] .contentBox .contentList .contentList-top1 .line:nth-child(1) div.content,
+div[data-ysp-modelid="personDKXX"] .contentBox .contentList .contentList-top1 .line:nth-child(1) div.content,
+div[data-ysp-modelid="personYYK"] .contentBox .contentList .contentList-top1 .line:nth-child(1) div.content,
+div[data-ysp-modelid="publicDQCKMX"] .contentBox .contentList .contentList-top1 .line:nth-child(1) div.content,
+div[data-ysp-modelid="publicHQCKMX"] .contentBox .contentList .contentList-top1 .line:nth-child(1) div.content {
+  text-align: left;
+  flex: 3;
+  font-size: 16px;
+  color: #414e79;
+}
+div[data-ysp-modelid="personCKXX"] .contentBox .contentList .contentList-top1 .line:nth-child(2),
+div[data-ysp-modelid="personDKXX"] .contentBox .contentList .contentList-top1 .line:nth-child(2),
+div[data-ysp-modelid="personYYK"] .contentBox .contentList .contentList-top1 .line:nth-child(2),
+div[data-ysp-modelid="publicDQCKMX"] .contentBox .contentList .contentList-top1 .line:nth-child(2),
+div[data-ysp-modelid="publicHQCKMX"] .contentBox .contentList .contentList-top1 .line:nth-child(2) {
+  position: relative;
+  display: flex;
+}
+div[data-ysp-modelid="personCKXX"] .contentBox .contentList .contentList-top1 .line:nth-child(2) > div:nth-child(1),
+div[data-ysp-modelid="personDKXX"] .contentBox .contentList .contentList-top1 .line:nth-child(2) > div:nth-child(1),
+div[data-ysp-modelid="personYYK"] .contentBox .contentList .contentList-top1 .line:nth-child(2) > div:nth-child(1),
+div[data-ysp-modelid="publicDQCKMX"] .contentBox .contentList .contentList-top1 .line:nth-child(2) > div:nth-child(1),
+div[data-ysp-modelid="publicHQCKMX"] .contentBox .contentList .contentList-top1 .line:nth-child(2) > div:nth-child(1) {
+  text-align: left;
+  flex: 1;
+  font-size: 16px;
+  color: #999999;
+}
+div[data-ysp-modelid="personCKXX"] .contentBox .contentList .contentList-top1 .line:nth-child(2) > div:nth-child(2),
+div[data-ysp-modelid="personDKXX"] .contentBox .contentList .contentList-top1 .line:nth-child(2) > div:nth-child(2),
+div[data-ysp-modelid="personYYK"] .contentBox .contentList .contentList-top1 .line:nth-child(2) > div:nth-child(2),
+div[data-ysp-modelid="publicDQCKMX"] .contentBox .contentList .contentList-top1 .line:nth-child(2) > div:nth-child(2),
+div[data-ysp-modelid="publicHQCKMX"] .contentBox .contentList .contentList-top1 .line:nth-child(2) > div:nth-child(2) {
+  text-align: left;
+  flex: 3;
+  font-size: 16px;
+  color: #414e79;
+}
+div[data-ysp-modelid="personCKXX"] .contentBox .contentList .contentList-top1 .line:nth-child(2) > span:nth-child(3),
+div[data-ysp-modelid="personDKXX"] .contentBox .contentList .contentList-top1 .line:nth-child(2) > span:nth-child(3),
+div[data-ysp-modelid="personYYK"] .contentBox .contentList .contentList-top1 .line:nth-child(2) > span:nth-child(3),
+div[data-ysp-modelid="publicDQCKMX"] .contentBox .contentList .contentList-top1 .line:nth-child(2) > span:nth-child(3),
+div[data-ysp-modelid="publicHQCKMX"] .contentBox .contentList .contentList-top1 .line:nth-child(2) > span:nth-child(3) {
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translate(0px, -50%);
+  font-size: 16px;
+  color: #cbcbcb;
+}
+div[data-ysp-modelid="personCKXX"] .contentBox .contentList .contentList-top .line,
+div[data-ysp-modelid="personDKXX"] .contentBox .contentList .contentList-top .line,
+div[data-ysp-modelid="personYYK"] .contentBox .contentList .contentList-top .line,
+div[data-ysp-modelid="publicDQCKMX"] .contentBox .contentList .contentList-top .line,
+div[data-ysp-modelid="publicHQCKMX"] .contentBox .contentList .contentList-top .line {
+  padding: 10px 0px;
+  overflow: hidden;
+}
+div[data-ysp-modelid="personCKXX"] .contentBox .contentList .contentList-top .line:nth-child(1) > div:nth-child(1),
+div[data-ysp-modelid="personDKXX"] .contentBox .contentList .contentList-top .line:nth-child(1) > div:nth-child(1),
+div[data-ysp-modelid="personYYK"] .contentBox .contentList .contentList-top .line:nth-child(1) > div:nth-child(1),
+div[data-ysp-modelid="publicDQCKMX"] .contentBox .contentList .contentList-top .line:nth-child(1) > div:nth-child(1),
+div[data-ysp-modelid="publicHQCKMX"] .contentBox .contentList .contentList-top .line:nth-child(1) > div:nth-child(1) {
+  float: left;
+  font-size: 18px;
+  color: #333333;
+  font-weight: bold;
+}
+div[data-ysp-modelid="personCKXX"] .contentBox .contentList .contentList-top .line:nth-child(1) > div:nth-child(2),
+div[data-ysp-modelid="personDKXX"] .contentBox .contentList .contentList-top .line:nth-child(1) > div:nth-child(2),
+div[data-ysp-modelid="personYYK"] .contentBox .contentList .contentList-top .line:nth-child(1) > div:nth-child(2),
+div[data-ysp-modelid="publicDQCKMX"] .contentBox .contentList .contentList-top .line:nth-child(1) > div:nth-child(2),
+div[data-ysp-modelid="publicHQCKMX"] .contentBox .contentList .contentList-top .line:nth-child(1) > div:nth-child(2) {
+  float: right;
+  font-size: 16px;
+  color: #686868;
+}
+div[data-ysp-modelid="personCKXX"] .contentBox .contentList .contentList-top .line:nth-child(2),
+div[data-ysp-modelid="personDKXX"] .contentBox .contentList .contentList-top .line:nth-child(2),
+div[data-ysp-modelid="personYYK"] .contentBox .contentList .contentList-top .line:nth-child(2),
+div[data-ysp-modelid="publicDQCKMX"] .contentBox .contentList .contentList-top .line:nth-child(2),
+div[data-ysp-modelid="publicHQCKMX"] .contentBox .contentList .contentList-top .line:nth-child(2) {
+  position: relative;
+  display: flex;
+}
+div[data-ysp-modelid="personCKXX"] .contentBox .contentList .contentList-top .line:nth-child(2) > div:nth-child(1),
+div[data-ysp-modelid="personDKXX"] .contentBox .contentList .contentList-top .line:nth-child(2) > div:nth-child(1),
+div[data-ysp-modelid="personYYK"] .contentBox .contentList .contentList-top .line:nth-child(2) > div:nth-child(1),
+div[data-ysp-modelid="publicDQCKMX"] .contentBox .contentList .contentList-top .line:nth-child(2) > div:nth-child(1),
+div[data-ysp-modelid="publicHQCKMX"] .contentBox .contentList .contentList-top .line:nth-child(2) > div:nth-child(1) {
+  text-align: left;
+  flex: 1;
+  font-size: 16px;
+  color: #999999;
+}
+div[data-ysp-modelid="personCKXX"] .contentBox .contentList .contentList-top .line:nth-child(2) > div:nth-child(2),
+div[data-ysp-modelid="personDKXX"] .contentBox .contentList .contentList-top .line:nth-child(2) > div:nth-child(2),
+div[data-ysp-modelid="personYYK"] .contentBox .contentList .contentList-top .line:nth-child(2) > div:nth-child(2),
+div[data-ysp-modelid="publicDQCKMX"] .contentBox .contentList .contentList-top .line:nth-child(2) > div:nth-child(2),
+div[data-ysp-modelid="publicHQCKMX"] .contentBox .contentList .contentList-top .line:nth-child(2) > div:nth-child(2) {
+  text-align: left;
+  flex: 3;
+  font-size: 16px;
+  color: #414e79;
+}
+div[data-ysp-modelid="personCKXX"] .contentBox .contentList .contentList-top .line:nth-child(2) > span:nth-child(3),
+div[data-ysp-modelid="personDKXX"] .contentBox .contentList .contentList-top .line:nth-child(2) > span:nth-child(3),
+div[data-ysp-modelid="personYYK"] .contentBox .contentList .contentList-top .line:nth-child(2) > span:nth-child(3),
+div[data-ysp-modelid="publicDQCKMX"] .contentBox .contentList .contentList-top .line:nth-child(2) > span:nth-child(3),
+div[data-ysp-modelid="publicHQCKMX"] .contentBox .contentList .contentList-top .line:nth-child(2) > span:nth-child(3) {
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translate(0px, -50%);
+  font-size: 16px;
+  color: #cbcbcb;
+}
+div[data-ysp-modelid="personCKXX"] .contentBox .contentList .contentList-bottom,
+div[data-ysp-modelid="personDKXX"] .contentBox .contentList .contentList-bottom,
+div[data-ysp-modelid="personYYK"] .contentBox .contentList .contentList-bottom,
+div[data-ysp-modelid="publicDQCKMX"] .contentBox .contentList .contentList-bottom,
+div[data-ysp-modelid="publicHQCKMX"] .contentBox .contentList .contentList-bottom {
+  border-top: solid 1px #cdcdcd;
+}
+div[data-ysp-modelid="personCKXX"] .contentBox .contentList .contentList-bottom .line,
+div[data-ysp-modelid="personDKXX"] .contentBox .contentList .contentList-bottom .line,
+div[data-ysp-modelid="personYYK"] .contentBox .contentList .contentList-bottom .line,
+div[data-ysp-modelid="publicDQCKMX"] .contentBox .contentList .contentList-bottom .line,
+div[data-ysp-modelid="publicHQCKMX"] .contentBox .contentList .contentList-bottom .line {
+  padding: 10px 0px;
+  display: flex;
+}
+div[data-ysp-modelid="personCKXX"] .contentBox .contentList .contentList-bottom .line div.title,
+div[data-ysp-modelid="personDKXX"] .contentBox .contentList .contentList-bottom .line div.title,
+div[data-ysp-modelid="personYYK"] .contentBox .contentList .contentList-bottom .line div.title,
+div[data-ysp-modelid="publicDQCKMX"] .contentBox .contentList .contentList-bottom .line div.title,
+div[data-ysp-modelid="publicHQCKMX"] .contentBox .contentList .contentList-bottom .line div.title {
+  text-align: left;
+  flex: 1;
+  font-size: 16px;
+  color: #999999;
+}
+div[data-ysp-modelid="personCKXX"] .contentBox .contentList .contentList-bottom .line div.content,
+div[data-ysp-modelid="personDKXX"] .contentBox .contentList .contentList-bottom .line div.content,
+div[data-ysp-modelid="personYYK"] .contentBox .contentList .contentList-bottom .line div.content,
+div[data-ysp-modelid="publicDQCKMX"] .contentBox .contentList .contentList-bottom .line div.content,
+div[data-ysp-modelid="publicHQCKMX"] .contentBox .contentList .contentList-bottom .line div.content {
+  text-align: left;
+  flex: 3;
+  font-size: 16px;
+  color: #414e79;
+}
+div[data-ysp-modelid="personCKXX"] .contentBox .contentList .contentList-bottom.hide,
+div[data-ysp-modelid="personDKXX"] .contentBox .contentList .contentList-bottom.hide,
+div[data-ysp-modelid="personYYK"] .contentBox .contentList .contentList-bottom.hide,
+div[data-ysp-modelid="publicDQCKMX"] .contentBox .contentList .contentList-bottom.hide,
+div[data-ysp-modelid="publicHQCKMX"] .contentBox .contentList .contentList-bottom.hide {
+  border-top: none;
+  display: none;
+}
+div[data-ysp-modelid="personCKXX"] .pageBox,
+div[data-ysp-modelid="personDKXX"] .pageBox,
+div[data-ysp-modelid="personYYK"] .pageBox,
+div[data-ysp-modelid="publicDQCKMX"] .pageBox,
+div[data-ysp-modelid="publicHQCKMX"] .pageBox {
+  padding: 30px 10px 110px 10px;
+}
+div[data-ysp-modelid="personCKXX"] .pageBox .pageBox-top,
+div[data-ysp-modelid="personDKXX"] .pageBox .pageBox-top,
+div[data-ysp-modelid="personYYK"] .pageBox .pageBox-top,
+div[data-ysp-modelid="publicDQCKMX"] .pageBox .pageBox-top,
+div[data-ysp-modelid="publicHQCKMX"] .pageBox .pageBox-top {
+  text-align: center;
+  font-size: 16px;
+  color: #333333;
+  margin-bottom: 10px;
+}
+div[data-ysp-modelid="personCKXX"] .pageBox .pageBox-bottom,
+div[data-ysp-modelid="personDKXX"] .pageBox .pageBox-bottom,
+div[data-ysp-modelid="personYYK"] .pageBox .pageBox-bottom,
+div[data-ysp-modelid="publicDQCKMX"] .pageBox .pageBox-bottom,
+div[data-ysp-modelid="publicHQCKMX"] .pageBox .pageBox-bottom {
+  display: flex;
+}
+div[data-ysp-modelid="personCKXX"] .pageBox .pageBox-bottom .prevBtn,
+div[data-ysp-modelid="personDKXX"] .pageBox .pageBox-bottom .prevBtn,
+div[data-ysp-modelid="personYYK"] .pageBox .pageBox-bottom .prevBtn,
+div[data-ysp-modelid="publicDQCKMX"] .pageBox .pageBox-bottom .prevBtn,
+div[data-ysp-modelid="publicHQCKMX"] .pageBox .pageBox-bottom .prevBtn,
+div[data-ysp-modelid="personCKXX"] .pageBox .pageBox-bottom .nextBtn,
+div[data-ysp-modelid="personDKXX"] .pageBox .pageBox-bottom .nextBtn,
+div[data-ysp-modelid="personYYK"] .pageBox .pageBox-bottom .nextBtn,
+div[data-ysp-modelid="publicDQCKMX"] .pageBox .pageBox-bottom .nextBtn,
+div[data-ysp-modelid="publicHQCKMX"] .pageBox .pageBox-bottom .nextBtn {
+  flex: 1;
+  margin: 0px 10px;
+  border-radius: 4px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 16px;
+  background-color: white;
+  color: #f5a623;
+}
+div[data-ysp-modelid="personCKXX"] .flexBox .flexBox-switch,
+div[data-ysp-modelid="personDKXX"] .flexBox .flexBox-switch,
+div[data-ysp-modelid="personYYK"] .flexBox .flexBox-switch,
+div[data-ysp-modelid="publicDQCKMX"] .flexBox .flexBox-switch,
+div[data-ysp-modelid="publicHQCKMX"] .flexBox .flexBox-switch {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  line-height: 54px;
+  padding: 0px 10px;
+  text-align: left;
+  background-color: #f5a623;
+  color: white;
+  font-size: 16px;
+}
+div[data-ysp-modelid="personCKXX"] .flexBox .flexBox-switch > span,
+div[data-ysp-modelid="personDKXX"] .flexBox .flexBox-switch > span,
+div[data-ysp-modelid="personYYK"] .flexBox .flexBox-switch > span,
+div[data-ysp-modelid="publicDQCKMX"] .flexBox .flexBox-switch > span,
+div[data-ysp-modelid="publicHQCKMX"] .flexBox .flexBox-switch > span {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translate(0px, -50%);
+  font-size: 16px;
+  color: white;
+}
+div[data-ysp-modelid="personCKXX"] .flexBox .flexBox-body.hide,
+div[data-ysp-modelid="personDKXX"] .flexBox .flexBox-body.hide,
+div[data-ysp-modelid="personYYK"] .flexBox .flexBox-body.hide,
+div[data-ysp-modelid="publicDQCKMX"] .flexBox .flexBox-body.hide,
+div[data-ysp-modelid="publicHQCKMX"] .flexBox .flexBox-body.hide {
+  display: none;
+}
+div[data-ysp-modelid="personCKXX"] .flexBox .flexBox-body,
+div[data-ysp-modelid="personDKXX"] .flexBox .flexBox-body,
+div[data-ysp-modelid="personYYK"] .flexBox .flexBox-body,
+div[data-ysp-modelid="publicDQCKMX"] .flexBox .flexBox-body,
+div[data-ysp-modelid="publicHQCKMX"] .flexBox .flexBox-body {
+  background-color: white;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  z-index: 1000;
+}
+div[data-ysp-modelid="personCKXX"] .flexBox .flexBox-body .flexBox-title,
+div[data-ysp-modelid="personDKXX"] .flexBox .flexBox-body .flexBox-title,
+div[data-ysp-modelid="personYYK"] .flexBox .flexBox-body .flexBox-title,
+div[data-ysp-modelid="publicDQCKMX"] .flexBox .flexBox-body .flexBox-title,
+div[data-ysp-modelid="publicHQCKMX"] .flexBox .flexBox-body .flexBox-title {
+  line-height: 40px;
+  position: relative;
+  text-align: center;
+  color: white;
+  background-color: #5481de;
+  font-size: 18px;
+}
+div[data-ysp-modelid="personCKXX"] .flexBox .flexBox-body .flexBox-title .back,
+div[data-ysp-modelid="personDKXX"] .flexBox .flexBox-body .flexBox-title .back,
+div[data-ysp-modelid="personYYK"] .flexBox .flexBox-body .flexBox-title .back,
+div[data-ysp-modelid="publicDQCKMX"] .flexBox .flexBox-body .flexBox-title .back,
+div[data-ysp-modelid="publicHQCKMX"] .flexBox .flexBox-body .flexBox-title .back {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translate(0px, -50%);
+  font-size: 16px;
+}
+div[data-ysp-modelid="personCKXX"] .flexBox .flexBox-body .flexBox-title .back span,
+div[data-ysp-modelid="personDKXX"] .flexBox .flexBox-body .flexBox-title .back span,
+div[data-ysp-modelid="personYYK"] .flexBox .flexBox-body .flexBox-title .back span,
+div[data-ysp-modelid="publicDQCKMX"] .flexBox .flexBox-body .flexBox-title .back span,
+div[data-ysp-modelid="publicHQCKMX"] .flexBox .flexBox-body .flexBox-title .back span {
+  font-size: 16px;
+}
+div[data-ysp-modelid="personCKXX"] .flexBox .flexBox-body .flexBox-table::-webkit-scrollbar,
+div[data-ysp-modelid="personDKXX"] .flexBox .flexBox-body .flexBox-table::-webkit-scrollbar,
+div[data-ysp-modelid="personYYK"] .flexBox .flexBox-body .flexBox-table::-webkit-scrollbar,
+div[data-ysp-modelid="publicDQCKMX"] .flexBox .flexBox-body .flexBox-table::-webkit-scrollbar,
+div[data-ysp-modelid="publicHQCKMX"] .flexBox .flexBox-body .flexBox-table::-webkit-scrollbar {
+  height: 1px;
+  width: 0px;
+}
+div[data-ysp-modelid="personCKXX"] .flexBox .flexBox-body .flexBox-table,
+div[data-ysp-modelid="personDKXX"] .flexBox .flexBox-body .flexBox-table,
+div[data-ysp-modelid="personYYK"] .flexBox .flexBox-body .flexBox-table,
+div[data-ysp-modelid="publicDQCKMX"] .flexBox .flexBox-body .flexBox-table,
+div[data-ysp-modelid="publicHQCKMX"] .flexBox .flexBox-body .flexBox-table {
+  overflow-x: scroll;
+}
+div[data-ysp-modelid="personCKXX"] .flexBox .flexBox-body .flexBox-table table,
+div[data-ysp-modelid="personDKXX"] .flexBox .flexBox-body .flexBox-table table,
+div[data-ysp-modelid="personYYK"] .flexBox .flexBox-body .flexBox-table table,
+div[data-ysp-modelid="publicDQCKMX"] .flexBox .flexBox-body .flexBox-table table,
+div[data-ysp-modelid="publicHQCKMX"] .flexBox .flexBox-body .flexBox-table table {
+  width: 1400px;
+}
+div[data-ysp-modelid="personCKXX"] .flexBox .flexBox-body .flexBox-table table tr,
+div[data-ysp-modelid="personDKXX"] .flexBox .flexBox-body .flexBox-table table tr,
+div[data-ysp-modelid="personYYK"] .flexBox .flexBox-body .flexBox-table table tr,
+div[data-ysp-modelid="publicDQCKMX"] .flexBox .flexBox-body .flexBox-table table tr,
+div[data-ysp-modelid="publicHQCKMX"] .flexBox .flexBox-body .flexBox-table table tr {
+  height: 50px;
+  line-height: 50px;
+}
+div[data-ysp-modelid="personCKXX"] .flexBox .flexBox-body .flexBox-table table td,
+div[data-ysp-modelid="personDKXX"] .flexBox .flexBox-body .flexBox-table table td,
+div[data-ysp-modelid="personYYK"] .flexBox .flexBox-body .flexBox-table table td,
+div[data-ysp-modelid="publicDQCKMX"] .flexBox .flexBox-body .flexBox-table table td,
+div[data-ysp-modelid="publicHQCKMX"] .flexBox .flexBox-body .flexBox-table table td {
+  text-align: center;
+  font-size: 16px;
+  font-weight: normal;
+}
+div[data-ysp-modelid="personCKXX"] .flexBox .flexBox-body .flexBox-table table #tabhead th,
+div[data-ysp-modelid="personDKXX"] .flexBox .flexBox-body .flexBox-table table #tabhead th,
+div[data-ysp-modelid="personYYK"] .flexBox .flexBox-body .flexBox-table table #tabhead th,
+div[data-ysp-modelid="publicDQCKMX"] .flexBox .flexBox-body .flexBox-table table #tabhead th,
+div[data-ysp-modelid="publicHQCKMX"] .flexBox .flexBox-body .flexBox-table table #tabhead th {
+  border: solid 1px #5481de;
+  color: #5481de;
+  text-align: center;
+  font-size: 16px;
+  font-weight: normal;
+}
+div[data-ysp-modelid="personCKXX"] .flexBox .flexBox-body .flexBox-table table #tabbody tr,
+div[data-ysp-modelid="personDKXX"] .flexBox .flexBox-body .flexBox-table table #tabbody tr,
+div[data-ysp-modelid="personYYK"] .flexBox .flexBox-body .flexBox-table table #tabbody tr,
+div[data-ysp-modelid="publicDQCKMX"] .flexBox .flexBox-body .flexBox-table table #tabbody tr,
+div[data-ysp-modelid="publicHQCKMX"] .flexBox .flexBox-body .flexBox-table table #tabbody tr {
+  background-color: #e4edff;
+}
+div[data-ysp-modelid="personCKXX"] .flexBox .flexBox-body .flexBox-table table #tabbody td,
+div[data-ysp-modelid="personDKXX"] .flexBox .flexBox-body .flexBox-table table #tabbody td,
+div[data-ysp-modelid="personYYK"] .flexBox .flexBox-body .flexBox-table table #tabbody td,
+div[data-ysp-modelid="publicDQCKMX"] .flexBox .flexBox-body .flexBox-table table #tabbody td,
+div[data-ysp-modelid="publicHQCKMX"] .flexBox .flexBox-body .flexBox-table table #tabbody td {
+  color: #333333;
+}

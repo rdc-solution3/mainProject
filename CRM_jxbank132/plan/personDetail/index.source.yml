@@ -1,0 +1,188 @@
+getTemplate_uiControl3_E3kh3c: |-
+  module.exports = React.createClass({
+    render: function() {
+      return (
+        <div>
+          自定义组件用来适配基本组件无法适配的页面元素，您可以通过右键打开该自定义组件编辑器进行编辑
+        </div>
+      )
+    }
+  });
+getData_control3_xpGU9v: ;console.log(elem);
+doAction_uiControl3_E3kh3c: ''
+getTemplate_uiControl3_JZJO3k: "export default class extends React.Component{\n  constructor(props){\n    super(props)\n  }\n  render(){\n    var data=this.props.customData;\n    var bgColor=\"#5481de\";\n    var fontColor=\"white\";\n    var styleObj={\n      pageHead:{\n        lineHeight: \"60px\",\n        textAlign: \"center\",\n        backgroundColor: bgColor,\n        color: fontColor,\n        position: \"fixed\",\n        top: \"0px\",\n        width: \"100%\",\n        fontSize: \"16px\"\n      },\n      titleBox:{\n        fontSize: \"18px\"\n      }\n    };\n    return data && data.length>0?\n      <div className=\"page-head\" style={styleObj.pageHead}>\n        <div className=\"back\" onClick={this.openTableBox}><span className=\"icon icon-left-nav\"></span>返回</div>\n        <div className=\"title-box\" style={styleObj.titleBox}>{data[0]}</div>\n      </div>\n      :\n\t\t\tnull\n  }\n}"
+getData_control3_zbDXXH: >-
+  ;var data=[];
+
+  if($(elem).length>0 && $(elem).children("li").length>1 &&
+  $(elem).children("li").children("a").length>0){
+    data[0]=$(elem).children("li").eq(1).children("a").eq(0).text().trim();
+  }
+
+  return data;
+doAction_uiControl3_JZJO3k: ''
+getTemplate_uiControl4_iUiFeP: "module.exports = React.createClass({\n  onClick:function(e){\n    var target=e.target;\n    var handler=this.props.customHandler;\n    if(target.tagName===\"LI\"){\n      if(handler){\n        handler({\n          data: target.dataset.index,\n          eventType: \"click\"\n        })\n      }\n    }\n  },\n  render: function() {\n    var data=this.props.customData;\n    var styleObj={\n      pageMenu:{\n        display: \"flex\"\n      }\n    };\n  \tvar index=data && data.length>0?data[0]:0;\n    return (\n      <div className=\"page-menu\" style={styleObj.pageMenu} onClick={this.onClick}>\n      \t<li className={index===0?\"activeList menulist\":\"menulist\"} data-index={0}>客户信息</li>\n        <li className={index===1?\"activeList menulist\":\"menulist\"} data-index={1}>存款信息</li>\n        <li className={index===2?\"activeList menulist\":\"menulist\"} data-index={2}>贷款信息</li>\n        <li className={index===3?\"activeList menulist\":\"menulist\"} data-index={3}>银行卡</li>\n      </div>\n    )\n  }\n});"
+getData_control4_SXzqDQ: |-
+  ;var data=[];
+  if($(elem).length>0 && $(elem).find(".menuactive").length>0){
+    var text=$(elem).find(".menuactive").text().trim();
+    if(text==="客户信息"){
+      data[0]=0;
+    }else if(text==="存款信息"){
+      data[0]=1;
+    }else if(text==="贷款信息"){
+      data[0]=2;
+    }else if(text==="银行卡"){
+      data[0]=3;
+    }
+  }
+  return data;
+doAction_uiControl4_iUiFeP: |-
+  if(data.eventType=="click"){
+    var index=parseInt(data.dataCustom);
+    if(index===0){
+      var target=$(elem).children("div").eq(0).find("li").eq(0)[0];
+      if(target){
+        target.click();
+      }
+    }else if(index===1){
+      var target=$(elem).children("div").eq(3).find("li").eq(0)[0];
+      if(target){
+        target.click();
+      }
+    }else if(index===2){
+      var target=$(elem).children("div").eq(3).find("li").eq(1)[0];
+      if(target){
+        target.click();
+      }
+    }else if(index===3){
+      var target=$(elem).children("div").eq(3).find("li").eq(2)[0];
+      if(target){
+        target.click();
+      }
+    }
+  }
+getTemplate_uiControl5_gfKqgr: "export default class extends React.Component{\n  constructor(props){\n    super(props);\n    this.showBox=this.showBox.bind(this);\n    this.state={\n      show:false\n    };\n  }\n  showBox(e){\n    this.setState({\n      show:!this.state.show\n    })\n  }\n  render(){\n    var _this=this;\n    var data=this.props.customData;\n    if(data && data.length>0){\n      var mainDiv=data.map(function(d,idx){\n        return (<div className=\"listBox\">\n          \t<div className=\"title\">{d.title}</div>\n            <div className=\"content\">{d.content}</div>\n          </div>)\n      })\n      return (<div className=\"mainBox1\">\n        \t<div className=\"mainBox1-title\"><span>基本信息</span></div>\n          <div className={this.state.show?\"mainBox1-box\":\"mainBox1-box hide\"}>{mainDiv}</div>\n          <div className={this.state.show?\"more icon icon-up-nav\":\"more icon icon-down-nav\"} onClick={this.showBox}>展开全部内容</div>\n        </div>)\n    }else{\n      return null\n    }\n  }\n}"
+getData_control5_a7F9FZ: >-
+  ;var data=[];
+
+  if($(elem).length>0 && $(elem).children("tbody").length>0 &&
+  $(elem).children("tbody").children("tr:visible").length>0 &&
+  $(elem).children("tbody").children("tr:visible").children("td:visible").length>0){
+    $(elem).children("tbody").children("tr:visible").each(function(idx,d){
+      $(d).children("td:visible").each(function(idx1,d1){
+        if(idx1%2===0 && d1.textContent.trim()!==""){
+          data.push({
+            title:d1.textContent.trim(),
+            content: d1.nextElementSibling.textContent.trim()
+          })
+        }
+      })
+    })
+  }
+
+  return data;
+doAction_uiControl5_gfKqgr: ''
+getTemplate_uiControl6_g8VwW1: "export default class extends React.Component{\n  constructor(props){\n    super(props);\n    this.showBox=this.showBox.bind(this);\n    this.state={\n      show:false\n    };\n  }\n  showBox(e){\n    this.setState({\n      show:!this.state.show\n    })\n  }\n  render(){\n    var _this=this;\n    var data=this.props.customData;\n    if(data && data.length>0){\n      var mainDiv=data.map(function(d,idx){\n        return (<div className=\"listBox\">\n          \t<div className=\"title\">{d.title}</div>\n            <div className=\"content\">{d.content}</div>\n          </div>)\n      })\n      return (<div className=\"mainBox2\">\n        \t<div className=\"mainBox2-title\"><span>客户资产汇总(单位:元)</span></div>\n          <div className={this.state.show?\"mainBox2-box\":\"mainBox2-box hide\"}>{mainDiv}</div>\n          <div className={this.state.show?\"more icon icon-up-nav\":\"more icon icon-down-nav\"} onClick={this.showBox}>展开全部内容</div>\n        </div>)\n    }else{\n      return null\n    }\n  }\n}"
+getData_control6_SFpVff: >-
+  ;var data=[];
+
+  if($(elem).length>0 && $(elem).children("tbody").length>0 &&
+  $(elem).children("tbody").children("tr:visible").length>0 &&
+  $(elem).children("tbody").children("tr:visible").children("td:visible").length>0){
+    $(elem).children("tbody").children("tr:visible").each(function(idx,d){
+      $(d).children("td:visible").each(function(idx1,d1){
+        if(idx1%2===0 && d1.textContent.trim()!==""){
+          data.push({
+            title:d1.textContent.trim(),
+            content: d1.nextElementSibling.textContent.trim()
+          })
+        }
+      })
+    })
+  }
+
+  return data;
+doAction_uiControl6_g8VwW1: ''
+getTemplate_uiControl7_HZbgUn: "export default class extends React.Component{\n  constructor(props){\n    super(props);\n    this.state={\n      show:false\n    };\n  }\n  render(){\n    var _this=this;\n    var data=this.props.customData;\n    if(data && data.length>0){\n      var mainDiv=data.map(function(d,idx){\n        return (<div className=\"listBox\">\n          \t<div className=\"title\">{d.title}</div>\n            <div className=\"content\">{d.content}</div>\n          </div>)\n      })\n      return (<div className=\"mainBox3\">\n        \t<div className=\"mainBox3-title\"><span>客户负债(单位:元)</span></div>\n          <div className={this.state.show?\"mainBox3-box\":\"mainBox3-box hide\"}>{mainDiv}</div>\n        </div>)\n    }else{\n      return null\n    }\n  }\n}"
+getData_control7_6KvB2w: >-
+  ;var data=[];
+
+  if($(elem).length>0 && $(elem).children("tbody").length>0 &&
+  $(elem).children("tbody").children("tr:visible").length>0 &&
+  $(elem).children("tbody").children("tr:visible").children("td:visible").length>0){
+    $(elem).children("tbody").children("tr:visible").each(function(idx,d){
+      $(d).children("td:visible").each(function(idx1,d1){
+        if(idx1%2===0 && d1.textContent.trim()!==""){
+          data.push({
+            title:d1.textContent.trim(),
+            content: d1.nextElementSibling.textContent.trim()
+          })
+        }
+      })
+    })
+  }
+
+  return data;
+doAction_uiControl7_HZbgUn: ''
+getTemplate_uiControl8_Q7mr61: "export default class extends React.Component{\n  constructor(props){\n    super(props);\n    this.state={\n      show:false\n    };\n  }\n  render(){\n    var _this=this;\n    var data=this.props.customData;\n    if(data && data.length>0){\n      var mainDiv=data.map(function(d,idx){\n        return (<div className=\"listBox\">\n          \t<div className=\"title\">{d.title}</div>\n            <div className=\"content\">{d.content}</div>\n          </div>)\n      })\n      return (<div className=\"mainBox3\">\n        \t<div className=\"mainBox3-title\"><span>卡上月消费情况(单位:元)</span></div>\n          <div className={this.state.show?\"mainBox3-box\":\"mainBox3-box hide\"}>{mainDiv}</div>\n        </div>)\n    }else{\n      return null\n    }\n  }\n}"
+getData_control8_9MXTIw: >-
+  ;var data=[];
+
+  if($(elem).length>0 && $(elem).children("tbody").length>0 &&
+  $(elem).children("tbody").children("tr:visible").length>0 &&
+  $(elem).children("tbody").children("tr:visible").children("td:visible").length>0){
+    $(elem).children("tbody").children("tr:visible").each(function(idx,d){
+      $(d).children("td:visible").each(function(idx1,d1){
+        if(idx1%2===0 && d1.textContent.trim()!==""){
+          data.push({
+            title:d1.textContent.trim(),
+            content: d1.nextElementSibling.textContent.trim()
+          })
+        }
+      })
+    })
+  }
+
+  return data;
+doAction_uiControl8_Q7mr61: ''
+getTemplate_uiControl9_328r9C: "export default class extends React.Component{\n  constructor(props){\n    super(props);\n    this.state={\n      show:false\n    };\n  }\n  render(){\n    var _this=this;\n    var data=this.props.customData;\n    if(data && data.length>0){\n      var mainDiv=data.map(function(d,idx){\n        return (<div className=\"listBox\">\n          \t<div className=\"title\">{d.title}</div>\n            <div className=\"content\">{d.content}</div>\n          </div>)\n      })\n      return (<div className=\"mainBox3\">\n        \t<div className=\"mainBox3-title\"><span>其他情况</span></div>\n          <div className={this.state.show?\"mainBox3-box\":\"mainBox3-box hide\"}>{mainDiv}</div>\n        </div>)\n    }else{\n      return null\n    }\n  }\n}"
+getData_control9_Pkwl9q: >-
+  ;var data=[];
+
+  if($(elem).length>0 && $(elem).children("tbody").length>0 &&
+  $(elem).children("tbody").children("tr:visible").length>0 &&
+  $(elem).children("tbody").children("tr:visible").children("td:visible").length>0){
+    $(elem).children("tbody").children("tr:visible").each(function(idx,d){
+      $(d).children("td:visible").each(function(idx1,d1){
+        if(idx1%2===0 && d1.textContent.trim()!==""){
+          data.push({
+            title:d1.textContent.trim(),
+            content: d1.nextElementSibling.textContent.trim()
+          })
+        }
+      })
+    })
+  }
+
+  return data;
+doAction_uiControl9_328r9C: ''
+getTemplate_uiControl10_LgaSLS: "export default class extends React.Component{\n  constructor(props){\n    super(props);\n    this.showPie=this.showPie.bind(this);\n  }\n  showPie(){\n    if(this.refs.pieBox && this.props.customData){\n      var obj=this.props.customData\n      var pieBox=this.refs.pieBox;\n      var myPieBox = echarts.init(pieBox);\n      var bal = 0;\n      if(obj.s_aum_bal){\n        bal = parseFloat(obj.s_aum_bal);\n      }\n      var loan_bal = 0;\n      if(obj.loan_bal){\n        loan_bal = parseFloat(obj.loan_bal);\n      }\n      var finance_bal = 0;\n      if(obj.finance_bal){\n        finance_bal = parseFloat(obj.finance_bal);\n      }\n      var invest_bal = 0;\n      if(obj.invest_bal){\n        invest_bal = parseFloat(obj.invest_bal);\n      }\n      var options={\n        backgroundColor: 'white',\n        tooltip : {\n          trigger: 'item',\n          formatter: \"{a} <br/>{b} : {c} ({d}%)\"\n        },\n        legend: {\n            data: ['存款', '贷款', '理财', '基金'],\n            bottom: \"20px\",\n          \titemWidth:30,\n        \t\titemHeight:20,\n          \ttextStyle:{\n              fontSize:16\n            }\n        },\n        calculable: false,\n        series: [{\n            name: '资产分类',\n            type: 'pie',\n            selectedMode: 'single',\n            radius: ['40%',\"60%\"],\n            center: ['50%', '50%'],\n            data: [{\n                value: bal,\n                name: '存款',\n              \tlabel:{\n                  fontSize:16\n                }\n            }, {\n                value: loan_bal,\n                name: '贷款',\n              \tlabel:{\n                  fontSize:16\n                }\n            }, {\n                value: finance_bal,\n                name: '理财',\n              \tlabel:{\n                  fontSize:16\n                }\n            }, {\n                value: invest_bal,\n                name: '基金',\n              \tlabel:{\n                  fontSize:16\n                }\n            }],\n            itemStyle: {\n              \tnormal: {\n                  borderWidth: 3, \n\t\t\t\t        \tborderColor: '#fff',\n                  label: {\n                      show: true,\n                      formatter: \"{b} : {c} \\n({d}%)\"\n                  },\n                  labelLine: {\n                      show: true\n                  }\n              \t}\n            },\n          \tcolor:['#ff7f50', '#58ceeb','#cd55e3','#0acd00']\n        }]\n      };\n      myPieBox.setOption(options);\n    }\n  }\n  componentDidMount(){\n    this.showPie();\n  }\n  componentDidUpdate(){\n    this.showPie();\n  }\n  render(){\n    var _this=this;\n    var data=this.props.customData;\n    if(data){\n      return (<div className=\"mainBox3\">\n        <div className=\"mainBox3-title\"><span>行内资产分类情况</span></div>\n        <div ref=\"pieBox\" className=\"mainPie\" style={{width:\"100%\",height:\"450px\"}}></div>\n      </div>)\n    }else{\n      return null\n    }\n  }\n}"
+getData_control10_3Ty6mW: |-
+  ;var data;
+  if(elem && elem.contentWindow && elem.contentWindow.pieData){
+    data=elem.contentWindow.pieData;
+  }
+  return data;
+doAction_uiControl10_LgaSLS: ''
+getTemplate_uiControl50_pBaqDL: "export default class extends React.Component{\n  constructor(props){\n    super(props);\n    this.closePage=this.closePage.bind(this);\n  }\n  closePage(e){\n    var handler=this.props.customHandler;\n    if(handler){\n      handler({\n        eventType: \"closePage\"\n      })\n    }\n  }\n  render(){\n    var data=this.props.customData;\n    var bgColor=\"#5481de\";\n    var fontColor=\"white\";\n    var styleObj={\n      pageHead:{\n        lineHeight: \"60px\",\n        textAlign: \"center\",\n        backgroundColor: bgColor,\n        color: fontColor,\n        position: \"fixed\",\n        top: \"0px\",\n        width: \"100%\",\n        fontSize: \"16px\"\n      },\n      titleBox:{\n        fontSize: \"18px\"\n      }\n    };\n    return data && data.length>0?\n      <div className=\"page-head\" style={styleObj.pageHead}>\n        <div className=\"back\" onClick={this.closePage}><span className=\"icon icon-left-nav\"></span>返回</div>\n        <div className=\"title-box\" style={styleObj.titleBox}>{data[0]}</div>\n      </div>\n      :\n\t\t\tnull\n  }\n}"
+getData_control57_Ngm6on: |-
+  ;var data=[];
+  if(elem && /.*【(.*)】.*/.test(elem.textContent)){
+    data[0]=elem.textContent.replace(/.*【(.*)】.*/,'$1');
+  }
+  return data;
+doAction_uiControl50_pBaqDL: |-
+  if(data.eventType=="closePage"){
+    elem.nextElementSibling.click();
+  }

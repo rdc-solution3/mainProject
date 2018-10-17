@@ -1,0 +1,51 @@
+{
+  "special_models": [
+    {
+      "path": "plan/login/index.json"
+    }
+  ],
+  "common_js": [
+    {
+      "path": "lib/base.js"
+    },
+    {
+      "path": "lib/customTemplate.js"
+    },
+    {
+      "path": "lib/echarts.common.min.js",
+      "sourceType": "local",
+      "target": "face"
+    },
+    {
+      "path": "lib/jquery.min.js",
+      "sourceType": "local",
+      "target": "back"
+    },
+    {
+      "path": "lib/jquery.min.js",
+      "sourceType": "local",
+      "target": "face"
+    },
+    {
+      "path": "lib/amazeui.touch.min.js",
+      "sourceType": "local",
+      "target": "face"
+    }
+  ],
+  "common_css": [
+    {
+      "path": "lib/base.css"
+    },
+    {
+      "path": "lib/amazeui.touch.min.css",
+      "sourceType": "local",
+      "target": "face"
+    },
+    {
+      "path": "lib/amazeui.touch1.override.css",
+      "sourceType": "local",
+      "target": "face"
+    }
+  ],
+  "path": "file://C:/Users/DYN/Documents/enterplorer/enterprises/58f9a16810b28eed7f2a193c/apps_0007/CRM_jxbank/common.json"
+}

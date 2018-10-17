@@ -1,0 +1,197 @@
+{
+  "version": "0.1",
+  "id": "login",
+  "targetURL": "http://10.1.43.44:9080/crm1/login.jsp",
+  "jsFile": "index.js",
+  "requires": {
+    "index": "../index/index.json",
+    "publicDetail": "../publicDetail/index.json",
+    "personDetail": "../personDetail/index.json"
+  },
+  "chineseName": "login",
+  "description": "登录",
+  "controls": {
+    "control0_GGozrF": {
+      "location": {
+        "data": {
+          "tagName": "DIV"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "value": "DIV.alphaContent DIV.mainContent DIV.inputdiv"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/DIV[2]/DIV[3]"
+          }
+        ]
+      },
+      "events": {
+        "onGetData": "getData_control0_GGozrF"
+      },
+      "intendedRole": "custom",
+      "roles": "element,custom",
+      "monitored": false,
+      "frameXPath": "",
+      "componentType": "custom"
+    }
+  },
+  "contexts": {
+    "context0_zFKlNT": {
+      "controls": [
+        "control0_GGozrF"
+      ],
+      "anchors": [],
+      "urlAnchor": []
+    }
+  },
+  "flows": {
+    "flow0_tUqn8Z": {
+      "toContexts": [
+        {
+          "toContextId": "context0_zFKlNT"
+        },
+        {
+          "toContextId": "context5_85mbl1",
+          "toModelId": "publicDetail"
+        },
+        {
+          "toContextId": "context1_mfZgIW",
+          "toModelId": "personDetail"
+        }
+      ]
+    },
+    "flow1_xG43FD": {
+      "fromContextId": "context0_zFKlNT",
+      "fromAction": "doAction",
+      "fromControlId": "control0_GGozrF",
+      "toContexts": [
+        {
+          "toContextId": "context0_zFKlNT"
+        },
+        {
+          "toContextId": "context1_MTr4k7",
+          "toModelId": "index"
+        }
+      ]
+    }
+  },
+  "pages": {
+    "page0_ut2e7n": {
+      "contextId": "context0_zFKlNT",
+      "layout": [
+        {
+          "id": "uiControl0_paqaL8",
+          "controlId": "control0_GGozrF",
+          "display": {
+            "adapterId": "custom",
+            "type": "custom",
+            "adapter": {
+              "templateType": "react",
+              "events": {
+                "onDoAction": "doAction_uiControl0_paqaL8",
+                "onGetTemplate": "getTemplate_uiControl0_paqaL8"
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "matchers": {
+    "page/title": {
+      "contexts": {
+        "context0_zFKlNT": [
+          "江西银行-客户关系管理系统"
+        ]
+      }
+    },
+    "page/urls": {
+      "contexts": {
+        "context0_zFKlNT": [
+          "10.1.43.44:9080/crm1/login.jsp"
+        ]
+      }
+    },
+    "page/ids": {
+      "contexts": {
+        "context0_zFKlNT": [
+          [
+            "_loadingDiv",
+            "alphaDiv",
+            "cooikebtn",
+            "loginbtn",
+            "name",
+            "password"
+          ]
+        ]
+      }
+    },
+    "page/classes": {
+      "contexts": {
+        "context0_zFKlNT": [
+          [
+            "alphaContent",
+            "bgdiv",
+            "btn",
+            "hangxun",
+            "inputdiv",
+            "inputout",
+            "logoimg",
+            "mainContent",
+            "stretch",
+            "title",
+            "titlediv",
+            "vline"
+          ],
+          [
+            "alphaContent",
+            "bgdiv",
+            "btn",
+            "hangxun",
+            "inputdiv",
+            "logoimg",
+            "mainContent",
+            "stretch",
+            "title",
+            "titlediv",
+            "vline"
+          ]
+        ]
+      }
+    },
+    "page/tagTriplets": {
+      "contexts": {
+        "context0_zFKlNT": [
+          [
+            "-/-/DIV",
+            "-/-/SCRIPT",
+            "-/DIV/DIV",
+            "-/DIV/IMG",
+            "-/DIV/TABLE",
+            "DIV/DIV/DIV",
+            "DIV/DIV/IMG",
+            "DIV/DIV/P",
+            "DIV/DIV/TABLE",
+            "DIV/TABLE/TBODY",
+            "TABLE/TBODY/TR",
+            "TBODY/TR/TD",
+            "TD/LABEL/INPUT-checkbox",
+            "TR/TD/IMG",
+            "TR/TD/INPUT-password",
+            "TR/TD/INPUT-submit",
+            "TR/TD/INPUT-text",
+            "TR/TD/LABEL"
+          ]
+        ]
+      }
+    }
+  }
+}
